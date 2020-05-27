@@ -1,0 +1,85 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    16,
+                    60
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": [
+                        "index"
+                    ]
+                },
+                "name": "Display",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "339582654436"
+                },
+                "propertyGroup": {
+                    "properties": []
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Extension with plugin for GPXViewer content element based on GPXViewer from J\u00fcrgen Berkemeier (https:\/\/www.j-berkemeier.de\/GPXViewer\/)",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "stable",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "wok_gpxviewer",
+        "name": "GPXViewer",
+        "originalExtensionKey": "wok_gpxviewer",
+        "originalVendorName": "Wok",
+        "persons": [],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Display => index",
+                    "noncacheableActions": "Display => index",
+                    "switchableActions": ""
+                },
+                "description": "Display GPX tracks with GPXViewer",
+                "key": "gpxtracks",
+                "name": "GPXViewer tracks display"
+            }
+        ],
+        "vendorName": "Wok"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2018-03-22 04:00",
+        "extension_builder_version": "8.7.0",
+        "be_user": " (1)"
+    }
+}

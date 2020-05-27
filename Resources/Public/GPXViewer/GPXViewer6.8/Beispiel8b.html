@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>GPXViewer Beispiel 8</title>
+		<style>
+			body > p > button { padding:.3em }
+			#map1, #map2 { display:inline-block; width:500px;height:500px; width:calc(50vw - 40px); height: calc(100vh - 10em); }
+			@media screen and (max-width:800px) {
+				#map1, #map2 { display:block; width:calc(100vw - 50px); }
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 8 - Nachträgliches Setzen von Wegpunkten und Abfahren eines Tracks</h1>
+		<p><button type="button" onclick = "buttonclick_rw()">Random Walk</button> 
+			<button type="button" onclick = "buttonclick_bp()">Bildwegpunkt</button></p>
+		<div id="map1" class="gpxview:Beispiel1.gpx:Satellit"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<div id="map2" class="gpxview:Beispiel3.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<hr><p>7. 5. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+			buttonclick_rw = function() {
+				var mapdiv = document.getElementById("map1");
+				var map = mapdiv.makeMap.GetMap();
+				map.rescale({latmin:40,latmax:60,lonmin:5,lonmax:15});
+				var marker = map.Marker_Text({lat:50,lon:0},JB.icons.flag,"Titel","Text")[0];
+				var x=50,y=10;
+				var animate = function() {
+					x += 0.2*(Math.random()-0.5);
+					y += 0.2*(Math.random()-0.5);
+					if(marker.setPosition) marker.setPosition(new google.maps.LatLng(x,y));
+					else if(marker.setLatLng) marker.setLatLng([x,y]);
+					window.requestAnimationFrame(animate);
+				};
+				animate();
+			}
+			buttonclick_bp = function() { 	
+				var mapdiv = document.getElementById("map1");
+				var map = mapdiv.makeMap.GetMap();
+				map.rescale({latmin:40,latmax:60,lonmin:5,lonmax:15});
+				var marker = map.Marker_Bild({lat:50,lon:10},JB.icons.Bild,"Beispiel4.png","Das Bild zeigt das Beispiel 4");
+			}
+			var latlon1 = [], movemarker1, nr1=0;
+			var latlon2 = [], movemarker2, nr2=0;
+			JB.GPX2GM.callback = function(pars) {
+				JB.Debug_Info("callback",pars.id+" "+pars.type,false);
+				if(pars.id=="map1" && pars.type == "Tracks_n") {
+					if(!latlon1.length) {
+						var tracks = pars.gpxdaten.tracks.track;
+						for(var i=0;i<tracks.length;i++) 
+							for(var j=0;j<tracks[i].daten.length;j++)
+								latlon1.push({lat:tracks[i].daten[j].lat,lon:tracks[i].daten[j].lon});
+						var mapdiv = document.getElementById(pars.id);
+						var map = mapdiv.makeMap.GetMap();
+						movemarker1 = map.Marker({lat:0,lon:0},JB.icons.MoveMarker)[0];
+					}
+				}
+				if(pars.id=="map2" && pars.type == "Tracks_n") {
+					if(!latlon2.length) {
+						var tracks = pars.gpxdaten.tracks.track;
+						for(var i=0;i<tracks.length;i++) 
+							for(var j=0;j<tracks[i].daten.length;j++)
+								latlon2.push({lat:tracks[i].daten[j].lat,lon:tracks[i].daten[j].lon});
+						var mapdiv = document.getElementById(pars.id);
+						var map = mapdiv.makeMap.GetMap();
+						movemarker2 = map.Marker({lat:0,lon:0},JB.icons.MoveMarker)[0];
+					}
+				}
+				return true;
+			} // JB.GPX2GM.callback
+			var animate1 = function() {
+				if(latlon1.length) {
+					if(movemarker1.setPosition) movemarker1.setPosition(new google.maps.LatLng(latlon1[nr1].lat,latlon1[nr1].lon));
+					else if(movemarker1.setLatLng) movemarker1.setLatLng([latlon1[nr1].lat,latlon1[nr1].lon]);
+					nr1 ++; if(nr1>=latlon1.length) nr1=0;
+				}
+				window.requestAnimationFrame(animate1);
+			};
+			animate1();
+			var animate2 = function() {
+				if(latlon2.length) {
+					if(movemarker2.setPosition) movemarker2.setPosition(new google.maps.LatLng(latlon2[nr2].lat,latlon2[nr2].lon));
+					else if(movemarker2.setLatLng) movemarker2.setLatLng([latlon2[nr2].lat,latlon2[nr2].lon]);
+					nr2 ++; if(nr2>=latlon2.length) nr2=0;
+				}
+				window.requestAnimationFrame(animate2);
+			};
+			animate2();
+		</script>	
+	</body>
+</html>

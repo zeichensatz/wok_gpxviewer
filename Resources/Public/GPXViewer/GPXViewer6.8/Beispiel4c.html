@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"> 
+    <title>GPXViewer Beispiel 4c</title>
+    <script type="text/javascript">
+			var Shtrvmitt = false;
+			var Shtrvmittwob = true;
+			var Trcolmod = "h";
+			var Fullscreenbutton = true;
+    </script>
+    <script src="GM_Utils/GPX2GM.js"></script>
+		<style>
+		  body { width:calc(100% - 40px);padding: 10px 10px 10px 30px }
+		  #map1 { width:49%;height:500px;display:inline-block;vertical-align:top }
+			#map1_profiles { margin-left:1%;width:49%;display:inline-block }
+			#map1_hp { height:200px;margin-top:10px }
+			#map1_sp { height:200px;margin-top:-37px }
+			#map1_vp { height:200px;margin-top:-37px }
+			#map1_hrp { height:200px;margin-top:-37px }
+			#map1_cadp { height:200px;margin-top:-37px }
+		</style>
+  </head>
+  <body>
+   <h1>GPXViewer Beispiel 4c</h1>
+     <div title="Radtour im Allgäu" id="map1" class="gpxview:Beispiel1.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+     <div id="map1_profiles">
+			<div id="map1_hp" class="pltx"></div>
+			<div id="map1_sp" class="pltx"></div>
+			<div id="map1_vp" class="pltx"></div>
+			<div id="map1_hrp" class="pltx"></div>
+			<div id="map1_cadp" class="pltx"></div>
+     </div>
+     <hr><p>5. 5. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script>
+		// Automatisches ein-/ausblenden von Profilen
+		JB.GPX2GM.callback = function(pars) { 
+			JB.Debug_Info("callback",pars.id+" "+pars.type,false);
+			var pltx = document.getElementById("map1_profiles").getElementsByClassName("pltx");
+			//var pltt = document.getElementById("map1_profiles").getElementsByClassName("pltt");
+			var p;
+			switch(pars.type) {
+				case "Profile_v":
+					document.getElementById("map1_profiles").style.display = "inline-block";
+					for(var i=0;i<pltx.length;i++) {
+						pltx[i].style.display = "";
+						JB.addClass("no_x",pltx[i]);
+					}
+					/*for(var i=0;i<pltt.length;i++) {
+						pltt[i].style.display = "";
+						JB.addClass("no_x",pltt[i]);
+					}*/
+					for(var i=pltx.length-1;i>=0;i--) {
+						var ptype = pltx[i].id.substr(5);
+						if(pars.profil[ptype].pflag) {
+							JB.removeClass("no_x",pltx[i]);
+							break;
+						}
+					}
+					/*for(var i=pltt.length-1;i>=0;i--) {
+						var ptype = pltt[i].id.substr(5);
+						if(pars.profil[ptype].pflag) {
+							JB.removeClass("no_x",pltt[i]);
+							break;
+						}
+					}*/
+					break;
+				case "Profile_n":
+					document.getElementById("map1_profiles").style.display = "inline-block";
+					//if(!wp) for(var i=0;i<pltx.length;i++) pltx[i].style.display = "none";
+					//if(!tp) for(var i=0;i<pltt.length;i++) pltt[i].style.display = "none";
+					for(p in pars.profil) if(!pars.profil[p].pflag && pars.profil[p].ele) pars.profil[p].ele.style.display = "none";
+					break;
+			}
+			return true;
+		}  // JB.GPX2GM.callback
+	 </script>
+  </body>
+</html>

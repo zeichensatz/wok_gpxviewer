@@ -1,0 +1,884 @@
+<T3DataStructure>
+	<meta type="array">
+		<langChildren>0</langChildren>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<options>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetTitle</sheetTitle>
+					<sheetDescription>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetDescription</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.gpxFileInfo>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileInfo</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</settings.gpxFileInfo>
+					<settings.gpxFile>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFile</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>sys_file</allowed>
+								<size>10</size>
+								<minitems>0</minitems>
+								<maxitems>100</maxitems>
+								<show_thumbs>0</show_thumbs>
+								<appearance>
+									<elementBrowserType>file</elementBrowserType>
+									<elementBrowserAllowed>gpx</elementBrowserAllowed>
+								</appearance>
+							</config>
+						</TCEforms>
+					</settings.gpxFile>
+					<settings.gpxFileMapType>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapType</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeKarte</numIndex>
+										<numIndex index="1">Karte</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeSatellit</numIndex>
+										<numIndex index="1">Satellit</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeHybrid</numIndex>
+										<numIndex index="1">Hybrid</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOberflaeche</numIndex>
+										<numIndex index="1">Oberflaeche</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOSM</numIndex>
+										<numIndex index="1">OSM</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOSMDE</numIndex>
+										<numIndex index="1">OSMDE</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOSM_Cycle</numIndex>
+										<numIndex index="1">OSM_Cycle</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOSM_Landscape</numIndex>
+										<numIndex index="1">OSM_Landscape</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOPENTOPO</numIndex>
+										<numIndex index="1">OPENTOPO</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOPEN_Sea</numIndex>
+										<numIndex index="1">OPEN_Sea</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMapType>
+					<settings.gpxFileDownloadLink>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDownloadLink</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDownloadLinkDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDownloadLinkOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDownloadLinkOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileDownloadLink>
+					<settings.gpxFileAnimation>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimation</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileAnimation>
+					<settings.gpxFileAnimationIcon>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIcon</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconMoveMarker</numIndex>
+										<numIndex index="1">MoveMarker</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconMotorbike42_l2r</numIndex>
+										<numIndex index="1">motorbike42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconMotorbike42_r2l</numIndex>
+										<numIndex index="1">motorbike42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCycling42_l2r</numIndex>
+										<numIndex index="1">cycling42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCycling42_r2l</numIndex>
+										<numIndex index="1">cycling42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconFourbyfour42_l2r</numIndex>
+										<numIndex index="1">fourbyfour42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconFourbyfour42_r2l</numIndex>
+										<numIndex index="1">fourbyfour42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconHiking42_l2r</numIndex>
+										<numIndex index="1">hiking42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconHiking42_r2l</numIndex>
+										<numIndex index="1">hiking42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconJogging42_l2r</numIndex>
+										<numIndex index="1">jogging42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconJogging42_r2l</numIndex>
+										<numIndex index="1">jogging42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconAircraftsmall42_l2r</numIndex>
+										<numIndex index="1">aircraftsmall42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconAircraftsmall42_r2l</numIndex>
+										<numIndex index="1">aircraftsmall42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCar42_l2r</numIndex>
+										<numIndex index="1">car42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCar42_r2l</numIndex>
+										<numIndex index="1">car42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconConvertible42_l2r</numIndex>
+										<numIndex index="1">convertible42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="16" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconConvertible42_r2l</numIndex>
+										<numIndex index="1">convertible42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="17" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCruiseship42_l2r</numIndex>
+										<numIndex index="1">cruiseship42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="18" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconCruiseship42_r2l</numIndex>
+										<numIndex index="1">cruiseship42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="19" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconHelicopter42_l2r</numIndex>
+										<numIndex index="1">helicopter42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="20" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconHelicopter42_r2l</numIndex>
+										<numIndex index="1">helicopter42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="21" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconPlane42_l2r</numIndex>
+										<numIndex index="1">plane42_l2r</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconPlane42_r2l</numIndex>
+										<numIndex index="1">plane42_r2l</numIndex>
+									</numIndex>
+									<numIndex index="100" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileAnimationIconDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileAnimationIcon>
+					<settings.gpxFileDescriptionToggle>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDescriptionToggle</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDescriptionToggleDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDescriptionToggleOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDescriptionToggleOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileDescriptionToggle>
+					<settings.gpxFileDescription>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileDescription</label>
+							<config>
+								<type>text</type>
+								<enableRichtext>true</enableRichtext>
+								<defaultExtras>
+									<richtext>rte_transform</richtext>
+								</defaultExtras>
+							</config>
+						</TCEforms>
+					</settings.gpxFileDescription>
+				</el>
+			</ROOT> 
+		</options>
+		<s_Coords>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetTitleCoords</sheetTitle>
+					<sheetDescription>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetDescriptionCoords</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.gpxMapCoordsCenterFormat>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormat</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>dezimal</default>
+ 								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDegreetime</numIndex>
+										<numIndex index="1">degreetime</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDezimal</numIndex>
+										<numIndex index="1">dezimal</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDegreedezimalmin</numIndex>
+										<numIndex index="1">degreedezimalmin</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxMapCoordsCenterFormat>
+					<settings.gpxMapCoordsCenter>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoords</label>
+							<config>
+								<type>input</type>
+								<size>48</size>
+							</config>
+						</TCEforms>
+					</settings.gpxMapCoordsCenter>
+					<settings.gpxMapCoordsCenterRadius>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapCoordsCenterRadius</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</settings.gpxMapCoordsCenterRadius>
+				</el>
+			</ROOT> 
+		</s_Coords>
+		<s_Waypoints>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetTitleWaypoints</sheetTitle>
+					<sheetDescription>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetDescriptionWaypoints</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.waypoints>
+						<section>1</section>
+						<type>array</type>
+						<el>
+							<container>
+								<title>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.elementTitleWaypoint</title>
+								<type>array</type>
+								<el>
+									<settings.gpxMapWaypointType>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointType</label>
+											<onChange>reload</onChange>
+											<config>
+												<type>select</type>
+												<renderType>selectSingle</renderType>
+												<maxitems>1</maxitems>
+												<size>1</size>
+												<default>image</default>
+ 												<items type="array">
+													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImage</numIndex>
+														<numIndex index="1">image</numIndex>
+													</numIndex>
+													<numIndex index="1" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectIcon</numIndex>
+														<numIndex index="1">icon</numIndex>
+													</numIndex>
+													<numIndex index="2" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectIconLinked</numIndex>
+														<numIndex index="1">iconLinked</numIndex>
+													</numIndex>
+													<numIndex index="3" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotagged</numIndex>
+														<numIndex index="1">imageGeotagged</numIndex>
+													</numIndex>
+													<numIndex index="4" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedDir</numIndex>
+														<numIndex index="1">imageGeotaggedDir</numIndex>
+													</numIndex>
+												</items>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointType>
+									<settings.gpxMapWaypointImage>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointImage</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,imageGeotagged</displayCond>
+											<config>
+												<type>group</type>
+												<internal_type>db</internal_type>
+												<allowed>sys_file</allowed>
+												<size>1</size>
+												<minitems>0</minitems>
+												<maxitems>1</maxitems>
+												<show_thumbs>1</show_thumbs>
+												<appearance>
+													<elementBrowserType>file</elementBrowserType>
+													<elementBrowserAllowed>gif,jpg,jpeg,png,pcx,tif</elementBrowserAllowed>
+												</appearance>
+												<eval>required</eval>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointImage>
+									<settings.gpxMapWaypointImageFolder>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointImageFolder</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:imageGeotaggedDir</displayCond>
+											<config>
+												<type>group</type>
+												<internal_type>db</internal_type>
+												<allowed>sys_file</allowed>
+												<size>1</size>
+												<minitems>0</minitems>
+												<maxitems>1</maxitems>
+												<show_thumbs>0</show_thumbs>
+												<appearance>
+													<elementBrowserType>file</elementBrowserType>
+													<elementBrowserAllowed>gif,jpg,jpeg,png,pcx,tif</elementBrowserAllowed>
+												</appearance>
+												<eval>required</eval>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointImageFolder>
+									<settings.gpxMapWaypointIcon>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointIcon</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:icon,iconLinked</displayCond>
+											<config>
+												<type>select</type>
+												<renderType>selectSingle</renderType>
+												<maxitems>1</maxitems>
+												<size>1</size>
+												<default></default>
+ 												<items type="array">
+													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:none</numIndex>
+														<numIndex index="1"></numIndex>
+													</numIndex>
+													<numIndex index="105" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:lodging</numIndex>
+														<numIndex index="1">lodging</numIndex>
+													</numIndex>
+													<numIndex index="106" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:museum</numIndex>
+														<numIndex index="1">museum</numIndex>
+													</numIndex>
+													<numIndex index="107" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:residence</numIndex>
+														<numIndex index="1">residence</numIndex>
+													</numIndex>
+													<numIndex index="108" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:library</numIndex>
+														<numIndex index="1">library</numIndex>
+													</numIndex>
+													<numIndex index="109" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:park</numIndex>
+														<numIndex index="1">park</numIndex>
+													</numIndex>
+													<numIndex index="110" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:castle</numIndex>
+														<numIndex index="1">castle</numIndex>
+													</numIndex>
+													<numIndex index="111" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:airport</numIndex>
+														<numIndex index="1">airport</numIndex>
+													</numIndex>
+													<numIndex index="112" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:church</numIndex>
+														<numIndex index="1">church</numIndex>
+													</numIndex>
+													<numIndex index="113" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:bridge</numIndex>
+														<numIndex index="1">bridge</numIndex>
+													</numIndex>
+													<numIndex index="114" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:bar</numIndex>
+														<numIndex index="1">bar</numIndex>
+													</numIndex>
+													<numIndex index="115" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:restaurant</numIndex>
+														<numIndex index="1">restaurant</numIndex>
+													</numIndex>
+													<numIndex index="116" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:start</numIndex>
+														<numIndex index="1">start</numIndex>
+													</numIndex>
+													<numIndex index="117" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:finish</numIndex>
+														<numIndex index="1">finish</numIndex>
+													</numIndex>
+													<numIndex index="118" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:cycling</numIndex>
+														<numIndex index="1">cycling</numIndex>
+													</numIndex>
+													<numIndex index="119" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:hiking</numIndex>
+														<numIndex index="1">hiking</numIndex>
+													</numIndex>
+													<numIndex index="120" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:flag</numIndex>
+														<numIndex index="1">flag</numIndex>
+													</numIndex>
+													<numIndex index="121" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:harbor</numIndex>
+														<numIndex index="1">harbor</numIndex>
+													</numIndex>
+													<numIndex index="122" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:anchor</numIndex>
+														<numIndex index="1">anchor</numIndex>
+													</numIndex>
+													<numIndex index="123" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:campground</numIndex>
+														<numIndex index="1">campground</numIndex>
+													</numIndex>
+													<numIndex index="124" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:summit</numIndex>
+														<numIndex index="1">summit</numIndex>
+													</numIndex>
+													<numIndex index="125" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:shoppingcenter</numIndex>
+														<numIndex index="1">shopping center</numIndex>
+													</numIndex>
+													<numIndex index="126" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:groundtransportation</numIndex>
+														<numIndex index="1">ground transportation</numIndex>
+													</numIndex>
+													<numIndex index="127" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:scenicarea</numIndex>
+														<numIndex index="1">scenic area</numIndex>
+													</numIndex>
+													<numIndex index="128" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:boatramp</numIndex>
+														<numIndex index="1">boat ramp</numIndex>
+													</numIndex>
+													<numIndex index="129" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:circle_red</numIndex>
+														<numIndex index="1">circle_red</numIndex>
+													</numIndex>
+													<numIndex index="130" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:circle_green</numIndex>
+														<numIndex index="1">circle_green</numIndex>
+													</numIndex>
+													<numIndex index="131" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:square_red</numIndex>
+														<numIndex index="1">square_red</numIndex>
+													</numIndex>
+													<numIndex index="132" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/icons.xlf:square_green</numIndex>
+														<numIndex index="1">square_green</numIndex>
+													</numIndex>
+												</items>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointIcon>
+									<settings.gpxMapWaypointDescriptionHeadline>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointDescriptionHeadline</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<config>
+												<type>input</type>
+												<size>48</size>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointDescriptionHeadline>
+									<settings.gpxMapWaypointDescription>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointDescription</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon</displayCond>
+											<config>
+												<type>text</type>
+												<enableRichtext>true</enableRichtext>
+												<defaultExtras>
+													<richtext>rte_transform</richtext>
+												</defaultExtras>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointDescription>
+									<settings.gpxMapWaypointLink>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointLink</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,iconLinked</displayCond>
+											<config>
+												<type>input</type>
+												<size>256</size>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointLink>
+									<settings.gpxMapWaypointCoordsFormat>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormat</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<config>
+												<type>select</type>
+												<renderType>selectSingle</renderType>
+												<maxitems>1</maxitems>
+												<size>1</size>
+												<default>dezimal</default>
+												<items type="array">
+													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDegreetime</numIndex>
+														<numIndex index="1">degreetime</numIndex>
+													</numIndex>
+													<numIndex index="1" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDezimal</numIndex>
+														<numIndex index="1">dezimal</numIndex>
+													</numIndex>
+													<numIndex index="2" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormatDegreedezimalmin</numIndex>
+														<numIndex index="1">degreedezimalmin</numIndex>
+													</numIndex>
+												</items>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointCoordsFormat>
+									<settings.gpxMapWaypointCoords>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoords</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<config>
+												<type>input</type>
+												<size>48</size>
+												<eval>required</eval>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointCoords>
+									<settings.gpxMapWaypointCoordsShow>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShow</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,imageGeotagged,imageGeotaggedDir</displayCond>
+											<config>
+												<type>select</type>
+												<renderType>selectSingle</renderType>
+												<maxitems>1</maxitems>
+												<size>1</size>
+												<default>true</default>
+ 												<items type="array">
+													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShowOptionTrue</numIndex>
+														<numIndex index="1">true</numIndex>
+													</numIndex>
+													<numIndex index="1" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShowOptionFalse</numIndex>
+														<numIndex index="1">false</numIndex>
+													</numIndex>
+												</items>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointCoordsShow>
+								</el>
+							</container>
+						</el>
+					</settings.waypoints>
+					<settings.gpxFileMap_wayp>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_wayp</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_waypDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_waypOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_waypOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_wayp>
+					<settings.gpxFileMap_img>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_img</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_img>
+					<settings.gpxFileMap_imgdiv>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdiv</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_imgdiv>
+					<settings.gpxFileMap_imgdivLayout>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayout</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayoutDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayoutAbove</numIndex>
+										<numIndex index="1">above</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayoutBelow</numIndex>
+										<numIndex index="1">below</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayoutLeft</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivLayoutRight</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_imgdivLayout>
+					<settings.gpxFileMap_imgdivScale>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_imgdivScale</label>
+							<config>
+								<type>input</type>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_imgdivScale>
+				</el>
+			</ROOT> 
+		</s_Waypoints>
+		<s_Profiles>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetTitleProfiles</sheetTitle>
+					<sheetDescription>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.sheetDescriptionProfiles</sheetDescription>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.gpxFileMap_sorting>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_sorting</label>
+							<config>
+								<type>input</type>
+								<size>48</size>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_sorting>
+					<settings.gpxFileMap_profiles>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profiles</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesOff</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesOn</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_profiles>
+					<settings.gpxFileMap_profilesLayout>
+						<TCEforms>
+							<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayout</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<default>Default</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayoutDefault</numIndex>
+										<numIndex index="1">Default</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayoutAbove</numIndex>
+										<numIndex index="1">above</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayoutBelow</numIndex>
+										<numIndex index="1">below</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayoutLeft</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMap_profilesLayoutRight</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.gpxFileMap_profilesLayout>
+				</el>
+			</ROOT> 
+		</s_Profiles>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,92 @@
+<html xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<f:layout name="Default" />
+
+<f:section name="content">
+
+<f:if condition="{profiles} == 'true' || {imgdiv} == 'true'">
+<f:then>
+	<!-- GPXViewer map with Profiles/Imagediv -->
+	<div id="c{uid}g" class="textpic textpic-{textpicPosition}" style="width:85%; margin-left: 0px; margin-bottom:0px;">
+		<div class="textpic-item textpic-gallery" style="padding-left:0; padding-right:0; margin-bottom:0px;">
+</f:then>
+<f:else>
+	<!-- GPXViewer map -->
+	<div id="c{uid}g" style="width:85%;">
+		<div style="padding-left:0; padding-right:0">
+</f:else>
+</f:if>
+			<!-- Map -->
+			<div class="gpx-viewer" style="width:100%">
+				<div id="map{uid}" class="<f:if condition="{gpxAnimation} == 'true'">animated_{gpxFileAnimationIcon} </f:if>map gpxview:<f:if condition="{gpxFile} != ''"></f:if>{gpxFile}:{gpxMapType}" style="width: 100%; height: 100%;">
+					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
+				</div>
+			</div>
+		<f:if condition="({gpxMap_img} == 'true' && {gpxMapImages} != '') || {gpxMapCoordsCenter} != ''">
+			<!-- Waypoints with images -->
+			<div id="map{uid}_img" <f:if condition="{gpxMapCoordsCenter} != ''"><f:format.raw>{gpxMapCoordsCenter}</f:format.raw></f:if>style="display:none">
+				<f:format.raw>{gpxMapImages}</f:format.raw>
+			</div>
+		</f:if>
+		<f:if condition="{gpxMap_wayp} == 'true' && {gpxMapIcons} != ''">
+			<!-- Waypoints with icons -->
+			<div id="map{uid}_wp" <f:if condition="{gpxMapCoordsCenter} != ''"><f:format.raw>{gpxMapCoordsCenter}</f:format.raw></f:if>style="display:none">
+				<f:format.raw>{gpxMapIcons}</f:format.raw>
+			</div>
+		</f:if>
+		</div>
+
+	<f:if condition="{imgdiv} == 'true'">
+		<!-- Bilder div to display of images from waypoints with images -->
+		<div id="map{uid}_images" data-scale="{gpxMap_imgdivScale}" class="textpic-item textpic-text" style="padding-left:0; padding-right:0; margin-bottom: 0px;">
+			<div style="border-style: solid; border-width: 1px; border-color: #477DBE;">
+			<div style="background-color: black;">
+				<button style="width:50%;"><f:translate key="template.previous" /></button><button style="width:50%;"><f:translate key="template.next" /></button>
+			</div>
+			<div>
+				<figure style="margin-bottom: 0px; background-color: black;">
+					<img alt=" " style="max-height: 600px;">
+					<figcaption class="gpx-viewer-figure-caption"></figcaption>
+				</figure>
+			</div>
+			</div>
+		</div>
+	</f:if>
+
+	<f:if condition="{profiles} == 'true'">
+		<!-- Profiles -->
+		<div id="map{uid}_profiles" class="textpic-item textpic-text" style="padding-left:0; padding-right:0; margin-bottom: 0px;<f:if condition="{imgdiv} == 'true'"> width: 100%;</f:if>">
+			<div class="gpx-viewer" style="width:100%;">
+			<f:for each="{profilesNameArray}" as="profile" iteration="pCount">
+				<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: {profilesWidth}; height: {profilesHeight}; margin-top: {profilesMargin-top}; margin-bottom: {profilesMargin-top}; margin-left: {profilesMargin-right}; margin-right: {profilesMargin-right}; float: left;">
+					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
+				</div>
+			</f:for>
+			</div>
+		</div>
+	</f:if>
+	</div>
+	<f:if condition="{gpxDescriptionToggle}=='true' && {gpxFileDescription} != ''">
+		<!-- Description -->
+		<div id="c{uid}d" class="gpx-viewer-description">
+			<f:format.html>{gpxFileDescription}</f:format.html>
+		</div>
+	</f:if>
+	<f:if condition="{gpxDownloadLink}=='true' && {gpxFilesCount} == '1' && {gpxFile} != ''">
+		<!-- Download link (only for a single GPX file!) -->
+		<div id="c{uid}l" class="gpx-viewer-download">
+			<a href="<f:uri.image src="{gpxFile}" />"><span class="glyphicon glyphicon-download-alt"></span> <f:translate key="template.downloadlabel" /></a>
+		</div>
+	</f:if>
+
+{namespace m=Wok\WokGpxviewer\ViewHelpers}
+<m:includeFile path="{settings.jsSourceFile}" footer="true">Bindet GPXViewer GPX2GM.js einmalig im Footer ein</m:includeFile>
+<f:if condition="{imgdiv} == 'true' || {gpxAnimation} == 'true'">
+	<m:includeFile path="{settings.jsSourceAdditionalJS}" footer="true">Bindet benötigten Code für die Darstellung von Animationen UND Bildern zu Markern auf EINER Seite ein.</m:includeFile>
+</f:if>
+<f:if condition="{settings.shimg} == 'true'">
+	<m:includeFile path="{settings.jsSourceFile4shimg}" footer="true">Bindet im Footer Javascript für die animierte Darstellung von Image-Wegpunkten ein.</m:includeFile>
+</f:if>
+<m:includeFile path="{settings.cssFile}" footer="true">Bindet im Footer zusätzliches CSS für die GPXViewer-Extension  ein.</m:includeFile>
+<m:GpxviewerSettings jsSettings="{jsSettings}">Bindet im Footer alle Definitionen für GPXViewer ein.</m:GpxviewerSettings>
+</f:section>
+</html>

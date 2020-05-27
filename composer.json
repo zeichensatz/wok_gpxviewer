@@ -1,0 +1,14 @@
+{
+    "name": "wok/wok-gpxviewer",
+    "type": "typo3-cms-extension",
+    "description": "Extension with plugin for GPXViewer content element based on GPXViewer from J\u00fcrgen Berkemeier (https://www.j-berkemeier.de/GPXViewer/)",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wok\\WokGpxviewer\\": "Classes"
+        }
+    }
+}

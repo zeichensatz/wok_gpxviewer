@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"> 
+    <title>GPXViewer Ejemplo 4</title>
+    <script>
+			var Fullscreenbutton = true;
+    </script>
+    <script src="GM_Utils/GPX2GM.js"></script>
+		<style>
+		  body { width:calc(100% - 50px);padding: 10px 10px 10px 30px }
+		  #map1 { width:49%;height:500px;height:100vh;display:inline-block;vertical-align:top }
+			#map1_profiles { width:49%;height:500px;height:100vh;margin-left:1%;display:inline-block; }
+			#map1_hp { height:36%;height:calc((100% + 64px)/3);margin-top:10px }
+			#map1_sp { height:36%;height:calc((100% + 64px)/3);margin-top:-37px }
+			#map1_vp { height:36%;height:calc((100% + 64px)/3);margin-top:-37px }
+			@media screen and (max-width:500px) {
+				#map1, #map1_profiles { width:100%;height:100vh; display:block; margin:0 }
+			}
+		</style>
+  </head>
+  <body>
+   <h1>GPXViewer Ejemplo 4 - Mapa y perfil contra pista con millas y pies como unidades de longitud</h1>
+     <div id="map1" class="gpxview:Beispiel1.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+     <div id="map1_profiles">
+       <div id="map1_hp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></div>
+       <div id="map1_sp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></div>
+       <div id="map1_vp"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></div>
+     </div>
+     <hr><p>3. 2. 2020 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+//* GPXViewer */
+.frame > .tx-wok-gpxviewer:last-child {
+	margin-bottom: 1em;
+}
+.tx-wok-gpxviewer:last-child {
+	margin-bottom: 0;
+}
+.gpx-viewer, .gpx-viewer-images {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	width: 85%;
+	height: 600px;
+}
+.gpx-viewer-description {
+	width: 85%;
+}
+.gpx-viewer-description p {
+	margin-bottom: 1px;
+}
+.gpx-viewer-profiles {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	width: 85%;
+	height: 600px;
+	border-top-style: none;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	margin-bottom: 0.5em;
+}
+.gpx-viewer-profile {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+.gpx-viewer-download {
+/*
+	margin-top: 4px;
+	margin-bottom: 12px;
+*/
+}
+.gpx-viewer-images { 
+	text-align: center;
+	height:auto;
+	background-color:black;
+	padding-bottom: 0;
+}
+.gpx-viewer-figure-caption {
+	text-align: left;
+	padding-right: 3px;
+	padding-left: 3px;
+	color: white;
+}
+
+/*
+figure figcaption { display: block }
+*/
+
+
+
+/* Bootstrap design changes */
+/*div.frame.default.gpx-viewer {*/
+.gpx-viewer {
+	margin-bottom: 0px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/* Settings of GPXViewer for media queries */
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+	.gpx-viewer {
+		height: 300px;
+	}
+	.gpx-viewer-profiles {
+		height: 300px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+}
+
+
+##########
+/* Changes for MarkerImage
+			@media screen and (max-width:500px) {
+/*
+				#map { display:block;width:100%;height:500px }
+*/
+				#Bilder { display:block;margin:0;width:100%; height:100% }
+
+			}
+/*
+			#map_img { display:none }
+*/
+			figure { display: inline-block; margin:0; padding:0 }
+
+			figure img { max-width: 100%; max-height: 500px }
+
+
+
+

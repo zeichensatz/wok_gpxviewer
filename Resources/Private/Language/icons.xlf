@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-22T15:59:58Z" product-name="wok_gpxviewer">
+		<header/>
+		<body>
+			<trans-unit id="none">
+				<source>[none]</source>
+			</trans-unit>
+			<trans-unit id="lodging">
+				<source>Lodging</source>
+			</trans-unit>
+			<trans-unit id="museum">
+				<source>Museum</source>
+			</trans-unit>
+			<trans-unit id="residence">
+				<source>Residenz</source>
+			</trans-unit>
+			<trans-unit id="library">
+				<source>Library</source>
+			</trans-unit>
+			<trans-unit id="park">
+				<source>Park</source>
+			</trans-unit>
+			<trans-unit id="castle">
+				<source>Castle</source>
+			</trans-unit>
+			<trans-unit id="airport">
+				<source>Airport</source>
+			</trans-unit>
+			<trans-unit id="church">
+				<source>Church</source>
+			</trans-unit>
+			<trans-unit id="bridge">
+				<source>Bridge</source>
+			</trans-unit>
+			<trans-unit id="bar">
+				<source>Bar</source>
+			</trans-unit>
+			<trans-unit id="restaurant">
+				<source>Restaurant</source>
+			</trans-unit>
+			<trans-unit id="start">
+				<source>Start</source>
+			</trans-unit>
+			<trans-unit id="finish">
+				<source>Finish</source>
+			</trans-unit>
+			<trans-unit id="cycling">
+				<source>Cycling</source>
+			</trans-unit>
+			<trans-unit id="hiking">
+				<source>Hiking</source>
+			</trans-unit>
+			<trans-unit id="flag">
+				<source>Flag</source>
+			</trans-unit>
+			<trans-unit id="harbor">
+				<source>Harbor</source>
+			</trans-unit>
+			<trans-unit id="anchor">
+				<source>Anchor</source>
+			</trans-unit>
+			<trans-unit id="campground">
+				<source>Campground</source>
+			</trans-unit>
+			<trans-unit id="summit">
+				<source>Summit</source>
+			</trans-unit>
+			<trans-unit id="shoppingcenter">
+				<source>Shopping center</source>
+			</trans-unit>
+			<trans-unit id="groundtransportation">
+				<source>Ground transportation</source>
+			</trans-unit>
+			<trans-unit id="scenicarea">
+				<source>Scenic area</source>
+			</trans-unit>
+			<trans-unit id="boatramp">
+				<source>Boat ramp</source>
+			</trans-unit>
+			<trans-unit id="circle_red">
+				<source>Circle red</source>
+			</trans-unit>
+			<trans-unit id="circle_green">
+				<source>Circle green</source>
+			</trans-unit>
+			<trans-unit id="square_red">
+				<source>Square red</source>
+			</trans-unit>
+			<trans-unit id="square_green">
+				<source>Square green</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

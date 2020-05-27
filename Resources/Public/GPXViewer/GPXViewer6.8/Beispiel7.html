@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"> 
+    <title>GPXViewer Beispiel 7</title>
+		<style>
+			.m { width:200px;height:200px;margin:20px;display:inline-block;vertical-align:top }
+		</style>
+  </head>
+  <body>
+   <h1>GPXViewer Beispiel 7 - Drei kleine Karten, die vergrößert werden können</h1>
+		<div class="m gpxview:Beispiel1.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div class="m gpxview:Beispiel2.gpx:Karte" data-showmaptypecontroll="true"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div class="m gpxview:Beispiel3.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+     <hr><p>16. 8. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+    <script>
+      var Legende = false;
+			var Fullscreenbutton = true;
+			var Showmaptypecontroll = false;
+    </script>
+    <script src="GM_Utils/GPX2GM.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>Fotoanzeige V2</title>
+	</head>
+	<body>
+		<h1>Fotoanzeige V2</h1>
+		<div id="map" class="gpxview:Beispiel1.gpx:Satellit" style="float:left;width:55%;height:500px"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<div style="display:inline-block;margin-left:5%;margin-top:1em;width:35%"><img id="Bild"><br><span id="Text"></span></div>
+    <p style="clear:both;margin-top:0.5em"><a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<p><button id="viewsource" type="button" style="position:absolute;top:0;right:0" onclick="JB.LoadScript('viewsource.js',function(){})">Quelltext anzeigen</button></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+		var marker = null;
+		JB.Wait("foto2",["maputils"],function() {
+			JB.GPX2GM.callback = function(pars) {
+				if(pars.type == "click_Marker_Bild") {
+					if(marker) JB.RemoveElement(marker);
+					document.getElementById("Bild").src = pars.src;
+					document.getElementById("Text").innerHTML = pars.text;
+					var mapdiv = document.getElementById("map");
+					var map = mapdiv.makeMap.GetMap();
+					if(JB.GPX2GM.parameters.mapapi=="gm") marker = map.Marker({ lat:pars.coord.lat, lon:pars.coord.lon },
+															{ icon: { anchor: { x: 0, y: 3 }, 
+																			 rotation: 60, scale: 5, 
+																			 path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW, 
+																			 strokeColor: "red", fillColor: "red", fillOpacity:1 
+																			} 
+															} ) [0];
+					else marker = map.Marker({lat:pars.coord.lat,lon:pars.coord.lon},JB.icons.Kreis)[0];
+					return false;
+				}
+				return true;
+			}
+		});
+		</script>	
+	</body>
+</html>

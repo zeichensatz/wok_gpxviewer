@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-22T15:59:58Z" product-name="wok_gpxviewer">
+		<header/>
+		<body>
+			<trans-unit id="tx_wokgpxviewer_domain_model_display">
+				<source>Display</source>
+			</trans-unit>
+			<trans-unit id="tx_wok_gpxviewer_gpxtracks.name">
+				<source>GPXViewer tracks display</source>
+			</trans-unit>
+			<trans-unit id="tx_wok_gpxviewer_gpxtracks.description">
+				<source>Display GPX tracks with GPXViewer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

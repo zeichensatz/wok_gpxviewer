@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>GPXViewer Beispiel 6</title>
+		<style>
+			body { width:calc(100% - 50px);padding: 10px 10px 10px 30px }
+			figure { margin:0;padding:0; }
+			#map1 { width:49%;height:500px;height:100vh;display:inline-block;vertical-align:top }
+			#map1_profiles { width:49%;height:500px;height:100vh;margin-left:1%;display:inline-block; }
+			#map1_hp { height:36%;height:calc((100% + 64px)/3);margin-top:10px }
+			#map1_sp { height:36%;height:calc((100% + 64px)/3);margin-top:-37px }
+			#map1_vp { height:36%;height:calc((100% + 64px)/3);margin-top:-37px }
+			@media screen and (max-width:500px) {
+				#map1, #map1_profiles { width:100%;height:100vh; display:block; margin:0 }
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 6 - Karte und Profile gegen Weg mit mehreren GPX-Dateien</h1>
+		<figure id="map1" class="gpxview:Beispiel2.gpx,Beispiel3.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></figure>
+		<figure id="map1_profiles">
+			<figure id="map1_hp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+			<figure id="map1_sp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+			<figure id="map1_vp"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+		</figure>
+		<hr><p>7. 8. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script>
+			var Profilfillopac = 0.3;
+			var Tracks_dateiuebergreifend_verbinden = true;
+			var Fullscreenbutton = true;
+		</script>
+		<script src="GM_Utils/GPX2GM.js"></script>
+	</body>
+</html>
