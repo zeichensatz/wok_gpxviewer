@@ -288,3 +288,15 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		storagePid =
 	}
 }
+
+// Extends bootstrap_package settings
+plugin.bootstrap_package {
+	settings {
+		scss {
+			# cat=bootstrap 4.x: styling/336/gpxiewer-height; type=string; label=$gpxviewer-height (NOT in %):
+			gpxviewer-height = 600px
+			# cat=bootstrap 4.x: styling/336/gpxiewer-profiles-height; type=string; label=$gpxviewer-profiles-height (NOT in %):
+			gpxviewer-profiles-height = 600px
+		}
+	}
+}

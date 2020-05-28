@@ -1,0 +1,155 @@
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
+
+//
+//* GPXViewer */
+//
+.frame > .tx-wok-gpxviewer:last-child {
+	margin-bottom: 1em;
+}
+.tx-wok-gpxviewer:last-child {
+	margin-bottom: 0;
+}
+.gpx-viewer, .gpx-viewer-images {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	width: 85%;
+	height: $gpxviewer-height;
+}
+.gpx-viewer-description {
+	width: 85%;
+}
+.gpx-viewer-description p {
+	margin-bottom: 1px;
+}
+.gpx-viewer-profiles {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	width: 85%;
+	height: $gpxviewer-profiles-height;
+}
+.textpic-left .gpx-viewer-profiles {
+	border-left-style: none;
+}
+.textpic-right .gpx-viewer-profiles {
+	border-right-style: none;
+}
+.textpic-above .gpx-viewer-profiles {
+	border-top-style: none;
+}
+.textpic-below .gpx-viewer-profiles {
+	border-bottom-style: none;
+}
+// For single profiles in the profile list
+.gpx-viewer-profile {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+.gpx-viewer-download {
+}
+.gpx-viewer-images-border { 
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+.textpic-left .gpx-viewer-images-border {
+	border-left-style: none;
+}
+.textpic-right .gpx-viewer-images-border {
+	border-right-style: none;
+}
+.textpic-above .gpx-viewer-images-border {
+	border-top-style: none;
+}
+.textpic-below .gpx-viewer-images-border {
+	border-bottom-style: none;
+}
+.gpx-viewer-images-border .buttonsbackground {
+	background-color: black;
+}
+.gpx-viewer-images-border button { 
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	width: 50%;
+}
+.gpx-viewer-images-border button:hover { 
+	background-color: #ff8700;
+}
+.gpx-viewer-images-border button.previous { 
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+.gpx-viewer-images-border button.next { 
+	border-left-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+.gpx-viewer-figure-caption {
+	text-align: left;
+	padding-right: 3px;
+	padding-left: 3px;
+	color: white;
+}
+
+.tx-wok-gpxviewer .textpic {
+	width:85%;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-gallery {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-text {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+/* Bootstrap design changes */
+/*div.frame.default.gpx-viewer {*/
+.gpx-viewer {
+	margin-bottom: 0px;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/* Settings of GPXViewer for media queries */
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (max-device-width: 480px) and (orientation: landscape) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+	.gpx-viewer {
+		height: 300px;
+	}
+	.gpx-viewer-profiles {
+		height: 300px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+@media (min-width: 1200px) {
+}

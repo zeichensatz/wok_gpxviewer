@@ -277,3 +277,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		#callDefaultActionIfActionCantBeResolved = 1
 	}
 }
+page {
+    includeCSS {
+        theme = EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
+    }

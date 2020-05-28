@@ -6,8 +6,8 @@
 <f:if condition="{profiles} == 'true' || {imgdiv} == 'true'">
 <f:then>
 	<!-- GPXViewer map with Profiles/Imagediv -->
-	<div id="c{uid}g" class="textpic textpic-{textpicPosition}" style="width:85%; margin-left: 0px; margin-bottom:0px;">
-		<div class="textpic-item textpic-gallery" style="padding-left:0; padding-right:0; margin-bottom:0px;">
+	<div id="c{uid}g" class="textpic textpic-{textpicPosition}">
+		<div class="textpic-item textpic-gallery">
 </f:then>
 <f:else>
 	<!-- GPXViewer map -->
@@ -37,25 +37,25 @@
 
 	<f:if condition="{imgdiv} == 'true'">
 		<!-- Bilder div for display of images from waypoints with images -->
-		<div id="map{uid}_images" data-scale="{gpxMap_imgdivScale}" class="textpic-item textpic-text" style="padding-left:0; padding-right:0; margin-bottom: 0px;">
-			<div style="border-style: solid; border-width: 1px; border-color: #477DBE;">
-			<div style="background-color: black;">
-				<button style="width:50%; border-style: solid; border-width: 1px; border-color: #477DBE;""><f:translate key="template.previous" /></button><button style="width:50%; border-style: solid; border-width: 1px; border-color: #477DBE;""><f:translate key="template.next" /></button>
-			</div>
-			<div>
-				<figure style="margin-bottom: 0px; background-color: black;">
-					<img alt=" " style="max-height: 600px;">
-					<figcaption class="gpx-viewer-figure-caption"></figcaption>
-				</figure>
-			</div>
+		<div id="map{uid}_images" data-scale="{gpxMap_imgdivScale}" class="textpic-item textpic-text">
+			<div "map{uid}_images_border" class="gpx-viewer-images-border">
+				<div class="buttonsbackground">
+					<button type="button" class="previous"><f:translate key="template.previous" /></button><button type="button" class="next"><f:translate key="template.next" /></button>
+				</div>
+				<div>
+					<figure style="margin-bottom: 0px; background-color: black;">
+						<img alt=" " style="max-height: 600px;">
+						<figcaption class="gpx-viewer-figure-caption"></figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</f:if>
 
 	<f:if condition="{profiles} == 'true'">
 		<!-- Profiles -->
-		<div id="map{uid}_profiles" class="textpic-item textpic-text" style="padding-left:0; padding-right:0; margin-bottom: 0px;<f:if condition="{imgdiv} == 'true'"> width: 100%;</f:if>">
-			<div class="gpx-viewer" style="width:100%;">
+		<div id="map{uid}_profiles" class="textpic-item textpic-text" <f:if condition="{imgdiv} == 'true'">style="width: 100%;"</f:if>>
+			<div class="gpx-viewer-profiles" style="width:100%;">
 			<f:for each="{profilesNameArray}" as="profile" iteration="pCount">
 				<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: {profilesWidth}; height: {profilesHeight}; margin-top: {profilesMargin-top}; margin-bottom: {profilesMargin-top}; margin-left: {profilesMargin-right}; margin-right: {profilesMargin-right}; float: left;">
 					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
