@@ -734,8 +734,8 @@ JB.Map.prototype.Marker_Bild = function(coord,icon,bild) {
 		var img = new Image();
 		img.onload = function() { 
 			var w = img.width, h = img.height, mw, mh;
-			if(w>h) { mw = makemap.parameters.groesseminibild; mh = Math.round(h*mw/w); }
-			else    { mh = makemap.parameters.groesseminibild; mw = Math.round(w*mh/h); }
+			if(w>h) { mw = dieses.makemap.parameters.groesseminibild; mh = Math.round(h*mw/w); }
+			else    { mh = dieses.makemap.parameters.groesseminibild; mw = Math.round(w*mh/h); }
 			var minibild = new google.maps.Marker({
 				position: new google.maps.LatLng(coord.lat,coord.lon), 
 				map: dieses.map,
