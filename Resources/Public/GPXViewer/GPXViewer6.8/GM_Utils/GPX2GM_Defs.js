@@ -285,6 +285,7 @@ JB.GPX2GM.setparameters = function() {
 	JB.GPX2GM.parameters.linktarget = (typeof(Linktarget)!="undefined") ? Linktarget : "";
 	JB.GPX2GM.parameters.popup_Pars = (typeof(Popup_Pars)!="undefined") ? Popup_Pars : "width=900,height=790,screenX=970,screenY=0,status=yes,scrollbars=yes";
 	JB.GPX2GM.parameters.gm_controlsize = (typeof(Gm_controlsize)!="undefined") ? Gm_controlsize : 25; // Für Google Maps controlSize/Änderungen werden erst nach Löschen des Browser-Cache wirksam! 
+	JB.GPX2GM.parameters.checkimagename = (typeof(Checkimagename)!="undefined") ? Checkimagename : true;
 	
 	if(JB.GPX2GM.parameters.tracks_dateiuebergreifend_verbinden) JB.GPX2GM.parameters.tracks_verbinden = true;
 	if(typeof(JB.GPX2GM.parameters.tcols)=="string") JB.GPX2GM.parameters.tcols = JB.GPX2GM.parameters.tcols.split(",");
