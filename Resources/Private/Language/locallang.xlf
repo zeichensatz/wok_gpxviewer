@@ -122,7 +122,6 @@
 				<target state="translated">Motorrad (links nach rechts)</target>
 			</trans-unit>
 			<trans-unit id="flexform.gpxFileAnimationIconMotorbike42_r2l">
-			
 				<source>motorbike (right to left)</source>
 				<target state="translated">Motorrad (rechts nach links)</target>
 			</trans-unit>
@@ -283,6 +282,10 @@
 				<source>Directory of images with geotags</source>
 				<target state="translated">Verzeichnis von Bildern mit Geotags</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir">
+				<source>Public accessible PhotoStation 6 album with geotagged images</source>
+				<target state="translated">Öffentliches PhotoStation 6 Album mit Bildern mit Geotags</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointImage">
 				<source>Image filename</source>
 				<target state="translated">Bilddateiname</target>
@@ -290,6 +293,25 @@
 			<trans-unit id="flexform.gpxMapWaypointImageFolder">
 				<source>Directory with geotagged images (Please select one of the pics in the directory!)</source>
 				<target state="translated">Verzeichnis mit geogetaggten Bildern (Bitte ein beliebiges Bild im Verzeichnis auswählen!)</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointImageFolderPS">
+				<source>PhotoStation album hash of an public accessible album</source>
+				<target state="translated">PhotoStation album hash eines öffentlich zugänglichen Albums</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize">
+				<source>Size of the PhotoStation images</source>
+				<target state="translated">Größe der PhotoStation Bilder</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.small">
+				<source>small</source>
+				<target state="translated">klein</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.large">
+				<source>large</source>
+				<target state="translated">groß</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointImageFolderPS.placeholder">
+				<source>album_</source>
 			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointIcon">
 				<source>Name of icon</source>
@@ -427,10 +449,6 @@
 				<source>In this field you can fill in a sorted, comma separated list of profiles for display of a track. Valid values: hp,hpt,sp,spt,vp,vpt,hrp,hrpt,cadp,cadpt,atempp,atemppt,wpt. Please check https://www.j-berkemeier.de/GPXViewer/#Profile for further details</source>
 				<target state="translated">In diesem Feld kann man eine sortierte, komma-getrennte Liste der Profile für einen Track angeben. Gültige Werte sind: hp,hpt,sp,spt,vp,vpt,hrp,hrpt,cadp,cadpt,atempp,atemppt,wpt. Mehr dazu unter https://www.j-berkemeier.de/GPXViewer/#Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_sorting">
-				<source>List of profiles for display</source>
-				<target state="translated">Liste der Profile für die Ausgabe</target>
-			</trans-unit>
 			<trans-unit id="flexform.gpxFileMap_profiles">
 				<source>Toggle for display of profiles</source>
 				<target state="translated">Schalter für die Ausgabe der Profile</target>
@@ -446,6 +464,14 @@
 			<trans-unit id="flexform.gpxFileMap_profilesOn">
 				<source>on</source>
 				<target state="translated">An</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxFileMap_sorting">
+				<source>List of profiles for display</source>
+				<target state="translated">Liste der Profile für die Ausgabe</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxFileMap_profilesCols">
+				<source>Number of columns for display of profiles</source>
+				<target state="translated">Anzahl der Spalten für Profilausgabe</target>
 			</trans-unit>
 			<trans-unit id="flexform.gpxFileMap_profilesLayout">
 				<source>Select the layout for display of maps with profiles</source>
@@ -470,6 +496,11 @@
 			<trans-unit id="flexform.gpxFileMap_profilesLayoutRight">
 				<source>Map right to profiles</source>
 				<target state="translated">Karte rechts der Profile</target>
+			</trans-unit>
+
+			<trans-unit id="constants.subcat.resources.label">
+				<source>Resources Test</source>
+				<target state="translated">Resourcen</target>
 			</trans-unit>
 
 			<trans-unit id="constants.jsSourceFile.label">
@@ -597,12 +628,8 @@
 				<target state="translated">GPXViewer Map_imgdiv: Ein-/Ausschalten eines Image-DIV für Image-Wegpunkte.</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMap_imgdivLayout.label">
-				<source>GPXViewer Two Columns Layout: Position of the map in relation to the DIV for the display of images/profiles.</source>
-				<target state="translated">GPXViewer Two Columns Layout: Position der Karte im Verhältnis zum DIV für die Ausgabe von Bildern/Profilen.</target>
-			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivScale.label">
-				<source>GPXViewer Map_imgdiv scale: Value for map scaling in case of image DIV for waypoints. The value is in km.</source>
-				<target state="translated">GPXViewer Map_imgdiv Skalierung: Wert für die Kartenskalierung im Fall eines Image-DIV für Image-Wegpunkte.</target>
+				<source>GPXViewer Map_imgdiv Layout: Position of the map in relation to the DIV for the display of images/profiles.</source>
+				<target state="translated">GPXViewer Map_imgdiv Layout: Position der Karte im Verhältnis zum DIV für die Ausgabe von Bildern/Profilen.</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMap_imgdivLayout.options.above">
 				<source>Map above image DIV</source>
@@ -619,6 +646,30 @@
 			<trans-unit id="constants.gpxMap_imgdivLayout.options.right">
 				<source>Map right of image DIV</source>
 				<target state="translated">Karte rechts des Bilder DIVs</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMap_imgdivScale.label">
+				<source>GPXViewer Map_imgdiv scale: Value for map scaling in case of image DIV for waypoints. The value is in km.</source>
+				<target state="translated">GPXViewer Map_imgdiv Skalierung: Wert für die Kartenskalierung im Fall eines Image-DIV für Image-Wegpunkte.</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxCheckimagename.label">
+				<source>GPXViewer Checkimagename: Toggles checking of images extensions for waypoints with images on/off. This switch has to be deactivated, if you want to use image references which are based on a hash value, i.e. images references to a Synology PhotoStation.</source>
+				<target state="translated">GPXViewer Checkimagename: Ein-/Ausschalten des Überprüfens der Namenserweiterungen von Bilddateien für Image-Wegpunkte. Dieser Schalter muss für Bildreferenzen deaktiviert werden, die z.B. über einen Hashwert einer Synology PhotoStation referenziert werden.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.label">
+				<source>Using ScssPHP Parser from bootstrap-package: If you use GPXViewer together with bootstrap-package, you should not turn this off. All layout changes then should be made in EXT:/Resources/Public/Scss/Theme. The cssFile will not be used in this case!</source>
+				<target state="translated">Nutzung des ScssPHP Parser aus dem bootstrap-package: Wenn GPXViewer mit dem bootstrap-package genutzt wird, sollte diese Einstellung nicht deaktiviert werden. Alle Layout-Änderungen sollten dann in EXT:/Resources/Public/Scss/Theme vorgenommen werden. Das cssFile wird in diesem Fall nicht genutzt!</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-height.label">
+				<source>$gpxviewer-height: Height of the map. Value may NOT be in %! Unit should be added!</source>
+				<target state="translated">$gpxviewer-height: Höhe der Karte. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-profiles-height.label">
+				<source>$gpxviewer-profiles-height: Height of the profiles div. Value may NOT be in %! Unit should be added!</source>
+				<target state="translated">$gpxviewer-profiles-height: Höhe der Profile-Anzeige. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-images-height.label">
+				<source>$gpxviewer-images-height: Maximum height of the images div. Value may NOT be in %! Unit should be added!</source>
+				<target state="translated">$gpxviewer-images-height: Maximale Höhe der Bilder-Anzeige. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMap_sorting.label">
 				<source>GPXViewer profiles sorting: Sorting of profiles for the display</source>
@@ -647,6 +698,10 @@
 			<trans-unit id="constants.gpxMap_profilesLayout.options.right">
 				<source>Map right of profiles</source>
 				<target state="translated">Karte rechts von den Profilen</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMap_profilesCols.label">
+				<source>GPXViewer Profiles Columns: Number of columns for display of profiles</source>
+				<target state="translated">GPXViewer Profiles Columns: Spaltenanzahl für die Ausgabe von Profilen</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxDoclang.options.auto">
 				<source>auto</source>

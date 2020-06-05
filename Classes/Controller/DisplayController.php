@@ -74,6 +74,50 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		return $CoordsDezimal;
 	}
 
+	/**
+	 * Return imageDescription
+	 *
+	 * @param string $imageDescriptionString
+	 * @return string $imageDescription
+	 */
+	protected function getImageDescription($imageDescriptionString)
+	{
+		// Überprüfen, ob ein mehrsprachiger Eintrag im Feld ImageDescription vorliegt, entsprechend dem Format:
+		// DE: Text
+		// -----
+		// EN: Text
+		// Array für den mehrsprachigen Eintrag anlegen
+		$imageDescriptionArray = explode('-----', $imageDescriptionString);
+		// Herausfiltern, ob eines der Arrays der aktuellen Sprachauswahl entspricht und in diesem Fall den Beschreibungstext ändern
+		foreach($imageDescriptionArray as $id) {
+			$id = trim($id, " \t\n\r\0\x0B");
+			if($this->pageLanguage . ":"  == strtolower(substr($id, 0, strlen($this->pageLanguage)+1))) {
+				$imageDescription = nl2br(trim(substr_replace($id, '', 0, strlen($this->pageLanguage)+1), " "));
+			}
+		}
+		return $imageDescription;
+	}
+
+	/**
+	 * Return Coords
+	 *
+	 * @param string $condition1
+	 * @param string $condition2
+	 * @return string $Coord
+	 */
+	protected function getCoords($condition1, $condition2, $latitude, $longitude)
+	{
+		// Ausgabe der Koordinaten in der Wegpunktbeschreibung
+		if($condition1 == "true" or $condition1 == "") {
+			$Coords = "[" . $latitude . " " . $longitude . "]";
+			if($condition2 != "") {
+				$Coords = $this->settings['gpxMap_img_coords_in_description_before'] . $Coords;
+			}
+		} else {
+			$Coords = "";
+		};
+		return $Coords;
+	}
 
 	/**
 	 * Index action for this controller.
@@ -272,18 +316,47 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
+
+			// FESTSTELLEN DER SEITENSPRACHE
+			// Bis 9.x funktionierte noch dies:
+			// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
+			// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
+			$this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
+
 			// Variablen für Ausgabestrings (Wegpunkte für Images/Icons) resetten
 			$gpxMapImages = "";
 			$gpxMapIcons = "";
 			foreach($wholeArray as $array) {
-
+				//Falls es sich um ein PhotoStation 6-Album handelt:
+				if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotaggedPSDir') {
+					$album = $array['container']['settings']['gpxMapWaypointImageFolderPS'];
+					$photoSize = "small"; // preview, small, large
+					exec("curl 'https://fotos.wolfgangkleinbach.de/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=50&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
+					$jsonPHParray = json_decode($jsonArray[0], true);
+					// Überprüfen, ob die PhotoStation-Abfrage erfolgreich war
+					if($jsonPHParray['success'] == 'true') {
+						$items = $jsonPHParray['data']['items'];
+						foreach($items as $item) {
+							$sourceFile = "https://fotos.wolfgang-kleinbach.de/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $item['id'];
+							$latitude = $item['additional']['photo_exif']['gps']['lat']; // Kann auch in $items['info']['lat'] stehen
+							$longitude = $item['additional']['photo_exif']['gps']['lng']; // Kann auch in $items['info']['lng'] stehen
+							$gpxMapWaypointLink = ""; // Checken!!!
+							// Get image description from a multilangual string
+							$imageDescription = $this->getImageDescription($item['info']['description']);
+							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
+							$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
+							// Ausgabestring
+							$gpxMapImages = $gpxMapImages . 
+									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
+				';
+						}
+					}
+				}
 				// Falls es sich um Bilder mit Geotags handelt
 				$geotagged = array('imageGeotagged','imageGeotaggedDir');
 				if (in_array($array['container']['settings']['gpxMapWaypointType'], $geotagged)) {
-					// Image filename
-
+					// Es handelt sich um eine Bilddatei
 					if ($array['container']['settings']['gpxMapWaypointImage'] != '') {
-//						$imageGeotaggedSource = $array['container']['settings']['gpxMapWaypointImage'];
 						// sys_file uid für Image in Dateiname umwandeln
 						$sysFileUid = $array['container']['settings']['gpxMapWaypointImage'];
 						// ResourceFactory einlesen
@@ -293,46 +366,30 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						// Vollen Dateinamen auslesen
 						$imageGeotaggedSource = 'fileadmin' . $tmpFile->getIdentifier();
 					}
-
 					// Wenn es ein Verzeichnis ist
 					if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotaggedDir') {
-//						$imageGeotaggedSource = substr($array['container']['settings']['gpxMapWaypointImageFolder'], 0, strrpos($array['container']['settings']['gpxMapWaypointImageFolder'], "/"));
-
 						// sys_file uid für gewähltes Image umwandeln
 						$sysFileUid = $array['container']['settings']['gpxMapWaypointImageFolder'];
-
 						// ResourceFactory muss hier wiederholt gebraucht
 						$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-
 						// Angaben aus sys_file auslesen
 						$tmpFile = $resourceFactory->getFileObject($sysFileUid);
-
 						// Vollen Dateinamen auslesen
 						$imageGeotaggedSource = 'fileadmin' . $tmpFile->getIdentifier();
-
 						// Dateinamen abschneiden: Übrig bleibt Verzeichnisname
 						$imageGeotaggedSource = substr($imageGeotaggedSource, 0, strrpos($imageGeotaggedSource, "/"));
 					}
-
-					// exiftool
+					// exiftool Abfrage
 					$exif = '';
 					eval('$exif=' . `exiftool -php -q -c %+.6f '$imageGeotaggedSource'`);
-
-					// FESTSTELLEN DER SEITENSPRACHE
-					// Bis 9.x funktionierte noch dies:
-					// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
-					// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
-					$pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
-
 					// Sortieren des exiftool-PHP-Arrays mit den Bilddaten nach Dateiname
 					$sort = array_column($exif,'SourceFile');
 					array_multisort($sort, SORT_ASC, $exif);
-
+					// Für alle Bilddaten
 					foreach($exif as $exifdata) {
 						$sourceFile = $exifdata['SourceFile'];
 						$latitude = $exifdata['GPSLatitude'];
 						$longitude = $exifdata['GPSLongitude'];
-
 						$imageURL = $exifdata['BaseURL'];
 						// Vorbereitung der Ausgabe eines Links über dem Bild in der Karte
 						if($imageURL <> '') {
@@ -340,34 +397,13 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						} else {
 							$gpxMapWaypointLink = '';
 						};
-
-						$imageDescription = $exifdata['ImageDescription'];
+//						$imageDescription = $exifdata['ImageDescription'];
 						// Ausgabe nur, wenn GPS-Daten vorhanden sind
 						if (($latitude <> "") and ($longitude <> "")) {
-							// Überprüfen, ob ein mehrsprachiger Eintrag im Feld ImageDescription vorliegt, entsprechend dem Format:
-							// DE: Text
-							// -----
-							// EN: Text
-							// Array für den mehrsprachigen Eintrag anlegen
-							$imageDescriptionArray = explode('-----', $exifdata['ImageDescription']);
-							// Herausfiltern, ob eines der Arrays der aktuellen Sprachauswahl entspricht und in diesem Fall den Beschreibungstext ändern
-							foreach($imageDescriptionArray as $id) {
-								$id = trim($id, " \t\n\r\0\x0B");
-								if($pageLanguage . ":"  == strtolower(substr($id, 0, strlen($pageLanguage)+1))) {
-									$imageDescription = nl2br(trim(substr_replace($id, '', 0, strlen($pageLanguage)+1), " "));
-								}
-							}
-
+							// Get image description from a multilangual string
+							$imageDescription = $this->getImageDescription($exifdata['ImageDescription']);
 							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-							if($array['container']['settings']['gpxMapWaypointCoordsShow'] == "true" or $array['container']['settings']['gpxMapWaypointCoordsShow'] == "") {
-								$Coords = "[" . $latitude . " " . $longitude . "]";
-								if($imageDescription != "") {
-									$Coords = $this->settings['gpxMap_img_coords_in_description_before'] . $Coords;
-								}
-							} else {
-								$Coords = "";
-							};
-
+							$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
 							// Ausgabestring
 							$gpxMapImages = $gpxMapImages . 
 									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
@@ -387,14 +423,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						$latitude = $CoordsDecimalArray[0];
 						$longitude = $CoordsDecimalArray[1];
 						// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-						if($array['container']['settings']['gpxMapWaypointCoordsShow'] == "true" or $array['container']['settings']['gpxMapWaypointCoordsShow'] == "") {
-							$Coords = "[" . $latitude . " " . $longitude . "]";
-							if($array['container']['settings']['gpxMapWaypointDescription'] != "") {
-								$Coords = $this->settings['gpxMap_img_coords_in_description_before'] . $Coords;
-							}
-						} else {
-							$Coords = "";
-						};
+						$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $array['container']['settings']['gpxMapWaypointDescription'], $latitude, $longitude);
 						// Vorbereitung der Ausgabe der Headline in der Wegpunktbeschreibung
 						if((isset($array['container']['settings']['gpxMapWaypointDescriptionHeadline'])) and ($array['container']['settings']['gpxMapWaypointDescriptionHeadline'] <> '')) {
 							$gpxMapWaypointDescriptionHeadline = ' data-name="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . '"';
@@ -409,7 +438,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						};
 						// Ausgabestrings für Wegpunkte (Images/Icons) erstellen
 						if ($array['container']['settings']['gpxMapWaypointType'] == 'image') {
-
 							// sys_file uid für gewähltes Image umwandeln
 							$sysFileUid = $array['container']['settings']['gpxMapWaypointImage'];
 							// ResourceFactory einlesen
@@ -418,9 +446,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							$tmpFile = $resourceFactory->getFileObject($sysFileUid);
 							// Vollen Dateinamen auslesen
 							$gpxMapWaypointImage = 'fileadmin' . $tmpFile->getIdentifier();
-
 							$gpxMapImages = $gpxMapImages . 
-#											'<img src="' . $array['container']['settings']['gpxMapWaypointImage'] . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . $Coords . '"' . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>
 											'<img src="' . $gpxMapWaypointImage . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . $Coords . '"' . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>
 			';
 						} else {
@@ -465,30 +491,28 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// Anzahl der aktivierte Profile feststellen
 			$profilesCount = 0;
 			$profilesCount = count($profilesNameArray);
-			// Ausgabeformatierung: Größenangaben für Höhe und Breite und Spaltenanzahl für Ausgabe
-			switch($profilesCount) {
-				case 1: $profilesArray = array( "width" => "98%", "height" => "98%", "margin-top" => "1%", "margin-right" => "1%", "cols" => "1"); break;
-				case 2: $profilesArray = array( "width" => "98%", "height" => "47.5%", "margin-top" => "1%", "margin-right" => "1%", "cols" => "1"); break;
-				case 3: $profilesArray = array( "width" => "98%", "height" => "32%", "margin-top" => "0.5%", "margin-right" => "1%", "cols" => "1"); break;
-				case 4: $profilesArray = array( "width" => "48%", "height" => "48%", "margin-top" => "0.75%", "margin-right" => "1%", "cols" => "3"); break;
-				case 5: $profilesArray = array( "width" => "98%", "height" => "19%", "margin-top" => "0.3%", "margin-right" => "1%", "cols" => "1"); break;
-				case 6: $profilesArray = array( "width" => "48%", "height" => "32%", "margin-top" => "0.5%", "margin-right" => "1%", "cols" => "3"); break;
-				case 7: $profilesArray = array( "width" => "32%", "height" => "32%", "margin-top" => "0.6%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 8: $profilesArray = array( "width" => "32%", "height" => "32%", "margin-top" => "0.6%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 9: $profilesArray = array( "width" => "32%", "height" => "32%", "margin-top" => "0.6%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 10: $profilesArray = array( "width" => "32%", "height" => "24%", "margin-top" => "0.4%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 11: $profilesArray = array( "width" => "32%", "height" => "24%", "margin-top" => "0.4%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 12: $profilesArray = array( "width" => "32%", "height" => "24%", "margin-top" => "0.4%", "margin-right" => "0.65%", "cols" => "3"); break;
-				case 13: $profilesArray = array( "width" => "32%", "height" => "19%", "margin-top" => "0.4%", "margin-right" => "0.65%", "cols" => "4"); break;
+			// Ausgabe der Profile in Tabellen
+			// Standard-Angabe für Spalten für jeweilige Anzahl von Profilen einlesen
+			$profilesCols = array_map('trim',explode(",",$this->settings['gpxMap_profilesCols']));
+			// Hier eine Prüfung, ob Spaltenangabe im Content Element vorgenommen wurden
+			if($this->settings['gpxFileMap_profilesCols'] != null and $this->settings['gpxFileMap_profilesCols'] != 'Default') {
+				$profilesCols[$profilesCount-1] = $this->settings['gpxFileMap_profilesCols'];
+			}
+			// Ganzzahlige Division von Profilanzahl durch Spalten zum Errechnen der Zeilenanzahl
+			$profilesRows = intdiv($profilesCount, $profilesCols[$profilesCount-1]);
+			// Modulo Division von Profilanzahl durch Spalten prüfen und falls ein Rest vorhanden, die Zeilenanzahl um 1 erhöhen
+			if($profilesCount % $profilesCols[$profilesCount-1] > 0 ) { 
+				$profilesRows++;
 			};
-			// Werte für die Profile-Ausgabe zuweisen
+			// Höhe des Profile-Divs geteilt durch Zeilenanzahl - 4px für Ränder ergibt die Höhe EINES Profils
+			$profileHeight = $this->settings['gpxviewer-profiles-height'] / $profilesRows - 4;
+			// Werte für die Ausgabe zu weisen
 			$this->view->assign('profilesNameArray', $profilesNameArray);
-			$this->view->assign('profilesCount', $profilesCount);
-			$this->view->assign('profilesWidth', $profilesArray["width"]);
-			$this->view->assign('profilesHeight', $profilesArray["height"]);
-			$this->view->assign('profilesMargin-top', $profilesArray["margin-top"]);
-			$this->view->assign('profilesMargin-right', $profilesArray["margin-right"]);
-			$this->view->assign('profilesCols', $profilesArray["cols"]);
+			$this->view->assign('profilesCols', $profilesCols[$profilesCount-1]);
+			$this->view->assign('profileHeight', $profileHeight ."px");
+			// Optional in case if layout would be build in a different way
+			// $this->view->assign('profilesRows', $profilesRows);
+			// $this->view->assign('profilesHeight', $this->settings['gpxviewer-profiles-height']);
 		}
 
 		// ############################
@@ -521,7 +545,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// ... sonst den Wert aus der Flexform nehmen
 			$gpxMap_imgdivLayout = $this->settings['gpxFileMap_imgdivLayout'];
 		}
-		$this->view->assign('gpxMap_imgdivLayout', $gpxMap_imgdivLayout);
 		// Layout for Profiles
 		if($this->settings['gpxFileMap_profilesLayout'] == 'Default' or $this->settings['gpxFileMap_profilesLayout'] == '') {
 			// ... dann den Wert für gpxMap_profilesLayout aus constants.ts nehmen ...
@@ -530,8 +553,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// ... sonst den Wert aus der Flexform nehmen
 			$gpxMap_profilesLayout = $this->settings['gpxFileMap_profilesLayout'];
 		}
-		$this->view->assign('gpxMap_profilesLayout', $gpxMap_profilesLayout);
-
 		// Check conditions and set variables
 		// imgdiv?
 		if($gpxMapImages != '' && $gpxMap_img == 'true' && $gpxMap_imgdiv == 'true') {
@@ -553,5 +574,23 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('profiles', $profiles);
 		// set layout variable
 		$this->view->assign('textpicPosition', $textpicPosition);
+		// in case there is a imgdiv AND profiles
+		$profilesType = "text";
+		if($imgdiv == 'true' AND $profiles == 'true') {
+			if($textpicPosition == "below" or $textpicPosition == "right") {
+				$profilesType = "gallery";
+			}
+		}
+		$this->view->assign('profilesType', $profilesType);
+		// create an additional classname
+		$addClassname = "gpx-";
+		if ($imgdiv == 'true') {
+			$addClassname = $addClassname . "img-";
+		}
+		if ($profiles == 'true') {
+			$addClassname = $addClassname . "pro-";
+		}
+		$addClassname = $addClassname . $textpicPosition;
+		$this->view->assign('addClassname', $addClassname);
 	}
 }

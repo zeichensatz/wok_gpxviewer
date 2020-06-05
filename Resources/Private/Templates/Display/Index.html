@@ -16,7 +16,7 @@
 </f:else>
 </f:if>
 			<!-- Map -->
-			<div class="gpx-viewer" style="width:100%">
+			<div class="gpx-viewer viewer-{addClassname}" style="width:100%">
 				<div id="map{uid}" class="<f:if condition="{gpxAnimation} == 'true'">animated_{gpxFileAnimationIcon} </f:if>map gpxview:<f:if condition="{gpxFile} != ''"></f:if>{gpxFile}:{gpxMapType}" style="width: 100%; height: 100%;">
 					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
 				</div>
@@ -37,14 +37,14 @@
 
 	<f:if condition="{imgdiv} == 'true'">
 		<!-- Bilder div for display of images from waypoints with images -->
-		<div id="map{uid}_images" data-scale="{gpxMap_imgdivScale}" class="textpic-item textpic-text">
-			<div "map{uid}_images_border" class="gpx-viewer-images-border">
-				<div class="buttonsbackground">
-					<button type="button" class="previous"><f:translate key="template.previous" /></button><button type="button" class="next"><f:translate key="template.next" /></button>
+		<div id="map{uid}_images" data-scale="{gpxMap_imgdivScale}" class="textpic-item textpic-text" >
+			<div class="gpx-viewer-images-border images-{addClassname}">
+				<div class="btn-group btn-block btn-group-sm buttonsbackground">
+					<button type="button" class="btn previous"><f:translate key="template.previous" /></button><button type="button" class="btn next"><f:translate key="template.next" /></button>
 				</div>
 				<div>
 					<figure style="margin-bottom: 0px; background-color: black;">
-						<img alt=" " style="max-height: 600px;">
+						<img alt=" " class="gpx-viewer-img">
 						<figcaption class="gpx-viewer-figure-caption"></figcaption>
 					</figure>
 				</div>
@@ -54,17 +54,27 @@
 
 	<f:if condition="{profiles} == 'true'">
 		<!-- Profiles -->
-		<div id="map{uid}_profiles" class="textpic-item textpic-text" <f:if condition="{imgdiv} == 'true'">style="width: 100%;"</f:if>>
+		<div id="map{uid}_profiles" class="textpic-item textpic-{profilesType} profiles-{addClassname}" <f:if condition="{imgdiv} == 'true'">style="width: 100%;"</f:if>>
 			<div class="gpx-viewer-profiles" style="width:100%;">
-			<f:for each="{profilesNameArray}" as="profile" iteration="pCount">
-				<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: {profilesWidth}; height: {profilesHeight}; margin-top: {profilesMargin-top}; margin-bottom: {profilesMargin-top}; margin-left: {profilesMargin-right}; margin-right: {profilesMargin-right}; float: left;">
-					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
+				<table class="table table-borderless">
+					<tr style="width: 100%;">
+					<f:for each="{profilesNameArray}" as="profile" iteration="pCount">
+						<td style="padding: 2px;">
+				<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: 100%; height: {profileHeight};">
 				</div>
-			</f:for>
+						</td>
+						<f:if condition="{pCount.cycle} % {profilesCols} == 0">
+					</tr>
+					<tr>
+						</f:if>
+					</f:for>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</f:if>
 	</div>
+
 	<f:if condition="{gpxDescriptionToggle}=='true' && {gpxFileDescription} != ''">
 		<!-- Description -->
 		<div id="c{uid}d" class="gpx-viewer-description">
@@ -86,7 +96,9 @@
 <f:if condition="{settings.shimg} == 'true'">
 	<m:includeFile path="{settings.jsSourceFile4shimg}" footer="true">Bindet im Footer Javascript für die animierte Darstellung von Image-Wegpunkten ein.</m:includeFile>
 </f:if>
-<m:includeFile path="{settings.cssFile}" footer="true">Bindet im Footer zusätzliches CSS für die GPXViewer-Extension  ein.</m:includeFile>
+<f:if condition="{settings.scss} == 'false'">
+	<m:includeFile path="{settings.cssFile}" footer="true">Bindet im Footer zusätzliches CSS für die GPXViewer-Extension ein, sofern nicht scss-Formatierung gewählt ist.</m:includeFile>
+</f:if>
 <m:GpxviewerSettings jsSettings="{jsSettings}">Bindet im Footer alle Definitionen für GPXViewer ein.</m:GpxviewerSettings>
 </f:section>
 </html>

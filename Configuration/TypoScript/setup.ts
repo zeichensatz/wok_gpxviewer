@@ -109,6 +109,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Ropac = 0.8
 			Linktarget = 
 			Popup_Pars = width=900,height=790,screenX=970,screenY=0,status=yes,scrollbars=yes
+			Checkimagename = true
 		}
 		// All GPXViewer settings. Values are set in constants or templates
 		constants {
@@ -221,6 +222,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Ropac = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxRopac}
 			Linktarget = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLinktarget}
 			Popup_Pars = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxPopup_Pars}
+			Checkimagename = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxCheckimagename}
 		}
 
 		// All settings for GPXViewer plugin
@@ -229,6 +231,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		jsSourceFile4shimg = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceFile4shimg}
 		jsSourceAdditionalJS = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceAdditionalJS}
 		cssFile = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
+		scss = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss}
 
 		// General Settings
 		gpxMapType = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMapType}
@@ -253,6 +256,13 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_sorting = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_sorting}
 		gpxMap_profiles = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profiles}
 		gpxMap_profilesLayout = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesLayout}
+		gpxMap_profilesCols = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesCols}
+
+		// Import layout variables from bootstrap_package
+		gpxviewer-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-height}
+		gpxviewer-profiles-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-profiles-height}
+		gpxviewer-images-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-images-height}
+
 	}
 	view {
 		templateRootPaths.0 = EXT:wok_gpxviewer/Resources/Private/Templates/
@@ -277,7 +287,15 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		#callDefaultActionIfActionCantBeResolved = 1
 	}
 }
-page {
-    includeCSS {
-        theme = EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
-    }
+
+// If scss is set to true, then use scss parser of bootstrap_package instead of a cssFile 
+// (defined plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile)
+// scss files are in directory /Resources/Public/Scss/Theme
+[{$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss} == true]
+//	plugin.tx_wokgpxviewer_gpxtracks.settings.cssFile >
+	page {
+		includeCSS {
+			theme = EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
+		}
+	}
+[END]

@@ -17,7 +17,7 @@
 .tx-wok-gpxviewer:last-child {
 	margin-bottom: 0;
 }
-.gpx-viewer, .gpx-viewer-images {
+.gpx-viewer {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #477DBE;
@@ -31,24 +31,10 @@
 	margin-bottom: 1px;
 }
 .gpx-viewer-profiles {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
 	width: 85%;
 	height: $gpxviewer-profiles-height;
 }
-.textpic-left .gpx-viewer-profiles {
-	border-left-style: none;
-}
-.textpic-right .gpx-viewer-profiles {
-	border-right-style: none;
-}
-.textpic-above .gpx-viewer-profiles {
-	border-top-style: none;
-}
-.textpic-below .gpx-viewer-profiles {
-	border-bottom-style: none;
-}
+
 // For single profiles in the profile list
 .gpx-viewer-profile {
 	border-style: solid;
@@ -57,25 +43,37 @@
 }
 .gpx-viewer-download {
 }
-.gpx-viewer-images-border { 
-	border-style: solid;
+.gpx-viewer-img {
+	max-height: $gpxviewer-images-height;
+}
+
+.gpx-viewer-images-border button.previous, .gpx-viewer-images-border button.next { 
+	border-top-style: none;
+	border-bottom-style: solid;
 	border-width: 1px;
 	border-color: #477DBE;
+	background-color: #f2f2f2;
 }
-.textpic-left .gpx-viewer-images-border {
+.gpx-viewer-images-border button.previous:hover, .gpx-viewer-images-border button.next:hover { 
+	background-color: $primary;
+	color: white;
+	font-weight: bolder;
+}
+.gpx-viewer-images-border button.previous:focus, .gpx-viewer-images-border button.next:focus { 
+	background-color: none;
+	font-weight: bolder;
+}
+.gpx-viewer-images-border button.previous {
 	border-left-style: none;
+	border-right-style: solid;
 }
-.textpic-right .gpx-viewer-images-border {
+.gpx-viewer-images-border button.next { 
+	border-left-style: solid;
 	border-right-style: none;
 }
-.textpic-above .gpx-viewer-images-border {
-	border-top-style: none;
-}
-.textpic-below .gpx-viewer-images-border {
-	border-bottom-style: none;
-}
+/*
 .gpx-viewer-images-border .buttonsbackground {
-	background-color: black;
+	background-color: #F2F2F2;
 }
 .gpx-viewer-images-border button { 
 	border-top-style: none;
@@ -89,16 +87,7 @@
 .gpx-viewer-images-border button:hover { 
 	background-color: #ff8700;
 }
-.gpx-viewer-images-border button.previous { 
-	border-right-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
-}
-.gpx-viewer-images-border button.next { 
-	border-left-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
-}
+*/
 .gpx-viewer-figure-caption {
 	text-align: left;
 	padding-right: 3px;
@@ -129,6 +118,137 @@
 	padding-bottom: 0;
 	padding-top: 0;
 }
+// ###################
+// correction of gpxviewer div for profiles left or right of gpxviewer
+.viewer-gpx-pro-left, .viewer-gpx-pro-right {
+	height: $gpxviewer-height + 2px;
+}
+
+// ###################
+// IMAGES and PROFILES
+// set defaults for all divs with images and profiles
+.images-gpx-img-pro-above, 
+.images-gpx-img-pro-left, 
+.images-gpx-img-pro-below, 
+.images-gpx-img-pro-right, 
+.images-gpx-img-above, 
+.images-gpx-img-left, 
+.images-gpx-img-below, 
+.images-gpx-img-right, 
+.images-gpx-pro-above, 
+.images-gpx-pro-left, 
+.images-gpx-pro-below, 
+.images-gpx-pro-right, 
+.profiles-gpx-img-pro-above, 
+.profiles-gpx-img-pro-left, 
+.profiles-gpx-img-pro-below, 
+.profiles-gpx-img-pro-right, 
+.profiles-gpx-img-above, 
+.profiles-gpx-img-left, 
+.profiles-gpx-img-below, 
+.profiles-gpx-img-right, 
+.profiles-gpx-pro-above, 
+.profiles-gpx-pro-left, 
+.profiles-gpx-pro-below, 
+.profiles-gpx-pro-right {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+// ### EXCEPTIONS FOR IMAGES
+// ### set exceptions for all divs with images or profiles
+.images-gpx-img-pro-above {
+	border-top-style: none;
+}
+.images-gpx-img-pro-left {
+	border-left-style: none;
+}
+.images-gpx-img-pro-below {
+	border-bottom-style: none;
+}
+.images-gpx-img-pro-right {
+	border-right-style: none;
+}
+// ### set exceptions for all divs with images
+.images-gpx-img-above {
+	border-top-style: none;
+}
+.images-gpx-img-left {
+	border-left-style: none;
+}
+.images-gpx-img-below {
+	border-bottom-style: none;
+}
+.images-gpx-img-right {
+	border-right-style: none;
+}
+// ### set exceptions for all divs with profiles
+.images-gpx-pro-above {}
+.images-gpx-pro-left {}
+.images-gpx-pro-below {}
+.images-gpx-pro-right {}
+// ### EXCEPTIONS FOR profiles
+// ### set exceptions for all divs with images or profiles
+.profiles-gpx-img-pro-above {
+	border-top-style: none;
+}
+.profiles-gpx-img-pro-left {}
+.profiles-gpx-img-pro-below {
+	border-top-style: none;
+}
+.profiles-gpx-img-pro-right {}
+// ### set exceptions for all divs with images
+.profiles-gpx-img-above {}
+.profiles-gpx-img-left {}
+.profiles-gpx-img-below {}
+.profiles-gpx-img-right {}
+// ### set exceptions for all divs with profiles
+.profiles-gpx-pro-above {
+	border-top-style: none;
+}
+.profiles-gpx-pro-left {
+	border-left-style: none;
+}
+.profiles-gpx-pro-below {
+	border-bottom-style: none;
+}
+.profiles-gpx-pro-right {
+	border-right-style: none;
+}
+// ### Exceptions for media queries
+@media (max-width: 767px) {
+	// ### set exceptions for all divs with images or profiles
+	.images-gpx-img-pro-left {
+		border-left-style: solid;
+		border-top-style: none;
+		border-bottom-style: none;
+	}
+	.images-gpx-img-pro-right {
+		border-right-style: solid;
+		border-top-style: none;
+		border-bottom-style: none;
+	}
+	// ### set exceptions for all divs with images
+	.images-gpx-img-left {
+		border-left-style: solid;
+		border-top-style: none;
+	}
+	.images-gpx-img-right {
+		border-right-style: solid;
+		border-top-style: none;
+	}
+	// ### set exceptions for all divs with profiles
+	.profiles-gpx-pro-left {
+		border-left-style: solid;
+		border-top-style: none;
+	}
+	.profiles-gpx-pro-right {
+		border-right-style: solid;
+		border-top-style: none;
+	}
+}
+// END OF IMAGES and PROFILES
+
 
 /* Settings of GPXViewer for media queries */
 @media (min-width: 768px) {
@@ -141,9 +261,6 @@
 }
 @media (max-width: 767px) {
 	.gpx-viewer {
-		height: 300px;
-	}
-	.gpx-viewer-profiles {
 		height: 300px;
 	}
 }

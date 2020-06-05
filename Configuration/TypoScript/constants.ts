@@ -3,10 +3,25 @@
 # customsubcategory=1100=General Settings
 # customsubcategory=1120=GPXViewer Waypoints
 # customsubcategory=1121=GPXViewer Profiles
+# customsubcategory=1122=Scss Layout Settings (only working with bootstrap-package!)
 # customsubcategory=1130=Javascript Settings
 # customsubcategory=1300=Templates
 # customsubcategory=1400=Storage
 
+// Extends bootstrap_package settings to use the ScssPHP parser, which is included in bootstrap_package
+plugin.bootstrap_package {
+	settings {
+		scss {
+			# cat=GPXViewer: Basic/1122/2181; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-height.label
+			gpxviewer-height = 600px
+			# cat=GPXViewer: Basic/1122/2182; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-profiles-height.label
+			gpxviewer-profiles-height = 600px
+			# cat=GPXViewer: Basic/1122/2183; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-height.label
+			gpxviewer-images-height = 600px
+		}
+	}
+}
+// Here start the plugin settings
 plugin.tx_wokgpxviewer_gpxtracks {
 	gpxviewer {
 		// Resources
@@ -58,6 +73,12 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_imgdivLayout = above
 		# cat=GPXViewer: Basic/1120/2165; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivScale.label
 		gpxMap_imgdivScale = 10
+		# cat=GPXViewer: Basic/1120/2166; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
+		gpxCheckimagename = true
+
+		// ScssPHP Parser
+		# cat=GPXViewer: Basic/1122/2180; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.label
+		scss = true
 
 		// Profiles
 		# cat=GPXViewer: Basic/1121/2170; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_sorting.label
@@ -66,6 +87,8 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_profiles = false
 		# cat=GPXViewer: Basic/1121/2172; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesLayout.options.above=above,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesLayout.options.below=below,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesLayout.options.left=left,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesLayout.options.right=right]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesLayout.label
 		gpxMap_profilesLayout = above
+		# cat=GPXViewer: Basic/1121/2173; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesCols.label
+		gpxMap_profilesCols = 1,1,1,3,1,3,3,3,3,3,3,3,4
 
 		// Advanced Javascript Settings
 		# cat=GPXViewer: Advanced/1130/2200; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.auto=auto,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.German=de,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.English=en,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.Spanish=es]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.label
@@ -274,7 +297,9 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxLinktarget = 
 		# cat=GPXViewer: Advanced/1130/2302; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPopup_Pars.label
 		gpxPopup_Pars = width=900,height=790,screenX=970,screenY=0,status=yes,scrollbars=yes
+
 	}
+
 	view {
 		# cat=GPXViewer: Basic/1300/2910; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.templateRootPath.label
 		templateRootPath = EXT:wok_gpxviewer/Resources/Private/Templates/
@@ -289,14 +314,3 @@ plugin.tx_wokgpxviewer_gpxtracks {
 	}
 }
 
-// Extends bootstrap_package settings
-plugin.bootstrap_package {
-	settings {
-		scss {
-			# cat=bootstrap 4.x: styling/336/gpxiewer-height; type=string; label=$gpxviewer-height (NOT in %):
-			gpxviewer-height = 600px
-			# cat=bootstrap 4.x: styling/336/gpxiewer-profiles-height; type=string; label=$gpxviewer-profiles-height (NOT in %):
-			gpxviewer-profiles-height = 600px
-		}
-	}
-}
