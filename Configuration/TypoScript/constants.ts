@@ -89,6 +89,8 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_profilesLayout = above
 		# cat=GPXViewer: Basic/1121/2173; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesCols.label
 		gpxMap_profilesCols = 1,1,1,3,1,3,3,3,3,3,3,3,4
+		# cat=GPXViewer: Basic/1121/2174; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_profilesPSaddr.label
+		gpxMap_profilesPSaddr = https://fotos.wolfgangkleinbach.de
 
 		// Advanced Javascript Settings
 		# cat=GPXViewer: Advanced/1130/2200; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.auto=auto,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.German=de,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.English=en,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.Spanish=es]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.label

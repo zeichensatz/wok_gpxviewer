@@ -31,7 +31,6 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 ## Todos
 * Check button formatting for imgdivs: perhaps change to a tag? This would mean changes in the javascript too.
 * More SCSS formats
-* Single image waypoints from PhotoStation
 * Check CSS file option and update CSS file
 * Map+imgdiv+profiles: Some minor problems in display
 * make each map/imgdiv/profiles scaleable from backend

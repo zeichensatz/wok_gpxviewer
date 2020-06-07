@@ -405,6 +405,10 @@
 														<numIndex index="1">imageGeotaggedDir</numIndex>
 													</numIndex>
 													<numIndex index="5" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedPS</numIndex>
+														<numIndex index="1">imageGeotaggedPS</numIndex>
+													</numIndex>
+													<numIndex index="6" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir</numIndex>
 														<numIndex index="1">imageGeotaggedPSDir</numIndex>
 													</numIndex>
@@ -452,6 +456,18 @@
 											</config>
 										</TCEforms>
 									</settings.gpxMapWaypointImageFolder>
+									<settings.gpxMapWaypointImagePS>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointImagePS</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:imageGeotaggedPS</displayCond>
+											<config>
+												<type>input</type>
+												<size>256</size>
+												<eval>required</eval>
+												<placeholder>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointImageFolderPS.placeholder</placeholder>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointImagePS>
 									<settings.gpxMapWaypointImageFolderPS>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointImageFolderPS</label>
@@ -464,10 +480,21 @@
 											</config>
 										</TCEforms>
 									</settings.gpxMapWaypointImageFolderPS>
+									<settings.gpxMapWaypointPhotoStationAddr>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationAddr</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:imageGeotaggedPS,imageGeotaggedPSDir</displayCond>
+											<config>
+												<type>input</type>
+												<size>256</size>
+												<placeholder>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationAddr.placeholder</placeholder>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointPhotoStationAddr>
 									<settings.gpxMapWaypointPhotoStationPhotoSize>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationPhotoSize</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:imageGeotaggedPSDir</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:imageGeotaggedPS,imageGeotaggedPSDir</displayCond>
 											<config>
 												<type>select</type>
 												<renderType>selectSingle</renderType>
@@ -692,7 +719,7 @@
 									<settings.gpxMapWaypointCoordsShow>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShow</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,imageGeotagged,imageGeotaggedDir,imageGeotaggedPSDir</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,imageGeotagged,imageGeotaggedPS,imageGeotaggedDir,imageGeotaggedPSDir</displayCond>
 											<config>
 												<type>select</type>
 												<renderType>selectSingle</renderType>

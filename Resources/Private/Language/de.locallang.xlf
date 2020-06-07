@@ -278,6 +278,10 @@
 				<source>Image with geotag</source>
 				<target state="translated">Bild mit Geotag</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPS">
+				<source>Image with geotag hosted on a Synology PhotoStation</source>
+				<target state="translated">Bild mit Geotag von einer Synology PhotoStation</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedDir">
 				<source>Directory of images with geotags</source>
 				<target state="translated">Verzeichnis von Bildern mit Geotags</target>
@@ -289,6 +293,10 @@
 			<trans-unit id="flexform.gpxMapWaypointImage">
 				<source>Image filename</source>
 				<target state="translated">Bilddateiname</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointImagePS">
+				<source>PhotoStation hash of an public accessible photo</source>
+				<target state="translated">PhotoStation hash eines öffentlich zugänglichen Fotos</target>
 			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointImageFolder">
 				<source>Directory with geotagged images (Please select one of the pics in the directory!)</source>
@@ -497,6 +505,14 @@
 				<source>Map right to profiles</source>
 				<target state="translated">Karte rechts der Profile</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr">
+				<source>Synology PhotoStation address (optional, only needed if no or different default value in constants)</source>
+				<target state="translated">Synology PhotoStation Adresse (optional, nur notwendig, wenn keine oder andere Voreinstellung in den Konstanten)</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr.placeholder">
+				<source>https://your_synology.com</source>
+				<target state="translated">https://deine_synology.de</target>
+			</trans-unit>
 
 			<trans-unit id="constants.subcat.resources.label">
 				<source>Resources Test</source>
@@ -702,6 +718,10 @@
 			<trans-unit id="constants.gpxMap_profilesCols.label">
 				<source>GPXViewer Profiles Columns: Number of columns for display of profiles</source>
 				<target state="translated">GPXViewer Profiles Columns: Spaltenanzahl für die Ausgabe von Profilen</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMap_profilesPSaddr.label">
+				<source>GPXViewer PhotoStation address: Default internet address of your Synology PhotoStation, i.e. https://your_synology.com. Add "http://" or "https://" and only enter the address itself and no "/" at the end.</source>
+				<target state="translated">GPXViewer PhotoStation Adresse: Voreinstellung für eine Synology PhotoStation, z.B. https://deine_synology.de. Das "http://" oder "https://" muss vorangestellt werden, sonst nur die Adresse und kein abschliessender "/"</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxDoclang.options.auto">
 				<source>auto</source>

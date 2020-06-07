@@ -257,6 +257,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_profiles = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profiles}
 		gpxMap_profilesLayout = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesLayout}
 		gpxMap_profilesCols = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesCols}
+		gpxMap_profilesPSaddr = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesPSaddr}
 
 		// Import layout variables from bootstrap_package
 		gpxviewer-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-height}
