@@ -316,13 +316,11 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
-
 			// FESTSTELLEN DER SEITENSPRACHE
 			// Bis 9.x funktionierte noch dies:
 			// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
 			// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
 			$this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
-
 			// Variablen für Ausgabestrings (Wegpunkte für Images/Icons) resetten
 			$gpxMapImages = "";
 			$gpxMapIcons = "";
@@ -366,14 +364,12 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 					}
 					$album = $array['container']['settings']['gpxMapWaypointImageFolderPS'];
 					$photoSize = "small"; // preview, small, large
-//					exec("curl 'https://fotos.wolfgangkleinbach.de/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=50&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
 					exec("curl '" . $serverAddr . "/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=50&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
 					$jsonPHParray = json_decode($jsonArray[0], true);
 					// Überprüfen, ob die PhotoStation-Abfrage erfolgreich war
 					if($jsonPHParray['success'] == 'true') {
 						$items = $jsonPHParray['data']['items'];
 						foreach($items as $item) {
-//							$sourceFile = "https://fotos.wolfgang-kleinbach.de/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $item['id'];
 							$sourceFile = $serverAddr . "/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $item['id'];
 							$latitude = $item['additional']['photo_exif']['gps']['lat']; // Kann auch in $items['info']['lat'] stehen
 							$longitude = $item['additional']['photo_exif']['gps']['lng']; // Kann auch in $items['info']['lng'] stehen
