@@ -17,21 +17,38 @@
 .tx-wok-gpxviewer:last-child {
 	margin-bottom: 0;
 }
+
+.tx-wok-gpxviewer .textpic {
+	width: $gpxviewer-width;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-gallery {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-text {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
 .gpx-viewer {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #477DBE;
-	width: 85%;
+	width: $gpxviewer-width;
 	height: $gpxviewer-height;
 }
 .gpx-viewer-description {
-	width: 85%;
+	width: $gpxviewer-width;
 }
 .gpx-viewer-description p {
 	margin-bottom: 1px;
 }
 .gpx-viewer-profiles {
-	width: 85%;
+	width: 100%;
 	height: $gpxviewer-profiles-height;
 }
 
@@ -71,44 +88,15 @@
 	border-left-style: solid;
 	border-right-style: none;
 }
-/*
-.gpx-viewer-images-border .buttonsbackground {
-	background-color: #F2F2F2;
+.gpx-viewer-figure {
+	margin-bottom: 0px; 
+	background-color: black;
 }
-.gpx-viewer-images-border button { 
-	border-top-style: none;
-	border-left-style: none;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
-	width: 50%;
-}
-.gpx-viewer-images-border button:hover { 
-	background-color: #ff8700;
-}
-*/
 .gpx-viewer-figure-caption {
 	text-align: left;
 	padding-right: 3px;
 	padding-left: 3px;
 	color: white;
-}
-
-.tx-wok-gpxviewer .textpic {
-	width:85%;
-	margin-left: 0px;
-	margin-bottom: 0px;
-}
-.tx-wok-gpxviewer .textpic-gallery {
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-bottom: 0px;
-}
-.tx-wok-gpxviewer .textpic-text {
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-bottom: 0px;
 }
 
 /* Bootstrap design changes */
@@ -123,7 +111,11 @@
 .viewer-gpx-pro-left, .viewer-gpx-pro-right {
 	height: $gpxviewer-height + 2px;
 }
-
+.viewer-gpx-img-pro-left, .viewer-gpx-img-pro-right, .viewer-gpx-img-pro-above, .viewer-gpx-img-pro-below, 
+.viewer-gpx-img-left, .viewer-gpx-img-right, .viewer-gpx-img-above, .viewer-gpx-img-below, 
+.viewer-gpx-pro-left, .viewer-gpx-pro-right, .viewer-gpx-pro-above, .viewer-gpx-pro-below {
+	width: 100%;
+}
 // ###################
 // IMAGES and PROFILES
 // set defaults for all divs with images and profiles

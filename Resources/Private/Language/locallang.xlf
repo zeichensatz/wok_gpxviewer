@@ -687,6 +687,10 @@
 				<source>$gpxviewer-images-height: Maximum height of the images div. Value may NOT be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-images-height: Maximale Höhe der Bilder-Anzeige. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
 			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-width.label">
+				<source>$gpxviewer-width: Width of Gpxviewer content element. Value should be in %! Unit should be added!</source>
+				<target state="translated">$gpxviewer-width: Breite der Karte. Der Wert muss in % sein! Die Einheit muss angegeben werden!</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxMap_sorting.label">
 				<source>GPXViewer profiles sorting: Sorting of profiles for the display</source>
 				<target state="translated">GPXViewer Profil Sortierung: Sortierung der Profile für die Ausgabe</target>

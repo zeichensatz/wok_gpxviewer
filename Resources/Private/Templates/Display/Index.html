@@ -11,12 +11,12 @@
 </f:then>
 <f:else>
 	<!-- GPXViewer map -->
-	<div id="c{uid}g" style="width:85%;">
-		<div style="padding-left:0; padding-right:0">
+	<div id="c{uid}g">
+		<div>
 </f:else>
 </f:if>
 			<!-- Map -->
-			<div class="gpx-viewer viewer-{addClassname}" style="width:100%">
+			<div class="gpx-viewer viewer-{addClassname}">
 				<div id="map{uid}" class="<f:if condition="{gpxAnimation} == 'true'">animated_{gpxFileAnimationIcon} </f:if>map gpxview:<f:if condition="{gpxFile} != ''"></f:if>{gpxFile}:{gpxMapType}" style="width: 100%; height: 100%;">
 					<noscript><p><f:translate key="template.javascriptWarning" /></p></noscript>
 				</div>
@@ -43,7 +43,7 @@
 					<button type="button" class="btn previous"><f:translate key="template.previous" /></button><button type="button" class="btn next"><f:translate key="template.next" /></button>
 				</div>
 				<div>
-					<figure style="margin-bottom: 0px; background-color: black;">
+					<figure class="gpx-viewer-figure">
 						<img alt=" " class="gpx-viewer-img">
 						<figcaption class="gpx-viewer-figure-caption"></figcaption>
 					</figure>
@@ -55,13 +55,13 @@
 	<f:if condition="{profiles} == 'true'">
 		<!-- Profiles -->
 		<div id="map{uid}_profiles" class="textpic-item textpic-{profilesType} profiles-{addClassname}" <f:if condition="{imgdiv} == 'true'">style="width: 100%;"</f:if>>
-			<div class="gpx-viewer-profiles" style="width:100%;">
+			<div class="gpx-viewer-profiles">
 				<table class="table table-borderless">
-					<tr style="width: 100%;">
+					<tr>
 					<f:for each="{profilesNameArray}" as="profile" iteration="pCount">
 						<td style="padding: 2px;">
-				<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: 100%; height: {profileHeight};">
-				</div>
+							<div id="map{uid}_{profile}" class="gpx-viewer-profile" style="width: 100%; height: {profileHeight};">
+							</div>
 						</td>
 						<f:if condition="{pCount.cycle} % {profilesCols} == 0">
 					</tr>

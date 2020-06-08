@@ -18,6 +18,8 @@ plugin.bootstrap_package {
 			gpxviewer-profiles-height = 600px
 			# cat=GPXViewer: Basic/1122/2183; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-height.label
 			gpxviewer-images-height = 600px
+			# cat=GPXViewer: Basic/1122/2184; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-width.label
+			gpxviewer-width = 100%
 		}
 	}
 }

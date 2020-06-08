@@ -588,6 +588,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		}
 		// Check conditions and set variables
 		// imgdiv?
+		$textpicPosition = "normal";
 		if($gpxMapImages != '' && $gpxMap_img == 'true' && $gpxMap_imgdiv == 'true') {
 			$textpicPosition = $gpxMap_imgdivLayout;
 			$imgdiv = 'true';
@@ -616,14 +617,14 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		}
 		$this->view->assign('profilesType', $profilesType);
 		// create an additional classname
-		$addClassname = "gpx-";
+		$addClassname = "gpx";
 		if ($imgdiv == 'true') {
-			$addClassname = $addClassname . "img-";
+			$addClassname = $addClassname . "-img";
 		}
 		if ($profiles == 'true') {
-			$addClassname = $addClassname . "pro-";
+			$addClassname = $addClassname . "-pro";
 		}
-		$addClassname = $addClassname . $textpicPosition;
+		$addClassname = $addClassname . "-" . $textpicPosition;
 		$this->view->assign('addClassname', $addClassname);
 	}
 }
