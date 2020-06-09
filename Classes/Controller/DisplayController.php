@@ -89,11 +89,16 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// Array für den mehrsprachigen Eintrag anlegen
 		$imageDescriptionArray = explode('-----', $imageDescriptionString);
 		// Herausfiltern, ob eines der Arrays der aktuellen Sprachauswahl entspricht und in diesem Fall den Beschreibungstext ändern
+		$imageDescription = "";
 		foreach($imageDescriptionArray as $id) {
 			$id = trim($id, " \t\n\r\0\x0B");
 			if($this->pageLanguage . ":"  == strtolower(substr($id, 0, strlen($this->pageLanguage)+1))) {
 				$imageDescription = nl2br(trim(substr_replace($id, '', 0, strlen($this->pageLanguage)+1), " "));
 			}
+		}
+		// Wenn keine Sprachtypische Beschreibung vorhanden ist, dann eventuell vorhandene (multilinguale) Beschreibung nehmen
+		if($imageDescription == '' and $imageDescriptionArray[0] != '') {
+			$imageDescription = $imageDescriptionArray[0];
 		}
 		return $imageDescription;
 	}
