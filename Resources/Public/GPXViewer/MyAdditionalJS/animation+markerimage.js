@@ -220,13 +220,14 @@
 					arrayMaps[pars.id]['nr'] = setImage(pars.id, nr);
 					return false;
 			}
-			if(pars.type == "Tracks_n") {
-				var infofenster = JB.Infofenster(arrayMaps[pars.id]['map'].map);
-				infofenster.content(pars.gpxdaten.tracks.track[0].info);
-				infofenster.show();
-				return;
-			}
 		}
-
+/*
+		if(pars.type == "Tracks_n") {
+			var infofenster = JB.Infofenster(arrayMaps[pars.id]['map'].map);
+			infofenster.content(pars.gpxdaten.tracks.track[0].info);
+			infofenster.show();
+			return;
+		}
+*/
 		return true;
 	}
