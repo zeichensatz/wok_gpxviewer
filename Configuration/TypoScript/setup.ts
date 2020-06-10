@@ -246,6 +246,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		// Waypoints
 		gpxMap_img = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_img}
 		gpxMap_wayp = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_wayp}
+		gpxMap_img_coords = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_img_coords}
 		gpxMap_img_coords_in_description_before = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_img_coords_in_description_before}
 		shimg = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.shimg}
 		gpxMap_imgdiv = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_imgdiv}

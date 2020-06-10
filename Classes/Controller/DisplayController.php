@@ -318,7 +318,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxMap_img', $gpxMap_img);
 		// Das gesamte Array für Wegpunkte einlesen
 		$wholeArray = $this->settings['waypoints'];
-
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
 			// FESTSTELLEN DER SEITENSPRACHE
@@ -330,6 +329,11 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			$gpxMapImages = "";
 			$gpxMapIcons = "";
 			foreach($wholeArray as $array) {
+				if($array['container']['settings']['gpxMapWaypointCoordsShow'] != '' and $array['container']['settings']['gpxMapWaypointCoordsShow'] != "Default") {
+					$coordsShow = $array['container']['settings']['gpxMapWaypointCoordsShow'];
+				} else {
+					$coordsShow = $this->settings['gpxMap_img_coords'];
+				}
 				//Falls es sich um ein PhotoStation 6-Bild handelt:
 				if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotaggedPS' and ($this->settings['gpxMap_profilesPSaddr'] != '' or $array['container']['settings']['gpxMapWaypointPhotoStationAddr'] != '')) {
 					if($array['container']['settings']['gpxMapWaypointPhotoStationAddr'] != '') {
@@ -353,7 +357,8 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						// Get image description from a multilangual string
 						$imageDescription = $this->getImageDescription($item['info']['description']);
 						// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-						$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
+//						$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
+						$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
 						// Ausgabestring
 						$gpxMapImages = $gpxMapImages . 
 								'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
@@ -382,7 +387,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							// Get image description from a multilangual string
 							$imageDescription = $this->getImageDescription($item['info']['description']);
 							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-							$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
+							$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
 							// Ausgabestring
 							$gpxMapImages = $gpxMapImages . 
 									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
@@ -441,7 +446,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							// Get image description from a multilangual string
 							$imageDescription = $this->getImageDescription($exifdata['ImageDescription']);
 							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-							$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
+							$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
 							// Ausgabestring
 							$gpxMapImages = $gpxMapImages . 
 									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
@@ -461,7 +466,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						$latitude = $CoordsDecimalArray[0];
 						$longitude = $CoordsDecimalArray[1];
 						// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-						$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $array['container']['settings']['gpxMapWaypointDescription'], $latitude, $longitude);
+						$Coords = $this->getCoords($coordsShow, $array['container']['settings']['gpxMapWaypointDescription'], $latitude, $longitude);
 						// Vorbereitung der Ausgabe der Headline in der Wegpunktbeschreibung
 						if((isset($array['container']['settings']['gpxMapWaypointDescriptionHeadline'])) and ($array['container']['settings']['gpxMapWaypointDescriptionHeadline'] <> '')) {
 							$gpxMapWaypointDescriptionHeadline = ' data-name="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . '"';

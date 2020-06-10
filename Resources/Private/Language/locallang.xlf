@@ -361,6 +361,10 @@
 				<source>Display coordinates in image/icon description text</source>
 				<target state="translated">Ausgabe der Koordinaten im Beschreibungstext des Bildes/Icons</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionDefault">
+				<source>[default]</source>
+				<target state="translated">[Voreinstellung]</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionTrue">
 				<source>yes</source>
 				<target state="translated">Ja</target>
@@ -630,6 +634,10 @@
 			<trans-unit id="constants.gpxMap_wayp.label">
 				<source>GPXViewer display of waypoints with icons: Display waypoints with icons on/off</source>
 				<target state="translated">GPXViewer Anzeige von Wegpunkten mit Icons: Ein-/Ausschalten der Ausgabe von Wegpunkten mit Icons</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMap_img_coords.label">
+				<source>GPXViewer display of coords in waypoints with images: Display coords in description of waypoints with images on/off</source>
+				<target state="translated">GPXViewer Anzeige von Koordinaten in Wegpunkten mit Bildern: Ein-/Ausschalten der Ausgabe von Koordinaten in der Beschreibung von Wegpunkten mit Bildern</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMap_img_coords_in_description_before.label">
 				<source>GPS coordinates display for a waypoint with image: Display given string before coordinates (only if there is a description)</source>

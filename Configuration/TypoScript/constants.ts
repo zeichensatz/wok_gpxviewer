@@ -65,17 +65,19 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_img = true
 		# cat=GPXViewer: Basic/1120/2161; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_wayp.label
 		gpxMap_wayp = true
-		# cat=GPXViewer: Basic/1120/2162; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_img_coords_in_description_before.label
+		# cat=GPXViewer: Basic/1120/2162; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_img_coords.label
+		gpxMap_img_coords = false
+		# cat=GPXViewer: Basic/1120/2163; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_img_coords_in_description_before.label
 		gpxMap_img_coords_in_description_before = <br />
-		# cat=GPXViewer: Basic/1120/2163; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.shimg.label
+		# cat=GPXViewer: Basic/1120/2164; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.shimg.label
 		shimg = false
-		# cat=GPXViewer: Basic/1120/2164; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdiv.label
+		# cat=GPXViewer: Basic/1120/2165; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdiv.label
 		gpxMap_imgdiv = false
-		# cat=GPXViewer: Basic/1120/2165; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.above=above,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.below=below,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.left=left,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.right=right]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.label
+		# cat=GPXViewer: Basic/1120/2166; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.above=above,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.below=below,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.left=left,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.options.right=right]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivLayout.label
 		gpxMap_imgdivLayout = above
-		# cat=GPXViewer: Basic/1120/2165; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivScale.label
+		# cat=GPXViewer: Basic/1120/2167; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivScale.label
 		gpxMap_imgdivScale = 10
-		# cat=GPXViewer: Basic/1120/2166; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
+		# cat=GPXViewer: Basic/1120/2168; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
 		gpxCheckimagename = true
 
 		// ScssPHP Parser

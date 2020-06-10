@@ -725,13 +725,17 @@
 												<renderType>selectSingle</renderType>
 												<maxitems>1</maxitems>
 												<size>1</size>
-												<default>true</default>
+												<default>Default</default>
  												<items type="array">
 													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShowOptionDefault</numIndex>
+														<numIndex index="1">Default</numIndex>
+													</numIndex>
+													<numIndex index="1" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShowOptionTrue</numIndex>
 														<numIndex index="1">true</numIndex>
 													</numIndex>
-													<numIndex index="1" type="array">
+													<numIndex index="2" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShowOptionFalse</numIndex>
 														<numIndex index="1">false</numIndex>
 													</numIndex>
