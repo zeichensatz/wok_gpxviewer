@@ -374,7 +374,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 					}
 					$album = $array['container']['settings']['gpxMapWaypointImageFolderPS'];
 					$photoSize = "small"; // preview, small, large
-					exec("curl '" . $serverAddr . "/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=50&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
+					exec("curl '" . $serverAddr . "/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=150&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
 					$jsonPHParray = json_decode($jsonArray[0], true);
 					// Überprüfen, ob die PhotoStation-Abfrage erfolgreich war
 					if($jsonPHParray['success'] == 'true') {
