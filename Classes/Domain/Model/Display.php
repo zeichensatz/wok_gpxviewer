@@ -17,4 +17,32 @@ namespace Wok\WokGpxviewer\Domain\Model;
  */
 class Display extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
+
+    /**
+     * dummy
+     * 
+     * @var string
+     */
+    protected $dummy = '';
+
+    /**
+     * Returns the dummy
+     * 
+     * @return string $dummy
+     */
+    public function getDummy()
+    {
+        return $this->dummy;
+    }
+
+    /**
+     * Sets the dummy
+     * 
+     * @param string $dummy
+     * @return void
+     */
+    public function setDummy($dummy)
+    {
+        $this->dummy = $dummy;
+    }
 }

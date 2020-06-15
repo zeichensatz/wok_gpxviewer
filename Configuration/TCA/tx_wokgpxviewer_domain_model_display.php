@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang_db.xlf:tx_wokgpxviewer_domain_model_display',
-        'label' => 'uid',
+        'label' => 'dummy',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -16,14 +16,14 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => '',
+        'searchFields' => 'dummy',
         'iconfile' => 'EXT:wok_gpxviewer/Resources/Public/Icons/tx_wokgpxviewer_domain_model_display.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, ',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, dummy',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, , --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, dummy, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -116,5 +116,15 @@ return [
             ],
         ],
 
+        'dummy' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang_db.xlf:tx_wokgpxviewer_domain_model_display.dummy',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+    
     ],
 ];

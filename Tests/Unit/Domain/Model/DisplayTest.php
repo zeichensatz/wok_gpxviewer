@@ -25,8 +25,25 @@ class DisplayTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
     /**
      * @test
      */
-    public function dummyTestToNotLeaveThisFileEmpty()
+    public function getDummyReturnsInitialValueForString()
     {
-        self::markTestIncomplete();
+        self::assertSame(
+            '',
+            $this->subject->getDummy()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setDummyForStringSetsDummy()
+    {
+        $this->subject->setDummy('Conceived at T3CON10');
+
+        self::assertAttributeEquals(
+            'Conceived at T3CON10',
+            'dummy',
+            $this->subject
+        );
     }
 }

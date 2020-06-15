@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:wok_gpxviewer/Resources/Private/Language/locallang_csh" date="2020-06-15T16:53:48Z" product-name="wok_gpxviewer">
+		<header/>
+		<body>
+			<trans-unit id="dummy.description" resname="dummy.description">
+				<source>dummy</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

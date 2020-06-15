@@ -34,7 +34,19 @@
                     "uid": "339582654436"
                 },
                 "propertyGroup": {
-                    "properties": []
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "dummy",
+                            "propertyType": "String",
+                            "uid": "1271810487638"
+                        }
+                    ]
                 },
                 "relationGroup": {
                     "relations": []
@@ -79,7 +91,7 @@
     "wires": [],
     "storagePath": "\/netzwerk\/ZSweb.local\/vhosts\/test2\/typo3conf\/ext\/",
     "log": {
-        "last_modified": "2020-06-15 09:26",
+        "last_modified": "2020-06-15 04:53",
         "extension_builder_version": "9.11.0",
         "be_user": "Wolfgang Kleinbach (4)"
     }
