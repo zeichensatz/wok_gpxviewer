@@ -21,3 +21,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['wokgpxviewer
     // Flexform configuration schema file
     'FILE:EXT:wok_gpxviewer/Configuration/FlexForms/Gpxtracks.xml'
 );
+
+/***************
+ * Deactivate pages and recursive in tab "plugin" of content element 
+ */
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['wokgpxviewer_gpxtracks'] = 'pages,recursive';
