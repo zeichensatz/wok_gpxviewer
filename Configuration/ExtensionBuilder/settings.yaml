@@ -48,7 +48,7 @@ overwriteSettings:
 
     Configuration:
         #TCA merge not possible - use overrides directory
-        TypoScript: merge
+        TypoScript: keep
 
     Resources:
         Private:
