@@ -52,7 +52,8 @@ overwriteSettings:
 
     Resources:
         Private:
-            Language: merge
+            // Language set to keep. Merge will strip all translations
+            Language: keep
             #Templates: keep
             Templates:
                 Index.html: keep

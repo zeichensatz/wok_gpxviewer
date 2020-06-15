@@ -4,7 +4,7 @@ namespace Wok\WokGpxviewer\Tests\Unit\Domain\Model;
 /**
  * Test case.
  */
-class DisplayTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
+class DisplayTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
      * @var \Wok\WokGpxviewer\Domain\Model\Display

@@ -1,1248 +1,1242 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-22T15:59:58Z" product-name="wok_gpxviewer">
+	<file source-language="en" datatype="plaintext" original="EXT:wok_gpxviewer/Resources/Private/Language/locallang" date="2020-06-15T09:26:45Z" product-name="wok_gpxviewer">
 		<header/>
 		<body>
-			<trans-unit id="tx_wokgpxviewer_domain_model_display">
+			<trans-unit id="tx_wokgpxviewer_domain_model_display" resname="tx_wokgpxviewer_domain_model_display">
 				<source>Display</source>
-				<target>Display</target>
+				<target state="translated">Display</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.sheetTitle">
+			<trans-unit id="flexform.sheetTitle" resname="flexform.sheetTitle">
 				<source>General settings</source>
 				<target state="translated">Allgemeine Einstellungen</target>
 			</trans-unit>
-			<trans-unit id="flexform.sheetDescription">
+			<trans-unit id="flexform.sheetDescription" resname="flexform.sheetDescription">
 				<source>In this form you may choose one or several GPX file(s) for display with GPXViewer</source>
 				<target state="translated">Auswahl einer oder mehrerer GPX-Datei(en) für die Darstellung mit Hilfe des GPXViewer</target>
 			</trans-unit>
-
-			<trans-unit id="flexform.gpxFileInfo">
+			<trans-unit id="flexform.gpxFileInfo" resname="flexform.gpxFileInfo">
 				<source>GPX file information (will not be displayed)</source>
 				<target state="translated">GPX-Dateiinformation (wird nicht ausgegeben)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFile">
+			<trans-unit id="flexform.gpxFile" resname="flexform.gpxFile">
 				<source>GPX file(s)</source>
 				<target state="translated">GPX-Datei(en)</target>
 			</trans-unit>
-
-			<trans-unit id="flexform.gpxFileMapType">
+			<trans-unit id="flexform.gpxFileMapType" resname="flexform.gpxFileMapType">
 				<source>Type of map for display</source>
 				<target state="translated">Kartentyp für die Ausgabe</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeDefault">
+			<trans-unit id="flexform.gpxFileMapTypeDefault" resname="flexform.gpxFileMapTypeDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeKarte">
+			<trans-unit id="flexform.gpxFileMapTypeKarte" resname="flexform.gpxFileMapTypeKarte">
 				<source>Map (only mapapi=gm)</source>
 				<target state="translated">Karte (nur mapapi=gm)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeSatellit">
+			<trans-unit id="flexform.gpxFileMapTypeSatellit" resname="flexform.gpxFileMapTypeSatellit">
 				<source>Satellite</source>
 				<target state="translated">Satellit</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeHybrid">
+			<trans-unit id="flexform.gpxFileMapTypeHybrid" resname="flexform.gpxFileMapTypeHybrid">
 				<source>Hybrid (only mapapi=gm)</source>
 				<target state="translated">Hybrid (nur mapapi=gm)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOberflaeche">
+			<trans-unit id="flexform.gpxFileMapTypeOberflaeche" resname="flexform.gpxFileMapTypeOberflaeche">
 				<source>Terrain (only mapapi=gm)</source>
 				<target state="translated">Oberflaeche (nur mapapi=gm)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOSM">
+			<trans-unit id="flexform.gpxFileMapTypeOSM" resname="flexform.gpxFileMapTypeOSM">
 				<source>OSM (Openstreetmap)</source>
 				<target state="translated">OSM (Openstreetmap)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOSMDE">
+			<trans-unit id="flexform.gpxFileMapTypeOSMDE" resname="flexform.gpxFileMapTypeOSMDE">
 				<source>OSM DE</source>
 				<target state="translated">OSM DE</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOSM_Cycle">
+			<trans-unit id="flexform.gpxFileMapTypeOSM_Cycle" resname="flexform.gpxFileMapTypeOSM_Cycle">
 				<source>OSM Cycle</source>
 				<target state="translated">OSM Cycle</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOSM_Landscape">
+			<trans-unit id="flexform.gpxFileMapTypeOSM_Landscape" resname="flexform.gpxFileMapTypeOSM_Landscape">
 				<source>OSM Landscape</source>
 				<target state="translated">OSM Landscape</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOPENTOPO">
+			<trans-unit id="flexform.gpxFileMapTypeOPENTOPO" resname="flexform.gpxFileMapTypeOPENTOPO">
 				<source>OPENTOPO</source>
 				<target state="translated">OPENTOPO</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMapTypeOPEN_Sea">
+			<trans-unit id="flexform.gpxFileMapTypeOPEN_Sea" resname="flexform.gpxFileMapTypeOPEN_Sea">
 				<source>OPEN Sea (only Leaflet)</source>
 				<target state="translated">OPEN Sea (nur Leaflet)</target>
 			</trans-unit>
-
-			<trans-unit id="flexform.gpxFileDownloadLink">
+			<trans-unit id="flexform.gpxFileDownloadLink" resname="flexform.gpxFileDownloadLink">
 				<source>Toggle for display of download link for the GPX file</source>
 				<target state="translated">Schalter für die Anzeige des Download-Links für die GPX-Datei</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDownloadLinkDefault">
+			<trans-unit id="flexform.gpxFileDownloadLinkDefault" resname="flexform.gpxFileDownloadLinkDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDownloadLinkOff">
+			<trans-unit id="flexform.gpxFileDownloadLinkOff" resname="flexform.gpxFileDownloadLinkOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDownloadLinkOn">
+			<trans-unit id="flexform.gpxFileDownloadLinkOn" resname="flexform.gpxFileDownloadLinkOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
-
-			<trans-unit id="flexform.gpxFileAnimation">
+			<trans-unit id="flexform.gpxFileAnimation" resname="flexform.gpxFileAnimation">
 				<source>Toggle for animation of GPX file(s).</source>
 				<target state="translated">Schalter für die Animation der GPX-Datei(en).</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationDefault">
+			<trans-unit id="flexform.gpxFileAnimationDefault" resname="flexform.gpxFileAnimationDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationOff">
+			<trans-unit id="flexform.gpxFileAnimationOff" resname="flexform.gpxFileAnimationOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationOn">
+			<trans-unit id="flexform.gpxFileAnimationOn" resname="flexform.gpxFileAnimationOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
-
-			<trans-unit id="flexform.gpxFileAnimationIcon">
+			<trans-unit id="flexform.gpxFileAnimationIcon" resname="flexform.gpxFileAnimationIcon">
 				<source>Icon for animation display along the GPX track</source>
 				<target state="translated">Icon für die Anzeige der Animation entlang des GPX-Tracks</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconMoveMarker">
+			<trans-unit id="flexform.gpxFileAnimationIconMoveMarker" resname="flexform.gpxFileAnimationIconMoveMarker">
 				<source>Standard</source>
 				<target state="translated">Standard</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconMotorbike42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconMotorbike42_l2r" resname="flexform.gpxFileAnimationIconMotorbike42_l2r">
 				<source>motorbike (left to right)</source>
 				<target state="translated">Motorrad (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconMotorbike42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconMotorbike42_r2l" resname="flexform.gpxFileAnimationIconMotorbike42_r2l">
 				<source>motorbike (right to left)</source>
 				<target state="translated">Motorrad (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCycling42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconCycling42_l2r" resname="flexform.gpxFileAnimationIconCycling42_l2r">
 				<source>cycling (left to right)</source>
 				<target state="translated">Fahrrad (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCycling42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconCycling42_r2l" resname="flexform.gpxFileAnimationIconCycling42_r2l">
 				<source>cycling (right to left)</source>
 				<target state="translated">Fahrrad (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconFourbyfour42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconFourbyfour42_l2r" resname="flexform.gpxFileAnimationIconFourbyfour42_l2r">
 				<source>fourbyfour (left to right)</source>
 				<target state="translated">4x4 (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconFourbyfour42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconFourbyfour42_r2l" resname="flexform.gpxFileAnimationIconFourbyfour42_r2l">
 				<source>fourbyfour (right to left)</source>
 				<target state="translated">4x4 (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconHiking42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconHiking42_l2r" resname="flexform.gpxFileAnimationIconHiking42_l2r">
 				<source>hiking (left to right)</source>
 				<target state="translated">Wandern (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconHiking42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconHiking42_r2l" resname="flexform.gpxFileAnimationIconHiking42_r2l">
 				<source>hiking (right to left)</source>
 				<target state="translated">Wandern (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconJogging42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconJogging42_l2r" resname="flexform.gpxFileAnimationIconJogging42_l2r">
 				<source>jogging (left to right)</source>
 				<target state="translated">Joggen (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconJogging42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconJogging42_r2l" resname="flexform.gpxFileAnimationIconJogging42_r2l">
 				<source>jogging (right to left)</source>
 				<target state="translated">Joggen (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconAircraftsmall42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconAircraftsmall42_r2l" resname="flexform.gpxFileAnimationIconAircraftsmall42_r2l">
 				<source>aircraftsmall (right to left)</source>
 				<target state="translated">Kleines Flugzeug (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconAircraftsmall42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconAircraftsmall42_l2r" resname="flexform.gpxFileAnimationIconAircraftsmall42_l2r">
 				<source>aircraftsmall (left to right)</source>
 				<target state="translated">Kleines Flugzeug (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCar42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconCar42_r2l" resname="flexform.gpxFileAnimationIconCar42_r2l">
 				<source>car (right to left)</source>
 				<target state="translated">Auto (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCar42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconCar42_l2r" resname="flexform.gpxFileAnimationIconCar42_l2r">
 				<source>car (left to right)</source>
 				<target state="translated">Auto (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconConvertible42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconConvertible42_r2l" resname="flexform.gpxFileAnimationIconConvertible42_r2l">
 				<source>convertible (right to left)</source>
 				<target state="translated">Cabrio (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconConvertible42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconConvertible42_l2r" resname="flexform.gpxFileAnimationIconConvertible42_l2r">
 				<source>convertible (left to right)</source>
 				<target state="translated">Cabrio (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCruiseship42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconCruiseship42_r2l" resname="flexform.gpxFileAnimationIconCruiseship42_r2l">
 				<source>cruiseship (right to left)</source>
 				<target state="translated">Schiff (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconCruiseship42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconCruiseship42_l2r" resname="flexform.gpxFileAnimationIconCruiseship42_l2r">
 				<source>cruiseship (left to right)</source>
 				<target state="translated">Schiff (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconHelicopter42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconHelicopter42_r2l" resname="flexform.gpxFileAnimationIconHelicopter42_r2l">
 				<source>helicopter (right to left)</source>
 				<target state="translated">Hubschrauber (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconHelicopter42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconHelicopter42_l2r" resname="flexform.gpxFileAnimationIconHelicopter42_l2r">
 				<source>helicopter (left to right)</source>
 				<target state="translated">Hubschrauber (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconPlane42_r2l">
+			<trans-unit id="flexform.gpxFileAnimationIconPlane42_r2l" resname="flexform.gpxFileAnimationIconPlane42_r2l">
 				<source>plane (right to left)</source>
 				<target state="translated">Flugzeug (rechts nach links)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconPlane42_l2r">
+			<trans-unit id="flexform.gpxFileAnimationIconPlane42_l2r" resname="flexform.gpxFileAnimationIconPlane42_l2r">
 				<source>plane (left to right)</source>
 				<target state="translated">Flugzeug (links nach rechts)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileAnimationIconDefault">
+			<trans-unit id="flexform.gpxFileAnimationIconDefault" resname="flexform.gpxFileAnimationIconDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.gpxFileDescriptionToggle">
+			<trans-unit id="flexform.gpxFileDescriptionToggle" resname="flexform.gpxFileDescriptionToggle">
 				<source>Toggle for display of description</source>
 				<target state="translated">Schalter für die Ausgabe der Beschreibung</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDescriptionToggleDefault">
+			<trans-unit id="flexform.gpxFileDescriptionToggleDefault" resname="flexform.gpxFileDescriptionToggleDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDescriptionToggleOff">
+			<trans-unit id="flexform.gpxFileDescriptionToggleOff" resname="flexform.gpxFileDescriptionToggleOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileDescriptionToggleOn">
+			<trans-unit id="flexform.gpxFileDescriptionToggleOn" resname="flexform.gpxFileDescriptionToggleOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.gpxFileDescription">
+			<trans-unit id="flexform.gpxFileDescription" resname="flexform.gpxFileDescription">
 				<source>Description for the GPX file(s)</source>
 				<target state="translated">Beschreibung der GPX-Datei(en)</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.sheetTitleCoords">
+			<trans-unit id="flexform.sheetTitleCoords" resname="flexform.sheetTitleCoords">
 				<source>Center map coordinates</source>
 				<target state="translated">Koordinaten für die Zentrierung der Karte</target>
 			</trans-unit>
-			<trans-unit id="flexform.sheetDescriptionCoords">
+			<trans-unit id="flexform.sheetDescriptionCoords" resname="flexform.sheetDescriptionCoords">
 				<source>Here you may enter values for centering the a map! You have to fill in all fields otherwise nothing will happen!</source>
 				<target state="translated">Hier können Werte für die Zentrierung der Karte eingegeben werden! Es müssen alle Felder ausgefüllt werden, sonst wird nichts passieren!</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapCoordsCenterRadius">
+			<trans-unit id="flexform.gpxMapCoordsCenterRadius" resname="flexform.gpxMapCoordsCenterRadius">
 				<source>Radius for centering the map</source>
 				<target state="translated">Radius für die Zentrierung der Karte</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.sheetTitleWaypoints">
+			<trans-unit id="flexform.sheetTitleWaypoints" resname="flexform.sheetTitleWaypoints">
 				<source>Waypoints</source>
 				<target state="translated">Wegpunkte</target>
 			</trans-unit>
-			<trans-unit id="flexform.sheetDescriptionWaypoints">
+			<trans-unit id="flexform.sheetDescriptionWaypoints" resname="flexform.sheetDescriptionWaypoints">
 				<source>Here you may add waypoints for display. There are four types of waypoints. For two types you have to add GPS coordinates manually: Image and Icons. For the other types the GPS data will be read from the image files automatically: Image with geotag and Directory of images with geotags. IMPORTANT: for getting GPS data from images files "exiftool" has to be installed on the server! Please note, that adding of a new waypoint item is only possible when the GPXViewer content element has been saved once before at least.</source>
 				<target state="translated">Hier kann man Wegpunkte für die Ausgabe hinzufügen. Es gibt vier Typen von Wegpunkten. Für zwei Typen müssen die GPS Koordinaten manuell angegeben werden: Bilder und Icons. Für die beiden anderen Typen werden die GPS-Daten automatisch aus den Bilddateien gelesen: Bild mit Geotag und Verzeichnis von Bildern mit Geotags. WICHTIG: Um GPS-Daten aus den Bilddateien auslesen zu können, muss "exiftool" auf dem Server installiert sein! Bitte ebenfalls beachten: Ein neuer Wegpunkt kann nur dann angelegt werden, wenn das GPXViewer-Content-Element vorher schon mal gespeichert wurde.</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.elementTitleWaypoint">
+			<trans-unit id="flexform.elementTitleWaypoint" resname="flexform.elementTitleWaypoint">
 				<source>Waypoint</source>
 				<target state="translated">Wegpunkt</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointType">
+			<trans-unit id="flexform.gpxMapWaypointType" resname="flexform.gpxMapWaypointType">
 				<source>Type of Waypoint: Image or Icon</source>
 				<target state="translated">Typ des Wegpunkts: Bild oder Icon</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectImage">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImage" resname="flexform.gpxMapWaypointTypeSelectImage">
 				<source>Image</source>
 				<target state="translated">Bild</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectIcon">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectIcon" resname="flexform.gpxMapWaypointTypeSelectIcon">
 				<source>Icon</source>
 				<target state="translated">Icon</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectIconLinked">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectIconLinked" resname="flexform.gpxMapWaypointTypeSelectIconLinked">
 				<source>Icon with hyperlink</source>
 				<target state="translated">Icon mit Link</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotagged">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotagged" resname="flexform.gpxMapWaypointTypeSelectImageGeotagged">
 				<source>Image with geotag</source>
 				<target state="translated">Bild mit Geotag</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPS">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPS" resname="flexform.gpxMapWaypointTypeSelectImageGeotaggedPS">
 				<source>Image with geotag hosted on a Synology PhotoStation</source>
 				<target state="translated">Bild mit Geotag von einer Synology PhotoStation</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedDir">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedDir" resname="flexform.gpxMapWaypointTypeSelectImageGeotaggedDir">
 				<source>Directory of images with geotags</source>
 				<target state="translated">Verzeichnis von Bildern mit Geotags</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir">
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir" resname="flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir">
 				<source>Public accessible PhotoStation 6 album with geotagged images</source>
 				<target state="translated">Öffentliches PhotoStation 6 Album mit Bildern mit Geotags</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointImage">
+			<trans-unit id="flexform.gpxMapWaypointImage" resname="flexform.gpxMapWaypointImage">
 				<source>Image filename</source>
 				<target state="translated">Bilddateiname</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointImagePS">
+			<trans-unit id="flexform.gpxMapWaypointImagePS" resname="flexform.gpxMapWaypointImagePS">
 				<source>PhotoStation hash of an public accessible photo</source>
 				<target state="translated">PhotoStation hash eines öffentlich zugänglichen Fotos</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointImageFolder">
+			<trans-unit id="flexform.gpxMapWaypointImageFolder" resname="flexform.gpxMapWaypointImageFolder">
 				<source>Directory with geotagged images (Please select one of the pics in the directory!)</source>
 				<target state="translated">Verzeichnis mit geogetaggten Bildern (Bitte ein beliebiges Bild im Verzeichnis auswählen!)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointImageFolderPS">
+			<trans-unit id="flexform.gpxMapWaypointImageFolderPS" resname="flexform.gpxMapWaypointImageFolderPS">
 				<source>PhotoStation album hash of an public accessible album</source>
 				<target state="translated">PhotoStation album hash eines öffentlich zugänglichen Albums</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize">
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize" resname="flexform.gpxMapWaypointPhotoStationPhotoSize">
 				<source>Size of the PhotoStation images</source>
 				<target state="translated">Größe der PhotoStation Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.small">
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.small" resname="flexform.gpxMapWaypointPhotoStationPhotoSize.small">
 				<source>small</source>
 				<target state="translated">klein</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.large">
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.large" resname="flexform.gpxMapWaypointPhotoStationPhotoSize.large">
 				<source>large</source>
 				<target state="translated">groß</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointImageFolderPS.placeholder">
+			<trans-unit id="flexform.gpxMapWaypointImageFolderPS.placeholder" resname="flexform.gpxMapWaypointImageFolderPS.placeholder">
 				<source>album_</source>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointIcon">
+			<trans-unit id="flexform.gpxMapWaypointIcon" resname="flexform.gpxMapWaypointIcon">
 				<source>Name of icon</source>
 				<target state="translated">Name des Icons</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointDescriptionHeadline">
+			<trans-unit id="flexform.gpxMapWaypointDescriptionHeadline" resname="flexform.gpxMapWaypointDescriptionHeadline">
 				<source>Waypoint name and headline for description of the Waypoint (optional)</source>
 				<target state="translated">Wegpunkt-Name und -Überschrift für Wegpunkt-Beschreibung (optional)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointDescription">
+			<trans-unit id="flexform.gpxMapWaypointDescription" resname="flexform.gpxMapWaypointDescription">
 				<source>Description of the Waypoint for display (optional)</source>
 				<target state="translated">Wegpunkt-Beschreibung für die Ausgabe (optional)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointLink">
+			<trans-unit id="flexform.gpxMapWaypointLink" resname="flexform.gpxMapWaypointLink">
 				<source>Hyperlink for displayed waypoint/image (optional; i.e. https://example.com)</source>
 				<target state="translated">Hyperlink für Wegpunkt/Bild (optional; z.B. https://example.com)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsFormat">
+			<trans-unit id="flexform.gpxMapWaypointCoordsFormat" resname="flexform.gpxMapWaypointCoordsFormat">
 				<source>Format of GPS Coordinates: Make sure that the format is equivalent to the examples!</source>
 				<target state="translated">Format der GPS Koordinaten: Bitte sicherstellen, dass die Eingabe den Beispielen entspricht!</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDegreetime">
+			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDegreetime" resname="flexform.gpxMapWaypointCoordsFormatDegreetime">
 				<source>Degrees, minutes, seconds (Example: N53° 38' 53.52" E10° 4' 59.88")</source>
 				<target state="translated">Grad, Minuten, Sekunden (Beispiel: N53° 38' 53.52" E10° 4' 59.88")</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDezimal">
+			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDezimal" resname="flexform.gpxMapWaypointCoordsFormatDezimal">
 				<source>Decimal (Example: 53.6482 10.0833 or 53.6482, 10.0833)</source>
 				<target state="translated">Dezimal (Beispiel: 53.6482 10.0833 or 53.6482, 10.0833)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDegreedezimalmin">
+			<trans-unit id="flexform.gpxMapWaypointCoordsFormatDegreedezimalmin" resname="flexform.gpxMapWaypointCoordsFormatDegreedezimalmin">
 				<source>Degrees, decimal minutes (Example: N53° 38.892' E10° 04.998' or N53° 38.892 E10° 04.998)</source>
 				<target state="translated">Grad, Dezimal-Minuten (Beispiel: N53° 38.892' E10° 04.998' or N53° 38.892 E10° 04.998)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoords">
+			<trans-unit id="flexform.gpxMapWaypointCoords" resname="flexform.gpxMapWaypointCoords">
 				<source>GPS Coordinates</source>
 				<target state="translated">GPS-Koordinaten</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsShow">
+			<trans-unit id="flexform.gpxMapWaypointCoordsShow" resname="flexform.gpxMapWaypointCoordsShow">
 				<source>Display coordinates in image/icon description text</source>
 				<target state="translated">Ausgabe der Koordinaten im Beschreibungstext des Bildes/Icons</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionDefault">
+			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionDefault" resname="flexform.gpxMapWaypointCoordsShowOptionDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionTrue">
+			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionTrue" resname="flexform.gpxMapWaypointCoordsShowOptionTrue">
 				<source>yes</source>
 				<target state="translated">Ja</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionFalse">
+			<trans-unit id="flexform.gpxMapWaypointCoordsShowOptionFalse" resname="flexform.gpxMapWaypointCoordsShowOptionFalse">
 				<source>no</source>
 				<target state="translated">Nein</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.gpxFileMap_wayp">
+			<trans-unit id="flexform.gpxFileMap_wayp" resname="flexform.gpxFileMap_wayp">
 				<source>Toggle for display of waypoints with icons</source>
 				<target state="translated">Schalter für die Ausgabe von Wegpunkten mit Icons</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_waypDefault">
+			<trans-unit id="flexform.gpxFileMap_waypDefault" resname="flexform.gpxFileMap_waypDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_waypOff">
+			<trans-unit id="flexform.gpxFileMap_waypOff" resname="flexform.gpxFileMap_waypOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_waypOn">
+			<trans-unit id="flexform.gpxFileMap_waypOn" resname="flexform.gpxFileMap_waypOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.gpxFileMap_img">
+			<trans-unit id="flexform.gpxFileMap_img" resname="flexform.gpxFileMap_img">
 				<source>Toggle for display of waypoints with images</source>
 				<target state="translated">Schalter für die Ausgabe von Wegpunkten mit Bildern</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgDefault">
+			<trans-unit id="flexform.gpxFileMap_imgDefault" resname="flexform.gpxFileMap_imgDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgOff">
+			<trans-unit id="flexform.gpxFileMap_imgOff" resname="flexform.gpxFileMap_imgOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgOn">
+			<trans-unit id="flexform.gpxFileMap_imgOn" resname="flexform.gpxFileMap_imgOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.gpxFileMap_imgdiv">
+			<trans-unit id="flexform.gpxFileMap_imgdiv" resname="flexform.gpxFileMap_imgdiv">
 				<source>Toggle for images DIV to display images from waypoints with images</source>
 				<target state="translated">Schalter für die Ausgabe eines Bilder DIVs zur Wiedergabe von Bildern aus Wegpunkten mit Bildern</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivDefault">
+			<trans-unit id="flexform.gpxFileMap_imgdivDefault" resname="flexform.gpxFileMap_imgdivDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivOff">
+			<trans-unit id="flexform.gpxFileMap_imgdivOff" resname="flexform.gpxFileMap_imgdivOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivOn">
+			<trans-unit id="flexform.gpxFileMap_imgdivOn" resname="flexform.gpxFileMap_imgdivOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayout">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayout" resname="flexform.gpxFileMap_imgdivLayout">
 				<source>Select the layout for display of maps with images-DIV</source>
 				<target state="translated">Layoutauswahl für die Ausgabe von Karten mit Bilder-DIV</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayoutDefault">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayoutDefault" resname="flexform.gpxFileMap_imgdivLayoutDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayoutAbove">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayoutAbove" resname="flexform.gpxFileMap_imgdivLayoutAbove">
 				<source>Map above images</source>
 				<target state="translated">Karte über den Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayoutBelow">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayoutBelow" resname="flexform.gpxFileMap_imgdivLayoutBelow">
 				<source>Map below images</source>
 				<target state="translated">Karte unter den Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayoutLeft">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayoutLeft" resname="flexform.gpxFileMap_imgdivLayoutLeft">
 				<source>Map left to images</source>
 				<target state="translated">Karte links der Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivLayoutRight">
+			<trans-unit id="flexform.gpxFileMap_imgdivLayoutRight" resname="flexform.gpxFileMap_imgdivLayoutRight">
 				<source>Map right to images</source>
 				<target state="translated">Karte rechts der Bilder</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_imgdivScale">
+			<trans-unit id="flexform.gpxFileMap_imgdivScale" resname="flexform.gpxFileMap_imgdivScale">
 				<source>Radius for centering the map for display of maps with images-DIV (numerical value in km, without unit!)</source>
 				<target state="translated">Radius für die Zentrierung der Karte bei Ausgabe von Karten mit Bilder-DIV (numerischer Wert in km, ohne Einheitenangabe!)</target>
 			</trans-unit>
 
-			<trans-unit id="flexform.sheetTitleProfiles">
+			<trans-unit id="flexform.sheetTitleProfiles" resname="flexform.sheetTitleProfiles">
 				<source>Profiles</source>
 				<target state="translated">Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.sheetDescriptionProfiles">
+			<trans-unit id="flexform.sheetDescriptionProfiles" resname="flexform.sheetDescriptionProfiles">
 				<source>In this field you can fill in a sorted, comma separated list of profiles for display of a track. Valid values: hp,hpt,sp,spt,vp,vpt,hrp,hrpt,cadp,cadpt,atempp,atemppt,wpt. Please check https://www.j-berkemeier.de/GPXViewer/#Profile for further details</source>
 				<target state="translated">In diesem Feld kann man eine sortierte, komma-getrennte Liste der Profile für einen Track angeben. Gültige Werte sind: hp,hpt,sp,spt,vp,vpt,hrp,hrpt,cadp,cadpt,atempp,atemppt,wpt. Mehr dazu unter https://www.j-berkemeier.de/GPXViewer/#Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profiles">
+			<trans-unit id="flexform.gpxFileMap_profiles" resname="flexform.gpxFileMap_profiles">
 				<source>Toggle for display of profiles</source>
 				<target state="translated">Schalter für die Ausgabe der Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesDefault">
+			<trans-unit id="flexform.gpxFileMap_profilesDefault" resname="flexform.gpxFileMap_profilesDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesOff">
+			<trans-unit id="flexform.gpxFileMap_profilesOff" resname="flexform.gpxFileMap_profilesOff">
 				<source>off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesOn">
+			<trans-unit id="flexform.gpxFileMap_profilesOn" resname="flexform.gpxFileMap_profilesOn">
 				<source>on</source>
 				<target state="translated">An</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_sorting">
+			<trans-unit id="flexform.gpxFileMap_sorting" resname="flexform.gpxFileMap_sorting">
 				<source>List of profiles for display</source>
 				<target state="translated">Liste der Profile für die Ausgabe</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesCols">
+			<trans-unit id="flexform.gpxFileMap_profilesCols" resname="flexform.gpxFileMap_profilesCols">
 				<source>Number of columns for display of profiles</source>
 				<target state="translated">Anzahl der Spalten für Profilausgabe</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayout">
+			<trans-unit id="flexform.gpxFileMap_profilesLayout" resname="flexform.gpxFileMap_profilesLayout">
 				<source>Select the layout for display of maps with profiles</source>
 				<target state="translated">Layoutauswahl für die Ausgabe von Karten mit Profilen</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayoutDefault">
+			<trans-unit id="flexform.gpxFileMap_profilesLayoutDefault" resname="flexform.gpxFileMap_profilesLayoutDefault">
 				<source>[default]</source>
 				<target state="translated">[Voreinstellung]</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayoutAbove">
+			<trans-unit id="flexform.gpxFileMap_profilesLayoutAbove" resname="flexform.gpxFileMap_profilesLayoutAbove">
 				<source>Map above profiles</source>
 				<target state="translated">Karte über den Profilen</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayoutBelow">
+			<trans-unit id="flexform.gpxFileMap_profilesLayoutBelow" resname="flexform.gpxFileMap_profilesLayoutBelow">
 				<source>Map below profiles</source>
 				<target state="translated">Karte unter den Profilen</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayoutLeft">
+			<trans-unit id="flexform.gpxFileMap_profilesLayoutLeft" resname="flexform.gpxFileMap_profilesLayoutLeft">
 				<source>Map left to profiles</source>
 				<target state="translated">Karte links der Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxFileMap_profilesLayoutRight">
+			<trans-unit id="flexform.gpxFileMap_profilesLayoutRight" resname="flexform.gpxFileMap_profilesLayoutRight">
 				<source>Map right to profiles</source>
 				<target state="translated">Karte rechts der Profile</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr">
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr" resname="flexform.gpxMapWaypointPhotoStationAddr">
 				<source>Synology PhotoStation address (optional, only needed if no or different default value in constants)</source>
 				<target state="translated">Synology PhotoStation Adresse (optional, nur notwendig, wenn keine oder andere Voreinstellung in den Konstanten)</target>
 			</trans-unit>
-			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr.placeholder">
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationAddr.placeholder" resname="flexform.gpxMapWaypointPhotoStationAddr.placeholder">
 				<source>https://your_synology.com</source>
 				<target state="translated">https://deine_synology.de</target>
 			</trans-unit>
 
-			<trans-unit id="constants.subcat.resources.label">
+			<trans-unit id="constants.subcat.resources.label" resname="constants.subcat.resources.label">
 				<source>Resources Test</source>
 				<target state="translated">Resourcen</target>
 			</trans-unit>
 
-			<trans-unit id="constants.jsSourceFile.label">
+			<trans-unit id="constants.jsSourceFile.label" resname="constants.jsSourceFile.label">
 				<source>GPXViewer JavaScript Source File: All files of the GM_Utils directory should be at the same folder!!!</source>
 				<target state="translated">GPXViewer JavaScript Quelldatei: Alle Dateien des Verzeichnisses GM_Utils müssen im gleichen Ordner sein.</target>
 			</trans-unit>
-			<trans-unit id="constants.cssFile.label">
+			<trans-unit id="constants.cssFile.label" resname="constants.cssFile.label">
 				<source>GPXViewer CSS File: CSS file for display of GPXViewer</source>
 				<target state="translated">GPXViewer CSS Datei: CSS Datei für die Ausgabe des GPXViewer</target>
 			</trans-unit>
-			<trans-unit id="constants.jsSourceFile4shimg.label">
+			<trans-unit id="constants.jsSourceFile4shimg.label" resname="constants.jsSourceFile4shimg.label">
 				<source>GPXViewer JavaScript Source File (shimg.js): This javascript file is needed for a different animation for display of images for waypoints with images. This file will only be included on a page if the constant shimg will be set to true/turned on.</source>
 				<target state="translated">GPXViewer JavaScript Quelldatei (shimg.js): Diese Javascript-Datei wird für eine unterschiedliche Animation der Darstellung von Bildern für Wegpunkte mit Bildern verwendet. Diese Datei wird nur dann auf einer Seite inkludiert, wenn die Konstante shimg den Wert true hat/eingeschaltet ist.</target>
 			</trans-unit>
-			<trans-unit id="constants.jsSourceAnimation.label">
+			<trans-unit id="constants.jsSourceAnimation.label" resname="constants.jsSourceAnimation.label">
 				<source>GPXViewer JavaScript Source File (animation.js): Additional javascript for animated markers on GPX tracks. This file will only be included on a page if the constant gpxAnimation will be set to true/turned on.</source>
 				<target state="translated">GPXViewer JavaScript Quelldatei (animation.js): Diese zusätzliche Javascript-Datei wird für die Animation von Markern auf GPX Tracks verwendet. Diese Datei wird nur dann auf einer Seite inkludiert, wenn die Konstante gpxAnimation den Wert true hat/eingeschaltet ist.</target>
 			</trans-unit>
-			<trans-unit id="constants.jsSourceMarkerImage.label">
+			<trans-unit id="constants.jsSourceMarkerImage.label" resname="constants.jsSourceMarkerImage.label">
 				<source>GPXViewer JavaScript Source File (markerimage.js): Additional javascript for the display of images of markers. This file will only be included on a page if the constant gpxMarkerImage will be set to true/turned on.</source>
 				<target state="translated">GPXViewer JavaScript Quelldatei (markerimage.js): Diese zusätzliche Javascript-Datei wird für die Anzeige von Bildern für Markern verwendet. Diese Datei wird nur dann auf einer Seite inkludiert, wenn die Konstante gpxMarkerImage den Wert true hat/eingeschaltet ist.</target>
 			</trans-unit>
-			<trans-unit id="constants.jsSourceAdditionalJS.label">
+			<trans-unit id="constants.jsSourceAdditionalJS.label" resname="constants.jsSourceAdditionalJS.label">
 				<source>GPXViewer Additional JavaScript Source File (animation+markerimage.js): Additional javascript for the display of animated marker and images of markers.</source>
 				<target state="translated">GPXViewer Additional JavaScript Quelldatei (animation+markerimage.js): Diese zusätzliche Javascript-Datei wird für die Animation von Markern und Anzeige von Bildern für Markern verwendet.</target>
 			</trans-unit>
-			<trans-unit id="constants.mapapi.label">
+			<trans-unit id="constants.mapapi.label" resname="constants.mapapi.label">
 				<source>Select Google Maps API or Leaflet OSM API key: see also www.j-berkemeier.de/GPXViewer/#intro</source>
 				<target state="translated">Auswahl von Google Maps API oder Leaflet OSM API: siehe auch www.j-berkemeier.de/GPXViewer/#intro</target>
 			</trans-unit>
-			<trans-unit id="constants.apiKeyGoogleMaps.label">
+			<trans-unit id="constants.apiKeyGoogleMaps.label" resname="constants.apiKeyGoogleMaps.label">
 				<source>Google Maps API key: see also www.j-berkemeier.de/GPXViewer/#Apikey</source>
 				<target state="translated">Google Maps API Schlüssel: siehe auch www.j-berkemeier.de/GPXViewer/#Apikey</target>
 			</trans-unit>
-			<trans-unit id="constants.apiKeyOSM_Cycle.label">
+			<trans-unit id="constants.apiKeyOSM_Cycle.label" resname="constants.apiKeyOSM_Cycle.label">
 				<source>API key for OSM Cycle: see also www.j-berkemeier.de/GPXViewer/#Apikey</source>
 				<target state="translated">API Schlüssel für OSM Cycle: siehe auch www.j-berkemeier.de/GPXViewer/#Apikey</target>
 			</trans-unit>
-			<trans-unit id="constants.apiKeyOSM_Landscape.label">
+			<trans-unit id="constants.apiKeyOSM_Landscape.label" resname="constants.apiKeyOSM_Landscape.label">
 				<source>API key for OSM Landscape: see also www.j-berkemeier.de/GPXViewer/#Apikey</source>
 				<target state="translated">API Schlüssel für OSM Landscape: siehe auch www.j-berkemeier.de/GPXViewer/#Apikey</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.Map">
+			<trans-unit id="constants.gpxMapType.options.Map" resname="constants.gpxMapType.options.Map">
 				<source>Map</source>
 				<target state="translated">Karte</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.Satellite">
+			<trans-unit id="constants.gpxMapType.options.Satellite" resname="constants.gpxMapType.options.Satellite">
 				<source>Satellite</source>
 				<target state="translated">Satellit</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.Hybrid">
+			<trans-unit id="constants.gpxMapType.options.Hybrid" resname="constants.gpxMapType.options.Hybrid">
 				<source>Hybrid</source>
 				<target state="translated">Hybrid</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.Terrain">
+			<trans-unit id="constants.gpxMapType.options.Terrain" resname="constants.gpxMapType.options.Terrain">
 				<source>Terrain</source>
 				<target state="translated">Oberfläche</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OSM">
+			<trans-unit id="constants.gpxMapType.options.OSM" resname="constants.gpxMapType.options.OSM">
 				<source>OpenStreetMap (OSM)</source>
 				<target state="translated">OpenStreetMap (OSM)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OSMDE">
+			<trans-unit id="constants.gpxMapType.options.OSMDE" resname="constants.gpxMapType.options.OSMDE">
 				<source>OpenStreetMap DE (OSM DE)</source>
 				<target state="translated">OpenStreetMap DE (OSM DE)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OSM_Cycle">
+			<trans-unit id="constants.gpxMapType.options.OSM_Cycle" resname="constants.gpxMapType.options.OSM_Cycle">
 				<source>OSM Cycle</source>
 				<target state="translated">OSM Cycle</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OSM_Landscape">
+			<trans-unit id="constants.gpxMapType.options.OSM_Landscape" resname="constants.gpxMapType.options.OSM_Landscape">
 				<source>OSM Landscape</source>
 				<target state="translated">OSM Landscape</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OPENTOPO">
+			<trans-unit id="constants.gpxMapType.options.OPENTOPO" resname="constants.gpxMapType.options.OPENTOPO">
 				<source>OpenTopo</source>
 				<target state="translated">OpenTopo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.options.OPEN_Sea">
+			<trans-unit id="constants.gpxMapType.options.OPEN_Sea" resname="constants.gpxMapType.options.OPEN_Sea">
 				<source>Open Sea</source>
 				<target state="translated">Open Sea</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMapType.label">
+			<trans-unit id="constants.gpxMapType.label" resname="constants.gpxMapType.label">
 				<source>GPXViewer Map Type: Choose kind of map</source>
 				<target state="translated">GPXViewer Kartentyp: Auswahl einer Karte</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDownloadLink.label">
+			<trans-unit id="constants.gpxDownloadLink.label" resname="constants.gpxDownloadLink.label">
 				<source>GPXViewer Download link: Create a download link (below the map) for the GPX file which has been displayed. Turn on/off</source>
 				<target state="translated">GPXViewer Download-Link: Einen Download-Link (unter der Karte) für die angezeigte GPX-Datei ausgeben. Ein-/Ausschalten</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxAnimation.label">
+			<trans-unit id="constants.gpxAnimation.label" resname="constants.gpxAnimation.label">
 				<source>GPXViewer Animation: Toggles animation for track(s) on/off.</source>
 				<target state="translated">GPXViewer Animation: Ein-/Ausschalten der Animation für Track(s).</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxAnimationIcon.label">
+			<trans-unit id="constants.gpxAnimationIcon.label" resname="constants.gpxAnimationIcon.label">
 				<source>GPXViewer Default Animation Icon: Default Icon used when animation is on</source>
 				<target state="translated">GPXViewer Default Animation Icon: Der Default Icon für die Animation</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDescriptionToggle.label">
+			<trans-unit id="constants.gpxDescriptionToggle.label" resname="constants.gpxDescriptionToggle.label">
 				<source>GPXViewer Description Text: Display text description. Turn on/off</source>
 				<target state="translated">GPXViewer Beschreibungstext: Ausgabe der Beschreibung ein-/ausschalten</target>
 			</trans-unit>
-			<trans-unit id="constants.debug.label">
+			<trans-unit id="constants.debug.label" resname="constants.debug.label">
 				<source>GPXViewer Debugging: Toggles display of the complete/minimal GPXViewer-Settings at the end of the HMTL code of the page on/off</source>
 				<target state="translated">GPXViewer Debugging: Ein-/Ausschalten der vollständigen/minimalen Ausgabe der GPXViewer-Settings am Ende des HTML-Codes der Seite</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_img.label">
+			<trans-unit id="constants.gpxMap_img.label" resname="constants.gpxMap_img.label">
 				<source>GPXViewer display of waypoints with images: Display waypoints with images on/off</source>
 				<target state="translated">GPXViewer Anzeige von Wegpunkten mit Bildern: Ein-/Ausschalten der Ausgabe von Wegpunkten mit Bildern</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_wayp.label">
+			<trans-unit id="constants.gpxMap_wayp.label" resname="constants.gpxMap_wayp.label">
 				<source>GPXViewer display of waypoints with icons: Display waypoints with icons on/off</source>
 				<target state="translated">GPXViewer Anzeige von Wegpunkten mit Icons: Ein-/Ausschalten der Ausgabe von Wegpunkten mit Icons</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_img_coords.label">
+			<trans-unit id="constants.gpxMap_img_coords.label" resname="constants.gpxMap_img_coords.label">
 				<source>GPXViewer display of coords in waypoints with images: Display coords in description of waypoints with images on/off</source>
 				<target state="translated">GPXViewer Anzeige von Koordinaten in Wegpunkten mit Bildern: Ein-/Ausschalten der Ausgabe von Koordinaten in der Beschreibung von Wegpunkten mit Bildern</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_img_coords_in_description_before.label">
+			<trans-unit id="constants.gpxMap_img_coords_in_description_before.label" resname="constants.gpxMap_img_coords_in_description_before.label">
 				<source>GPS coordinates display for a waypoint with image: Display given string before coordinates (only if there is a description)</source>
 				<target state="translated">GPS-Koordinatenausgabe in einem Wegpunkt mit Bild: Ausgabe des angegebenen Strings vor den Koordinaten (nur wenn eine Beschreibung vorhanden ist)</target>
 			</trans-unit>
-			<trans-unit id="constants.shimg.label">
+			<trans-unit id="constants.shimg.label" resname="constants.shimg.label">
 				<source>Animation for waypoints with images: Turn on/off a different animation for display of images for waypoints with images</source>
 				<target state="translated">Animation für Wegpunkte mit Bildern: Ein-/Ausschalten einer unterschiedlichen Animation bei der Anzeige von Bildern bei Wegpunkten mit Bildern</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdiv.label">
+			<trans-unit id="constants.gpxMap_imgdiv.label" resname="constants.gpxMap_imgdiv.label">
 				<source>GPXViewer Map_imgdiv: Toggles a image DIV for waypoints with images on/off.</source>
 				<target state="translated">GPXViewer Map_imgdiv: Ein-/Ausschalten eines Image-DIV für Image-Wegpunkte.</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivLayout.label">
+			<trans-unit id="constants.gpxMap_imgdivLayout.label" resname="constants.gpxMap_imgdivLayout.label">
 				<source>GPXViewer Map_imgdiv Layout: Position of the map in relation to the DIV for the display of images/profiles.</source>
 				<target state="translated">GPXViewer Map_imgdiv Layout: Position der Karte im Verhältnis zum DIV für die Ausgabe von Bildern/Profilen.</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivLayout.options.above">
+			<trans-unit id="constants.gpxMap_imgdivLayout.options.above" resname="constants.gpxMap_imgdivLayout.options.above">
 				<source>Map above image DIV</source>
 				<target state="translated">Karte über dem Bilder DIV</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivLayout.options.below">
+			<trans-unit id="constants.gpxMap_imgdivLayout.options.below" resname="constants.gpxMap_imgdivLayout.options.below">
 				<source>Map below image DIV</source>
 				<target state="translated">Karte unter dem Bilder DIV</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivLayout.options.left">
+			<trans-unit id="constants.gpxMap_imgdivLayout.options.left" resname="constants.gpxMap_imgdivLayout.options.left">
 				<source>Map left of image DIV</source>
 				<target state="translated">Karte links des Bilder DIVs</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivLayout.options.right">
+			<trans-unit id="constants.gpxMap_imgdivLayout.options.right" resname="constants.gpxMap_imgdivLayout.options.right">
 				<source>Map right of image DIV</source>
 				<target state="translated">Karte rechts des Bilder DIVs</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_imgdivScale.label">
+			<trans-unit id="constants.gpxMap_imgdivScale.label" resname="constants.gpxMap_imgdivScale.label">
 				<source>GPXViewer Map_imgdiv scale: Value for map scaling in case of image DIV for waypoints. The value is in km.</source>
 				<target state="translated">GPXViewer Map_imgdiv Skalierung: Wert für die Kartenskalierung im Fall eines Image-DIV für Image-Wegpunkte.</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxCheckimagename.label">
+			<trans-unit id="constants.gpxCheckimagename.label" resname="constants.gpxCheckimagename.label">
 				<source>GPXViewer Checkimagename: Toggles checking of images extensions for waypoints with images on/off. This switch has to be deactivated, if you want to use image references which are based on a hash value, i.e. images references to a Synology PhotoStation.</source>
 				<target state="translated">GPXViewer Checkimagename: Ein-/Ausschalten des Überprüfens der Namenserweiterungen von Bilddateien für Image-Wegpunkte. Dieser Schalter muss für Bildreferenzen deaktiviert werden, die z.B. über einen Hashwert einer Synology PhotoStation referenziert werden.</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.label">
+			<trans-unit id="constants.scss.label" resname="constants.scss.label">
 				<source>Using ScssPHP Parser from bootstrap-package: If you use GPXViewer together with bootstrap-package, you should not turn this off. All layout changes then should be made in EXT:/Resources/Public/Scss/Theme. The cssFile will not be used in this case!</source>
 				<target state="translated">Nutzung des ScssPHP Parser aus dem bootstrap-package: Wenn GPXViewer mit dem bootstrap-package genutzt wird, sollte diese Einstellung nicht deaktiviert werden. Alle Layout-Änderungen sollten dann in EXT:/Resources/Public/Scss/Theme vorgenommen werden. Das cssFile wird in diesem Fall nicht genutzt!</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.gpxviewer-height.label">
+			<trans-unit id="constants.scss.gpxviewer-height.label" resname="constants.scss.gpxviewer-height.label">
 				<source>$gpxviewer-height: Height of the map. Value may NOT be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-height: Höhe der Karte. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.gpxviewer-profiles-height.label">
+			<trans-unit id="constants.scss.gpxviewer-profiles-height.label" resname="constants.scss.gpxviewer-profiles-height.label">
 				<source>$gpxviewer-profiles-height: Height of the profiles div. Value may NOT be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-profiles-height: Höhe der Profile-Anzeige. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.gpxviewer-images-height.label">
+			<trans-unit id="constants.scss.gpxviewer-images-height.label" resname="constants.scss.gpxviewer-images-height.label">
 				<source>$gpxviewer-images-height: Maximum height of the images div. Value may NOT be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-images-height: Maximale Höhe der Bilder-Anzeige. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.gpxviewer-width.label">
+			<trans-unit id="constants.scss.gpxviewer-width.label" resname="constants.scss.gpxviewer-width.label">
 				<source>$gpxviewer-width: Width of Gpxviewer content element. Value should be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-width: Breite der Karte. Der Wert muss in % sein! Die Einheit muss angegeben werden!</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_sorting.label">
+			<trans-unit id="constants.gpxMap_sorting.label" resname="constants.gpxMap_sorting.label">
 				<source>GPXViewer profiles sorting: Sorting of profiles for the display</source>
 				<target state="translated">GPXViewer Profil Sortierung: Sortierung der Profile für die Ausgabe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profiles.label">
+			<trans-unit id="constants.gpxMap_profiles.label" resname="constants.gpxMap_profiles.label">
 				<source>GPXViewer display of profiles: Toggles display of profiles on/off</source>
 				<target state="translated">GPXViewer Profile anzeigen: Ein-/Ausschalten der Anzeige der Profile</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesLayout.label">
+			<trans-unit id="constants.gpxMap_profilesLayout.label" resname="constants.gpxMap_profilesLayout.label">
 				<source>GPXViewer Profiles Layout: Position of the map in relation to the DIV for the display of profiles</source>
 				<target state="translated">GPXViewer Profiles Layout: Position der Karte im Verhältnis zum DIV für die Ausgabe von Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesLayout.options.above">
+			<trans-unit id="constants.gpxMap_profilesLayout.options.above" resname="constants.gpxMap_profilesLayout.options.above">
 				<source>Map above profiles</source>
 				<target state="translated">Karte über den Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesLayout.options.below">
+			<trans-unit id="constants.gpxMap_profilesLayout.options.below" resname="constants.gpxMap_profilesLayout.options.below">
 				<source>Map below profiles</source>
 				<target state="translated">Karte unter den Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesLayout.options.left">
+			<trans-unit id="constants.gpxMap_profilesLayout.options.left" resname="constants.gpxMap_profilesLayout.options.left">
 				<source>Map left of profiles</source>
 				<target state="translated">Karte links von den Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesLayout.options.right">
+			<trans-unit id="constants.gpxMap_profilesLayout.options.right" resname="constants.gpxMap_profilesLayout.options.right">
 				<source>Map right of profiles</source>
 				<target state="translated">Karte rechts von den Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesCols.label">
+			<trans-unit id="constants.gpxMap_profilesCols.label" resname="constants.gpxMap_profilesCols.label">
 				<source>GPXViewer Profiles Columns: Number of columns for display of profiles</source>
 				<target state="translated">GPXViewer Profiles Columns: Spaltenanzahl für die Ausgabe von Profilen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMap_profilesPSaddr.label">
+			<trans-unit id="constants.gpxMap_profilesPSaddr.label" resname="constants.gpxMap_profilesPSaddr.label">
 				<source>GPXViewer PhotoStation address: Default internet address of your Synology PhotoStation, i.e. https://your_synology.com. Add "http://" or "https://" and only enter the address itself and no "/" at the end.</source>
 				<target state="translated">GPXViewer PhotoStation Adresse: Voreinstellung für eine Synology PhotoStation, z.B. https://deine_synology.de. Das "http://" oder "https://" muss vorangestellt werden, sonst nur die Adresse und kein abschliessender "/"</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDoclang.options.auto">
+			<trans-unit id="constants.gpxDoclang.options.auto" resname="constants.gpxDoclang.options.auto">
 				<source>auto</source>
 				<target state="translated">auto</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDoclang.options.German">
+			<trans-unit id="constants.gpxDoclang.options.German" resname="constants.gpxDoclang.options.German">
 				<source>German</source>
 				<target state="translated">Deutsch</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDoclang.options.English">
+			<trans-unit id="constants.gpxDoclang.options.English" resname="constants.gpxDoclang.options.English">
 				<source>English</source>
 				<target state="translated">Englisch</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDoclang.options.Spanish">
+			<trans-unit id="constants.gpxDoclang.options.Spanish" resname="constants.gpxDoclang.options.Spanish">
 				<source>Spanish</source>
 				<target state="translated">Spanisch</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDoclang.label">
+			<trans-unit id="constants.gpxDoclang.label" resname="constants.gpxDoclang.label">
 				<source></source>
 				<target state="translated">GPXViewer Doclang: Sprache für die Ausgabe auswahlen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxUnit.label">
+			<trans-unit id="constants.gpxUnit.label" resname="constants.gpxUnit.label">
 				<source>GPXViewer Unit: Choose set of units for display</source>
 				<target state="translated">GPXViewer Unit: Einheiten für die Ausgabe auswählen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLargemapcontrol.options.large">
+			<trans-unit id="constants.gpxLargemapcontrol.options.large" resname="constants.gpxLargemapcontrol.options.large">
 				<source>large</source>
 				<target state="translated">groß</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLargemapcontrol.options.small">
+			<trans-unit id="constants.gpxLargemapcontrol.options.small" resname="constants.gpxLargemapcontrol.options.small">
 				<source>small</source>
 				<target state="translated">klein</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLargemapcontrol.label">
+			<trans-unit id="constants.gpxLargemapcontrol.label" resname="constants.gpxLargemapcontrol.label">
 				<source>GPXViewer Largemapcontrol: Large[=true]/small[=false] zoom controls</source>
 				<target state="translated">GPXViewer Largemapcontrol: Große[=true]/keine[=false] Zoom Kontrolle in der Ausgabe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxOverviewmapcontrol.label">
+			<trans-unit id="constants.gpxOverviewmapcontrol.label" resname="constants.gpxOverviewmapcontrol.label">
 				<source>GPXViewer Overviewmapcontrol: Overview map on/off</source>
 				<target state="translated">GPXViewer Overviewmapcontrol: Ein-/Ausschalten der Überblickskarte</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShowmaptypecontroll.label">
+			<trans-unit id="constants.gpxShowmaptypecontroll.label" resname="constants.gpxShowmaptypecontroll.label">
 				<source>GPXViewer Showmaptypecontroll: Show map selection on/off</source>
 				<target state="translated">GPXViewer Showmaptypecontroll: Ein-/Ausschalten der Kartenauswahl</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxScrollwheelzoom.label">
+			<trans-unit id="constants.gpxScrollwheelzoom.label" resname="constants.gpxScrollwheelzoom.label">
 				<source>GPXViewer Scrollwheelzoom: Scrolling with wheel control on/off</source>
 				<target state="translated">GPXViewer Scrollwheelzoom: Ein-/Ausschalten des Scrollens mit der Mausrad-Kontrolle</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxFullscreenbutton.label">
+			<trans-unit id="constants.gpxFullscreenbutton.label" resname="constants.gpxFullscreenbutton.label">
 				<source>GPXViewer Fullscreenbutton: Magnifying glass (mapapi=gm) or Magnifying icon (mapapi=osm) in the upper right corner of the map for toggling into fullscreen mode on/off</source>
 				<target state="translated">GPXViewer Fullscreenbutton: Ein-/Ausschalten der Einblendung eines Vergrößerungsglases (mapapi=gm) bzw. eines Vergrößerungsicons (mapapi=osm) in der oberen rechten Ecke der Karte zum Umschalten in den Fullscreen-Modus</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxCurrentlocationbutton.label">
+			<trans-unit id="constants.gpxCurrentlocationbutton.label" resname="constants.gpxCurrentlocationbutton.label">
 				<source>GPXViewer Currentlocationbutton: Button to display the current position on/off</source>
 				<target state="translated">GPXViewer Currentlocationbutton: Ein-/Ausschalten eines Buttons zum Anzeigen der aktuellen Position</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrafficbutton.label">
+			<trans-unit id="constants.gpxTrafficbutton.label" resname="constants.gpxTrafficbutton.label">
 				<source>GPXViewer Trafficbutton: Button for display of traffic layer on Google maps on/off</source>
 				<target state="translated">GPXViewer Trafficbutton:Ein-/Ausschalten eines Buttons zum Einblenden des Trafficlayers auf Google-Karten</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrafficonload.label">
+			<trans-unit id="constants.gpxTrafficonload.label" resname="constants.gpxTrafficonload.label">
 				<source>GPXViewer Trafficonload: Show traffic layer at start on/off</source>
 				<target state="translated">GPXViewer Trafficonload: Ein-/Ausschalten des Trafficlayers beim Seitenaufruf</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende.label">
+			<trans-unit id="constants.gpxLegende.label" resname="constants.gpxLegende.label">
 				<source>GPXViewer Legende: Legend for map on/off</source>
 				<target state="translated">GPXViewer Legende: Ein-/Ausschalten der Kartenlegende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_fnm.label">
+			<trans-unit id="constants.gpxLegende_fnm.label" resname="constants.gpxLegende_fnm.label">
 				<source>GPXViewer Legende_fnm: Show file name(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_fnm: Ein-/Ausschalten der Anzeige des Dateinamens in der Legende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_fnm_lm.label">
+			<trans-unit id="constants.gpxLegende_fnm_lm.label" resname="constants.gpxLegende_fnm_lm.label">
 				<source>GPXViewer Legende_fnm_lm: Show date of last changes to GPX file in legend after filename on/off (display of filename must be activated)</source>
 				<target state="translated">GPXViewer Legende_fnm_lm: Ein-/Ausschalten der Anzeige der letzten Änderung an der GPX-Datei in der Legende (Ausgabe für Dateiname muss aktiviert sein!)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_rr.label">
+			<trans-unit id="constants.gpxLegende_rr.label" resname="constants.gpxLegende_rr.label">
 				<source>GPXViewer Legende_rr: Show altitude(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_rr: Ein-/Ausschalten der Anzeige der Höhe in der Legende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_trk.label">
+			<trans-unit id="constants.gpxLegende_trk.label" resname="constants.gpxLegende_trk.label">
 				<source>GPXViewer Legende_trk: Show track(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_trk: Ein-/Ausschalten der Anzeige des Tracks/der Tracks in der Legende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_rte.label">
+			<trans-unit id="constants.gpxLegende_rte.label" resname="constants.gpxLegende_rte.label">
 				<source>GPXViewer Legende_rte: Show route(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_rte: Ein-/Ausschalten der Anzeige der Route(n) in der Legende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLegende_wpt.label">
+			<trans-unit id="constants.gpxLegende_wpt.label" resname="constants.gpxLegende_wpt.label">
 				<source>GPXViewer Legende_wpt: Show waypoint(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_wpt: Ein-/Ausschalten der Anzeige der Wegpunkte in der Legende</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxGpxtracks.label">
+			<trans-unit id="constants.gpxGpxtracks.label" resname="constants.gpxGpxtracks.label">
 				<source>GPXViewer Gpxtracks: Toggles display of GPX track(s) from GPX file(s) at start on/off</source>
 				<target state="translated">GPXViewer Gpxtracks: Ein-/Ausschalten der Anzeige von Tracks bei Seitenaufruf</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxGpxrouten.label">
+			<trans-unit id="constants.gpxGpxrouten.label" resname="constants.gpxGpxrouten.label">
 				<source>GPXViewer Gpxrouten: Toggles display of GPX route(s) from GPX file(s) at start on/off</source>
 				<target state="translated">GPXViewer Gpxrouten: Ein-/Ausschalten der Anzeige von Routen bei Seitenaufruf</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxGpxwegpunkte.label">
+			<trans-unit id="constants.gpxGpxwegpunkte.label" resname="constants.gpxGpxwegpunkte.label">
 				<source>GPXViewer Gpxwegpunkte: Toggles display of Waypoints from GPX file(s) at start on/off</source>
 				<target state="translated">GPXViewer Gpxwegpunkte: Ein-/Ausschalten der Anzeige von Wegpunkten aus den GPX-Dateien bei Seitenaufruf</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTracks_verbinden.label">
+			<trans-unit id="constants.gpxTracks_verbinden.label" resname="constants.gpxTracks_verbinden.label">
 				<source>GPXViewer Tracks_verbinden: Combine tracks for profile graphics on/off</source>
 				<target state="translated">GPXViewer Tracks_verbinden: Ein-/Ausschalten der Kombination der Tracks für die Profilgrafiken</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTracks_dateiuebergreifend_verbinden.label">
+			<trans-unit id="constants.gpxTracks_dateiuebergreifend_verbinden.label" resname="constants.gpxTracks_dateiuebergreifend_verbinden.label">
 				<source>GPXViewer Tracks_dateiuebergreifend_verbinden: Combine tracks from all files for profile graphics on/off</source>
 				<target state="translated">GPXViewer Tracks_dateiuebergreifend_verbinden: Ein-/Ausschalten der dateiübergreifenden Kombination der Tracks für die Profilgrafiken</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTracksort.label">
+			<trans-unit id="constants.gpxTracksort.label" resname="constants.gpxTracksort.label">
 				<source>GPXViewer Tracksort: With this variable you may change the sorting of the tracks</source>
 				<target state="translated">GPXViewer Tracksort: Über die Steuervariable Tracksort kann die Sortierung der Tracks gesteuert werden</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDateitrenner.label">
+			<trans-unit id="constants.gpxDateitrenner.label" resname="constants.gpxDateitrenner.label">
 				<source>GPXViewer Dateitrenner: File separator for multiple GPX files. DO NOT CHANGE!</source>
 				<target state="translated">GPXViewer Dateitrenner: Steuervariable für Dateitrennzeichen. DO NOT CHANGE!</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxReadspeed.label">
+			<trans-unit id="constants.gpxReadspeed.label" resname="constants.gpxReadspeed.label">
 				<source>GPXViewer Readspeed: Use speed tag if available on/off</source>
 				<target state="translated">GPXViewer Readspeed: Ein-/Ausschalten des speed tag sofern verfügbar</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxSpeedfaktor.label">
+			<trans-unit id="constants.gpxSpeedfaktor.label" resname="constants.gpxSpeedfaktor.label">
 				<source>GPXViewer Speedfaktor: Calibration factor for the value of the speed tag</source>
 				<target state="translated">GPXViewer Speedfaktor: Kalibrationsfaktor für den Wert des speed tag</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxHfaktor.label">
+			<trans-unit id="constants.gpxHfaktor.label" resname="constants.gpxHfaktor.label">
 				<source>GPXViewer Hfaktor: Calibration factor for the altitude</source>
 				<target state="translated">GPXViewer Hfaktor: Kalibrationsfaktor für die Höhe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxSfaktor.label">
+			<trans-unit id="constants.gpxSfaktor.label" resname="constants.gpxSfaktor.label">
 				<source>GPXViewer Sfaktor: Calibration factor for the slope</source>
 				<target state="translated">GPXViewer Sfaktor: Kalibrationsfaktor für die Steigung</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxVfaktor.label">
+			<trans-unit id="constants.gpxVfaktor.label" resname="constants.gpxVfaktor.label">
 				<source>GPXViewer Vfaktor: Calibration factor for the speed</source>
 				<target state="translated">GPXViewer Vfaktor: Kalibrationsfaktor für die Geschwindigkeit</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxWfaktor.label">
+			<trans-unit id="constants.gpxWfaktor.label" resname="constants.gpxWfaktor.label">
 				<source>GPXViewer Wfaktor: Calibration factor for the distance</source>
 				<target state="translated">GPXViewer Wfaktor: Kalibrationsfaktor für die Entfernung</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTfaktor.label">
+			<trans-unit id="constants.gpxTfaktor.label" resname="constants.gpxTfaktor.label">
 				<source>GPXViewer Tfaktor: Calibration factor for the temperature</source>
 				<target state="translated">GPXViewer Tfaktor: Kalibrationsfaktor für die Temperatur</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxToffset.label">
+			<trans-unit id="constants.gpxToffset.label" resname="constants.gpxToffset.label">
 				<source>GPXViewer Toffset: Calibration offset for the temperature</source>
 				<target state="translated">GPXViewer Toffset: Kalibrationsoffset für die Temperatur</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxUnwraplon.label">
+			<trans-unit id="constants.gpxUnwraplon.label" resname="constants.gpxUnwraplon.label">
 				<source>GPXViewer Unwraplon: Correction of Lon values when crossing the 180° border</source>
 				<target state="translated">GPXViewer Unwraplon: Lon-Werte beim Übergang über die 180°-Grenze korrigieren</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrackover.label">
+			<trans-unit id="constants.gpxTrackover.label" resname="constants.gpxTrackover.label">
 				<source>GPXViewer Trackover: Show track and route info on mouseover over the line on/off</source>
 				<target state="translated">GPXViewer Trackover: Ein-/Ausschalten der Track-Info über der Linie bei Mouseover</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrackclick.label">
+			<trans-unit id="constants.gpxTrackclick.label" resname="constants.gpxTrackclick.label">
 				<source>GPXViewer Trackclick: Show track and route info on mouseclick over the line on/off</source>
 				<target state="translated">GPXViewer Trackclick: Ein-/Ausschalten der Track- und Rounteninfo über der Linie bei Mouseclick</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrackmarker.label">
+			<trans-unit id="constants.gpxTrackmarker.label" resname="constants.gpxTrackmarker.label">
 				<source>GPXViewer Trackmarker: Distance between markers in km. Empty: no marker (only OSM)</source>
 				<target state="translated">GPXViewer Trackmarker: Abstand zwischen den Markern in Km. Leer: kein Marker (nur OSM)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxRoutemarker.label">
+			<trans-unit id="constants.gpxRoutemarker.label" resname="constants.gpxRoutemarker.label">
 				<source>GPXViewer Routemarker: Distance between markers in km. Empty: no marker (only OSM)</source>
 				<target state="translated">GPXViewer Routemarker: Abstand zwischen den Markern in Km. Leer: kein Marker (nur OSM)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShwpname.label">
+			<trans-unit id="constants.gpxShwpname.label" resname="constants.gpxShwpname.label">
 				<source>GPXViewer Shwpname: Show content of name field in waypoint info on/off</source>
 				<target state="translated">GPXViewer Shwpname: Ein-/Ausschalten der Ausgabe des Namensfeldes in der Wegpunktinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShwpcmt.label">
+			<trans-unit id="constants.gpxShwpcmt.label" resname="constants.gpxShwpcmt.label">
 				<source>GPXViewer Shwpcmt: Show content of cmt field in waypoint info on/off</source>
 				<target state="translated">GPXViewer Shwpcmt: Ein-/Ausschalten der Ausgabe des cmt-Feldes in der Wegpunktinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShwpdesc.label">
+			<trans-unit id="constants.gpxShwpdesc.label" resname="constants.gpxShwpdesc.label">
 				<source>GPXViewer Shwpdesc: Show content of desc field in waypoint info on/off</source>
 				<target state="translated">GPXViewer Shwpdesc: Ein-/Ausschalten der Ausgabe des desc-Feldes in der Wegpunktinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShwptime.label">
+			<trans-unit id="constants.gpxShwptime.label" resname="constants.gpxShwptime.label">
 				<source>GPXViewer Shwptime: Show time in waypoint info on/off</source>
 				<target state="translated">GPXViewer Shwptime: Ein-/Ausschalten der Ausgabe der Zeit in der Wegpunktinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShwpshadow.label">
+			<trans-unit id="constants.gpxShwpshadow.label" resname="constants.gpxShwpshadow.label">
 				<source>GPXViewer Shwpshadow: Show waypoint icons with shadow on/off</source>
 				<target state="translated">GPXViewer Shwpshadow: Ein-/Auschalten der Ausgabe eines Schattens für Wegpunkten mit Icons</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxWpcluster.label">
+			<trans-unit id="constants.gpxWpcluster.label" resname="constants.gpxWpcluster.label">
 				<source>GPXViewer Wpcluster: Display waypoint, which are nearby each other, as cluster on/off</source>
 				<target state="translated">GPXViewer Wpcluster: Ein-/Ausschalten der Anzeige nahe aneinander gelegender Wegpunkte als Cluster</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxBildpfad.label">
+			<trans-unit id="constants.gpxBildpfad.label" resname="constants.gpxBildpfad.label">
 				<source>GPXViewer Bildpfad: Path to picture(s)</source>
 				<target state="translated">GPXViewer Bildpfad: Pfad zu den Bildern</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxGpxpfad.label">
+			<trans-unit id="constants.gpxGpxpfad.label" resname="constants.gpxGpxpfad.label">
 				<source>GPXViewer Gpxpfad: Path to GPX file(s). BETTER DO NOT USE THIS OPTION! CHOOSE FILE WITHIN PLUGIN FILE SELECTION!</source>
 				<target state="translated">GPXViewer Gpxpfad: Pfad zum/zu den GPX Datei(en). DIESE OPTION BESSER NICHT NUTZEN! DIE GPX-DATEIEN IN DER DATEIAUSWAHL DES PLUGINS AUSWÄHLEN!</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxBildwegpunkticon.label">
+			<trans-unit id="constants.gpxBildwegpunkticon.label" resname="constants.gpxBildwegpunkticon.label">
 				<source>GPXViewer Bildwegpunkticon: Filename of waypoint icon. If empty Icon of GPX file will be used</source>
 				<target state="translated">GPXViewer Bildwegpunkticon: Dateiname des Wegpunkticons. Wenn leer, wird das Icon der GPX-Datei verwendet</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrcmt.label">
+			<trans-unit id="constants.gpxShtrcmt.label" resname="constants.gpxShtrcmt.label">
 				<source>GPXViewer Shtrcmt: Show content of cmt field in track info on/off</source>
 				<target state="translated">GPXViewer Shtrcmt: Ein-/Ausschalten der Ausgabe des cmt-Feldes in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrdesc.label">
+			<trans-unit id="constants.gpxShtrdesc.label" resname="constants.gpxShtrdesc.label">
 				<source>GPXViewer Shtrdesc: Show content of desc field in track info on/off</source>
 				<target state="translated">GPXViewer Shtrdesc: Ein-/Ausschalten der Ausgabe des desc-Feldes in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrx.label">
+			<trans-unit id="constants.gpxShtrx.label" resname="constants.gpxShtrx.label">
 				<source>GPXViewer Shtrx: Show distance in track info on/off</source>
 				<target state="translated">GPXViewer Shtrx: Ein-/Ausschalten der Ausgabe der Entfernung in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrt.label">
+			<trans-unit id="constants.gpxShtrt.label" resname="constants.gpxShtrt.label">
 				<source>GPXViewer Shtrt: Show time in track info on/off</source>
 				<target state="translated">GPXViewer Shtrt: Ein-/Ausschalten der Ausgabe des Zeitdauer in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrtwob.label">
+			<trans-unit id="constants.gpxShtrtwob.label" resname="constants.gpxShtrtwob.label">
 				<source>GPXViewer Shtrtwob: Show time in motion in track info on/off</source>
 				<target state="translated">GPXViewer Shtrtwob: Ein-/Ausschalten der Ausgabe des Zeit in Bewegung in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrtabs.label">
+			<trans-unit id="constants.gpxShtrtabs.label" resname="constants.gpxShtrtabs.label">
 				<source>GPXViewer Shtrtabs: Show total time from start in info window (mouseover profile graphics) on/off</source>
 				<target state="translated">GPXViewer Shtrtabs: Ein-/Ausschalten der Ausgabe der Gesamtzeit im Info Fenster (Mouseover über Profil-Grafiken)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrtges.label">
+			<trans-unit id="constants.gpxShtrtges.label" resname="constants.gpxShtrtges.label">
 				<source>GPXViewer Shtrtges: Show total time of track on/off</source>
 				<target state="translated">GPXViewer Shtrtges: Ein-/Ausschalten der Gesamtzeit des Tracks</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrtgeswob.label">
+			<trans-unit id="constants.gpxShtrtgeswob.label" resname="constants.gpxShtrtgeswob.label">
 				<source>GPXViewer Shtrtgeswob: Show total time of motion on/off</source>
 				<target state="translated">GPXViewer Shtrtgeswob: Ein-/Ausschalten der Anzeige der gesamten Zeit in Bewegung in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrv.label">
+			<trans-unit id="constants.gpxShtrv.label" resname="constants.gpxShtrv.label">
 				<source>GPXViewer Shtrv: Show speed in track info on/off</source>
 				<target state="translated">GPXViewer Shtrv: Ein-/Ausschalten der Anzeige der Geschwindigkeit in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrpace.label">
+			<trans-unit id="constants.gpxShtrpace.label" resname="constants.gpxShtrpace.label">
 				<source>GPXViewer Shtrpace: Show pace in track info on/off</source>
 				<target state="translated">GPXViewer Shtrpace: Ein-/Ausschalten der Anzeige der Pace in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrh.label">
+			<trans-unit id="constants.gpxShtrh.label" resname="constants.gpxShtrh.label">
 				<source>GPXViewer Shtrh: Show altitude in track info on/off</source>
 				<target state="translated">GPXViewer Shtrh: Ein-/Ausschalten der Anzeige der Höhe in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrrr.label">
+			<trans-unit id="constants.gpxShtrrr.label" resname="constants.gpxShtrrr.label">
 				<source>GPXViewer Shtrrr: Show accumulated altitude in track info on/off</source>
 				<target state="translated">GPXViewer Shtrrr: Ein-/Ausschalten der kumulierten Steigungsmeter in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrs.label">
+			<trans-unit id="constants.gpxShtrs.label" resname="constants.gpxShtrs.label">
 				<source>GPXViewer Shtrs: Show slope in track info on/off</source>
 				<target state="translated">GPXViewer Shtrs: Ein-/Ausschalten der Anzeige der Steigung in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrhr.label">
+			<trans-unit id="constants.gpxShtrhr.label" resname="constants.gpxShtrhr.label">
 				<source>GPXViewer Shtrhr: Show heartrate in track info on/off</source>
 				<target state="translated">GPXViewer Shtrhr: Ein-/Ausschalten der Anzeige der Herzfrequenz in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrcad.label">
+			<trans-unit id="constants.gpxShtrcad.label" resname="constants.gpxShtrcad.label">
 				<source>GPXViewer Shtrcad: Show cadence in track info on/off</source>
 				<target state="translated">GPXViewer Shtrcad: Ein-/Ausschalten der Anzeige der Schrittfrequenz in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtratemp.label">
+			<trans-unit id="constants.gpxShtratemp.label" resname="constants.gpxShtratemp.label">
 				<source>GPXViewer Shtratemp: Show temperature in track info on/off</source>
 				<target state="translated">GPXViewer Shtratemp: Ein-/Ausschalten der Anzeige der Temperatur in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrvmitt.label">
+			<trans-unit id="constants.gpxShtrvmitt.label" resname="constants.gpxShtrvmitt.label">
 				<source>GPXViewer Shtrvmitt: Show average speed in track info on/off</source>
 				<target state="translated">GPXViewer Shtrvmitt: Ein-/Ausschalten der Anzeige der Durchschnittsgeschwindigkeit in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrvmittwob.label">
+			<trans-unit id="constants.gpxShtrvmittwob.label" resname="constants.gpxShtrvmittwob.label">
 				<source>GPXViewer Shtrvmittwob: Show average speed (without breaks) in track info on/off</source>
 				<target state="translated">GPXViewer Shtrvmittwob: Ein-/Ausschalten der Anzeige der Durchschnittsgeschwindigkeit (ohne Pausen) in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrvmittpace.label">
+			<trans-unit id="constants.gpxShtrvmittpace.label" resname="constants.gpxShtrvmittpace.label">
 				<source>GPXViewer Shtrvmittpace: Show average pace (min/km) in track info on/off</source>
 				<target state="translated">GPXViewer Shtrvmittpace: Ein-/Ausschalten der Anzeige der durchschnittlichen Tempos in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrvmittpacewob.label">
+			<trans-unit id="constants.gpxShtrvmittpacewob.label" resname="constants.gpxShtrvmittpacewob.label">
 				<source>GPXViewer Shtrvmittpacewob: Show average pace (without breaks) in track info on/off</source>
 				<target state="translated">GPXViewer Shtrvmittpacewob: Ein-/Ausschalten der Anzeige der durchschnittlichen Tempos (ohne Pausen) in der Trackinfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMovevmin.label">
+			<trans-unit id="constants.gpxMovevmin.label" resname="constants.gpxMovevmin.label">
 				<source>GPXViewer Movevmin: Minimum speed for movement</source>
 				<target state="translated">GPXViewer Movevmin: Mindestgeschwindigkeit für Bewegung</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxArrowtrack.label">
+			<trans-unit id="constants.gpxArrowtrack.label" resname="constants.gpxArrowtrack.label">
 				<source>GPXViewer Arrowtrack: Show arrow(s) in track for direction of motion on/off</source>
 				<target state="translated">GPXViewer Arrowtrack: Ein-/Ausschalten der Ausgabe von Richtungspfeilen für Tracks</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxArrowtrackcol.label">
+			<trans-unit id="constants.gpxArrowtrackcol.label" resname="constants.gpxArrowtrackcol.label">
 				<source>GPXViewer Arrowtrackcol: Color of the track arrow(s). If not set, track color will be used</source>
 				<target state="translated">GPXViewer Arrowtrackcol: Farbe der Richtungspfeile in Tracks. Falls nicht gesetzt, wird die Farbe des Tracks verwendet</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShrtcmt.label">
+			<trans-unit id="constants.gpxShrtcmt.label" resname="constants.gpxShrtcmt.label">
 				<source>GPXViewer Shrtcmt: Show content of cmt field in route info on/off</source>
 				<target state="translated">GPXViewer Shrtcmt: Ein-/Ausschalten der Ausgabe der cmt-Feldes in der Routeninfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShrtdesc.label">
+			<trans-unit id="constants.gpxShrtdesc.label" resname="constants.gpxShrtdesc.label">
 				<source>GPXViewer Shrtdesc: Show content of desc field in route info on/off</source>
 				<target state="translated">GPXViewer Shrtdesc: Ein-/Ausschalten der Ausgabe der desc-Feldes in der Routeninfo</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrstart.label">
+			<trans-unit id="constants.gpxShtrstart.label" resname="constants.gpxShtrstart.label">
 				<source>GPXViewer Shtrstart: Marker for start of track on/off</source>
 				<target state="translated">GPXViewer Shtrstart: Ein-/Ausschalten der Markierung für den Startpunkt von Tracks</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShtrziel.label">
+			<trans-unit id="constants.gpxShtrziel.label" resname="constants.gpxShtrziel.label">
 				<source>GPXViewer Shtrziel: Marker for end of track on/off</source>
 				<target state="translated">GPXViewer Shtrziel: Ein-/Ausschalten der Markierung für den Zielpunkt von Tracks</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShrtstart.label">
+			<trans-unit id="constants.gpxShrtstart.label" resname="constants.gpxShrtstart.label">
 				<source>GPXViewer Shrtstart: Marker for start of route on/off</source>
 				<target state="translated">GPXViewer Shrtstart: Ein-/Ausschalten der Markierung für den Startpunkt von Routen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxShrtziel.label">
+			<trans-unit id="constants.gpxShrtziel.label" resname="constants.gpxShrtziel.label">
 				<source>GPXViewer Shrtziel: Marker for end of route on/off</source>
 				<target state="translated">GPXViewer Shrtziel: Ein-/Ausschalten der Markierung für den Zielpunkt von Routen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxArrowroute.label">
+			<trans-unit id="constants.gpxArrowroute.label" resname="constants.gpxArrowroute.label">
 				<source>GPXViewer Arrowroute: Show arrow(s) in route for direction of motion on/off</source>
 				<target state="translated">GPXViewer Arrowroute: Ein-/Ausschalten der Ausgabe von Richtungspfeilen für Routen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxArrowroutecol.label">
+			<trans-unit id="constants.gpxArrowroutecol.label" resname="constants.gpxArrowroutecol.label">
 				<source>GPXViewer Arrowroutecol: Color of the route arrow(s). If not set, track color will be used</source>
 				<target state="translated">GPXViewer Arrowroutecol: Farbe der Richtungspfeile in Routen. Falls nicht gesetzt, wird die Farbe der Route verwendet</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxArrowsymbol.label">
+			<trans-unit id="constants.gpxArrowsymbol.label" resname="constants.gpxArrowsymbol.label">
 				<source>GPXViewer Arrowsymbol: Symbol for the route arrow(s) (only OSM)</source>
 				<target state="translated">GPXViewer Arrowsymbol: Symbol für Richtungspfeile in Routen (nur OSM)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxGroesseminibild.label">
+			<trans-unit id="constants.gpxGroesseminibild.label" resname="constants.gpxGroesseminibild.label">
 				<source>GPXViewer Groesseminibild: Size of preview pic for waypoint pictures</source>
 				<target state="translated">GPXViewer Groesseminibild: Größe des Vorschaubilders für Wegpunkt-Bilder</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxDisplaycolor.label">
+			<trans-unit id="constants.gpxDisplaycolor.label" resname="constants.gpxDisplaycolor.label">
 				<source>GPXViewer Displaycolor: Use color from GPX file for drawing line on/off</source>
 				<target state="translated">GPXViewer Displaycolor: Ein-/Auschalten der Verwendung der Farbe aus der GPX-Datei für das Zeichnen der Linie</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLaengen3d.label">
+			<trans-unit id="constants.gpxLaengen3d.label" resname="constants.gpxLaengen3d.label">
 				<source>GPXViewer Laengen3d: Consider height differences for calculation of distance on/off</source>
 				<target state="translated">GPXViewer Laengen3d: Ein-/Ausschalten der Berücksichtigung der Höhendifferenz für die Berechnung von Entfernungen</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxUsegpxbounds.label">
+			<trans-unit id="constants.gpxUsegpxbounds.label" resname="constants.gpxUsegpxbounds.label">
 				<source>GPXViewer Usegpxbounds: Scaling after the bounds tag on/off</source>
 				<target state="translated">GPXViewer Usegpxbounds: Ein-/Ausschalten der Skalierung nach den "bounds tag"</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxHglattlaen.label">
+			<trans-unit id="constants.gpxHglattlaen.label" resname="constants.gpxHglattlaen.label">
 				<source>GPXViewer Hglattlaen: Length of the smoothing interval for the altitude profile (in meter), for the calculation of the slope</source>
 				<target state="translated">GPXViewer Hglattlaen: Länge des Glättungsintervalls für das Höhenprofil in Meter, für die Berechnung der Steigung und bei Bedarf für die Anzeige</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxVglattlaen.label">
+			<trans-unit id="constants.gpxVglattlaen.label" resname="constants.gpxVglattlaen.label">
 				<source>GPXViewer Vglattlaen: Lenght of the smoothing interval for the speed profile in meter</source>
 				<target state="translated">GPXViewer Vglattlaen: Länge des Glättungsintervalls für das Geschwindigkeitsprofil in Meter</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxVglatt.label">
+			<trans-unit id="constants.gpxVglatt.label" resname="constants.gpxVglatt.label">
 				<source>GPXViewer Vglatt: Toggle for smoothing of speed profile on/off</source>
 				<target state="translated">GPXViewer Vglatt: Ein-/Ausschalten der Glättung des Geschwindigkeitsprofils</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxHglatt.label">
+			<trans-unit id="constants.gpxHglatt.label" resname="constants.gpxHglatt.label">
 				<source>GPXViewer Hglatt: Toggle for smoothing of altitude profile on/off</source>
 				<target state="translated">GPXViewer Hglatt: Ein-/Ausschalten der Glättung des Höhenprofils für die Anzeige</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTdiff.label">
+			<trans-unit id="constants.gpxTdiff.label" resname="constants.gpxTdiff.label">
 				<source>GPXViewer Tdiff: Time offset for display of time in the info window (in hours)</source>
 				<target state="translated">GPXViewer Tdiff: Zeitoffset für Zeitanzeige im Infofenster in Stunden</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTkorr.label">
+			<trans-unit id="constants.gpxTkorr.label" resname="constants.gpxTkorr.label">
 				<source>GPXViewer Tkorr: Correction of time difference to local time</source>
 				<target state="translated">GPXViewer Tkorr: Korrektur der Zeitangaben zur Ortszeit</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxMaxzoomemove.label">
+			<trans-unit id="constants.gpxMaxzoomemove.label" resname="constants.gpxMaxzoomemove.label">
 				<source>GPXViewer Maxzoomemove: NOT DEFINED/USE UNKNOWN</source>
 				<target state="translated">GPXViewer Maxzoomemove: UNDEFINIERT/BENUTZUNG UNBEKANNT</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxPlotframecol.label">
+			<trans-unit id="constants.gpxPlotframecol.label" resname="constants.gpxPlotframecol.label">
 				<source>GPXViewer Plotframecol: Colors of the profile grafics, border color</source>
 				<target state="translated">GPXViewer Plotframecol: Farben der Profilgrafik, Rahmenfarbe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxPlotgridcol.label">
+			<trans-unit id="constants.gpxPlotgridcol.label" resname="constants.gpxPlotgridcol.label">
 				<source>GPXViewer Plotgridcol: Color of the profile grafics, grid color</source>
 				<target state="translated">GPXViewer Plotgridcol: Farben der Profilgrafik, Gitterfarbe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxPlotlabelcol.label">
+			<trans-unit id="constants.gpxPlotlabelcol.label" resname="constants.gpxPlotlabelcol.label">
 				<source>GPXViewer Plotlabelcol: Color of the profile grafics, color of axis labels</source>
 				<target state="translated">GPXViewer Plotlabelcol: Farben der Profilgrafik, Farbe der Achsenbeschriftung</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxPlotmarkercol.label">
+			<trans-unit id="constants.gpxPlotmarkercol.label" resname="constants.gpxPlotmarkercol.label">
 				<source>GPXViewer Plotmarkercol: Color of the profile grafic, color of the marker in the profile grafic</source>
 				<target state="translated">GPXViewer Plotmarkercol: Farben der Profilgrafik, Farbe des Markers in der Profilgrafik</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxProfilfillopac.label">
+			<trans-unit id="constants.gpxProfilfillopac.label" resname="constants.gpxProfilfillopac.label">
 				<source>GPXViewer Profilfillopac: Saturation of the color under profile curve (valid values are 0 to 1)</source>
 				<target state="translated">GPXViewer Profilfillopac: Sättigung der Farbe unter der Profilkurve (0 bis 1)</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.none">
+			<trans-unit id="constants.gpxTrcolmod.options.none" resname="constants.gpxTrcolmod.options.none">
 				<source>none</source>
 				<target state="translated">keine</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.altitude">
+			<trans-unit id="constants.gpxTrcolmod.options.altitude" resname="constants.gpxTrcolmod.options.altitude">
 				<source>altitude</source>
 				<target state="translated">Höhe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.slope">
+			<trans-unit id="constants.gpxTrcolmod.options.slope" resname="constants.gpxTrcolmod.options.slope">
 				<source>slope</source>
 				<target state="translated">Steigung</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.speed">
+			<trans-unit id="constants.gpxTrcolmod.options.speed" resname="constants.gpxTrcolmod.options.speed">
 				<source>speed</source>
 				<target state="translated">Geschwindigkeit</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.cadence">
+			<trans-unit id="constants.gpxTrcolmod.options.cadence" resname="constants.gpxTrcolmod.options.cadence">
 				<source>cadence</source>
 				<target state="translated">Schrittzahl</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.options.heartrate">
+			<trans-unit id="constants.gpxTrcolmod.options.heartrate" resname="constants.gpxTrcolmod.options.heartrate">
 				<source>heartrate</source>
 				<target state="translated">Herzfrequenz</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTrcolmod.label">
+			<trans-unit id="constants.gpxTrcolmod.label" resname="constants.gpxTrcolmod.label">
 				<source>GPXViewer Trcolmod: Color codes of tracks depending on altitude, slope, speed, cadence, heartrate</source>
 				<target state="translated">GPXViewer Trcolmod: Farb-Codes für die Tracks abhängig von Höhe, Steigung, Geschwindigkeit, Schrittzahl, Herzfrequenz</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTcols.label">
+			<trans-unit id="constants.gpxTcols.label" resname="constants.gpxTcols.label">
 				<source>GPXViewer Tcols: Colors of tracks in #rrggbb. The colors will be used alternately. You may define a set of colors</source>
 				<target state="translated">GPXViewer Tcols: Trackfarben in #rrggbb für rot grün blau. Die Farben werden abwechselnd verwendet. Es können noch mehr Farben definiert werden</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxRcols.label">
+			<trans-unit id="constants.gpxRcols.label" resname="constants.gpxRcols.label">
 				<source>GPXViewer Rcols: Colors of routes in #rrggbb. The colors will be used alternately. You may define a set of colors</source>
 				<target state="translated">GPXViewer Rcols: Routenfarben in #rrggbb für rot grün blau. Die Farben werden abwechselnd verwendet. Es können noch mehr Farben definiert werden</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxOcol.label">
+			<trans-unit id="constants.gpxOcol.label" resname="constants.gpxOcol.label">
 				<source>GPXViewer Ocol: Color of track and route while Mouseover</source>
 				<target state="translated">GPXViewer Ocol: Track- und Routenfarbe bei Mouseover</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxOwidth.label">
+			<trans-unit id="constants.gpxOwidth.label" resname="constants.gpxOwidth.label">
 				<source>GPXViewer Owidth: Line width of track and route while mouseover</source>
 				<target state="translated">GPXViewer Owidth: Linienstärke Track und Route bei Mouseover</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTwidth.label">
+			<trans-unit id="constants.gpxTwidth.label" resname="constants.gpxTwidth.label">
 				<source>GPXViewer Twidth: Linewidth of track</source>
 				<target state="translated">GPXViewer Twidth: Linienstärke Track</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxRwidth.label">
+			<trans-unit id="constants.gpxRwidth.label" resname="constants.gpxRwidth.label">
 				<source>GPXViewer Rwidth: Line width of route</source>
 				<target state="translated">GPXViewer Rwidth: Linienstärke Route</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxTopac.label">
+			<trans-unit id="constants.gpxTopac.label" resname="constants.gpxTopac.label">
 				<source>GPXViewer Topac: Transparancy of the track color</source>
 				<target state="translated">GPXViewer Topac: Transparenz Trackfarbe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxRopac.label">
+			<trans-unit id="constants.gpxRopac.label" resname="constants.gpxRopac.label">
 				<source>GPXViewer Ropac: Transparancy of the route color</source>
 				<target state="translated">GPXViewer Ropac: Transparenz Routenfarbe</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxLinktarget.label">
+			<trans-unit id="constants.gpxLinktarget.label" resname="constants.gpxLinktarget.label">
 				<source>GPXViewer Linktarget: Target for links given in tracks/routes/waypoint/images</source>
 				<target state="translated">GPXViewer Linktarget: Ziel für die Ausgabe von Linkangaben in Tracks/Routen/Wegpunkten/Bildern</target>
 			</trans-unit>
-			<trans-unit id="constants.gpxPopup_Pars.label">
+			<trans-unit id="constants.gpxPopup_Pars.label" resname="constants.gpxPopup_Pars.label">
 				<source>GPXViewer Popup_Pars: Parameters for popup window for links given in tracks/routes</source>
 				<target state="translated">GPXViewer Popup_Pars: Parameter für das Popup-Fenster für Linkangaben aus Tracks/Routen</target>
 			</trans-unit>
-			<trans-unit id="constants.templateRootPath.label">
+			<trans-unit id="constants.templateRootPath.label" resname="constants.templateRootPath.label">
 				<source>Path to template root (FE) [Not tested yet!!!]</source>
 				<target state="translated">Pfad zum Template-Wurzelverzeichnis (FE) [Not tested yet!!!]</target>
 			</trans-unit>
-			<trans-unit id="constants.partialRootPath.label">
+			<trans-unit id="constants.partialRootPath.label" resname="constants.partialRootPath.label">
 				<source>Path to template partials (FE) [Not tested yet!!!]</source>
 				<target state="translated">Pfad zu den Template Partials (FE) [Not tested yet!!!]</target>
 			</trans-unit>
-			<trans-unit id="constants.layoutRootPath.label">
+			<trans-unit id="constants.layoutRootPath.label" resname="constants.layoutRootPath.label">
 				<source>Path to template layouts (FE) [Not tested yet!!!]</source>
 				<target state="translated">Pfad zu den Template Layout (FE) [Not tested yet!!!]</target>
 			</trans-unit>
-			<trans-unit id="constants.storagePid.label">
+			<trans-unit id="constants.storagePid.label" resname="constants.storagePid.label">
 				<source>Default storage PID</source>
 				<target state="translated">Default storage PID</target>
 			</trans-unit>
 
-			<trans-unit id="constants.options.On">
+			<trans-unit id="constants.options.On" resname="constants.options.On">
 				<source>On</source>
 				<target state="translated">An</target>
 			</trans-unit>
-			<trans-unit id="constants.options.Off">
+			<trans-unit id="constants.options.Off" resname="constants.options.Off">
 				<source>Off</source>
 				<target state="translated">Aus</target>
 			</trans-unit>
 
-
-			<trans-unit id="template.javascriptWarning">
+			<trans-unit id="template.javascriptWarning" resname="template.javascriptWarning">
 				<source>JavaSript is needed for display of the map!</source>
 				<target state="translated">Für die Darstellung der Karte wird JavaSript benötigt!</target>
 			</trans-unit>
-			<trans-unit id="template.downloadlabel">
+			<trans-unit id="template.downloadlabel" resname="template.downloadlabel">
 				<source>Download GPX file</source>
 				<target state="translated">Download der GPX-Datei</target>
 			</trans-unit>
-			<trans-unit id="template.previous">
+			<trans-unit id="template.previous" resname="template.previous">
 				<source>Previous</source>
 				<target state="translated">Zurück</target>
 			</trans-unit>
-			<trans-unit id="template.next">
+			<trans-unit id="template.next" resname="template.next">
 				<source>Next</source>
 				<target state="translated">Weiter</target>
 			</trans-unit>

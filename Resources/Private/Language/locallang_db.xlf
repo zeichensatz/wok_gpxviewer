@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2018-03-22T15:59:58Z" product-name="wok_gpxviewer">
+	<file source-language="en" datatype="plaintext" original="EXT:wok_gpxviewer/Resources/Private/Language/locallang_db" date="2020-06-15T09:26:45Z" product-name="wok_gpxviewer">
 		<header/>
 		<body>
-			<trans-unit id="tx_wokgpxviewer_domain_model_display">
+			<trans-unit id="tx_wokgpxviewer_domain_model_display" resname="tx_wokgpxviewer_domain_model_display">
 				<source>Display</source>
 			</trans-unit>
-			<trans-unit id="tx_wok_gpxviewer_gpxtracks.name">
+			<trans-unit id="tx_wok_gpxviewer_gpxtracks.name" resname="tx_wok_gpxviewer_gpxtracks.name">
 				<source>GPXViewer tracks display</source>
 			</trans-unit>
-			<trans-unit id="tx_wok_gpxviewer_gpxtracks.description">
+			<trans-unit id="tx_wok_gpxviewer_gpxtracks.description" resname="tx_wok_gpxviewer_gpxtracks.description">
 				<source>Display GPX tracks with GPXViewer</source>
 			</trans-unit>
 		</body>
