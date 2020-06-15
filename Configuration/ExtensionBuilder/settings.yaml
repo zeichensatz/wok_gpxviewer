@@ -40,28 +40,34 @@
 ############  extension settings  ##############
 
 overwriteSettings:
-  Classes:
-    Controller: merge
-    Domain:
-      Model: merge
-      Repository: merge
+    Classes:
+        Controller: merge
+        Domain:
+            Model: merge
+            Repository: merge
 
-  Configuration:
-    #TCA merge not possible - use overrides directory
-    #TypoScript: keep
+    Configuration:
+        #TCA merge not possible - use overrides directory
+        TypoScript: merge
 
-  Resources:
-    Private:
-      #Language: merge
-      #Templates: keep
+    Resources:
+        Private:
+            Language: merge
+            #Templates: keep
+            Templates:
+                Index.html: keep
+        Public:
+            Icons:
+                Extension.svg: keep
+                user_plugin_gpxtracks.svg: keep
 
-  user_extension.svg: keep
+    user_extension.svg: keep
 
-#  ext_localconf.php: merge
+    ext_localconf.php: merge
 
-ext_tables.php: keep
+    ext_tables.php: keep
 
-#  ext_tables.sql: merge
+    ext_tables.sql: merge
 
 ## use static date attribute in xliff files ##
 #staticDateInXliffFiles: 2018-03-20T09:41:00Z
