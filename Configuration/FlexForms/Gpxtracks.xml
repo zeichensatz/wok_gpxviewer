@@ -500,13 +500,17 @@
 												<renderType>selectSingle</renderType>
 												<maxitems>1</maxitems>
 												<size>1</size>
-												<default>small</default>
+												<default>large</default>
 												<items type="array">
 													<numIndex index="0" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationPhotoSize.Default</numIndex>
+														<numIndex index="1">Default</numIndex>
+													</numIndex>
+													<numIndex index="1" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationPhotoSize.small</numIndex>
 														<numIndex index="1">small</numIndex>
 													</numIndex>
-													<numIndex index="1" type="array">
+													<numIndex index="2" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointPhotoStationPhotoSize.large</numIndex>
 														<numIndex index="1">large</numIndex>
 													</numIndex>

@@ -334,6 +334,12 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 				} else {
 					$coordsShow = $this->settings['gpxMap_img_coords'];
 				}
+				// Bestimmen von $photoSize für PhotoStation-Zugriffe (PhotoStation 6 Bild oder Album)
+				if($array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'] != '' and $array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'] != "Default") {
+					$photoSize = $array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'];
+				} else {
+					$photoSize = $this->settings['gpxMap_imgPhotoStationPhotoSize'];
+				}
 				//Falls es sich um ein PhotoStation 6-Bild handelt:
 				if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotaggedPS' and ($this->settings['gpxMap_profilesPSaddr'] != '' or $array['container']['settings']['gpxMapWaypointPhotoStationAddr'] != '')) {
 					if($array['container']['settings']['gpxMapWaypointPhotoStationAddr'] != '') {
@@ -342,7 +348,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						$serverAddr = $this->settings['gpxMap_profilesPSaddr'];
 					}
 					$image = $array['container']['settings']['gpxMapWaypointImagePS'];
-					$photoSize = "small"; // preview, small, large
 					// reset jsonArray
 					$jsonArray = array();
 					exec("curl '" . $serverAddr . "/photo/webapi/photo.php?api=SYNO.PhotoStation.Photo&method=getinfo&version=1&limit=50&type=photo&id=" . $image . "&additional=photo_exif&gps&offset=0'", $jsonArray);
@@ -357,7 +362,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						// Get image description from a multilangual string
 						$imageDescription = $this->getImageDescription($item['info']['description']);
 						// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-//						$Coords = $this->getCoords($array['container']['settings']['gpxMapWaypointCoordsShow'], $imageDescription, $latitude, $longitude);
 						$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
 						// Ausgabestring
 						$gpxMapImages = $gpxMapImages . 
@@ -373,7 +377,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						$serverAddr = $this->settings['gpxMap_profilesPSaddr'];
 					}
 					$album = $array['container']['settings']['gpxMapWaypointImageFolderPS'];
-					$photoSize = "small"; // preview, small, large
 					exec("curl '" . $serverAddr . "/photo/webapi/album.php?api=SYNO.PhotoStation.Album&method=list&version=1&limit=150&type=photo&id=" . $album . "&additional=photo_exif&gps&offset=0'", $jsonArray);
 					$jsonPHParray = json_decode($jsonArray[0], true);
 					// Überprüfen, ob die PhotoStation-Abfrage erfolgreich war

@@ -77,7 +77,9 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_imgdivLayout = above
 		# cat=GPXViewer: Basic/1120/2167; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgdivScale.label
 		gpxMap_imgdivScale = 10
-		# cat=GPXViewer: Basic/1120/2168; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
+		# cat=GPXViewer: Basic/1120/2168; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.small=small,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.large=large]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_imgPhotoStationPhotoSize.label
+		gpxMap_imgPhotoStationPhotoSize = large
+		# cat=GPXViewer: Basic/1120/2169; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
 		gpxCheckimagename = true
 
 		// ScssPHP Parser

@@ -305,6 +305,10 @@
 				<source>Size of the PhotoStation images</source>
 				<target state="translated">Größe der PhotoStation Bilder</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.Default" resname="flexform.gpxMapWaypointPhotoStationPhotoSize.Default">
+				<source>[default]</source>
+				<target state="translated">[Voreinstellung]</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointPhotoStationPhotoSize.small" resname="flexform.gpxMapWaypointPhotoStationPhotoSize.small">
 				<source>small</source>
 				<target state="translated">klein</target>
@@ -669,6 +673,10 @@
 			<trans-unit id="constants.gpxMap_imgdivScale.label" resname="constants.gpxMap_imgdivScale.label">
 				<source>GPXViewer Map_imgdiv scale: Value for map scaling in case of image DIV for waypoints. The value is in km.</source>
 				<target state="translated">GPXViewer Map_imgdiv Skalierung: Wert für die Kartenskalierung im Fall eines Image-DIV für Image-Wegpunkte.</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMap_imgPhotoStationPhotoSize.label" resname="constants.gpxMap_imgPhotoStationPhotoSize.label">
+				<source>GPXViewer gpxMap_imgPhotoStationPhotoSize: Size of PhotoStation pics in image DIV for waypoints from a PhotoStation album.</source>
+				<target state="translated">GPXViewer gpxMap_imgPhotoStationPhotoSize: Größe der PhotoStation Bilder im Image-DIV für Image-Wegpunkte von einem PhotoStation-Album.</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxCheckimagename.label" resname="constants.gpxCheckimagename.label">
 				<source>GPXViewer Checkimagename: Toggles checking of images extensions for waypoints with images on/off. This switch has to be deactivated, if you want to use image references which are based on a hash value, i.e. images references to a Synology PhotoStation.</source>
@@ -1222,6 +1230,14 @@
 			<trans-unit id="constants.options.Off" resname="constants.options.Off">
 				<source>Off</source>
 				<target state="translated">Aus</target>
+			</trans-unit>
+			<trans-unit id="constants.options.small" resname="constants.options.small">
+				<source>Small</source>
+				<target state="translated">Klein</target>
+			</trans-unit>
+			<trans-unit id="constants.options.large" resname="constants.options.large">
+				<source>Large</source>
+				<target state="translated">Groß</target>
 			</trans-unit>
 
 			<trans-unit id="template.javascriptWarning" resname="template.javascriptWarning">

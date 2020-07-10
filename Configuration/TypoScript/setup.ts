@@ -252,6 +252,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_imgdiv = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_imgdiv}
 		gpxMap_imgdivLayout = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_imgdivLayout}
 		gpxMap_imgdivScale = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_imgdivScale}
+		gpxMap_imgPhotoStationPhotoSize = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_imgPhotoStationPhotoSize}
 
 		// Profiles
 		gpxMap_sorting = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_sorting}
