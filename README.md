@@ -26,7 +26,7 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
   * Set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss = false`.
   * Copy the file `wok_gpxviewer/Resources/Public/CSS/custom.css` to the place, where you store your own CSS files.
   * Remove all uncommenting of CSS directives in this file.
-  * Set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile = ToYourCssFile`. Please check, if your CSS file will be included in the source text of your page. If not, path/name are not correct yet.
+  * Set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile = ToYourCssFile`. Please check, if your CSS file will be included in the source text of your page. If not, path/name most probably are not correct yet.
 
 ## How can you give your feedback
 * I would like to hear from you, how you're using the extension and what can be improved.
