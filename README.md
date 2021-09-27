@@ -18,7 +18,7 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 ## How to set up?
 * Download and install the extension [wok_gpxviewer](https://github.com/zeichensatz/wok_gpxviewer).
 * Create a new page in [TYPO3](https://typo3.org) backend or edit an existing one.
-* Create an extension template for that page or edit an existing template and `"Include static (from extensions)"` for `GPXViewer (wok_gpxviewer)`.
+* Create an extension template for that page or edit an existing template and `"Include static (from extensions)"` for `GPXViewer (wok_gpxviewer)`. Please include the GPXViewer template after your bootstrap_package templates.
 * Change to `Constant Editor` and edit the settings for GPXViewer if needed.
 * Now you can create a content element of type `plugin` and then select `GPXViewer tracks display`.
 * In the tab `Plug-in` you are able to add GPX files for display in the frontend. There are several tabs with settings to explore. Hopefully most of them are self explaining. If not, don't hesitate to contact me (see below).
