@@ -24,7 +24,7 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 * In the tab `Plug-in` you are able to add GPX files for display in the frontend. There are several tabs with settings to explore. Hopefully most of them are self explaining. If not, don't hesitate to contact me (see below).
 * If you're not using the bootstrap_package, please do the following:
   * Set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss = false`. This setting will cause the use of CSS file `wok_gpxviewer/Resources/Public/CSS/custom.css`. 
-  * Best practice is to copy the CSS `wok_gpxviewer/Resources/Public/CSS/custom.css` file into your CSS file folder. Then set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile = ToYourCssFile`. Please check, if your CSS file will be included in the source text of your page. If not, path/name is most probably not correct yet.
+  * Best practice is to copy the CSS file `wok_gpxviewer/Resources/Public/CSS/custom.css` into your CSS file folder. Then set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile = ToYourCssFile`. Please check, if your CSS file will be included in the source text of your page. If not, path/name is most probably not correct yet.
 
 ## How can you give your feedback
 * I would like to hear from you, how you're using the extension and what can be improved.
