@@ -1,35 +1,48 @@
+//
 //* GPXViewer */
-/*
+//
 .frame > .tx-wok-gpxviewer:last-child {
 	margin-bottom: 1em;
 }
 .tx-wok-gpxviewer:last-child {
 	margin-bottom: 0;
 }
-.gpx-viewer, .gpx-viewer-images {
+
+.tx-wok-gpxviewer .textpic {
+	width: 100%;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-gallery {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+.tx-wok-gpxviewer .textpic-text {
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+.gpx-viewer {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #477DBE;
-	width: 85%;
+	width: 100%;
 	height: 600px;
 }
 .gpx-viewer-description {
-	width: 85%;
+	width: 100%;
 }
 .gpx-viewer-description p {
 	margin-bottom: 1px;
 }
 .gpx-viewer-profiles {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
-	width: 85%;
+	width: 100%;
 	height: 600px;
-	border-top-style: none;
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
-	margin-bottom: 0.5em;
 }
+
+// For single profiles in the profile list
 .gpx-viewer-profile {
 	border-style: solid;
 	border-width: 1px;
@@ -37,11 +50,37 @@
 }
 .gpx-viewer-download {
 }
-.gpx-viewer-images { 
-	text-align: center;
-	height:auto;
-	background-color:black;
-	padding-bottom: 0;
+.gpx-viewer-img {
+	max-height: 600px;
+}
+
+.gpx-viewer-images-border button.previous, .gpx-viewer-images-border button.next { 
+	border-top-style: none;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+	background-color: #f2f2f2;
+}
+.gpx-viewer-images-border button.previous:hover, .gpx-viewer-images-border button.next:hover { 
+	background-color: #ff8700;
+	color: white;
+	font-weight: bolder;
+}
+.gpx-viewer-images-border button.previous:focus, .gpx-viewer-images-border button.next:focus { 
+	background-color: none;
+	font-weight: bolder;
+}
+.gpx-viewer-images-border button.previous {
+	border-left-style: none;
+	border-right-style: solid;
+}
+.gpx-viewer-images-border button.next { 
+	border-left-style: solid;
+	border-right-style: none;
+}
+.gpx-viewer-figure {
+	margin-bottom: 0px; 
+	background-color: black;
 }
 .gpx-viewer-figure-caption {
 	text-align: left;
@@ -49,19 +88,151 @@
 	padding-left: 3px;
 	color: white;
 }
-*/
 
 /* Bootstrap design changes */
 /*div.frame.default.gpx-viewer {*/
-/*
 .gpx-viewer {
 	margin-bottom: 0px;
 	padding-bottom: 0;
 	padding-top: 0;
 }
-*/
+// ###################
+// correction of gpxviewer div for profiles left or right of gpxviewer
+.viewer-gpx-pro-left, .viewer-gpx-pro-right {
+	height: 602px;
+}
+.viewer-gpx-img-pro-left, .viewer-gpx-img-pro-right, .viewer-gpx-img-pro-above, .viewer-gpx-img-pro-below, 
+.viewer-gpx-img-left, .viewer-gpx-img-right, .viewer-gpx-img-above, .viewer-gpx-img-below, 
+.viewer-gpx-pro-left, .viewer-gpx-pro-right, .viewer-gpx-pro-above, .viewer-gpx-pro-below {
+	width: 100%;
+}
+// ###################
+// IMAGES and PROFILES
+// set defaults for all divs with images and profiles
+.images-gpx-img-pro-above, 
+.images-gpx-img-pro-left, 
+.images-gpx-img-pro-below, 
+.images-gpx-img-pro-right, 
+.images-gpx-img-above, 
+.images-gpx-img-left, 
+.images-gpx-img-below, 
+.images-gpx-img-right, 
+.images-gpx-pro-above, 
+.images-gpx-pro-left, 
+.images-gpx-pro-below, 
+.images-gpx-pro-right, 
+.profiles-gpx-img-pro-above, 
+.profiles-gpx-img-pro-left, 
+.profiles-gpx-img-pro-below, 
+.profiles-gpx-img-pro-right, 
+.profiles-gpx-img-above, 
+.profiles-gpx-img-left, 
+.profiles-gpx-img-below, 
+.profiles-gpx-img-right, 
+.profiles-gpx-pro-above, 
+.profiles-gpx-pro-left, 
+.profiles-gpx-pro-below, 
+.profiles-gpx-pro-right {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #477DBE;
+}
+// ### EXCEPTIONS FOR IMAGES
+// ### set exceptions for all divs with images or profiles
+.images-gpx-img-pro-above {
+	border-top-style: none;
+}
+.images-gpx-img-pro-left {
+	border-left-style: none;
+}
+.images-gpx-img-pro-below {
+	border-bottom-style: none;
+}
+.images-gpx-img-pro-right {
+	border-right-style: none;
+}
+// ### set exceptions for all divs with images
+.images-gpx-img-above {
+	border-top-style: none;
+}
+.images-gpx-img-left {
+	border-left-style: none;
+}
+.images-gpx-img-below {
+	border-bottom-style: none;
+}
+.images-gpx-img-right {
+	border-right-style: none;
+}
+// ### set exceptions for all divs with profiles
+.images-gpx-pro-above {}
+.images-gpx-pro-left {}
+.images-gpx-pro-below {}
+.images-gpx-pro-right {}
+// ### EXCEPTIONS FOR profiles
+// ### set exceptions for all divs with images or profiles
+.profiles-gpx-img-pro-above {
+	border-top-style: none;
+}
+.profiles-gpx-img-pro-left {}
+.profiles-gpx-img-pro-below {
+	border-top-style: none;
+}
+.profiles-gpx-img-pro-right {}
+// ### set exceptions for all divs with images
+.profiles-gpx-img-above {}
+.profiles-gpx-img-left {}
+.profiles-gpx-img-below {}
+.profiles-gpx-img-right {}
+// ### set exceptions for all divs with profiles
+.profiles-gpx-pro-above {
+	border-top-style: none;
+}
+.profiles-gpx-pro-left {
+	border-left-style: none;
+}
+.profiles-gpx-pro-below {
+	border-bottom-style: none;
+}
+.profiles-gpx-pro-right {
+	border-right-style: none;
+}
+// ### Exceptions for media queries
+@media (max-width: 767px) {
+	// ### set exceptions for all divs with images or profiles
+	.images-gpx-img-pro-left {
+		border-left-style: solid;
+		border-top-style: none;
+		border-bottom-style: none;
+	}
+	.images-gpx-img-pro-right {
+		border-right-style: solid;
+		border-top-style: none;
+		border-bottom-style: none;
+	}
+	// ### set exceptions for all divs with images
+	.images-gpx-img-left {
+		border-left-style: solid;
+		border-top-style: none;
+	}
+	.images-gpx-img-right {
+		border-right-style: solid;
+		border-top-style: none;
+	}
+	// ### set exceptions for all divs with profiles
+	.profiles-gpx-pro-left {
+		border-left-style: solid;
+		border-top-style: none;
+	}
+	.profiles-gpx-pro-right {
+		border-right-style: solid;
+		border-top-style: none;
+	}
+}
+// END OF IMAGES and PROFILES
+
+
 /* Settings of GPXViewer for media queries */
-/*
 @media (min-width: 768px) {
 }
 @media (min-width: 992px) {
@@ -74,9 +245,6 @@
 	.gpx-viewer {
 		height: 300px;
 	}
-	.gpx-viewer-profiles {
-		height: 300px;
-	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
 }
@@ -84,12 +252,3 @@
 }
 @media (min-width: 1200px) {
 }
-*/
-/*
-			figure { display: inline-block; margin:0; padding:0 }
-
-			figure img { max-width: 100%; max-height: 500px }
-*/
-
-
-
