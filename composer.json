@@ -10,5 +10,10 @@
         "psr-4": {
             "Wok\\WokGpxviewer\\": "Classes"
         }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "wok_gpxviewer"
+        }
     }
 }
