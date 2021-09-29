@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"> 
+    <title>GPXViewer Example 4</title>
+    <script>
+			var Fullscreenbutton = true;
+			var Unit = "enus";
+    </script>
+    <script src="GM_Utils/GPX2GM.js"></script>
+		<style>
+			body { width:calc(100% - 50px);padding: 10px 10px 10px 30px }
+			figure { margin:0;padding:0; }
+			#gpxviewer { display: grid; gap: .3em; grid-template-columns: repeat(auto-fit, minmax(15em, 1fr	)); }
+			#map1 { height:100vh; }
+			#map1_profiles { height:100vh; }
+			#map1_hp { height:calc((100% + 64px)/3);margin-top:10px }
+			#map1_sp { height:calc((100% + 64px)/3);margin-top:-37px }
+			#map1_vp { height:calc((100% + 64px)/3);margin-top:-37px }
+		</style>
+  </head>
+  <body>
+   <h1>GPXViewer Example 4 - Map and profile versus track with mile and ft as units of length</h1>
+		<div id="gpxviewer">
+			<figure id="map1" class="gpxview:Beispiel1.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></figure>
+			<figure id="map1_profiles">
+				<figure id="map1_hp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+				<figure id="map1_sp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+				<figure id="map1_vp"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+			</figure>
+		</div>
+     <hr><p>2. 7. 2020 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+  </body>
+</html>

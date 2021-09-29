@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de"> 
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<title>Beispiel 12 - Ordner lesen</title>
+		<style>
+			#map { width:100%;height:500px;height:95vh;margin-top:2.5em }
+			#sel { position:absolute;right:1em }
+		</style>
+	</head>
+	<body>
+		<h1>Beispiel 12 - Ordner lesen</h1>
+		<p>In diesem Beispiel wird gezeigt, wie alle in einem Ordner auf dem Server abgelegten GPX-Dateien über ein Auswahlmenü angezeigt werden können. Dazu muss auf dem Webserver das <code>Dirctorylisting</code> eingeschaltet werden. Auf dem Apache-Server muss dazu in den Ordner mit den GPX-Dateien eine Datei mit Namen <code>.htaccess</code> und dem Inhalt <code>Options +Indexes</code> gelegt werden.</p>
+		<select id="sel" class="gpxview">
+		</select>		
+		<div id="map"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		
+		<script src="GM_Utils/GPX2GM.js?autoload=false"></script>
+		<script>
+			var Legende_fnm = false;
+			var ordner = "GPX/"; // in diesem Ordner werden die GPX-Dateien gesucht
+			var sel = document.getElementById("sel");
+			JB.loadFile({name:ordner},"a",function(result,status) { // Daten lesen
+				JB.Debug_Info("","Lese Ordner: "+ordner+", Status: "+status,false);
+				if(status == 200) { // Wenn OK, URLs suchen, in ein Array schreiben und Menüoptionen anlegen
+					var hrefs = result.asciidata.match(/href=".+?\.gpx"/g);  // ? wegen "genügsam".
+					for(var i=0;i<hrefs.length;i++) hrefs[i] = hrefs[i].replace('href="','').replace('"','');
+					JB.Debug_Info("",hrefs.join("\n"),false);
+					for(var i=0;i<hrefs.length;i++) {
+						var opt = document.createElement("option");
+						opt.value = 'map:'+ordner+hrefs[i]+':Karte';
+						var txt = document.createTextNode(decodeURI(hrefs[i]));
+						opt.appendChild(txt);
+						sel.appendChild(opt);
+					}
+					if(hrefs.length) { 
+						document.getElementById("map").className = 'gpxview:'+ordner+hrefs[0]+':Karte'; // Die erste Datei wird angezeigt
+						JB.GPX2GM.start();
+					}
+				}
+			});
+		</script>
+		
+		<p>7. 5. 2019 <a href="https://www.j-berkemeier.de">Jürgen Berkemeier</a></p>
+	</body>
+</html>

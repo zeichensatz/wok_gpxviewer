@@ -1,0 +1,3389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.13.4" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensions/v3/GpxExtensionsv3.xsd http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2007-11-16T20:56:14Z</time>
+    <bounds maxlat="52.0" maxlon="7.6" minlat="51.0" minlon="7.2"/>
+  </metadata>
+
+  <wpt lat="51.6182327" lon="7.3255205">
+    <time>2007-03-31T18:51:17Z</time>
+    <name>Altes Schiffshebewerk Henrichenburg</name>
+    <sym>Boat Ramp</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.8660035" lon="7.4800899">
+    <time>2007-03-31T18:52:54Z</time>
+    <name>Start</name>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <rte>
+    <name>Hinweg</name>
+    <cmt>Zum Schiffshebewerk Henrichenburg</cmt>
+    <extensions>
+      <gpxx:RouteExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:IsAutoNamed>true</gpxx:IsAutoNamed>
+      </gpxx:RouteExtension>
+    </extensions>
+    <rtept lat="51.8660035" lon="7.4800899">
+      <time>2007-03-31T18:52:54Z</time>
+      <name>Erlengrund3611</name>
+      <cmt>Erlengrund 361</cmt>
+      <desc>Erlengrund 361</desc>
+      <sym>Residence</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000ffffffffffffffffffffffff</gpxx:Subclass>
+          <gpxx:rpt lat="51.8660035" lon="7.4800899">
+            <gpxx:Subclass>06000f544d00a43711002116000027002700</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8657684" lon="7.4800587"/>
+          <gpxx:rpt lat="51.8652534" lon="7.4795437">
+            <gpxx:Subclass>06000f544d00163811001f062900aef12800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8650818" lon="7.4799728"/>
+          <gpxx:rpt lat="51.8650389" lon="7.4808311">
+            <gpxx:Subclass>06000f544d0020d709001f0229006ef37201</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8635368" lon="7.4807024"/>
+          <gpxx:rpt lat="51.8618202" lon="7.4811316"/>
+          <gpxx:rpt lat="51.8609619" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8608761" lon="7.4812174"/>
+          <gpxx:rpt lat="51.8605757" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8594170" lon="7.4813032"/>
+          <gpxx:rpt lat="51.8589020" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8583870" lon="7.4813461"/>
+          <gpxx:rpt lat="51.8580866" lon="7.4815178"/>
+          <gpxx:rpt lat="51.8578720" lon="7.4817753"/>
+          <gpxx:rpt lat="51.8574858" lon="7.4823761"/>
+          <gpxx:rpt lat="51.8574858" lon="7.4825048">
+            <gpxx:Subclass>0c000f544d0062a843001f0e310076af0800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8573141" lon="7.4825478"/>
+          <gpxx:rpt lat="51.8573141" lon="7.4825478">
+            <gpxx:Subclass>0c000f544d0079a803001f00310092af0a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8573141" lon="7.4827194"/>
+          <gpxx:rpt lat="51.8573999" lon="7.4828482">
+            <gpxx:Subclass>03000f544d00551c13001f4f3100adafc000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8572712" lon="7.4833632"/>
+          <gpxx:rpt lat="51.8573141" lon="7.4842215"/>
+          <gpxx:rpt lat="51.8574429" lon="7.4847794"/>
+          <gpxx:rpt lat="51.8574429" lon="7.4849081"/>
+          <gpxx:rpt lat="51.8575716" lon="7.4853802"/>
+          <gpxx:rpt lat="51.8576574" lon="7.4868393"/>
+          <gpxx:rpt lat="51.8576574" lon="7.4868393"/>
+          <gpxx:rpt lat="51.8577003" lon="7.4887276"/>
+          <gpxx:rpt lat="51.8577433" lon="7.4893713">
+            <gpxx:Subclass>03000f544d00b5302a001f0031003ab07000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8578291" lon="7.4902296"/>
+          <gpxx:rpt lat="51.8577862" lon="7.4906588"/>
+          <gpxx:rpt lat="51.8576145" lon="7.4913454"/>
+          <gpxx:rpt lat="51.8573999" lon="7.4918175"/>
+          <gpxx:rpt lat="51.8570995" lon="7.4925470"/>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>03000f544d00b5302a001f003100c3b00000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>03000f544d00b5302a002117000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.8570137" lon="7.4928904">
+      <time>2007-03-31T19:05:10Z</time>
+      <name>B235undWilhelm1</name>
+      <cmt> B235 und Wilhelm-Haverkamp-Strasse und K4</cmt>
+      <desc> B235 und Wilhelm-Haverkamp-Strasse und K4</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02800f544d0017007c090f24050048e00a54</gpxx:Subclass>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>03000f544d00b5302a002116000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>02000f544d002ce70a001f023100c3b00c01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8565845" lon="7.4927616"/>
+          <gpxx:rpt lat="51.8548679" lon="7.4922037"/>
+          <gpxx:rpt lat="51.8543959" lon="7.4920750"/>
+          <gpxx:rpt lat="51.8539667" lon="7.4919462"/>
+          <gpxx:rpt lat="51.8533230" lon="7.4917316"/>
+          <gpxx:rpt lat="51.8524218" lon="7.4913883"/>
+          <gpxx:rpt lat="51.8519497" lon="7.4911737"/>
+          <gpxx:rpt lat="51.8513918" lon="7.4909163">
+            <gpxx:Subclass>02000f544d0040e50a001f00330076541000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8510914" lon="7.4907875">
+            <gpxx:Subclass>06000f544d00ad9e07001f022a00c5190a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8510485" lon="7.4904013">
+            <gpxx:Subclass>06000f544d00b689d3001f062a00b0196e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8506622" lon="7.4902725"/>
+          <gpxx:rpt lat="51.8496323" lon="7.4890709"/>
+          <gpxx:rpt lat="51.8491602" lon="7.4886417"/>
+          <gpxx:rpt lat="51.8490744" lon="7.4884701">
+            <gpxx:Subclass>06000f544d00be391b001f062a0012181000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8488598" lon="7.4885130"/>
+          <gpxx:rpt lat="51.8488169" lon="7.4886847">
+            <gpxx:Subclass>02000f544d001de50a001f022a0058188600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8483019" lon="7.4885559"/>
+          <gpxx:rpt lat="51.8470573" lon="7.4884701"/>
+          <gpxx:rpt lat="51.8459415" lon="7.4884272">
+            <gpxx:Subclass>02000f544d0031e6ca001f00330023542a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8450403" lon="7.4883842">
+            <gpxx:Subclass>02000f544d00caebca001f00330012545800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8431520" lon="7.4883413">
+            <gpxx:Subclass>02000f544d0013e0ca001f003300fd536004</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8424654" lon="7.4882984"/>
+          <gpxx:rpt lat="51.8416500" lon="7.4884272"/>
+          <gpxx:rpt lat="51.8413496" lon="7.4885559"/>
+          <gpxx:rpt lat="51.8396330" lon="7.4891138"/>
+          <gpxx:rpt lat="51.8380022" lon="7.4895859"/>
+          <gpxx:rpt lat="51.8376160" lon="7.4896717"/>
+          <gpxx:rpt lat="51.8330669" lon="7.4908304"/>
+          <gpxx:rpt lat="51.8310928" lon="7.4910021"/>
+          <gpxx:rpt lat="51.8301916" lon="7.4912167"/>
+          <gpxx:rpt lat="51.8286896" lon="7.4916887"/>
+          <gpxx:rpt lat="51.8278742" lon="7.4919462"/>
+          <gpxx:rpt lat="51.8268871" lon="7.4922466"/>
+          <gpxx:rpt lat="51.8246984" lon="7.4925041"/>
+          <gpxx:rpt lat="51.8243122" lon="7.4925470"/>
+          <gpxx:rpt lat="51.8219519" lon="7.4928474"/>
+          <gpxx:rpt lat="51.8201065" lon="7.4931049"/>
+          <gpxx:rpt lat="51.8193769" lon="7.4931479">
+            <gpxx:Subclass>02000f544d0080f3ca001f003300ba55ea02</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8179178" lon="7.4928904"/>
+          <gpxx:rpt lat="51.8151712" lon="7.4922466"/>
+          <gpxx:rpt lat="51.8120813" lon="7.4915171"/>
+          <gpxx:rpt lat="51.8107510" lon="7.4910450"/>
+          <gpxx:rpt lat="51.8099785" lon="7.4907446"/>
+          <gpxx:rpt lat="51.8096352" lon="7.4904871"/>
+          <gpxx:rpt lat="51.8091631" lon="7.4901009"/>
+          <gpxx:rpt lat="51.8083048" lon="7.4890709"/>
+          <gpxx:rpt lat="51.8071461" lon="7.4874830"/>
+          <gpxx:rpt lat="51.8062878" lon="7.4861526"/>
+          <gpxx:rpt lat="51.8050861" lon="7.4840498">
+            <gpxx:Subclass>02000f544d0044efca001f00330097530a01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8038845" lon="7.4817324"/>
+          <gpxx:rpt lat="51.8032408" lon="7.4805737"/>
+          <gpxx:rpt lat="51.8028116" lon="7.4799728"/>
+          <gpxx:rpt lat="51.8008804" lon="7.4779129">
+            <gpxx:Subclass>02000f544d00d1ddca001f0033008253c002</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7991209" lon="7.4759388"/>
+          <gpxx:rpt lat="51.7984343" lon="7.4749947"/>
+          <gpxx:rpt lat="51.7979193" lon="7.4742651"/>
+          <gpxx:rpt lat="51.7972326" lon="7.4733639"/>
+          <gpxx:rpt lat="51.7940998" lon="7.4703598"/>
+          <gpxx:rpt lat="51.7940998" lon="7.4703598"/>
+          <gpxx:rpt lat="51.7931557" lon="7.4694157"/>
+          <gpxx:rpt lat="51.7924261" lon="7.4686432"/>
+          <gpxx:rpt lat="51.7922115" lon="7.4683857"/>
+          <gpxx:rpt lat="51.7913103" lon="7.4672270"/>
+          <gpxx:rpt lat="51.7907095" lon="7.4662828"/>
+          <gpxx:rpt lat="51.7907095" lon="7.4662828"/>
+          <gpxx:rpt lat="51.7904520" lon="7.4658966"/>
+          <gpxx:rpt lat="51.7888641" lon="7.4633217">
+            <gpxx:Subclass>02000f544d0054ed0a001f00330016534800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7877483" lon="7.4615192">
+            <gpxx:Subclass>06000f544d0090fe0b001f062a0060d87c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7862034" lon="7.4650383">
+            <gpxx:Subclass>06000f544d002efe0b001f022a00d0daca00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7838001" lon="7.4648237"/>
+          <gpxx:rpt lat="51.7836714" lon="7.4649096"/>
+          <gpxx:rpt lat="51.7831993" lon="7.4659395"/>
+          <gpxx:rpt lat="51.7829418" lon="7.4661970"/>
+          <gpxx:rpt lat="51.7823410" lon="7.4666262">
+            <gpxx:Subclass>06000f544d009aee0b001f022a00addbda00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7804098" lon="7.4655533"/>
+          <gpxx:rpt lat="51.7795515" lon="7.4652100"/>
+          <gpxx:rpt lat="51.7795515" lon="7.4652100"/>
+          <gpxx:rpt lat="51.7778778" lon="7.4645233">
+            <gpxx:Subclass>06000f544d0079ee0b001f002a00c0da0801</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7773628" lon="7.4643087"/>
+          <gpxx:rpt lat="51.7768908" lon="7.4640942"/>
+          <gpxx:rpt lat="51.7767191" lon="7.4640512"/>
+          <gpxx:rpt lat="51.7761183" lon="7.4638367"/>
+          <gpxx:rpt lat="51.7742300" lon="7.4631500"/>
+          <gpxx:rpt lat="51.7742300" lon="7.4631500"/>
+          <gpxx:rpt lat="51.7733717" lon="7.4632359"/>
+          <gpxx:rpt lat="51.7722988" lon="7.4633217">
+            <gpxx:Subclass>05000f544d0049f409001f022a00cdd91600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7722130" lon="7.4625492">
+            <gpxx:Subclass>06000f544d003f2712001f062a00f6d8ae00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7711401" lon="7.4628496"/>
+          <gpxx:rpt lat="51.7702389" lon="7.4631071"/>
+          <gpxx:rpt lat="51.7698097" lon="7.4631929"/>
+          <gpxx:rpt lat="51.7692089" lon="7.4631929"/>
+          <gpxx:rpt lat="51.7687798" lon="7.4631500"/>
+          <gpxx:rpt lat="51.7686081" lon="7.4633217">
+            <gpxx:Subclass>06000f544d00bd6622001f022a00e8d96800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7682648" lon="7.4619913"/>
+          <gpxx:rpt lat="51.7679214" lon="7.4605751"/>
+          <gpxx:rpt lat="51.7677927" lon="7.4600172">
+            <gpxx:Subclass>05000f544d00585d25001f062a009fd61c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7672348" lon="7.4603176">
+            <gpxx:Subclass>05000f544d00585d25001f003300ce520000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7672348" lon="7.4603176">
+            <gpxx:Subclass>05000f544d00585d25002117000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7672348" lon="7.4603176">
+      <time>2007-03-31T19:10:39Z</time>
+      <name>Kreisverkehr</name>
+      <cmt>Kreisverkehr</cmt>
+      <desc>Kreisverkehr</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>0c800f544d003c001d090f240500f0cf1c4e</gpxx:Subclass>
+          <gpxx:rpt lat="51.7672348" lon="7.4603176">
+            <gpxx:Subclass>05000f544d00585d25002116000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7672348" lon="7.4603176">
+            <gpxx:Subclass>0c000f544d00c68e03001f0e3300ce521200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7671919" lon="7.4602318"/>
+          <gpxx:rpt lat="51.7671061" lon="7.4601889"/>
+          <gpxx:rpt lat="51.7670202" lon="7.4603176"/>
+          <gpxx:rpt lat="51.7670202" lon="7.4604893">
+            <gpxx:Subclass>03000f544d00e05c25001f4f3100efac4a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7660761" lon="7.4609613"/>
+          <gpxx:rpt lat="51.7654753" lon="7.4612188">
+            <gpxx:Subclass>03000f544d00089d1c001f00310009ad3a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7642736" lon="7.4616480">
+            <gpxx:Subclass>03000f544d00089d1c001f002a0077d84800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7640591" lon="7.4617338"/>
+          <gpxx:rpt lat="51.7627678" lon="7.4622656">
+            <gpxx:Subclass>03000f544d00089d1c002117000061000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7627679" lon="7.4622655">
+      <time>2007-03-31T19:20:34Z</time>
+      <name>L835</name>
+      <cmt>L835</cmt>
+      <desc>L835</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>03000f544d001e00d4000d2405001fcf754e</gpxx:Subclass>
+          <gpxx:rpt lat="51.7627678" lon="7.4622656">
+            <gpxx:Subclass>03000f544d00089d1c002116000061002f00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7625999" lon="7.4623346"/>
+          <gpxx:rpt lat="51.7617846" lon="7.4626350">
+            <gpxx:Subclass>03000f544d00089d1c001f002a0011d93200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7607546" lon="7.4630642">
+            <gpxx:Subclass>03000f544d00034511001f0031004cad2e03</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7599392" lon="7.4632788"/>
+          <gpxx:rpt lat="51.7593384" lon="7.4637079"/>
+          <gpxx:rpt lat="51.7590809" lon="7.4640512"/>
+          <gpxx:rpt lat="51.7584801" lon="7.4650812"/>
+          <gpxx:rpt lat="51.7581797" lon="7.4654245"/>
+          <gpxx:rpt lat="51.7562485" lon="7.4671412"/>
+          <gpxx:rpt lat="51.7551327" lon="7.4682570"/>
+          <gpxx:rpt lat="51.7536306" lon="7.4697590"/>
+          <gpxx:rpt lat="51.7536306" lon="7.4697590"/>
+          <gpxx:rpt lat="51.7516565" lon="7.4717331"/>
+          <gpxx:rpt lat="51.7503691" lon="7.4730635"/>
+          <gpxx:rpt lat="51.7494249" lon="7.4740076"/>
+          <gpxx:rpt lat="51.7491245" lon="7.4742222"/>
+          <gpxx:rpt lat="51.7476225" lon="7.4749517"/>
+          <gpxx:rpt lat="51.7467213" lon="7.4752951"/>
+          <gpxx:rpt lat="51.7453909" lon="7.4755096">
+            <gpxx:Subclass>03000f544d00364511001f003100e1aeb201</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7433739" lon="7.4757242"/>
+          <gpxx:rpt lat="51.7413139" lon="7.4754667"/>
+          <gpxx:rpt lat="51.7405415" lon="7.4753809"/>
+          <gpxx:rpt lat="51.7394686" lon="7.4751234"/>
+          <gpxx:rpt lat="51.7384386" lon="7.4745655"/>
+          <gpxx:rpt lat="51.7362499" lon="7.4733639">
+            <gpxx:Subclass>03000f544d009b9ddc001f0031004eae4a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7347908" lon="7.4725485">
+            <gpxx:Subclass>03000f544d0028e71d001f00310038ae4805</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7342758" lon="7.4720764"/>
+          <gpxx:rpt lat="51.7331171" lon="7.4706173"/>
+          <gpxx:rpt lat="51.7328596" lon="7.4701881"/>
+          <gpxx:rpt lat="51.7325592" lon="7.4694157"/>
+          <gpxx:rpt lat="51.7317009" lon="7.4661541"/>
+          <gpxx:rpt lat="51.7314005" lon="7.4651670"/>
+          <gpxx:rpt lat="51.7301559" lon="7.4622059"/>
+          <gpxx:rpt lat="51.7295122" lon="7.4606609"/>
+          <gpxx:rpt lat="51.7291260" lon="7.4600172"/>
+          <gpxx:rpt lat="51.7288685" lon="7.4597597"/>
+          <gpxx:rpt lat="51.7285681" lon="7.4595451"/>
+          <gpxx:rpt lat="51.7271519" lon="7.4589014"/>
+          <gpxx:rpt lat="51.7251348" lon="7.4579573"/>
+          <gpxx:rpt lat="51.7229891" lon="7.4570131"/>
+          <gpxx:rpt lat="51.7226458" lon="7.4569273"/>
+          <gpxx:rpt lat="51.7225170" lon="7.4568844"/>
+          <gpxx:rpt lat="51.7197275" lon="7.4565840"/>
+          <gpxx:rpt lat="51.7197275" lon="7.4565840"/>
+          <gpxx:rpt lat="51.7163801" lon="7.4561548"/>
+          <gpxx:rpt lat="51.7148781" lon="7.4559832"/>
+          <gpxx:rpt lat="51.7125607" lon="7.4559832"/>
+          <gpxx:rpt lat="51.7116594" lon="7.4561119"/>
+          <gpxx:rpt lat="51.7108011" lon="7.4564552"/>
+          <gpxx:rpt lat="51.7102861" lon="7.4567556">
+            <gpxx:Subclass>03000f544d00f2aa1f001f00310078acf200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7083549" lon="7.4579144"/>
+          <gpxx:rpt lat="51.7076683" lon="7.4582148"/>
+          <gpxx:rpt lat="51.7069817" lon="7.4583435"/>
+          <gpxx:rpt lat="51.7066383" lon="7.4584293"/>
+          <gpxx:rpt lat="51.7056084" lon="7.4584293"/>
+          <gpxx:rpt lat="51.7052221" lon="7.4583864">
+            <gpxx:Subclass>02000f544d00f0f60a001f0033007152a800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7052221" lon="7.4583864"/>
+          <gpxx:rpt lat="51.7047930" lon="7.4583864"/>
+          <gpxx:rpt lat="51.7047930" lon="7.4583864"/>
+          <gpxx:rpt lat="51.7035913" lon="7.4584293"/>
+          <gpxx:rpt lat="51.7035913" lon="7.4584293"/>
+          <gpxx:rpt lat="51.7027760" lon="7.4587727"/>
+          <gpxx:rpt lat="51.7023468" lon="7.4591160"/>
+          <gpxx:rpt lat="51.7018318" lon="7.4596739">
+            <gpxx:Subclass>02000f544d00f0f60a001f001300d6223500</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7009559" lon="7.4608618">
+            <gpxx:Subclass>02000f544d00f0f60a0021170000e7000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7009560" lon="7.4608618">
+      <time>2007-03-31T19:17:10Z</time>
+      <name>Münsterlandstra</name>
+      <cmt>Münsterlandstrasse</cmt>
+      <desc>Münsterlandstrasse</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d005400ef000d240500e0c3384e</gpxx:Subclass>
+          <gpxx:rpt lat="51.7009559" lon="7.4608618">
+            <gpxx:Subclass>02000f544d00f0f60a0021160000e700e700</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6980982" lon="7.4647379"/>
+          <gpxx:rpt lat="51.6974545" lon="7.4653816"/>
+          <gpxx:rpt lat="51.6970253" lon="7.4656391">
+            <gpxx:Subclass>02000f544d008af5ca001f0032008a8b1000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6970253" lon="7.4656391"/>
+          <gpxx:rpt lat="51.6967249" lon="7.4658537">
+            <gpxx:Subclass>02000f544d0049f5ca001f003200ca8b3c01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6967249" lon="7.4658537"/>
+          <gpxx:rpt lat="51.6964245" lon="7.4660254"/>
+          <gpxx:rpt lat="51.6964245" lon="7.4660254"/>
+          <gpxx:rpt lat="51.6956091" lon="7.4664545"/>
+          <gpxx:rpt lat="51.6944075" lon="7.4665403"/>
+          <gpxx:rpt lat="51.6935921" lon="7.4666691"/>
+          <gpxx:rpt lat="51.6935921" lon="7.4666691"/>
+          <gpxx:rpt lat="51.6926479" lon="7.4670553"/>
+          <gpxx:rpt lat="51.6921329" lon="7.4670124"/>
+          <gpxx:rpt lat="51.6918325" lon="7.4668407"/>
+          <gpxx:rpt lat="51.6916180" lon="7.4666262"/>
+          <gpxx:rpt lat="51.6914463" lon="7.4663687"/>
+          <gpxx:rpt lat="51.6912317" lon="7.4661112"/>
+          <gpxx:rpt lat="51.6907167" lon="7.4655533"/>
+          <gpxx:rpt lat="51.6903305" lon="7.4653816">
+            <gpxx:Subclass>02000f544d0049f50a001f0032003b8b0000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6903305" lon="7.4653816">
+            <gpxx:Subclass>02000f544d0049f50a002117000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.6903305" lon="7.4653816">
+      <time>2007-03-31T19:17:05Z</time>
+      <name>Kreisstrasseund</name>
+      <cmt>Kreisstrasse und Kreisverkehr</cmt>
+      <desc>Kreisstrasse und Kreisverkehr</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d003e0025050f240500f0c1084f</gpxx:Subclass>
+          <gpxx:rpt lat="51.6903305" lon="7.4653816">
+            <gpxx:Subclass>02000f544d0049f50a002116000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6903305" lon="7.4653816">
+            <gpxx:Subclass>0c000f544d005e8c43001f0e32003b8b0a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6902876" lon="7.4652100"/>
+          <gpxx:rpt lat="51.6902018" lon="7.4652100">
+            <gpxx:Subclass>0c000f544d00758c03001f003200df8a0600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6901159" lon="7.4653816">
+            <gpxx:Subclass>02000f544d00e0f8ca001f4f3200188bee00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6898584" lon="7.4654245"/>
+          <gpxx:rpt lat="51.6895151" lon="7.4655962"/>
+          <gpxx:rpt lat="51.6886568" lon="7.4662828"/>
+          <gpxx:rpt lat="51.6878414" lon="7.4668837"/>
+          <gpxx:rpt lat="51.6872406" lon="7.4672270"/>
+          <gpxx:rpt lat="51.6869402" lon="7.4673986"/>
+          <gpxx:rpt lat="51.6859961" lon="7.4679565"/>
+          <gpxx:rpt lat="51.6853523" lon="7.4682999">
+            <gpxx:Subclass>02000f544d0069f70a001f003200f38bfe02</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6850519" lon="7.4685144"/>
+          <gpxx:rpt lat="51.6841078" lon="7.4692440"/>
+          <gpxx:rpt lat="51.6835499" lon="7.4697590"/>
+          <gpxx:rpt lat="51.6826916" lon="7.4704885"/>
+          <gpxx:rpt lat="51.6817904" lon="7.4708748"/>
+          <gpxx:rpt lat="51.6806746" lon="7.4708319"/>
+          <gpxx:rpt lat="51.6806746" lon="7.4708319"/>
+          <gpxx:rpt lat="51.6787434" lon="7.4706173"/>
+          <gpxx:rpt lat="51.6783571" lon="7.4706173"/>
+          <gpxx:rpt lat="51.6778421" lon="7.4707031"/>
+          <gpxx:rpt lat="51.6752672" lon="7.4712181"/>
+          <gpxx:rpt lat="51.6747522" lon="7.4712181"/>
+          <gpxx:rpt lat="51.6743660" lon="7.4710464"/>
+          <gpxx:rpt lat="51.6720057" lon="7.4700165"/>
+          <gpxx:rpt lat="51.6715765" lon="7.4698448"/>
+          <gpxx:rpt lat="51.6712761" lon="7.4697161"/>
+          <gpxx:rpt lat="51.6702032" lon="7.4693298"/>
+          <gpxx:rpt lat="51.6695166" lon="7.4694157">
+            <gpxx:Subclass>05000f544d007ba042001f392b003ad71400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6691303" lon="7.4692011">
+            <gpxx:Subclass>05000f544d009df21b001f002b0022d70800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6690016" lon="7.4690294">
+            <gpxx:Subclass>05000f544d0014f21b001f002b000dd7aa00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6687012" lon="7.4688578"/>
+          <gpxx:rpt lat="51.6681004" lon="7.4684715"/>
+          <gpxx:rpt lat="51.6678429" lon="7.4684286"/>
+          <gpxx:rpt lat="51.6673279" lon="7.4687719"/>
+          <gpxx:rpt lat="51.6670704" lon="7.4688148"/>
+          <gpxx:rpt lat="51.6666842" lon="7.4687719"/>
+          <gpxx:rpt lat="51.6662979" lon="7.4687290"/>
+          <gpxx:rpt lat="51.6657400" lon="7.4686003"/>
+          <gpxx:rpt lat="51.6656113" lon="7.4686432"/>
+          <gpxx:rpt lat="51.6654825" lon="7.4687719">
+            <gpxx:Subclass>05000f544d009e8515001f022b00d3d63000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6653538" lon="7.4685574"/>
+          <gpxx:rpt lat="51.6653109" lon="7.4683857"/>
+          <gpxx:rpt lat="51.6651821" lon="7.4674416"/>
+          <gpxx:rpt lat="51.6651392" lon="7.4673128">
+            <gpxx:Subclass>05000f544d000e1b29001f062b0030d60001</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6643667" lon="7.4670553"/>
+          <gpxx:rpt lat="51.6620922" lon="7.4669266"/>
+          <gpxx:rpt lat="51.6619635" lon="7.4669266"/>
+          <gpxx:rpt lat="51.6612768" lon="7.4667549"/>
+          <gpxx:rpt lat="51.6603756" lon="7.4665833"/>
+          <gpxx:rpt lat="51.6600323" lon="7.4666691"/>
+          <gpxx:rpt lat="51.6596889" lon="7.4668407">
+            <gpxx:Subclass>05000f544d00271929001f002b00b7d52400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6593027" lon="7.4671412"/>
+          <gpxx:rpt lat="51.6590023" lon="7.4673557">
+            <gpxx:Subclass>03000f544d00291a29001f022f004914be01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6585302" lon="7.4663258"/>
+          <gpxx:rpt lat="51.6581011" lon="7.4656391"/>
+          <gpxx:rpt lat="51.6578007" lon="7.4651670"/>
+          <gpxx:rpt lat="51.6571999" lon="7.4643087"/>
+          <gpxx:rpt lat="51.6567278" lon="7.4635792"/>
+          <gpxx:rpt lat="51.6563416" lon="7.4633217"/>
+          <gpxx:rpt lat="51.6559124" lon="7.4632359"/>
+          <gpxx:rpt lat="51.6554403" lon="7.4633646"/>
+          <gpxx:rpt lat="51.6545820" lon="7.4639225"/>
+          <gpxx:rpt lat="51.6541100" lon="7.4640512"/>
+          <gpxx:rpt lat="51.6536379" lon="7.4638796"/>
+          <gpxx:rpt lat="51.6532516" lon="7.4634504"/>
+          <gpxx:rpt lat="51.6529942" lon="7.4630213"/>
+          <gpxx:rpt lat="51.6526937" lon="7.4619055"/>
+          <gpxx:rpt lat="51.6524363" lon="7.4613476"/>
+          <gpxx:rpt lat="51.6520500" lon="7.4607038"/>
+          <gpxx:rpt lat="51.6516638" lon="7.4602318">
+            <gpxx:Subclass>03000f544d00c81a29001f002f0097129801</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6502047" lon="7.4586010"/>
+          <gpxx:rpt lat="51.6485310" lon="7.4560690"/>
+          <gpxx:rpt lat="51.6482306" lon="7.4555969"/>
+          <gpxx:rpt lat="51.6461277" lon="7.4518633"/>
+          <gpxx:rpt lat="51.6461277" lon="7.4518633"/>
+          <gpxx:rpt lat="51.6453981" lon="7.4505329">
+            <gpxx:Subclass>03000f544d006b5b0d001f002f000b122401</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6444111" lon="7.4479580"/>
+          <gpxx:rpt lat="51.6442394" lon="7.4474430"/>
+          <gpxx:rpt lat="51.6432524" lon="7.4447393"/>
+          <gpxx:rpt lat="51.6429090" lon="7.4437523"/>
+          <gpxx:rpt lat="51.6422224" lon="7.4418211">
+            <gpxx:Subclass>03000f544d00085c0d001f002f004b11bc01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6418791" lon="7.4404049"/>
+          <gpxx:rpt lat="51.6409349" lon="7.4359417"/>
+          <gpxx:rpt lat="51.6406345" lon="7.4346542"/>
+          <gpxx:rpt lat="51.6406345" lon="7.4346542"/>
+          <gpxx:rpt lat="51.6403341" lon="7.4332809"/>
+          <gpxx:rpt lat="51.6399050" lon="7.4317789"/>
+          <gpxx:rpt lat="51.6392183" lon="7.4301481"/>
+          <gpxx:rpt lat="51.6380167" lon="7.4282598">
+            <gpxx:Subclass>03000f544d002d5bcd001f002f00714d5a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6375446" lon="7.4276161"/>
+          <gpxx:rpt lat="51.6370296" lon="7.4270153"/>
+          <gpxx:rpt lat="51.6364288" lon="7.4265862">
+            <gpxx:Subclass>05000f544d006f5a0d001f022f00394d2c02</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6365147" lon="7.4261570"/>
+          <gpxx:rpt lat="51.6364717" lon="7.4258566"/>
+          <gpxx:rpt lat="51.6364288" lon="7.4255133"/>
+          <gpxx:rpt lat="51.6357422" lon="7.4235821"/>
+          <gpxx:rpt lat="51.6350985" lon="7.4216938"/>
+          <gpxx:rpt lat="51.6348839" lon="7.4210072"/>
+          <gpxx:rpt lat="51.6327810" lon="7.4152565"/>
+          <gpxx:rpt lat="51.6326094" lon="7.4148703"/>
+          <gpxx:rpt lat="51.6317081" lon="7.4140549"/>
+          <gpxx:rpt lat="51.6314507" lon="7.4136257"/>
+          <gpxx:rpt lat="51.6308498" lon="7.4122953"/>
+          <gpxx:rpt lat="51.6304207" lon="7.4112225"/>
+          <gpxx:rpt lat="51.6304207" lon="7.4112225"/>
+          <gpxx:rpt lat="51.6302919" lon="7.4110079"/>
+          <gpxx:rpt lat="51.6301203" lon="7.4109221">
+            <gpxx:Subclass>05000f544d00e1a90b001f022b0046feb001</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6301203" lon="7.4105787"/>
+          <gpxx:rpt lat="51.6300344" lon="7.4104071"/>
+          <gpxx:rpt lat="51.6286182" lon="7.4070597"/>
+          <gpxx:rpt lat="51.6285324" lon="7.4068880"/>
+          <gpxx:rpt lat="51.6278028" lon="7.4052143"/>
+          <gpxx:rpt lat="51.6273737" lon="7.4041843"/>
+          <gpxx:rpt lat="51.6269016" lon="7.4031973"/>
+          <gpxx:rpt lat="51.6261721" lon="7.4013519"/>
+          <gpxx:rpt lat="51.6252708" lon="7.3982620">
+            <gpxx:Subclass>05000f544d00e2b2cb001f002b005bfc4600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6245842" lon="7.3960733">
+            <gpxx:Subclass>05000f544d00bb0117001f002b001cfc7401</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6241550" lon="7.3948717"/>
+          <gpxx:rpt lat="51.6239405" lon="7.3942709"/>
+          <gpxx:rpt lat="51.6237259" lon="7.3936272"/>
+          <gpxx:rpt lat="51.6236401" lon="7.3933268"/>
+          <gpxx:rpt lat="51.6229105" lon="7.3910093"/>
+          <gpxx:rpt lat="51.6229105" lon="7.3910093"/>
+          <gpxx:rpt lat="51.6226101" lon="7.3899794"/>
+          <gpxx:rpt lat="51.6226101" lon="7.3899794"/>
+          <gpxx:rpt lat="51.6222668" lon="7.3885632"/>
+          <gpxx:rpt lat="51.6221380" lon="7.3878765"/>
+          <gpxx:rpt lat="51.6220093" lon="7.3865032"/>
+          <gpxx:rpt lat="51.6217518" lon="7.3842716">
+            <gpxx:Subclass>05000f544d006ba8e2001f002b003cfb2400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6216660" lon="7.3830700">
+            <gpxx:Subclass>05000f544d00b4ab22001f002b0027fb1400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6215801" lon="7.3828554"/>
+          <gpxx:rpt lat="51.6213655" lon="7.3826838">
+            <gpxx:Subclass>03000f544d00a8a862001f022f007d487800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6214943" lon="7.3820400"/>
+          <gpxx:rpt lat="51.6215801" lon="7.3813105"/>
+          <gpxx:rpt lat="51.6216230" lon="7.3807526"/>
+          <gpxx:rpt lat="51.6215372" lon="7.3798513"/>
+          <gpxx:rpt lat="51.6212797" lon="7.3786926">
+            <gpxx:Subclass>03000f544d00aea722001f002f0000484201</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6208506" lon="7.3767614"/>
+          <gpxx:rpt lat="51.6197777" lon="7.3722982"/>
+          <gpxx:rpt lat="51.6189194" lon="7.3682642">
+            <gpxx:Subclass>03000f544d002faa22001f002f007e46b200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6183615" lon="7.3655605"/>
+          <gpxx:rpt lat="51.6183615" lon="7.3655605"/>
+          <gpxx:rpt lat="51.6180182" lon="7.3640156"/>
+          <gpxx:rpt lat="51.6177177" lon="7.3624706">
+            <gpxx:Subclass>03000f544d00d7aa22001f002f00d4441e01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6173315" lon="7.3607111"/>
+          <gpxx:rpt lat="51.6170311" lon="7.3592091"/>
+          <gpxx:rpt lat="51.6168594" lon="7.3582220"/>
+          <gpxx:rpt lat="51.6165590" lon="7.3549175"/>
+          <gpxx:rpt lat="51.6163874" lon="7.3528576">
+            <gpxx:Subclass>06000f544d003fb31d001f061400f4a17200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6147137" lon="7.3524284"/>
+          <gpxx:rpt lat="51.6139841" lon="7.3521709">
+            <gpxx:Subclass>06000f544d00b20508001f021400b4a15602</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6142845" lon="7.3493814"/>
+          <gpxx:rpt lat="51.6144991" lon="7.3453474"/>
+          <gpxx:rpt lat="51.6144991" lon="7.3453474"/>
+          <gpxx:rpt lat="51.6149712" lon="7.3378372"/>
+          <gpxx:rpt lat="51.6149712" lon="7.3378372"/>
+          <gpxx:rpt lat="51.6152287" lon="7.3348331"/>
+          <gpxx:rpt lat="51.6155720" lon="7.3317003">
+            <gpxx:Subclass>06000f544d009e0548001f00150043629c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6159582" lon="7.3281813"/>
+          <gpxx:rpt lat="51.6160011" lon="7.3277950"/>
+          <gpxx:rpt lat="51.6159582" lon="7.3275375"/>
+          <gpxx:rpt lat="51.6156149" lon="7.3264647">
+            <gpxx:Subclass>06000f544d00a13608001f021500fe5f2000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6162586" lon="7.3261642">
+            <gpxx:Subclass>06000f544d00a13608001f0015006c5f6100</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6169882" lon="7.3262501"/>
+          <gpxx:rpt lat="51.6173315" lon="7.3258638"/>
+          <gpxx:rpt lat="51.6182404" lon="7.3255872">
+            <gpxx:Subclass>06000f544d00a13608002117000080000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.6182327" lon="7.3255205">
+      <time>2007-03-31T18:51:17Z</time>
+      <name>AltesSchiffshe1</name>
+      <cmt>Altes Schiffshebewerk Henrichenburg</cmt>
+      <desc>Altes Schiffshebewerk Henrichenburg</desc>
+      <sym>Boat Ramp</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>002000000000ffffffffffffffffffffffff</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+  </rte>
+
+  <rte>
+    <name>Rückweg</name>
+    <cmt>Zurück nach Senden</cmt>
+    <extensions>
+      <gpxx:RouteExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:IsAutoNamed>true</gpxx:IsAutoNamed>
+      </gpxx:RouteExtension>
+    </extensions>
+    <rtept lat="51.6182327" lon="7.3255205">
+      <time>2007-03-31T18:51:17Z</time>
+      <name>AltesSchiffsheb</name>
+      <cmt>Altes Schiffshebewerk Henrichenburg</cmt>
+      <desc>Altes Schiffshebewerk Henrichenburg</desc>
+      <sym>Boat Ramp</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>002000000000ffffffffffffffffffffffff</gpxx:Subclass>
+          <gpxx:rpt lat="51.6182404" lon="7.3255872">
+            <gpxx:Subclass>06000f544d00a13608002116000080000400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6183186" lon="7.3255634">
+            <gpxx:Subclass>03000f544d00ff4b22001f061500e15ebc00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6184473" lon="7.3242331"/>
+          <gpxx:rpt lat="51.6184473" lon="7.3242331"/>
+          <gpxx:rpt lat="51.6185331" lon="7.3236752"/>
+          <gpxx:rpt lat="51.6188765" lon="7.3227310"/>
+          <gpxx:rpt lat="51.6189623" lon="7.3223019"/>
+          <gpxx:rpt lat="51.6187906" lon="7.3211432"/>
+          <gpxx:rpt lat="51.6188335" lon="7.3204136"/>
+          <gpxx:rpt lat="51.6190052" lon="7.3197699"/>
+          <gpxx:rpt lat="51.6191339" lon="7.3194265">
+            <gpxx:Subclass>02000f544d00aef10a001f02320030852402</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6199923" lon="7.3199844"/>
+          <gpxx:rpt lat="51.6202497" lon="7.3201561"/>
+          <gpxx:rpt lat="51.6208076" lon="7.3204994"/>
+          <gpxx:rpt lat="51.6208076" lon="7.3204994"/>
+          <gpxx:rpt lat="51.6217947" lon="7.3210573"/>
+          <gpxx:rpt lat="51.6220522" lon="7.3211861"/>
+          <gpxx:rpt lat="51.6229534" lon="7.3217440"/>
+          <gpxx:rpt lat="51.6239834" lon="7.3226452"/>
+          <gpxx:rpt lat="51.6245413" lon="7.3229456"/>
+          <gpxx:rpt lat="51.6245413" lon="7.3229456"/>
+          <gpxx:rpt lat="51.6252279" lon="7.3230314"/>
+          <gpxx:rpt lat="51.6260433" lon="7.3229027"/>
+          <gpxx:rpt lat="51.6268587" lon="7.3230314"/>
+          <gpxx:rpt lat="51.6277599" lon="7.3234177"/>
+          <gpxx:rpt lat="51.6281462" lon="7.3236752"/>
+          <gpxx:rpt lat="51.6287041" lon="7.3243618"/>
+          <gpxx:rpt lat="51.6291761" lon="7.3250914"/>
+          <gpxx:rpt lat="51.6297770" lon="7.3261642">
+            <gpxx:Subclass>02000f544d00aef10a001f001500815f2c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6302490" lon="7.3273230"/>
+          <gpxx:rpt lat="51.6302919" lon="7.3274157">
+            <gpxx:Subclass>02000f544d00aef10a002117000050020000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.6302919" lon="7.3274159">
+      <time>2007-03-31T19:16:33Z</time>
+      <name>CastroperStras1</name>
+      <cmt>Castroper Strasse 313</cmt>
+      <desc>Castroper Strasse 313</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d003e00f50001810c00722b0000</gpxx:Subclass>
+          <gpxx:rpt lat="51.6302919" lon="7.3274157">
+            <gpxx:Subclass>02000f544d00aef10a002116000050025500</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6305065" lon="7.3278809"/>
+          <gpxx:rpt lat="51.6316652" lon="7.3292971">
+            <gpxx:Subclass>02000f544d00aef10a001f0015004661a800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6316652" lon="7.3292971"/>
+          <gpxx:rpt lat="51.6319656" lon="7.3296404"/>
+          <gpxx:rpt lat="51.6327381" lon="7.3302412"/>
+          <gpxx:rpt lat="51.6348410" lon="7.3320007">
+            <gpxx:Subclass>02000f544d00aef10a001f002b0010f90000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6348410" lon="7.3320007">
+            <gpxx:Subclass>02000f544d00aef10a00211700004c030000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.6348410" lon="7.3320007">
+      <time>2007-03-31T19:16:26Z</time>
+      <name>CastroperStrass</name>
+      <cmt>Castroper Strasse und Zechenstrasse</cmt>
+      <desc>Castroper Strasse und Zechenstrasse</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02800f544d00330051050f240500d6b7c036</gpxx:Subclass>
+          <gpxx:rpt lat="51.6348410" lon="7.3320007">
+            <gpxx:Subclass>02000f544d00aef10a00211600004c030000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6348410" lon="7.3320007">
+            <gpxx:Subclass>02000f544d00aef10a001f002b0010f9bc00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6350126" lon="7.3321295"/>
+          <gpxx:rpt lat="51.6363001" lon="7.3323441"/>
+          <gpxx:rpt lat="51.6363001" lon="7.3323441"/>
+          <gpxx:rpt lat="51.6374588" lon="7.3324299"/>
+          <gpxx:rpt lat="51.6380167" lon="7.3324299"/>
+          <gpxx:rpt lat="51.6383171" lon="7.3325586"/>
+          <gpxx:rpt lat="51.6388750" lon="7.3328161">
+            <gpxx:Subclass>02000f544d00aef10a001f001500aa411b00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6394326" lon="7.3330948">
+            <gpxx:Subclass>02000f544d00aef10a002117000026040000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.6394327" lon="7.3330948">
+      <time>2007-03-31T19:23:24Z</time>
+      <name>CastroperStras2</name>
+      <cmt>Castroper Strasse 185</cmt>
+      <desc>Castroper Strasse 185</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d002d004e0501811400361b0000</gpxx:Subclass>
+          <gpxx:rpt lat="51.6394326" lon="7.3330948">
+            <gpxx:Subclass>02000f544d00aef10a002116000026041300</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6398191" lon="7.3332882">
+            <gpxx:Subclass>02000f544d00aef10a001f0015000a42f600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6407633" lon="7.3341465"/>
+          <gpxx:rpt lat="51.6416216" lon="7.3349619"/>
+          <gpxx:rpt lat="51.6425228" lon="7.3355627"/>
+          <gpxx:rpt lat="51.6426086" lon="7.3356485"/>
+          <gpxx:rpt lat="51.6434669" lon="7.3363352"/>
+          <gpxx:rpt lat="51.6444969" lon="7.3371506">
+            <gpxx:Subclass>06000f544d00961d0c001f021500b7453e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6445398" lon="7.3374939"/>
+          <gpxx:rpt lat="51.6445398" lon="7.3380089"/>
+          <gpxx:rpt lat="51.6444969" lon="7.3383522"/>
+          <gpxx:rpt lat="51.6444111" lon="7.3389101"/>
+          <gpxx:rpt lat="51.6442823" lon="7.3391247">
+            <gpxx:Subclass>06000f544d00b01d0c001f0015007047e600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6445398" lon="7.3398113"/>
+          <gpxx:rpt lat="51.6445398" lon="7.3398113"/>
+          <gpxx:rpt lat="51.6445827" lon="7.3399401"/>
+          <gpxx:rpt lat="51.6445827" lon="7.3399401"/>
+          <gpxx:rpt lat="51.6445827" lon="7.3399401"/>
+          <gpxx:rpt lat="51.6447973" lon="7.3405838"/>
+          <gpxx:rpt lat="51.6451836" lon="7.3415279"/>
+          <gpxx:rpt lat="51.6452265" lon="7.3416138"/>
+          <gpxx:rpt lat="51.6456556" lon="7.3424721"/>
+          <gpxx:rpt lat="51.6458273" lon="7.3427296"/>
+          <gpxx:rpt lat="51.6469431" lon="7.3442316"/>
+          <gpxx:rpt lat="51.6475439" lon="7.3450041">
+            <gpxx:Subclass>06000f544d00db7913001f061500e7668200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6484451" lon="7.3446608"/>
+          <gpxx:rpt lat="51.6484451" lon="7.3446608"/>
+          <gpxx:rpt lat="51.6489601" lon="7.3444891"/>
+          <gpxx:rpt lat="51.6493464" lon="7.3442316"/>
+          <gpxx:rpt lat="51.6499901" lon="7.3437595"/>
+          <gpxx:rpt lat="51.6501617" lon="7.3436308">
+            <gpxx:Subclass>06000f544d00667a53001f001500b54b0600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6502905" lon="7.3435450">
+            <gpxx:Subclass>06000f544d00fe7913001f0015005d4b5400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6511917" lon="7.3429441"/>
+          <gpxx:rpt lat="51.6519213" lon="7.3423862">
+            <gpxx:Subclass>06000f544d006ca75e001f001500b74a0600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6520500" lon="7.3423433">
+            <gpxx:Subclass>06000f544d00c2a023001f021500a14a5c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6524792" lon="7.3436308"/>
+          <gpxx:rpt lat="51.6525221" lon="7.3437595"/>
+          <gpxx:rpt lat="51.6527796" lon="7.3446608"/>
+          <gpxx:rpt lat="51.6530800" lon="7.3450470">
+            <gpxx:Subclass>06000f544d0055ea1a001f0615009c4c1200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6534662" lon="7.3451328">
+            <gpxx:Subclass>06000f544d0055ea1a001f021500b24c2000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6534662" lon="7.3451328"/>
+          <gpxx:rpt lat="51.6535521" lon="7.3456049"/>
+          <gpxx:rpt lat="51.6535521" lon="7.3462486">
+            <gpxx:Subclass>06000f544d00dd5220001f06140079992c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6538954" lon="7.3466349"/>
+          <gpxx:rpt lat="51.6540670" lon="7.3471928"/>
+          <gpxx:rpt lat="51.6541100" lon="7.3473644">
+            <gpxx:Subclass>06000f544d00aba14e001f0614003a9b3a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6544962" lon="7.3471928"/>
+          <gpxx:rpt lat="51.6553116" lon="7.3469782">
+            <gpxx:Subclass>05000f544d0004ac14001f061400769a2a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6552258" lon="7.3459911"/>
+          <gpxx:rpt lat="51.6550970" lon="7.3456049">
+            <gpxx:Subclass>05000f544d001ac31d001f022b001be4f000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6556120" lon="7.3453903"/>
+          <gpxx:rpt lat="51.6561699" lon="7.3453045"/>
+          <gpxx:rpt lat="51.6561699" lon="7.3453045"/>
+          <gpxx:rpt lat="51.6568565" lon="7.3452616"/>
+          <gpxx:rpt lat="51.6570711" lon="7.3452616"/>
+          <gpxx:rpt lat="51.6570711" lon="7.3452616"/>
+          <gpxx:rpt lat="51.6576290" lon="7.3453903"/>
+          <gpxx:rpt lat="51.6581869" lon="7.3455620"/>
+          <gpxx:rpt lat="51.6590023" lon="7.3457336"/>
+          <gpxx:rpt lat="51.6593456" lon="7.3457766"/>
+          <gpxx:rpt lat="51.6593456" lon="7.3457766"/>
+          <gpxx:rpt lat="51.6601610" lon="7.3459053">
+            <gpxx:Subclass>05000f544d004cad1f001f002b00d6f98e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6614485" lon="7.3460340"/>
+          <gpxx:rpt lat="51.6618347" lon="7.3460770"/>
+          <gpxx:rpt lat="51.6621351" lon="7.3461199"/>
+          <gpxx:rpt lat="51.6621351" lon="7.3461199"/>
+          <gpxx:rpt lat="51.6631651" lon="7.3462486">
+            <gpxx:Subclass>05000f544d0084b81f001f002b00f9f95c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6637230" lon="7.3463345"/>
+          <gpxx:rpt lat="51.6642380" lon="7.3465919"/>
+          <gpxx:rpt lat="51.6646242" lon="7.3469782"/>
+          <gpxx:rpt lat="51.6649246" lon="7.3474932">
+            <gpxx:Subclass>05000f544d00d0b15f001f002b001cfa1400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6651821" lon="7.3480511">
+            <gpxx:Subclass>02000f544d00c4f20a001f062b003cfae800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6658688" lon="7.3479223"/>
+          <gpxx:rpt lat="51.6669416" lon="7.3479223"/>
+          <gpxx:rpt lat="51.6678858" lon="7.3480940"/>
+          <gpxx:rpt lat="51.6690445" lon="7.3485661"/>
+          <gpxx:rpt lat="51.6697741" lon="7.3490381"/>
+          <gpxx:rpt lat="51.6699886" lon="7.3491669">
+            <gpxx:Subclass>02000f544d0055f14a001f0032002586a200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6708040" lon="7.3498535"/>
+          <gpxx:rpt lat="51.6715765" lon="7.3505402"/>
+          <gpxx:rpt lat="51.6729927" lon="7.3519564">
+            <gpxx:Subclass>02000f544d00dbee4a001f00320069863a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6738081" lon="7.3527718"/>
+          <gpxx:rpt lat="51.6740656" lon="7.3530293">
+            <gpxx:Subclass>02000f544d00fdf04a001f003200d1865401</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6759968" lon="7.3549175"/>
+          <gpxx:rpt lat="51.6765547" lon="7.3554754"/>
+          <gpxx:rpt lat="51.6775417" lon="7.3564625"/>
+          <gpxx:rpt lat="51.6775417" lon="7.3564625"/>
+          <gpxx:rpt lat="51.6781855" lon="7.3570633"/>
+          <gpxx:rpt lat="51.6781855" lon="7.3570633"/>
+          <gpxx:rpt lat="51.6797304" lon="7.3586082"/>
+          <gpxx:rpt lat="51.6802883" lon="7.3591232">
+            <gpxx:Subclass>02000f544d00b9f04a001f003200ec862a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6804600" lon="7.3592949"/>
+          <gpxx:rpt lat="51.6810608" lon="7.3598957">
+            <gpxx:Subclass>02000f544d002ae34a001f00320001873e01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6820478" lon="7.3606253"/>
+          <gpxx:rpt lat="51.6829062" lon="7.3609686"/>
+          <gpxx:rpt lat="51.6840219" lon="7.3610115"/>
+          <gpxx:rpt lat="51.6855669" lon="7.3606253"/>
+          <gpxx:rpt lat="51.6867685" lon="7.3603678"/>
+          <gpxx:rpt lat="51.6877127" lon="7.3603249">
+            <gpxx:Subclass>02000f544d0050e34a001f00320017877800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6881847" lon="7.3604107"/>
+          <gpxx:rpt lat="51.6888285" lon="7.3606682"/>
+          <gpxx:rpt lat="51.6896868" lon="7.3611832"/>
+          <gpxx:rpt lat="51.6902018" lon="7.3614836">
+            <gpxx:Subclass>02000f544d0092e34a001f00320030877000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6912317" lon="7.3620844"/>
+          <gpxx:rpt lat="51.6917038" lon="7.3624277"/>
+          <gpxx:rpt lat="51.6917038" lon="7.3624277"/>
+          <gpxx:rpt lat="51.6924334" lon="7.3629427">
+            <gpxx:Subclass>02000f544d00abee4a001f00320049871401</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6957808" lon="7.3654747"/>
+          <gpxx:rpt lat="51.6957808" lon="7.3654747"/>
+          <gpxx:rpt lat="51.6963387" lon="7.3659039"/>
+          <gpxx:rpt lat="51.6977549" lon="7.3669767">
+            <gpxx:Subclass>02000f544d008bee4a001f00320062875400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.6982269" lon="7.3673201"/>
+          <gpxx:rpt lat="51.6993427" lon="7.3682213">
+            <gpxx:Subclass>02000f544d00b9ed4a001f0032007b872800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7000294" lon="7.3690367">
+            <gpxx:Subclass>02000f544d00c8ec4a001f00320090873200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7006302" lon="7.3698950"/>
+          <gpxx:rpt lat="51.7007160" lon="7.3701525"/>
+          <gpxx:rpt lat="51.7007160" lon="7.3702812">
+            <gpxx:Subclass>05000f544d0042254f001f063200a1879600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7009306" lon="7.3703241"/>
+          <gpxx:rpt lat="51.7010164" lon="7.3704529"/>
+          <gpxx:rpt lat="51.7032051" lon="7.3735428">
+            <gpxx:Subclass>05000f544d00e8240f001f002d0019276000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7035913" lon="7.3741007"/>
+          <gpxx:rpt lat="51.7047930" lon="7.3757315">
+            <gpxx:Subclass>06000f544d0063254f001f002d0093272200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7053509" lon="7.3765039">
+            <gpxx:Subclass>06000f544d00b91420001f002a0082867400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7057371" lon="7.3771477"/>
+          <gpxx:rpt lat="51.7062521" lon="7.3778343"/>
+          <gpxx:rpt lat="51.7062521" lon="7.3779202"/>
+          <gpxx:rpt lat="51.7062521" lon="7.3779202"/>
+          <gpxx:rpt lat="51.7069817" lon="7.3788214"/>
+          <gpxx:rpt lat="51.7071104" lon="7.3793793">
+            <gpxx:Subclass>06000f544d0067e81a001f022a005d991600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7066383" lon="7.3795509">
+            <gpxx:Subclass>06000f544d000f4561001f062a00c1994000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7066813" lon="7.3806238"/>
+          <gpxx:rpt lat="51.7071104" lon="7.3815250">
+            <gpxx:Subclass>06000f544d00594821001f002a00099b5400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7072392" lon="7.3817396"/>
+          <gpxx:rpt lat="51.7074108" lon="7.3821688"/>
+          <gpxx:rpt lat="51.7075825" lon="7.3826838"/>
+          <gpxx:rpt lat="51.7077971" lon="7.3835421"/>
+          <gpxx:rpt lat="51.7078400" lon="7.3841000">
+            <gpxx:Subclass>05000f544d00384661001f002d0079281e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7078829" lon="7.3851728">
+            <gpxx:Subclass>05000f544d003b5d25001f002d0094284600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7078400" lon="7.3858595"/>
+          <gpxx:rpt lat="51.7076254" lon="7.3875332">
+            <gpxx:Subclass>0c000f544d005ba903001f0e2d00a9281000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7074966" lon="7.3876619"/>
+          <gpxx:rpt lat="51.7074537" lon="7.3877907"/>
+          <gpxx:rpt lat="51.7075396" lon="7.3879194">
+            <gpxx:Subclass>0c000f544d0048a943001f002d00f4280800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7076683" lon="7.3877907">
+            <gpxx:Subclass>06000f544d00c4e75d001f8f2d00dd281c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7077541" lon="7.3878336"/>
+          <gpxx:rpt lat="51.7082691" lon="7.3877907"/>
+          <gpxx:rpt lat="51.7082691" lon="7.3877907">
+            <gpxx:Subclass>06000f544d005ee81d001f002a007b9e3e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7085266" lon="7.3898935">
+            <gpxx:Subclass>06000f544d00abe7dd001f002a00ba9e6c00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7085695" lon="7.3907518"/>
+          <gpxx:rpt lat="51.7085695" lon="7.3925114"/>
+          <gpxx:rpt lat="51.7084837" lon="7.3930264"/>
+          <gpxx:rpt lat="51.7082691" lon="7.3935413">
+            <gpxx:Subclass>02000f544d00fde40a001f062a005f9f2600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7089558" lon="7.3942709">
+            <gpxx:Subclass>02000f544d0066e10a001f003300dd4c9a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7103291" lon="7.3959017"/>
+          <gpxx:rpt lat="51.7107582" lon="7.3965025"/>
+          <gpxx:rpt lat="51.7114449" lon="7.3977041">
+            <gpxx:Subclass>02000f544d0066e10a001f002a00d39fa500</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7120886" lon="7.3989058"/>
+          <gpxx:rpt lat="51.7126036" lon="7.3997211"/>
+          <gpxx:rpt lat="51.7134190" lon="7.4006653"/>
+          <gpxx:rpt lat="51.7141308" lon="7.4013770">
+            <gpxx:Subclass>02000f544d0066e10a00211700003e010000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7141308" lon="7.4013771">
+      <time>2007-03-31T19:15:41Z</time>
+      <name>LüdinghauserSt1</name>
+      <cmt>Lüdinghauser Strasse</cmt>
+      <desc>Lüdinghauser Strasse</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d001300d7000d24050046c65d43</gpxx:Subclass>
+          <gpxx:rpt lat="51.7141308" lon="7.4013770">
+            <gpxx:Subclass>02000f544d0066e10a00211600003e010800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7142773" lon="7.4015236">
+            <gpxx:Subclass>02000f544d0066e10a001f002a009ba00e01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7152214" lon="7.4021673"/>
+          <gpxx:rpt lat="51.7168093" lon="7.4028111"/>
+          <gpxx:rpt lat="51.7191267" lon="7.4036694"/>
+          <gpxx:rpt lat="51.7198563" lon="7.4040127">
+            <gpxx:Subclass>05000f544d005fad0c001f002d001a2a0000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7198563" lon="7.4040127">
+            <gpxx:Subclass>05000f544d005fad0c002117000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7198563" lon="7.4040127">
+      <time>2007-03-31T19:15:00Z</time>
+      <name>LüdinghauserStr</name>
+      <cmt>Lüdinghauser Strasse und Birkenallee</cmt>
+      <desc>Lüdinghauser Strasse und Birkenallee</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02800f544d00230072090f24050050c7dc43</gpxx:Subclass>
+          <gpxx:rpt lat="51.7198563" lon="7.4040127">
+            <gpxx:Subclass>05000f544d005fad0c002116000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7198563" lon="7.4040127">
+            <gpxx:Subclass>02000f544d0066e10a001f002d001a2a4802</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7204142" lon="7.4044418"/>
+          <gpxx:rpt lat="51.7209721" lon="7.4050856"/>
+          <gpxx:rpt lat="51.7220449" lon="7.4069309"/>
+          <gpxx:rpt lat="51.7226458" lon="7.4077463"/>
+          <gpxx:rpt lat="51.7249203" lon="7.4096775"/>
+          <gpxx:rpt lat="51.7265511" lon="7.4110508"/>
+          <gpxx:rpt lat="51.7294264" lon="7.4134541"/>
+          <gpxx:rpt lat="51.7295551" lon="7.4135828"/>
+          <gpxx:rpt lat="51.7304993" lon="7.4143553">
+            <gpxx:Subclass>02000f544d00a6f30a001f003300d04f4602</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7312288" lon="7.4148703"/>
+          <gpxx:rpt lat="51.7319584" lon="7.4150419"/>
+          <gpxx:rpt lat="51.7333746" lon="7.4152994"/>
+          <gpxx:rpt lat="51.7356062" lon="7.4163723"/>
+          <gpxx:rpt lat="51.7402411" lon="7.4186039"/>
+          <gpxx:rpt lat="51.7416573" lon="7.4193335"/>
+          <gpxx:rpt lat="51.7424297" lon="7.4200201">
+            <gpxx:Subclass>02000f544d00a6f30a001f002a006ca5c100</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7424297" lon="7.4200201"/>
+          <gpxx:rpt lat="51.7442322" lon="7.4216938"/>
+          <gpxx:rpt lat="51.7453909" lon="7.4226809"/>
+          <gpxx:rpt lat="51.7461079" lon="7.4231082">
+            <gpxx:Subclass>02000f544d00a6f30a002117000008030000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7461080" lon="7.4231083">
+      <time>2007-03-31T19:14:40Z</time>
+      <name>OlfenerStrasse</name>
+      <cmt>Olfener Strasse</cmt>
+      <desc>Olfener Strasse</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d002200d4000d24050018cc5347</gpxx:Subclass>
+          <gpxx:rpt lat="51.7461079" lon="7.4231082">
+            <gpxx:Subclass>02000f544d00a6f30a002116000008034b00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7476225" lon="7.4240112">
+            <gpxx:Subclass>02000f544d00a6f30a001f002a00c26c1200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7476225" lon="7.4240112"/>
+          <gpxx:rpt lat="51.7479658" lon="7.4242258">
+            <gpxx:Subclass>02000f544d00e3e04a001f0033001450ce00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7489100" lon="7.4247837"/>
+          <gpxx:rpt lat="51.7494678" lon="7.4252558"/>
+          <gpxx:rpt lat="51.7499828" lon="7.4258566"/>
+          <gpxx:rpt lat="51.7503262" lon="7.4264574"/>
+          <gpxx:rpt lat="51.7505407" lon="7.4268866"/>
+          <gpxx:rpt lat="51.7513561" lon="7.4286032">
+            <gpxx:Subclass>02000f544d0043f44a001f00330087508a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7517424" lon="7.4292040"/>
+          <gpxx:rpt lat="51.7521286" lon="7.4295902"/>
+          <gpxx:rpt lat="51.7525578" lon="7.4298906"/>
+          <gpxx:rpt lat="51.7532015" lon="7.4300623"/>
+          <gpxx:rpt lat="51.7540598" lon="7.4301052">
+            <gpxx:Subclass>02000f544d003df30a001f003300a250a601</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7545748" lon="7.4302769"/>
+          <gpxx:rpt lat="51.7554760" lon="7.4309206"/>
+          <gpxx:rpt lat="51.7570210" lon="7.4322510"/>
+          <gpxx:rpt lat="51.7574072" lon="7.4326372"/>
+          <gpxx:rpt lat="51.7583513" lon="7.4338818"/>
+          <gpxx:rpt lat="51.7583513" lon="7.4338818"/>
+          <gpxx:rpt lat="51.7589092" lon="7.4343109"/>
+          <gpxx:rpt lat="51.7601109" lon="7.4351263"/>
+          <gpxx:rpt lat="51.7609692" lon="7.4354696"/>
+          <gpxx:rpt lat="51.7619133" lon="7.4357271"/>
+          <gpxx:rpt lat="51.7622137" lon="7.4357271">
+            <gpxx:Subclass>02000f544d003df30a001f002a0024b00500</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7623203" lon="7.4357333">
+            <gpxx:Subclass>02000f544d003df30a0021170000a8010000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7623204" lon="7.4357333">
+      <time>2007-03-31T19:14:20Z</time>
+      <name>OlfenerStrasse6</name>
+      <cmt>Olfener Strasse 60</cmt>
+      <desc>Olfener Strasse 60</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d001f00d40001810800fa040000</gpxx:Subclass>
+          <gpxx:rpt lat="51.7623203" lon="7.4357333">
+            <gpxx:Subclass>02000f544d003df30a0021160000a8011d00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7629433" lon="7.4357700">
+            <gpxx:Subclass>02000f544d003df30a001f002d001a2b8200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7657282" lon="7.4358506">
+            <gpxx:Subclass>02000f544d003df30a002117000047020000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7657284" lon="7.4358506">
+      <time>2007-03-31T19:14:27Z</time>
+      <name>OlfenerStrasse2</name>
+      <cmt>Olfener Strasse 21</cmt>
+      <desc>Olfener Strasse 21</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02000f544d001f00d40001010900d1810000</gpxx:Subclass>
+          <gpxx:rpt lat="51.7657282" lon="7.4358506">
+            <gpxx:Subclass>0200b02551006aed03002116000047020800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7659044" lon="7.4358559">
+            <gpxx:Subclass>0200b02551006aed03001f000d00c8c67800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7659473" lon="7.4358559"/>
+          <gpxx:rpt lat="51.7668486" lon="7.4359417"/>
+          <gpxx:rpt lat="51.7673206" lon="7.4362421"/>
+          <gpxx:rpt lat="51.7677069" lon="7.4367142"/>
+          <gpxx:rpt lat="51.7679214" lon="7.4371433"/>
+          <gpxx:rpt lat="51.7680502" lon="7.4373150"/>
+          <gpxx:rpt lat="51.7681360" lon="7.4373150">
+            <gpxx:Subclass>0300b025510021de4e001f0014008a961a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7683506" lon="7.4374866"/>
+          <gpxx:rpt lat="51.7686081" lon="7.4378729">
+            <gpxx:Subclass>0300b02551003de108001f061300eeb7b001</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7689943" lon="7.4370575"/>
+          <gpxx:rpt lat="51.7692947" lon="7.4368858"/>
+          <gpxx:rpt lat="51.7695093" lon="7.4367142"/>
+          <gpxx:rpt lat="51.7707109" lon="7.4362850"/>
+          <gpxx:rpt lat="51.7710114" lon="7.4361992"/>
+          <gpxx:rpt lat="51.7723846" lon="7.4355555"/>
+          <gpxx:rpt lat="51.7725992" lon="7.4355125"/>
+          <gpxx:rpt lat="51.7728138" lon="7.4355984"/>
+          <gpxx:rpt lat="51.7731142" lon="7.4358988"/>
+          <gpxx:rpt lat="51.7733288" lon="7.4361992"/>
+          <gpxx:rpt lat="51.7745304" lon="7.4373150"/>
+          <gpxx:rpt lat="51.7753029" lon="7.4378300"/>
+          <gpxx:rpt lat="51.7759037" lon="7.4381733"/>
+          <gpxx:rpt lat="51.7761612" lon="7.4384308"/>
+          <gpxx:rpt lat="51.7767620" lon="7.4392462"/>
+          <gpxx:rpt lat="51.7768478" lon="7.4394608">
+            <gpxx:Subclass>0300b0255100577e06001f06130051b8f801</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7775774" lon="7.4391603"/>
+          <gpxx:rpt lat="51.7777491" lon="7.4391174"/>
+          <gpxx:rpt lat="51.7780066" lon="7.4389458"/>
+          <gpxx:rpt lat="51.7788219" lon="7.4381304"/>
+          <gpxx:rpt lat="51.7798519" lon="7.4373150"/>
+          <gpxx:rpt lat="51.7830706" lon="7.4361563"/>
+          <gpxx:rpt lat="51.7835426" lon="7.4358988"/>
+          <gpxx:rpt lat="51.7861176" lon="7.4333239"/>
+          <gpxx:rpt lat="51.7865896" lon="7.4326372">
+            <gpxx:Subclass>0600b0255100166406001f020e00630f3300</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7876852" lon="7.4326609">
+            <gpxx:Subclass>0600b0255100166406002117000033000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.7876853" lon="7.4326609">
+      <time>2007-07-08T08:03:26Z</time>
+      <name>ElverterStrasse</name>
+      <cmt>Elverter Strasse</cmt>
+      <desc>Elverter Strasse</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>0600b02551003d009d030d240500a9d31349</gpxx:Subclass>
+          <gpxx:rpt lat="51.7876852" lon="7.4326609">
+            <gpxx:Subclass>0600b0255100166406002116000033002900</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7885637" lon="7.4326801">
+            <gpxx:Subclass>0600b0255100016446001f000e00810f3e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7898941" lon="7.4328089">
+            <gpxx:Subclass>0600b02551002e6406001f000e00a00fd201</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7927265" lon="7.4332380"/>
+          <gpxx:rpt lat="51.7944431" lon="7.4334955"/>
+          <gpxx:rpt lat="51.7950010" lon="7.4334526"/>
+          <gpxx:rpt lat="51.7960310" lon="7.4332809"/>
+          <gpxx:rpt lat="51.7979622" lon="7.4333668"/>
+          <gpxx:rpt lat="51.7984343" lon="7.4334955"/>
+          <gpxx:rpt lat="51.7998505" lon="7.4339247">
+            <gpxx:Subclass>0500b0255100c06206001f000d0079c55e02</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.7998505" lon="7.4339247"/>
+          <gpxx:rpt lat="51.8040991" lon="7.4354267"/>
+          <gpxx:rpt lat="51.8050003" lon="7.4358130"/>
+          <gpxx:rpt lat="51.8050003" lon="7.4358130"/>
+          <gpxx:rpt lat="51.8053865" lon="7.4361134"/>
+          <gpxx:rpt lat="51.8057299" lon="7.4368429"/>
+          <gpxx:rpt lat="51.8062019" lon="7.4387312"/>
+          <gpxx:rpt lat="51.8064594" lon="7.4394178"/>
+          <gpxx:rpt lat="51.8067598" lon="7.4398899"/>
+          <gpxx:rpt lat="51.8080044" lon="7.4418211"/>
+          <gpxx:rpt lat="51.8082619" lon="7.4424648"/>
+          <gpxx:rpt lat="51.8083477" lon="7.4427652"/>
+          <gpxx:rpt lat="51.8085194" lon="7.4430227"/>
+          <gpxx:rpt lat="51.8086910" lon="7.4431086"/>
+          <gpxx:rpt lat="51.8091202" lon="7.4431086"/>
+          <gpxx:rpt lat="51.8103218" lon="7.4422073">
+            <gpxx:Subclass>0500b02551008c104a001f02120021096400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8115234" lon="7.4449968">
+            <gpxx:Subclass>0500b0255100955904001f02120066093603</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8113089" lon="7.4476147"/>
+          <gpxx:rpt lat="51.8109655" lon="7.4505329"/>
+          <gpxx:rpt lat="51.8108797" lon="7.4514771"/>
+          <gpxx:rpt lat="51.8109655" lon="7.4521637"/>
+          <gpxx:rpt lat="51.8110514" lon="7.4525928"/>
+          <gpxx:rpt lat="51.8111801" lon="7.4530220"/>
+          <gpxx:rpt lat="51.8115234" lon="7.4538374"/>
+          <gpxx:rpt lat="51.8116093" lon="7.4541807"/>
+          <gpxx:rpt lat="51.8115234" lon="7.4554253"/>
+          <gpxx:rpt lat="51.8109655" lon="7.4602318"/>
+          <gpxx:rpt lat="51.8107939" lon="7.4619913"/>
+          <gpxx:rpt lat="51.8107080" lon="7.4626780"/>
+          <gpxx:rpt lat="51.8107510" lon="7.4631071"/>
+          <gpxx:rpt lat="51.8114376" lon="7.4658108"/>
+          <gpxx:rpt lat="51.8120384" lon="7.4680853"/>
+          <gpxx:rpt lat="51.8124676" lon="7.4698448"/>
+          <gpxx:rpt lat="51.8129826" lon="7.4716902"/>
+          <gpxx:rpt lat="51.8131113" lon="7.4722481">
+            <gpxx:Subclass>0500b0255100a25604001f061200120c5a01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8134975" lon="7.4718618"/>
+          <gpxx:rpt lat="51.8148708" lon="7.4706602"/>
+          <gpxx:rpt lat="51.8164158" lon="7.4695015"/>
+          <gpxx:rpt lat="51.8168449" lon="7.4692869"/>
+          <gpxx:rpt lat="51.8170595" lon="7.4692869"/>
+          <gpxx:rpt lat="51.8201065" lon="7.4692440">
+            <gpxx:Subclass>0500b02551004d104a001f001200c80bee00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8219090" lon="7.4686432"/>
+          <gpxx:rpt lat="51.8221664" lon="7.4684715"/>
+          <gpxx:rpt lat="51.8224669" lon="7.4680853"/>
+          <gpxx:rpt lat="51.8227243" lon="7.4675703"/>
+          <gpxx:rpt lat="51.8233681" lon="7.4651670"/>
+          <gpxx:rpt lat="51.8236685" lon="7.4646521"/>
+          <gpxx:rpt lat="51.8237543" lon="7.4645662">
+            <gpxx:Subclass>0500b02551007f7c07001f001200fc0a9802</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8241405" lon="7.4643517"/>
+          <gpxx:rpt lat="51.8244410" lon="7.4643517"/>
+          <gpxx:rpt lat="51.8265438" lon="7.4651241"/>
+          <gpxx:rpt lat="51.8274450" lon="7.4652958"/>
+          <gpxx:rpt lat="51.8281317" lon="7.4650383"/>
+          <gpxx:rpt lat="51.8288612" lon="7.4645233"/>
+          <gpxx:rpt lat="51.8291187" lon="7.4644375"/>
+          <gpxx:rpt lat="51.8296337" lon="7.4646521"/>
+          <gpxx:rpt lat="51.8301487" lon="7.4651241"/>
+          <gpxx:rpt lat="51.8325090" lon="7.4670553"/>
+          <gpxx:rpt lat="51.8334532" lon="7.4671841"/>
+          <gpxx:rpt lat="51.8334532" lon="7.4671841"/>
+          <gpxx:rpt lat="51.8352985" lon="7.4672699"/>
+          <gpxx:rpt lat="51.8355560" lon="7.4673557"/>
+          <gpxx:rpt lat="51.8366718" lon="7.4681282"/>
+          <gpxx:rpt lat="51.8374014" lon="7.4681282">
+            <gpxx:Subclass>0600b02551008d7d07001f021200ac0bc400</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8373156" lon="7.4703598"/>
+          <gpxx:rpt lat="51.8374443" lon="7.4724197"/>
+          <gpxx:rpt lat="51.8374014" lon="7.4730635"/>
+          <gpxx:rpt lat="51.8372297" lon="7.4737501"/>
+          <gpxx:rpt lat="51.8365431" lon="7.4739218"/>
+          <gpxx:rpt lat="51.8365431" lon="7.4739218">
+            <gpxx:Subclass>0600b0255100aa7dc7001f000d00dff45a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8362856" lon="7.4770117">
+            <gpxx:Subclass>0600b0255100387e47001f060d0045f5e600</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8367147" lon="7.4771833"/>
+          <gpxx:rpt lat="51.8368006" lon="7.4773121"/>
+          <gpxx:rpt lat="51.8380451" lon="7.4801874"/>
+          <gpxx:rpt lat="51.8382168" lon="7.4804020"/>
+          <gpxx:rpt lat="51.8396759" lon="7.4801874"/>
+          <gpxx:rpt lat="51.8397617" lon="7.4802303"/>
+          <gpxx:rpt lat="51.8398046" lon="7.4803591"/>
+          <gpxx:rpt lat="51.8398476" lon="7.4808741">
+            <gpxx:Subclass>0600b025510053184c001f000d008bb64800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8398905" lon="7.4812174"/>
+          <gpxx:rpt lat="51.8399763" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8411779" lon="7.4816895">
+            <gpxx:Subclass>0600b0255100e4170c001f000d00f6b63000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8418217" lon="7.4820328"/>
+          <gpxx:rpt lat="51.8421650" lon="7.4821615">
+            <gpxx:Subclass>0600b0255100ff170c001f020d0018b76800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8422937" lon="7.4827623"/>
+          <gpxx:rpt lat="51.8425083" lon="7.4829340"/>
+          <gpxx:rpt lat="51.8427658" lon="7.4829769"/>
+          <gpxx:rpt lat="51.8437099" lon="7.4829340"/>
+          <gpxx:rpt lat="51.8440962" lon="7.4830198">
+            <gpxx:Subclass>0600b025510001b005001f020d007cb73e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8440533" lon="7.4851656">
+            <gpxx:Subclass>0600b0255100e4af05001f060d00fbb78e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8448687" lon="7.4852085"/>
+          <gpxx:rpt lat="51.8460274" lon="7.4852085"/>
+          <gpxx:rpt lat="51.8471861" lon="7.4852514">
+            <gpxx:Subclass>0500b0255100cfdc09001f020d003db85e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8470573" lon="7.4884701">
+            <gpxx:Subclass>0200b025510028e903001f0612002a0d5200</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8483019" lon="7.4885559"/>
+          <gpxx:rpt lat="51.8488169" lon="7.4886847">
+            <gpxx:Subclass>0600b025510046890a001f060d0046ba1000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8488598" lon="7.4885130"/>
+          <gpxx:rpt lat="51.8490744" lon="7.4884701">
+            <gpxx:Subclass>0600b0255100ac7e47001f020d0000ba6e00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8491602" lon="7.4886417"/>
+          <gpxx:rpt lat="51.8496323" lon="7.4890709"/>
+          <gpxx:rpt lat="51.8506622" lon="7.4902725"/>
+          <gpxx:rpt lat="51.8510485" lon="7.4904013">
+            <gpxx:Subclass>0600b0255100a80c03001f020d0058bb0a00</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8510914" lon="7.4907875">
+            <gpxx:Subclass>0200b02551004be903001f060d0085bb1000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8513918" lon="7.4909163">
+            <gpxx:Subclass>0200b0255100ade903001f00140052990c01</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8519497" lon="7.4911737"/>
+          <gpxx:rpt lat="51.8524218" lon="7.4913883"/>
+          <gpxx:rpt lat="51.8533230" lon="7.4917316"/>
+          <gpxx:rpt lat="51.8539667" lon="7.4919462"/>
+          <gpxx:rpt lat="51.8543959" lon="7.4920750"/>
+          <gpxx:rpt lat="51.8548679" lon="7.4922037"/>
+          <gpxx:rpt lat="51.8565845" lon="7.4927616"/>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>0300b0255100b36710001f0013004bbe0000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>0300b0255100b36710002117000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.8570137" lon="7.4928904">
+      <time>2007-03-31T19:05:10Z</time>
+      <name>B235undWilhelm-</name>
+      <cmt> B235 und Wilhelm-Haverkamp-Strasse und K4</cmt>
+      <desc> B235 und Wilhelm-Haverkamp-Strasse und K4</desc>
+      <sym>Waypoint</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>02800f544d0017007c090f24050048e00a54</gpxx:Subclass>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>03000f544d00b5302a002116000000000000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8570137" lon="7.4928904">
+            <gpxx:Subclass>03000f544d00b5302a001f063100c3b07000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8570995" lon="7.4925470"/>
+          <gpxx:rpt lat="51.8573999" lon="7.4918175"/>
+          <gpxx:rpt lat="51.8576145" lon="7.4913454"/>
+          <gpxx:rpt lat="51.8577862" lon="7.4906588"/>
+          <gpxx:rpt lat="51.8578291" lon="7.4902296"/>
+          <gpxx:rpt lat="51.8577433" lon="7.4893713">
+            <gpxx:Subclass>03000f544d00551c13001f0031003ab0c000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8577003" lon="7.4887276"/>
+          <gpxx:rpt lat="51.8576574" lon="7.4868393"/>
+          <gpxx:rpt lat="51.8576574" lon="7.4868393"/>
+          <gpxx:rpt lat="51.8575716" lon="7.4853802"/>
+          <gpxx:rpt lat="51.8574429" lon="7.4849081"/>
+          <gpxx:rpt lat="51.8574429" lon="7.4847794"/>
+          <gpxx:rpt lat="51.8573141" lon="7.4842215"/>
+          <gpxx:rpt lat="51.8572712" lon="7.4833632"/>
+          <gpxx:rpt lat="51.8573999" lon="7.4828482">
+            <gpxx:Subclass>0c000f544d0079a803001f0e3100adaf1000</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8575287" lon="7.4827623"/>
+          <gpxx:rpt lat="51.8575287" lon="7.4825907"/>
+          <gpxx:rpt lat="51.8574858" lon="7.4825048">
+            <gpxx:Subclass>06000f544d0020d709001f4f310076af7201</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8574858" lon="7.4823761"/>
+          <gpxx:rpt lat="51.8578720" lon="7.4817753"/>
+          <gpxx:rpt lat="51.8580866" lon="7.4815178"/>
+          <gpxx:rpt lat="51.8583870" lon="7.4813461"/>
+          <gpxx:rpt lat="51.8589020" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8594170" lon="7.4813032"/>
+          <gpxx:rpt lat="51.8605757" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8608761" lon="7.4812174"/>
+          <gpxx:rpt lat="51.8609619" lon="7.4812603"/>
+          <gpxx:rpt lat="51.8618202" lon="7.4811316"/>
+          <gpxx:rpt lat="51.8635368" lon="7.4807024"/>
+          <gpxx:rpt lat="51.8650389" lon="7.4808311">
+            <gpxx:Subclass>06000f544d00163811001f0629006ef32800</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8650818" lon="7.4799728"/>
+          <gpxx:rpt lat="51.8652534" lon="7.4795437">
+            <gpxx:Subclass>06000f544d00a43711001f022900aef12700</gpxx:Subclass>
+          </gpxx:rpt>
+          <gpxx:rpt lat="51.8657684" lon="7.4800587"/>
+          <gpxx:rpt lat="51.8660035" lon="7.4800899">
+            <gpxx:Subclass>06000f544d00a43711002117000027000000</gpxx:Subclass>
+          </gpxx:rpt>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+    <rtept lat="51.8660035" lon="7.4800899">
+      <time>2007-03-31T18:52:54Z</time>
+      <name>Erlengrund361</name>
+      <cmt>Erlengrund 361</cmt>
+      <desc>Erlengrund 361</desc>
+      <sym>Residence</sym>
+      <extensions>
+        <gpxx:RoutePointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+          <gpxx:Subclass>000000000000ffffffffffffffffffffffff</gpxx:Subclass>
+        </gpxx:RoutePointExtension>
+      </extensions>
+    </rtept>
+  </rte>
+
+  <trk>
+    <name>Track vom 8. 7. 08</name>
+    <cmt>Gefahrener Weg</cmt>
+    <extensions>
+      <gpxx:TrackExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayColor>#77aa22</gpxx:DisplayColor>
+      </gpxx:TrackExtension>
+    </extensions>
+    <trkseg>
+      <trkpt lat="51.8657139" lon="7.4796268">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:21:02Z</time>
+      </trkpt>
+      <trkpt lat="51.8655991" lon="7.4796656">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:21:19Z</time>
+      </trkpt>
+      <trkpt lat="51.8655864" lon="7.4796950">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:21:28Z</time>
+      </trkpt>
+      <trkpt lat="51.8654136" lon="7.4797037">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:21:33Z</time>
+      </trkpt>
+      <trkpt lat="51.8650456" lon="7.4806974">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:21:48Z</time>
+      </trkpt>
+      <trkpt lat="51.8632797" lon="7.4807668">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:22:14Z</time>
+      </trkpt>
+      <trkpt lat="51.8623961" lon="7.4809877">
+        <ele>58.0</ele>
+        <time>2007-07-08T08:22:40Z</time>
+      </trkpt>
+      <trkpt lat="51.8611946" lon="7.4812254">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:23:18Z</time>
+      </trkpt>
+      <trkpt lat="51.8608424" lon="7.4812222">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:23:26Z</time>
+      </trkpt>
+      <trkpt lat="51.8600411" lon="7.4812802">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:23:44Z</time>
+      </trkpt>
+      <trkpt lat="51.8585049" lon="7.4813265">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T08:24:04Z</time>
+      </trkpt>
+      <trkpt lat="51.8574858" lon="7.4824066">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T08:24:21Z</time>
+      </trkpt>
+      <trkpt lat="51.8572761" lon="7.4834600">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T08:24:31Z</time>
+      </trkpt>
+      <trkpt lat="51.8574429" lon="7.4848825">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:24:43Z</time>
+      </trkpt>
+      <trkpt lat="51.8576428" lon="7.4865911">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T08:24:57Z</time>
+      </trkpt>
+      <trkpt lat="51.8576824" lon="7.4879373">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T08:25:08Z</time>
+      </trkpt>
+      <trkpt lat="51.8576927" lon="7.4883913">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:26:50Z</time>
+      </trkpt>
+      <trkpt lat="51.8576970" lon="7.4885783">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:26:53Z</time>
+      </trkpt>
+      <trkpt lat="51.8577713" lon="7.4896511">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T08:27:28Z</time>
+      </trkpt>
+      <trkpt lat="51.8578062" lon="7.4900003">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T08:27:31Z</time>
+      </trkpt>
+      <trkpt lat="51.8571813" lon="7.4923486">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T08:27:52Z</time>
+      </trkpt>
+      <trkpt lat="51.8570714" lon="7.4926597">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T08:27:55Z</time>
+      </trkpt>
+      <trkpt lat="51.8552553" lon="7.4923294">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T08:28:19Z</time>
+      </trkpt>
+      <trkpt lat="51.8522524" lon="7.4913111">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T08:29:02Z</time>
+      </trkpt>
+      <trkpt lat="51.8511570" lon="7.4908156">
+        <ele>60.7003174</ele>
+        <time>2007-07-08T08:29:20Z</time>
+      </trkpt>
+      <trkpt lat="51.8500996" lon="7.4896161">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T08:29:40Z</time>
+      </trkpt>
+      <trkpt lat="51.8484074" lon="7.4885822">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T08:30:07Z</time>
+      </trkpt>
+      <trkpt lat="51.8481457" lon="7.4885449">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T08:30:11Z</time>
+      </trkpt>
+      <trkpt lat="51.8430944" lon="7.4883376">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T08:31:20Z</time>
+      </trkpt>
+      <trkpt lat="51.8418551" lon="7.4883949">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T08:31:37Z</time>
+      </trkpt>
+      <trkpt lat="51.8404995" lon="7.4888322">
+        <ele>58.7777100</ele>
+        <time>2007-07-08T08:31:56Z</time>
+      </trkpt>
+      <trkpt lat="51.8378026" lon="7.4896304">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T08:32:33Z</time>
+      </trkpt>
+      <trkpt lat="51.8330512" lon="7.4908319">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T08:33:38Z</time>
+      </trkpt>
+      <trkpt lat="51.8314501" lon="7.4909711">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T08:33:59Z</time>
+      </trkpt>
+      <trkpt lat="51.8265530" lon="7.4922859">
+        <ele>58.7777100</ele>
+        <time>2007-07-08T08:35:05Z</time>
+      </trkpt>
+      <trkpt lat="51.8251211" lon="7.4924545">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T08:35:24Z</time>
+      </trkpt>
+      <trkpt lat="51.8194779" lon="7.4931421">
+        <ele>62.1423340</ele>
+        <time>2007-07-08T08:36:42Z</time>
+      </trkpt>
+      <trkpt lat="51.8181767" lon="7.4929359">
+        <ele>63.1036377</ele>
+        <time>2007-07-08T08:37:00Z</time>
+      </trkpt>
+      <trkpt lat="51.8125840" lon="7.4916357">
+        <ele>65.0263672</ele>
+        <time>2007-07-08T08:38:22Z</time>
+      </trkpt>
+      <trkpt lat="51.8102386" lon="7.4908455">
+        <ele>64.5456543</ele>
+        <time>2007-07-08T08:38:56Z</time>
+      </trkpt>
+      <trkpt lat="51.8074679" lon="7.4879241">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T08:39:43Z</time>
+      </trkpt>
+      <trkpt lat="51.8042567" lon="7.4824504">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T08:40:48Z</time>
+      </trkpt>
+      <trkpt lat="51.8032565" lon="7.4806019">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T08:41:07Z</time>
+      </trkpt>
+      <trkpt lat="51.8022354" lon="7.4793580">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T08:41:23Z</time>
+      </trkpt>
+      <trkpt lat="51.8009997" lon="7.4780400">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T08:41:42Z</time>
+      </trkpt>
+      <trkpt lat="51.7976851" lon="7.4739576">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:42:35Z</time>
+      </trkpt>
+      <trkpt lat="51.7951073" lon="7.4713258">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:43:16Z</time>
+      </trkpt>
+      <trkpt lat="51.7918658" lon="7.4679411">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T08:44:09Z</time>
+      </trkpt>
+      <trkpt lat="51.7907688" lon="7.4663761">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:44:30Z</time>
+      </trkpt>
+      <trkpt lat="51.7877482" lon="7.4615195">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:45:38Z</time>
+      </trkpt>
+      <trkpt lat="51.7877255" lon="7.4615712">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:45:41Z</time>
+      </trkpt>
+      <trkpt lat="51.7866066" lon="7.4641201">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T08:46:13Z</time>
+      </trkpt>
+      <trkpt lat="51.7862683" lon="7.4648905">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T08:46:21Z</time>
+      </trkpt>
+      <trkpt lat="51.7846856" lon="7.4649027">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T08:46:43Z</time>
+      </trkpt>
+      <trkpt lat="51.7839361" lon="7.4648357">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:46:53Z</time>
+      </trkpt>
+      <trkpt lat="51.7830815" lon="7.4660574">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:47:10Z</time>
+      </trkpt>
+      <trkpt lat="51.7815096" lon="7.4661642">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:47:36Z</time>
+      </trkpt>
+      <trkpt lat="51.7771087" lon="7.4641930">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T08:48:37Z</time>
+      </trkpt>
+      <trkpt lat="51.7744511" lon="7.4632303">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T08:49:14Z</time>
+      </trkpt>
+      <trkpt lat="51.7732614" lon="7.4632448">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:49:31Z</time>
+      </trkpt>
+      <trkpt lat="51.7724896" lon="7.4633066">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T08:49:42Z</time>
+      </trkpt>
+      <trkpt lat="51.7710525" lon="7.4628747">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:50:07Z</time>
+      </trkpt>
+      <trkpt lat="51.7688543" lon="7.4631573">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:50:47Z</time>
+      </trkpt>
+      <trkpt lat="51.7684787" lon="7.4628204">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T08:50:55Z</time>
+      </trkpt>
+      <trkpt lat="51.7677655" lon="7.4600320">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:51:26Z</time>
+      </trkpt>
+      <trkpt lat="51.7676397" lon="7.4600996">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:51:32Z</time>
+      </trkpt>
+      <trkpt lat="51.7672348" lon="7.4603176">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:51:49Z</time>
+      </trkpt>
+      <trkpt lat="51.7664705" lon="7.4607642">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T08:52:01Z</time>
+      </trkpt>
+      <trkpt lat="51.7625367" lon="7.4623580">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:53:00Z</time>
+      </trkpt>
+      <trkpt lat="51.7601292" lon="7.4632288">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:53:35Z</time>
+      </trkpt>
+      <trkpt lat="51.7582928" lon="7.4652953">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:54:07Z</time>
+      </trkpt>
+      <trkpt lat="51.7570734" lon="7.4664079">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T08:54:26Z</time>
+      </trkpt>
+      <trkpt lat="51.7560399" lon="7.4673498">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T08:54:43Z</time>
+      </trkpt>
+      <trkpt lat="51.7523589" lon="7.4710307">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T08:55:44Z</time>
+      </trkpt>
+      <trkpt lat="51.7500175" lon="7.4734150">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T08:56:22Z</time>
+      </trkpt>
+      <trkpt lat="51.7464286" lon="7.4753423">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T08:57:16Z</time>
+      </trkpt>
+      <trkpt lat="51.7455828" lon="7.4754788">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T08:57:28Z</time>
+      </trkpt>
+      <trkpt lat="51.7437350" lon="7.4756859">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T08:57:55Z</time>
+      </trkpt>
+      <trkpt lat="51.7433180" lon="7.4757171">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T08:58:03Z</time>
+      </trkpt>
+      <trkpt lat="51.7430083" lon="7.4756784">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T08:58:08Z</time>
+      </trkpt>
+      <trkpt lat="51.7395360" lon="7.4751395">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T08:58:57Z</time>
+      </trkpt>
+      <trkpt lat="51.7383960" lon="7.4745420">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T08:59:13Z</time>
+      </trkpt>
+      <trkpt lat="51.7347709" lon="7.4725300">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T09:00:06Z</time>
+      </trkpt>
+      <trkpt lat="51.7328988" lon="7.4702534">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T09:00:40Z</time>
+      </trkpt>
+      <trkpt lat="51.7319653" lon="7.4671591">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T09:01:11Z</time>
+      </trkpt>
+      <trkpt lat="51.7314171" lon="7.4652214">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:01:30Z</time>
+      </trkpt>
+      <trkpt lat="51.7306071" lon="7.4632792">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:01:51Z</time>
+      </trkpt>
+      <trkpt lat="51.7297938" lon="7.4613366">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T09:02:12Z</time>
+      </trkpt>
+      <trkpt lat="51.7276749" lon="7.4591390">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:02:49Z</time>
+      </trkpt>
+      <trkpt lat="51.7228700" lon="7.4569833">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:04:03Z</time>
+      </trkpt>
+      <trkpt lat="51.7217938" lon="7.4568063">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:04:19Z</time>
+      </trkpt>
+      <trkpt lat="51.7133300" lon="7.4559832">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T09:06:23Z</time>
+      </trkpt>
+      <trkpt lat="51.7122268" lon="7.4560309">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T09:06:39Z</time>
+      </trkpt>
+      <trkpt lat="51.7104419" lon="7.4566649">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T09:07:05Z</time>
+      </trkpt>
+      <trkpt lat="51.7088114" lon="7.4576405">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:07:36Z</time>
+      </trkpt>
+      <trkpt lat="51.7076655" lon="7.4582153">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T09:07:53Z</time>
+      </trkpt>
+      <trkpt lat="51.7054826" lon="7.4584152">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T09:08:27Z</time>
+      </trkpt>
+      <trkpt lat="51.7052243" lon="7.4583865">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T09:08:58Z</time>
+      </trkpt>
+      <trkpt lat="51.7044450" lon="7.4583989">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T09:09:10Z</time>
+      </trkpt>
+      <trkpt lat="51.7032201" lon="7.4585857">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T09:09:28Z</time>
+      </trkpt>
+      <trkpt lat="51.7013828" lon="7.4602828">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T09:09:58Z</time>
+      </trkpt>
+      <trkpt lat="51.6979819" lon="7.4648541">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T09:10:59Z</time>
+      </trkpt>
+      <trkpt lat="51.6966371" lon="7.4659038">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:12:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6956587" lon="7.4664284">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T09:12:42Z</time>
+      </trkpt>
+      <trkpt lat="51.6930576" lon="7.4668879">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T09:13:17Z</time>
+      </trkpt>
+      <trkpt lat="51.6920501" lon="7.4669648">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T09:13:31Z</time>
+      </trkpt>
+      <trkpt lat="51.6907514" lon="7.4655907">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:13:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6903715" lon="7.4653997">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:13:59Z</time>
+      </trkpt>
+      <trkpt lat="51.6899389" lon="7.4654112">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:14:06Z</time>
+      </trkpt>
+      <trkpt lat="51.6891062" lon="7.4659233">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:14:19Z</time>
+      </trkpt>
+      <trkpt lat="51.6873153" lon="7.4671844">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:14:48Z</time>
+      </trkpt>
+      <trkpt lat="51.6839331" lon="7.4694053">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T09:15:38Z</time>
+      </trkpt>
+      <trkpt lat="51.6827974" lon="7.4703987">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T09:15:56Z</time>
+      </trkpt>
+      <trkpt lat="51.6802524" lon="7.4707848">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T09:16:33Z</time>
+      </trkpt>
+      <trkpt lat="51.6787155" lon="7.4706173">
+        <ele>60.7003174</ele>
+        <time>2007-07-08T09:16:58Z</time>
+      </trkpt>
+      <trkpt lat="51.6775311" lon="7.4707655">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T09:17:15Z</time>
+      </trkpt>
+      <trkpt lat="51.6751541" lon="7.4712181">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T09:17:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6748973" lon="7.4712181">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T09:17:55Z</time>
+      </trkpt>
+      <trkpt lat="51.6739109" lon="7.4708477">
+        <ele>65.5070801</ele>
+        <time>2007-07-08T09:18:11Z</time>
+      </trkpt>
+      <trkpt lat="51.6703558" lon="7.4693847">
+        <ele>70.3134766</ele>
+        <time>2007-07-08T09:19:09Z</time>
+      </trkpt>
+      <trkpt lat="51.6701663" lon="7.4693344">
+        <ele>72.7169189</ele>
+        <time>2007-07-08T09:19:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6694567" lon="7.4693825">
+        <ele>73.6782227</ele>
+        <time>2007-07-08T09:19:40Z</time>
+      </trkpt>
+      <trkpt lat="51.6687929" lon="7.4689100">
+        <ele>73.1976318</ele>
+        <time>2007-07-08T09:19:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6678848" lon="7.4684355">
+        <ele>73.1976318</ele>
+        <time>2007-07-08T09:20:06Z</time>
+      </trkpt>
+      <trkpt lat="51.6676151" lon="7.4685805">
+        <ele>72.2362061</ele>
+        <time>2007-07-08T09:20:11Z</time>
+      </trkpt>
+      <trkpt lat="51.6672949" lon="7.4687775">
+        <ele>71.7554932</ele>
+        <time>2007-07-08T09:20:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6663977" lon="7.4687399">
+        <ele>70.3134766</ele>
+        <time>2007-07-08T09:20:29Z</time>
+      </trkpt>
+      <trkpt lat="51.6656896" lon="7.4686171">
+        <ele>70.3134766</ele>
+        <time>2007-07-08T09:20:40Z</time>
+      </trkpt>
+      <trkpt lat="51.6652737" lon="7.4681135">
+        <ele>70.3134766</ele>
+        <time>2007-07-08T09:20:49Z</time>
+      </trkpt>
+      <trkpt lat="51.6652011" lon="7.4675811">
+        <ele>70.3134766</ele>
+        <time>2007-07-08T09:20:54Z</time>
+      </trkpt>
+      <trkpt lat="51.6639792" lon="7.4670332">
+        <ele>68.8715820</ele>
+        <time>2007-07-08T09:21:14Z</time>
+      </trkpt>
+      <trkpt lat="51.6610030" lon="7.4667027">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T09:21:48Z</time>
+      </trkpt>
+      <trkpt lat="51.6602202" lon="7.4666221">
+        <ele>60.7003174</ele>
+        <time>2007-07-08T09:21:57Z</time>
+      </trkpt>
+      <trkpt lat="51.6591429" lon="7.4672554">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:22:13Z</time>
+      </trkpt>
+      <trkpt lat="51.6582856" lon="7.4659342">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T09:22:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6576712" lon="7.4649820">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T09:22:35Z</time>
+      </trkpt>
+      <trkpt lat="51.6567554" lon="7.4636217">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T09:22:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6559557" lon="7.4632445">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T09:23:01Z</time>
+      </trkpt>
+      <trkpt lat="51.6546339" lon="7.4638889">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T09:23:21Z</time>
+      </trkpt>
+      <trkpt lat="51.6529180" lon="7.4627382">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T09:23:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6514852" lon="7.4600321">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T09:24:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6497204" lon="7.4578683">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T09:24:56Z</time>
+      </trkpt>
+      <trkpt lat="51.6459366" lon="7.4515146">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:26:10Z</time>
+      </trkpt>
+      <trkpt lat="51.6457272" lon="7.4511329">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:26:14Z</time>
+      </trkpt>
+      <trkpt lat="51.6440730" lon="7.4469869">
+        <ele>47.2418213</ele>
+        <time>2007-07-08T09:26:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6422772" lon="7.4419753">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:27:44Z</time>
+      </trkpt>
+      <trkpt lat="51.6415130" lon="7.4386747">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:28:17Z</time>
+      </trkpt>
+      <trkpt lat="51.6411897" lon="7.4371459">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:28:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6406302" lon="7.4346341">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T09:29:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6403526" lon="7.4333654">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:29:41Z</time>
+      </trkpt>
+      <trkpt lat="51.6397988" lon="7.4315266">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:30:00Z</time>
+      </trkpt>
+      <trkpt lat="51.6382342" lon="7.4286015">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T09:30:34Z</time>
+      </trkpt>
+      <trkpt lat="51.6373886" lon="7.4274339">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T09:30:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6364592" lon="7.4257555">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:31:14Z</time>
+      </trkpt>
+      <trkpt lat="51.6358995" lon="7.4240244">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:31:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6340031" lon="7.4185984">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T09:32:31Z</time>
+      </trkpt>
+      <trkpt lat="51.6326845" lon="7.4150392">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:33:14Z</time>
+      </trkpt>
+      <trkpt lat="51.6325815" lon="7.4148452">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:33:17Z</time>
+      </trkpt>
+      <trkpt lat="51.6323997" lon="7.4146806">
+        <ele>62.6229248</ele>
+        <time>2007-07-08T09:33:21Z</time>
+      </trkpt>
+      <trkpt lat="51.6316715" lon="7.4139939">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:33:45Z</time>
+      </trkpt>
+      <trkpt lat="51.6305012" lon="7.4114237">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T09:34:13Z</time>
+      </trkpt>
+      <trkpt lat="51.6303312" lon="7.4110734">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T09:34:17Z</time>
+      </trkpt>
+      <trkpt lat="51.6285215" lon="7.4068629">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T09:35:03Z</time>
+      </trkpt>
+      <trkpt lat="51.6268675" lon="7.4031110">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:35:48Z</time>
+      </trkpt>
+      <trkpt lat="51.6264246" lon="7.4019906">
+        <ele>62.1423340</ele>
+        <time>2007-07-08T09:36:01Z</time>
+      </trkpt>
+      <trkpt lat="51.6257206" lon="7.3998041">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:36:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6252652" lon="7.3982441">
+        <ele>65.0263672</ele>
+        <time>2007-07-08T09:36:41Z</time>
+      </trkpt>
+      <trkpt lat="51.6240290" lon="7.3945186">
+        <ele>68.8715820</ele>
+        <time>2007-07-08T09:37:29Z</time>
+      </trkpt>
+      <trkpt lat="51.6227471" lon="7.3904490">
+        <ele>73.1976318</ele>
+        <time>2007-07-08T09:38:26Z</time>
+      </trkpt>
+      <trkpt lat="51.6223538" lon="7.3889220">
+        <ele>74.6395264</ele>
+        <time>2007-07-08T09:38:45Z</time>
+      </trkpt>
+      <trkpt lat="51.6220371" lon="7.3868007">
+        <ele>75.6008301</ele>
+        <time>2007-07-08T09:39:09Z</time>
+      </trkpt>
+      <trkpt lat="51.6216754" lon="7.3832036">
+        <ele>76.5621338</ele>
+        <time>2007-07-08T09:39:45Z</time>
+      </trkpt>
+      <trkpt lat="51.6215872" lon="7.3803760">
+        <ele>72.2362061</ele>
+        <time>2007-07-08T09:40:13Z</time>
+      </trkpt>
+      <trkpt lat="51.6214889" lon="7.3796340">
+        <ele>72.2362061</ele>
+        <time>2007-07-08T09:40:20Z</time>
+      </trkpt>
+      <trkpt lat="51.6209237" lon="7.3770908">
+        <ele>73.1976318</ele>
+        <time>2007-07-08T09:40:44Z</time>
+      </trkpt>
+      <trkpt lat="51.6190381" lon="7.3688221">
+        <ele>68.8715820</ele>
+        <time>2007-07-08T09:42:05Z</time>
+      </trkpt>
+      <trkpt lat="51.6186604" lon="7.3670092">
+        <ele>69.8328857</ele>
+        <time>2007-07-08T09:42:25Z</time>
+      </trkpt>
+      <trkpt lat="51.6170346" lon="7.3592267">
+        <ele>67.9102783</ele>
+        <time>2007-07-08T09:43:38Z</time>
+      </trkpt>
+      <trkpt lat="51.6165838" lon="7.3551913">
+        <ele>65.9876709</ele>
+        <time>2007-07-08T09:44:15Z</time>
+      </trkpt>
+      <trkpt lat="51.6164903" lon="7.3540926">
+        <ele>65.9876709</ele>
+        <time>2007-07-08T09:44:26Z</time>
+      </trkpt>
+      <trkpt lat="51.6163848" lon="7.3527811">
+        <ele>67.4296875</ele>
+        <time>2007-07-08T09:45:01Z</time>
+      </trkpt>
+      <trkpt lat="51.6152485" lon="7.3525656">
+        <ele>67.4296875</ele>
+        <time>2007-07-08T09:45:26Z</time>
+      </trkpt>
+      <trkpt lat="51.6141605" lon="7.3522331">
+        <ele>69.8328857</ele>
+        <time>2007-07-08T09:45:49Z</time>
+      </trkpt>
+      <trkpt lat="51.6140080" lon="7.3519489">
+        <ele>69.3522949</ele>
+        <time>2007-07-08T09:45:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6142072" lon="7.3500998">
+        <ele>67.9102783</ele>
+        <time>2007-07-08T09:46:10Z</time>
+      </trkpt>
+      <trkpt lat="51.6143506" lon="7.3481380">
+        <ele>66.4682617</ele>
+        <time>2007-07-08T09:46:27Z</time>
+      </trkpt>
+      <trkpt lat="51.6144615" lon="7.3460518">
+        <ele>66.4682617</ele>
+        <time>2007-07-08T09:46:46Z</time>
+      </trkpt>
+      <trkpt lat="51.6149609" lon="7.3379993">
+        <ele>67.9102783</ele>
+        <time>2007-07-08T09:47:57Z</time>
+      </trkpt>
+      <trkpt lat="51.6153046" lon="7.3341401">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T09:48:33Z</time>
+      </trkpt>
+      <trkpt lat="51.6155720" lon="7.3317003">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T09:49:03Z</time>
+      </trkpt>
+      <trkpt lat="51.6155720" lon="7.3317003">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T09:49:07Z</time>
+      </trkpt>
+      <trkpt lat="51.6154583" lon="7.3327368">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T09:49:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6154861" lon="7.3324836">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T09:49:36Z</time>
+      </trkpt>
+      <trkpt lat="51.6155017" lon="7.3323415">
+        <ele>64.5456543</ele>
+        <time>2007-07-08T09:49:40Z</time>
+      </trkpt>
+      <trkpt lat="51.6160269" lon="7.3324225">
+        <ele>65.9876709</ele>
+        <time>2007-07-08T09:49:55Z</time>
+      </trkpt>
+      <trkpt lat="51.6159607" lon="7.3334158">
+        <ele>66.4682617</ele>
+        <time>2007-07-08T09:50:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6162984" lon="7.3332102">
+        <ele>67.4296875</ele>
+        <time>2007-07-08T09:50:47Z</time>
+      </trkpt>
+      <trkpt lat="51.6168564" lon="7.3320577">
+        <ele>69.3522949</ele>
+        <time>2007-07-08T09:51:12Z</time>
+      </trkpt>
+      <trkpt lat="51.6172344" lon="7.3325010">
+        <ele>66.9489746</ele>
+        <time>2007-07-08T09:51:31Z</time>
+      </trkpt>
+      <trkpt lat="51.6173991" lon="7.3326994">
+        <ele>65.9876709</ele>
+        <time>2007-07-08T09:51:47Z</time>
+      </trkpt>
+      <trkpt lat="51.6178247" lon="7.3321032">
+        <ele>62.1423340</ele>
+        <time>2007-07-08T09:52:12Z</time>
+      </trkpt>
+      <trkpt lat="51.6181680" lon="7.3314940">
+        <ele>60.7003174</ele>
+        <time>2007-07-08T09:52:24Z</time>
+      </trkpt>
+      <trkpt lat="51.6185304" lon="7.3308351">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T09:52:42Z</time>
+      </trkpt>
+      <trkpt lat="51.6182269" lon="7.3303184">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T09:52:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6186619" lon="7.3302841">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T09:53:02Z</time>
+      </trkpt>
+      <trkpt lat="51.6186619" lon="7.3302841">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T09:53:15Z</time>
+      </trkpt>
+      <trkpt lat="51.6186619" lon="7.3302841">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:53:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6181155" lon="7.3301511">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T09:53:38Z</time>
+      </trkpt>
+      <trkpt lat="51.6179579" lon="7.3291057">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T09:53:54Z</time>
+      </trkpt>
+      <trkpt lat="51.6190254" lon="7.3277385">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T09:54:25Z</time>
+      </trkpt>
+      <trkpt lat="51.6198222" lon="7.3260336">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T09:54:58Z</time>
+      </trkpt>
+      <trkpt lat="51.6199584" lon="7.3249033">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T09:55:25Z</time>
+      </trkpt>
+      <trkpt lat="51.6197805" lon="7.3245661">
+        <ele>64.0650635</ele>
+        <time>2007-07-08T09:55:36Z</time>
+      </trkpt>
+      <trkpt lat="51.6194384" lon="7.3242467">
+        <ele>63.5843506</ele>
+        <time>2007-07-08T09:55:52Z</time>
+      </trkpt>
+      <trkpt lat="51.6189733" lon="7.3238361">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T09:56:12Z</time>
+      </trkpt>
+      <trkpt lat="51.6186663" lon="7.3234647">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T09:56:27Z</time>
+      </trkpt>
+      <trkpt lat="51.6181177" lon="7.3230536">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T09:56:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6176014" lon="7.3235058">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T09:57:09Z</time>
+      </trkpt>
+      <trkpt lat="51.6171384" lon="7.3246376">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T09:57:38Z</time>
+      </trkpt>
+      <trkpt lat="51.6170182" lon="7.3255746">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T09:57:54Z</time>
+      </trkpt>
+      <trkpt lat="51.6169892" lon="7.3259239">
+        <ele>62.1423340</ele>
+        <time>2007-07-08T10:15:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6169987" lon="7.3258990">
+        <ele>70.7941895</ele>
+        <time>2007-07-08T10:15:26Z</time>
+      </trkpt>
+      <trkpt lat="51.6180083" lon="7.3256579">
+        <ele>65.0263672</ele>
+        <time>2007-07-08T10:15:56Z</time>
+      </trkpt>
+      <trkpt lat="51.6183176" lon="7.3255638">
+        <ele>63.5843506</ele>
+        <time>2007-07-08T10:16:06Z</time>
+      </trkpt>
+      <trkpt lat="51.6183920" lon="7.3248043">
+        <ele>63.1036377</ele>
+        <time>2007-07-08T10:16:15Z</time>
+      </trkpt>
+      <trkpt lat="51.6184968" lon="7.3239107">
+        <ele>63.5843506</ele>
+        <time>2007-07-08T10:16:23Z</time>
+      </trkpt>
+      <trkpt lat="51.6187924" lon="7.3211550">
+        <ele>62.1423340</ele>
+        <time>2007-07-08T10:16:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6190121" lon="7.3197515">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T10:17:10Z</time>
+      </trkpt>
+      <trkpt lat="51.6190676" lon="7.3196031">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T10:18:08Z</time>
+      </trkpt>
+      <trkpt lat="51.6200503" lon="7.3200232">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T10:18:31Z</time>
+      </trkpt>
+      <trkpt lat="51.6232614" lon="7.3220134">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T10:19:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6242707" lon="7.3227998">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T10:19:29Z</time>
+      </trkpt>
+      <trkpt lat="51.6245196" lon="7.3229337">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T10:19:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6258925" lon="7.3229266">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T10:19:49Z</time>
+      </trkpt>
+      <trkpt lat="51.6270038" lon="7.3230935">
+        <ele>62.6229248</ele>
+        <time>2007-07-08T10:20:04Z</time>
+      </trkpt>
+      <trkpt lat="51.6277993" lon="7.3234438">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T10:20:17Z</time>
+      </trkpt>
+      <trkpt lat="51.6285916" lon="7.3241610">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T10:20:40Z</time>
+      </trkpt>
+      <trkpt lat="51.6303419" lon="7.3275241">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T10:21:09Z</time>
+      </trkpt>
+      <trkpt lat="51.6324884" lon="7.3300468">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T10:21:35Z</time>
+      </trkpt>
+      <trkpt lat="51.6335165" lon="7.3308923">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T10:21:48Z</time>
+      </trkpt>
+      <trkpt lat="51.6348392" lon="7.3319992">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T10:22:15Z</time>
+      </trkpt>
+      <trkpt lat="51.6359036" lon="7.3322778">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T10:22:30Z</time>
+      </trkpt>
+      <trkpt lat="51.6372400" lon="7.3324135">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T10:22:45Z</time>
+      </trkpt>
+      <trkpt lat="51.6386904" lon="7.3327308">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:23:01Z</time>
+      </trkpt>
+      <trkpt lat="51.6396888" lon="7.3332229">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:23:14Z</time>
+      </trkpt>
+      <trkpt lat="51.6408652" lon="7.3342433">
+        <ele>46.2806396</ele>
+        <time>2007-07-08T10:23:30Z</time>
+      </trkpt>
+      <trkpt lat="51.6415151" lon="7.3348607">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T10:23:39Z</time>
+      </trkpt>
+      <trkpt lat="51.6423247" lon="7.3354305">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T10:24:04Z</time>
+      </trkpt>
+      <trkpt lat="51.6433771" lon="7.3362615">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:24:33Z</time>
+      </trkpt>
+      <trkpt lat="51.6445140" lon="7.3372875">
+        <ele>46.7612305</ele>
+        <time>2007-07-08T10:24:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6468720" lon="7.3389655">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:25:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6484303" lon="7.3390189">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T10:25:55Z</time>
+      </trkpt>
+      <trkpt lat="51.6492803" lon="7.3388808">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T10:26:18Z</time>
+      </trkpt>
+      <trkpt lat="51.6516691" lon="7.3385294">
+        <ele>46.7612305</ele>
+        <time>2007-07-08T10:26:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6527861" lon="7.3387814">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T10:27:06Z</time>
+      </trkpt>
+      <trkpt lat="51.6537619" lon="7.3385944">
+        <ele>45.7999268</ele>
+        <time>2007-07-08T10:27:23Z</time>
+      </trkpt>
+      <trkpt lat="51.6540562" lon="7.3386435">
+        <ele>42.4354248</ele>
+        <time>2007-07-08T10:28:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6542612" lon="7.3386827">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:28:22Z</time>
+      </trkpt>
+      <trkpt lat="51.6544370" lon="7.3399333">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:28:34Z</time>
+      </trkpt>
+      <trkpt lat="51.6544781" lon="7.3411570">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:28:44Z</time>
+      </trkpt>
+      <trkpt lat="51.6544962" lon="7.3424182">
+        <ele>40.9934082</ele>
+        <time>2007-07-08T10:28:54Z</time>
+      </trkpt>
+      <trkpt lat="51.6551745" lon="7.3455726">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:29:22Z</time>
+      </trkpt>
+      <trkpt lat="51.6567208" lon="7.3452700">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:29:43Z</time>
+      </trkpt>
+      <trkpt lat="51.6574898" lon="7.3453580">
+        <ele>39.0706787</ele>
+        <time>2007-07-08T10:30:12Z</time>
+      </trkpt>
+      <trkpt lat="51.6585953" lon="7.3456479">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:30:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6599349" lon="7.3458695">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T10:30:49Z</time>
+      </trkpt>
+      <trkpt lat="51.6602115" lon="7.3461866">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T10:30:54Z</time>
+      </trkpt>
+      <trkpt lat="51.6604652" lon="7.3476010">
+        <ele>44.8386230</ele>
+        <time>2007-07-08T10:31:06Z</time>
+      </trkpt>
+      <trkpt lat="51.6608080" lon="7.3497544">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:31:34Z</time>
+      </trkpt>
+      <trkpt lat="51.6608418" lon="7.3500586">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:31:45Z</time>
+      </trkpt>
+      <trkpt lat="51.6610247" lon="7.3512214">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:31:56Z</time>
+      </trkpt>
+      <trkpt lat="51.6621629" lon="7.3538754">
+        <ele>42.4354248</ele>
+        <time>2007-07-08T10:32:21Z</time>
+      </trkpt>
+      <trkpt lat="51.6641880" lon="7.3579545">
+        <ele>41.4739990</ele>
+        <time>2007-07-08T10:33:04Z</time>
+      </trkpt>
+      <trkpt lat="51.6642567" lon="7.3579143">
+        <ele>41.4739990</ele>
+        <time>2007-07-08T10:33:05Z</time>
+      </trkpt>
+      <trkpt lat="51.6659800" lon="7.3570351">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:33:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6662702" lon="7.3569011">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:33:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6670258" lon="7.3563171">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:33:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6666231" lon="7.3569931">
+        <ele>44.8386230</ele>
+        <time>2007-07-08T10:34:10Z</time>
+      </trkpt>
+      <trkpt lat="51.6678656" lon="7.3561394">
+        <ele>46.7612305</ele>
+        <time>2007-07-08T10:34:33Z</time>
+      </trkpt>
+      <trkpt lat="51.6684097" lon="7.3555953">
+        <ele>47.2418213</ele>
+        <time>2007-07-08T10:34:42Z</time>
+      </trkpt>
+      <trkpt lat="51.6690165" lon="7.3556806">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T10:34:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6696930" lon="7.3570601">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T10:35:20Z</time>
+      </trkpt>
+      <trkpt lat="51.6703820" lon="7.3564259">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T10:35:34Z</time>
+      </trkpt>
+      <trkpt lat="51.6722231" lon="7.3538709">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:36:08Z</time>
+      </trkpt>
+      <trkpt lat="51.6728521" lon="7.3521775">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T10:36:28Z</time>
+      </trkpt>
+      <trkpt lat="51.6740630" lon="7.3530267">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T10:36:50Z</time>
+      </trkpt>
+      <trkpt lat="51.6756317" lon="7.3545605">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T10:37:11Z</time>
+      </trkpt>
+      <trkpt lat="51.6786300" lon="7.3574986">
+        <ele>46.2806396</ele>
+        <time>2007-07-08T10:37:52Z</time>
+      </trkpt>
+      <trkpt lat="51.6817926" lon="7.3604364">
+        <ele>46.7612305</ele>
+        <time>2007-07-08T10:38:39Z</time>
+      </trkpt>
+      <trkpt lat="51.6843633" lon="7.3609263">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T10:39:16Z</time>
+      </trkpt>
+      <trkpt lat="51.6854218" lon="7.3606616">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T10:39:32Z</time>
+      </trkpt>
+      <trkpt lat="51.6867057" lon="7.3603813">
+        <ele>56.8551025</ele>
+        <time>2007-07-08T10:39:51Z</time>
+      </trkpt>
+      <trkpt lat="51.6894745" lon="7.3610557">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T10:40:34Z</time>
+      </trkpt>
+      <trkpt lat="51.6947165" lon="7.3646696">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T10:41:53Z</time>
+      </trkpt>
+      <trkpt lat="51.6987266" lon="7.3677236">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T10:42:52Z</time>
+      </trkpt>
+      <trkpt lat="51.7005850" lon="7.3698304">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T10:43:19Z</time>
+      </trkpt>
+      <trkpt lat="51.7021948" lon="7.3721165">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:43:45Z</time>
+      </trkpt>
+      <trkpt lat="51.7043088" lon="7.3750743">
+        <ele>47.2418213</ele>
+        <time>2007-07-08T10:44:17Z</time>
+      </trkpt>
+      <trkpt lat="51.7064435" lon="7.3781564">
+        <ele>46.2806396</ele>
+        <time>2007-07-08T10:44:57Z</time>
+      </trkpt>
+      <trkpt lat="51.7070172" lon="7.3789753">
+        <ele>45.3192139</ele>
+        <time>2007-07-08T10:45:11Z</time>
+      </trkpt>
+      <trkpt lat="51.7066512" lon="7.3798720">
+        <ele>45.3192139</ele>
+        <time>2007-07-08T10:45:23Z</time>
+      </trkpt>
+      <trkpt lat="51.7073523" lon="7.3792825">
+        <ele>44.3580322</ele>
+        <time>2007-07-08T10:45:35Z</time>
+      </trkpt>
+      <trkpt lat="51.7071892" lon="7.3793478">
+        <ele>44.8386230</ele>
+        <time>2007-07-08T10:45:53Z</time>
+      </trkpt>
+      <trkpt lat="51.7072731" lon="7.3793142">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:46:00Z</time>
+      </trkpt>
+      <trkpt lat="51.7073733" lon="7.3792741">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:46:04Z</time>
+      </trkpt>
+      <trkpt lat="51.7074299" lon="7.3803504">
+        <ele>46.2806396</ele>
+        <time>2007-07-08T10:46:14Z</time>
+      </trkpt>
+      <trkpt lat="51.7073484" lon="7.3807157">
+        <ele>44.8386230</ele>
+        <time>2007-07-08T10:46:22Z</time>
+      </trkpt>
+      <trkpt lat="51.7074265" lon="7.3822158">
+        <ele>46.2806396</ele>
+        <time>2007-07-08T10:46:46Z</time>
+      </trkpt>
+      <trkpt lat="51.7078440" lon="7.3838417">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:47:03Z</time>
+      </trkpt>
+      <trkpt lat="51.7078779" lon="7.3839918">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:47:05Z</time>
+      </trkpt>
+      <trkpt lat="51.7083250" lon="7.3841408">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:47:20Z</time>
+      </trkpt>
+      <trkpt lat="51.7082314" lon="7.3840005">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:47:25Z</time>
+      </trkpt>
+      <trkpt lat="51.7081833" lon="7.3839283">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:47:31Z</time>
+      </trkpt>
+      <trkpt lat="51.7079178" lon="7.3844726">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:47:40Z</time>
+      </trkpt>
+      <trkpt lat="51.7077892" lon="7.3862557">
+        <ele>41.4739990</ele>
+        <time>2007-07-08T10:47:59Z</time>
+      </trkpt>
+      <trkpt lat="51.7076625" lon="7.3872431">
+        <ele>41.9547119</ele>
+        <time>2007-07-08T10:48:08Z</time>
+      </trkpt>
+      <trkpt lat="51.7082021" lon="7.3877963">
+        <ele>44.3580322</ele>
+        <time>2007-07-08T10:48:27Z</time>
+      </trkpt>
+      <trkpt lat="51.7083099" lon="7.3881235">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:48:33Z</time>
+      </trkpt>
+      <trkpt lat="51.7083575" lon="7.3885128">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:48:38Z</time>
+      </trkpt>
+      <trkpt lat="51.7085343" lon="7.3900466">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:48:54Z</time>
+      </trkpt>
+      <trkpt lat="51.7085695" lon="7.3921335">
+        <ele>42.9160156</ele>
+        <time>2007-07-08T10:49:16Z</time>
+      </trkpt>
+      <trkpt lat="51.7085695" lon="7.3923544">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:49:19Z</time>
+      </trkpt>
+      <trkpt lat="51.7086011" lon="7.3938940">
+        <ele>43.8773193</ele>
+        <time>2007-07-08T10:49:40Z</time>
+      </trkpt>
+      <trkpt lat="51.7108421" lon="7.3966493">
+        <ele>43.3966064</ele>
+        <time>2007-07-08T10:50:17Z</time>
+      </trkpt>
+      <trkpt lat="51.7138948" lon="7.4011410">
+        <ele>44.3580322</ele>
+        <time>2007-07-08T10:51:12Z</time>
+      </trkpt>
+      <trkpt lat="51.7165034" lon="7.4026869">
+        <ele>45.3192139</ele>
+        <time>2007-07-08T10:51:50Z</time>
+      </trkpt>
+      <trkpt lat="51.7199312" lon="7.4040703">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T10:52:41Z</time>
+      </trkpt>
+      <trkpt lat="51.7208338" lon="7.4049259">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:52:57Z</time>
+      </trkpt>
+      <trkpt lat="51.7209303" lon="7.4050373">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:52:59Z</time>
+      </trkpt>
+      <trkpt lat="51.7211348" lon="7.4053654">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:53:04Z</time>
+      </trkpt>
+      <trkpt lat="51.7219693" lon="7.4068007">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T10:53:21Z</time>
+      </trkpt>
+      <trkpt lat="51.7225104" lon="7.4075625">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T10:53:31Z</time>
+      </trkpt>
+      <trkpt lat="51.7234363" lon="7.4084175">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T10:53:46Z</time>
+      </trkpt>
+      <trkpt lat="51.7250815" lon="7.4098132">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T10:54:14Z</time>
+      </trkpt>
+      <trkpt lat="51.7262258" lon="7.4107766">
+        <ele>59.2584229</ele>
+        <time>2007-07-08T10:54:34Z</time>
+      </trkpt>
+      <trkpt lat="51.7283832" lon="7.4125821">
+        <ele>63.5843506</ele>
+        <time>2007-07-08T10:55:10Z</time>
+      </trkpt>
+      <trkpt lat="51.7306645" lon="7.4144719">
+        <ele>63.5843506</ele>
+        <time>2007-07-08T10:55:45Z</time>
+      </trkpt>
+      <trkpt lat="51.7328500" lon="7.4152039">
+        <ele>67.9102783</ele>
+        <time>2007-07-08T10:56:17Z</time>
+      </trkpt>
+      <trkpt lat="51.7335755" lon="7.4153959">
+        <ele>69.8328857</ele>
+        <time>2007-07-08T10:56:28Z</time>
+      </trkpt>
+      <trkpt lat="51.7348391" lon="7.4160034">
+        <ele>70.7941895</ele>
+        <time>2007-07-08T10:56:47Z</time>
+      </trkpt>
+      <trkpt lat="51.7368274" lon="7.4169602">
+        <ele>71.7554932</ele>
+        <time>2007-07-08T10:57:16Z</time>
+      </trkpt>
+      <trkpt lat="51.7402391" lon="7.4186029">
+        <ele>68.3908691</ele>
+        <time>2007-07-08T10:58:02Z</time>
+      </trkpt>
+      <trkpt lat="51.7415282" lon="7.4192667">
+        <ele>66.4682617</ele>
+        <time>2007-07-08T10:58:18Z</time>
+      </trkpt>
+      <trkpt lat="51.7438583" lon="7.4213465">
+        <ele>61.6617432</ele>
+        <time>2007-07-08T10:58:49Z</time>
+      </trkpt>
+      <trkpt lat="51.7449435" lon="7.4222997">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T10:59:03Z</time>
+      </trkpt>
+      <trkpt lat="51.7462868" lon="7.4232149">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T10:59:20Z</time>
+      </trkpt>
+      <trkpt lat="51.7467615" lon="7.4234977">
+        <ele>58.7777100</ele>
+        <time>2007-07-08T10:59:26Z</time>
+      </trkpt>
+      <trkpt lat="51.7494192" lon="7.4252145">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T10:59:59Z</time>
+      </trkpt>
+      <trkpt lat="51.7513411" lon="7.4285713">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T11:00:31Z</time>
+      </trkpt>
+      <trkpt lat="51.7538303" lon="7.4300936">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:01:02Z</time>
+      </trkpt>
+      <trkpt lat="51.7573803" lon="7.4326101">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:01:49Z</time>
+      </trkpt>
+      <trkpt lat="51.7598749" lon="7.4349660">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T11:02:24Z</time>
+      </trkpt>
+      <trkpt lat="51.7611288" lon="7.4355130">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T11:02:39Z</time>
+      </trkpt>
+      <trkpt lat="51.7638987" lon="7.4357976">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T11:03:15Z</time>
+      </trkpt>
+      <trkpt lat="51.7652661" lon="7.4358372">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T11:03:33Z</time>
+      </trkpt>
+      <trkpt lat="51.7665624" lon="7.4359144">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T11:03:50Z</time>
+      </trkpt>
+      <trkpt lat="51.7679125" lon="7.4371252">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T11:04:12Z</time>
+      </trkpt>
+      <trkpt lat="51.7680152" lon="7.4372681">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T11:04:21Z</time>
+      </trkpt>
+      <trkpt lat="51.7686081" lon="7.4378729">
+        <ele>47.2418213</ele>
+        <time>2007-07-08T11:04:36Z</time>
+      </trkpt>
+      <trkpt lat="51.7692589" lon="7.4369062">
+        <ele>47.2418213</ele>
+        <time>2007-07-08T11:04:54Z</time>
+      </trkpt>
+      <trkpt lat="51.7712605" lon="7.4360824">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:05:23Z</time>
+      </trkpt>
+      <trkpt lat="51.7724423" lon="7.4355440">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:05:40Z</time>
+      </trkpt>
+      <trkpt lat="51.7737983" lon="7.4366350">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T11:06:01Z</time>
+      </trkpt>
+      <trkpt lat="51.7767102" lon="7.4391757">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T11:06:46Z</time>
+      </trkpt>
+      <trkpt lat="51.7781986" lon="7.4387538">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:07:20Z</time>
+      </trkpt>
+      <trkpt lat="51.7785254" lon="7.4384269">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:07:33Z</time>
+      </trkpt>
+      <trkpt lat="51.7793092" lon="7.4377447">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T11:07:50Z</time>
+      </trkpt>
+      <trkpt lat="51.7817154" lon="7.4366443">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:08:28Z</time>
+      </trkpt>
+      <trkpt lat="51.7832056" lon="7.4360826">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T11:08:54Z</time>
+      </trkpt>
+      <trkpt lat="51.7837218" lon="7.4357197">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T11:09:06Z</time>
+      </trkpt>
+      <trkpt lat="51.7859641" lon="7.4334773">
+        <ele>48.6839600</ele>
+        <time>2007-07-08T11:09:46Z</time>
+      </trkpt>
+      <trkpt lat="51.7868967" lon="7.4326438">
+        <ele>47.7225342</ele>
+        <time>2007-07-08T11:10:09Z</time>
+      </trkpt>
+      <trkpt lat="51.7896516" lon="7.4327852">
+        <ele>48.2033691</ele>
+        <time>2007-07-08T11:10:50Z</time>
+      </trkpt>
+      <trkpt lat="51.7926229" lon="7.4332222">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T11:11:31Z</time>
+      </trkpt>
+      <trkpt lat="51.7943520" lon="7.4334817">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T11:11:54Z</time>
+      </trkpt>
+      <trkpt lat="51.7959544" lon="7.4332938">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T11:12:15Z</time>
+      </trkpt>
+      <trkpt lat="51.7996340" lon="7.4338590">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T11:13:06Z</time>
+      </trkpt>
+      <trkpt lat="51.8023191" lon="7.4347973">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T11:13:44Z</time>
+      </trkpt>
+      <trkpt lat="51.8052771" lon="7.4360280">
+        <ele>50.6065674</ele>
+        <time>2007-07-08T11:14:25Z</time>
+      </trkpt>
+      <trkpt lat="51.8058966" lon="7.4375097">
+        <ele>49.6452637</ele>
+        <time>2007-07-08T11:14:40Z</time>
+      </trkpt>
+      <trkpt lat="51.8071307" lon="7.4404653">
+        <ele>51.0871582</ele>
+        <time>2007-07-08T11:15:11Z</time>
+      </trkpt>
+      <trkpt lat="51.8081586" lon="7.4422066">
+        <ele>49.1645508</ele>
+        <time>2007-07-08T11:15:31Z</time>
+      </trkpt>
+      <trkpt lat="51.8090181" lon="7.4431086">
+        <ele>50.1259766</ele>
+        <time>2007-07-08T11:15:46Z</time>
+      </trkpt>
+      <trkpt lat="51.8101069" lon="7.4423685">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T11:16:02Z</time>
+      </trkpt>
+      <trkpt lat="51.8103218" lon="7.4422073">
+        <ele>51.5678711</ele>
+        <time>2007-07-08T11:16:08Z</time>
+      </trkpt>
+      <trkpt lat="51.8124221" lon="7.4406431">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T11:16:37Z</time>
+      </trkpt>
+      <trkpt lat="51.8146133" lon="7.4382703">
+        <ele>52.5291748</ele>
+        <time>2007-07-08T11:17:14Z</time>
+      </trkpt>
+      <trkpt lat="51.8194070" lon="7.4340010">
+        <ele>52.0485840</ele>
+        <time>2007-07-08T11:18:33Z</time>
+      </trkpt>
+      <trkpt lat="51.8204550" lon="7.4336446">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T11:18:49Z</time>
+      </trkpt>
+      <trkpt lat="51.8208541" lon="7.4335021">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:18:55Z</time>
+      </trkpt>
+      <trkpt lat="51.8222744" lon="7.4327343">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T11:19:17Z</time>
+      </trkpt>
+      <trkpt lat="51.8233411" lon="7.4343040">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:19:42Z</time>
+      </trkpt>
+      <trkpt lat="51.8239602" lon="7.4356129">
+        <ele>53.0097656</ele>
+        <time>2007-07-08T11:19:58Z</time>
+      </trkpt>
+      <trkpt lat="51.8251000" lon="7.4342268">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:20:23Z</time>
+      </trkpt>
+      <trkpt lat="51.8267623" lon="7.4317946">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T11:20:58Z</time>
+      </trkpt>
+      <trkpt lat="51.8280798" lon="7.4298298">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T11:21:26Z</time>
+      </trkpt>
+      <trkpt lat="51.8288303" lon="7.4280934">
+        <ele>62.6229248</ele>
+        <time>2007-07-08T11:21:47Z</time>
+      </trkpt>
+      <trkpt lat="51.8295906" lon="7.4259925">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T11:22:15Z</time>
+      </trkpt>
+      <trkpt lat="51.8303204" lon="7.4239865">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:22:33Z</time>
+      </trkpt>
+      <trkpt lat="51.8303608" lon="7.4238770">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:22:34Z</time>
+      </trkpt>
+      <trkpt lat="51.8308491" lon="7.4222494">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T11:22:49Z</time>
+      </trkpt>
+      <trkpt lat="51.8311934" lon="7.4202599">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:23:06Z</time>
+      </trkpt>
+      <trkpt lat="51.8315284" lon="7.4179095">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T11:23:29Z</time>
+      </trkpt>
+      <trkpt lat="51.8327884" lon="7.4188768">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:23:53Z</time>
+      </trkpt>
+      <trkpt lat="51.8352798" lon="7.4206448">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T11:24:31Z</time>
+      </trkpt>
+      <trkpt lat="51.8368704" lon="7.4204778">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T11:24:55Z</time>
+      </trkpt>
+      <trkpt lat="51.8374183" lon="7.4208482">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T11:25:07Z</time>
+      </trkpt>
+      <trkpt lat="51.8380781" lon="7.4218448">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T11:25:20Z</time>
+      </trkpt>
+      <trkpt lat="51.8397245" lon="7.4234533">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T11:25:46Z</time>
+      </trkpt>
+      <trkpt lat="51.8400924" lon="7.4256338">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T11:26:04Z</time>
+      </trkpt>
+      <trkpt lat="51.8404062" lon="7.4351942">
+        <ele>56.8551025</ele>
+        <time>2007-07-08T11:27:16Z</time>
+      </trkpt>
+      <trkpt lat="51.8404217" lon="7.4357061">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T11:27:20Z</time>
+      </trkpt>
+      <trkpt lat="51.8404870" lon="7.4378620">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:27:37Z</time>
+      </trkpt>
+      <trkpt lat="51.8416231" lon="7.4399757">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:28:02Z</time>
+      </trkpt>
+      <trkpt lat="51.8432365" lon="7.4411288">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T11:28:28Z</time>
+      </trkpt>
+      <trkpt lat="51.8447610" lon="7.4412956">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T11:28:50Z</time>
+      </trkpt>
+      <trkpt lat="51.8461811" lon="7.4413919">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:29:10Z</time>
+      </trkpt>
+      <trkpt lat="51.8476749" lon="7.4413919">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:29:31Z</time>
+      </trkpt>
+      <trkpt lat="51.8495468" lon="7.4407980">
+        <ele>58.7777100</ele>
+        <time>2007-07-08T11:30:00Z</time>
+      </trkpt>
+      <trkpt lat="51.8545988" lon="7.4400207">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T11:31:12Z</time>
+      </trkpt>
+      <trkpt lat="51.8546104" lon="7.4400187">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T11:31:14Z</time>
+      </trkpt>
+      <trkpt lat="51.8546350" lon="7.4406459">
+        <ele>59.7391357</ele>
+        <time>2007-07-08T11:31:22Z</time>
+      </trkpt>
+      <trkpt lat="51.8547775" lon="7.4440353">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T11:31:51Z</time>
+      </trkpt>
+      <trkpt lat="51.8542090" lon="7.4481272">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:32:26Z</time>
+      </trkpt>
+      <trkpt lat="51.8540422" lon="7.4488083">
+        <ele>56.8551025</ele>
+        <time>2007-07-08T11:32:32Z</time>
+      </trkpt>
+      <trkpt lat="51.8538470" lon="7.4540927">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T11:33:18Z</time>
+      </trkpt>
+      <trkpt lat="51.8539667" lon="7.4554479">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T11:33:30Z</time>
+      </trkpt>
+      <trkpt lat="51.8539113" lon="7.4566965">
+        <ele>55.4130859</ele>
+        <time>2007-07-08T11:33:41Z</time>
+      </trkpt>
+      <trkpt lat="51.8537114" lon="7.4589619">
+        <ele>54.9323730</ele>
+        <time>2007-07-08T11:34:00Z</time>
+      </trkpt>
+      <trkpt lat="51.8538326" lon="7.4607452">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T11:34:15Z</time>
+      </trkpt>
+      <trkpt lat="51.8541761" lon="7.4653380">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:34:53Z</time>
+      </trkpt>
+      <trkpt lat="51.8543722" lon="7.4691464">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:35:24Z</time>
+      </trkpt>
+      <trkpt lat="51.8543359" lon="7.4693786">
+        <ele>53.4904785</ele>
+        <time>2007-07-08T11:35:26Z</time>
+      </trkpt>
+      <trkpt lat="51.8546543" lon="7.4697321">
+        <ele>53.9711914</ele>
+        <time>2007-07-08T11:35:32Z</time>
+      </trkpt>
+      <trkpt lat="51.8548998" lon="7.4700243">
+        <ele>54.4517822</ele>
+        <time>2007-07-08T11:35:36Z</time>
+      </trkpt>
+      <trkpt lat="51.8565268" lon="7.4706763">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:36:01Z</time>
+      </trkpt>
+      <trkpt lat="51.8569701" lon="7.4707347">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:36:07Z</time>
+      </trkpt>
+      <trkpt lat="51.8584062" lon="7.4728327">
+        <ele>56.3745117</ele>
+        <time>2007-07-08T11:36:33Z</time>
+      </trkpt>
+      <trkpt lat="51.8598783" lon="7.4731922">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:36:54Z</time>
+      </trkpt>
+      <trkpt lat="51.8600625" lon="7.4731922">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:36:57Z</time>
+      </trkpt>
+      <trkpt lat="51.8600019" lon="7.4756714">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T11:37:21Z</time>
+      </trkpt>
+      <trkpt lat="51.8606727" lon="7.4773515">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T11:37:43Z</time>
+      </trkpt>
+      <trkpt lat="51.8607914" lon="7.4774810">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T11:37:45Z</time>
+      </trkpt>
+      <trkpt lat="51.8610048" lon="7.4799773">
+        <ele>55.8937988</ele>
+        <time>2007-07-08T11:38:06Z</time>
+      </trkpt>
+      <trkpt lat="51.8613699" lon="7.4811991">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:38:25Z</time>
+      </trkpt>
+      <trkpt lat="51.8625178" lon="7.4809573">
+        <ele>61.1810303</ele>
+        <time>2007-07-08T11:38:40Z</time>
+      </trkpt>
+      <trkpt lat="51.8638735" lon="7.4807312">
+        <ele>60.2197266</ele>
+        <time>2007-07-08T11:38:59Z</time>
+      </trkpt>
+      <trkpt lat="51.8650568" lon="7.4804737">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T11:39:19Z</time>
+      </trkpt>
+      <trkpt lat="51.8650659" lon="7.4802926">
+        <ele>58.2971191</ele>
+        <time>2007-07-08T11:39:21Z</time>
+      </trkpt>
+      <trkpt lat="51.8650775" lon="7.4800591">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T11:39:24Z</time>
+      </trkpt>
+      <trkpt lat="51.8654147" lon="7.4797049">
+        <ele>57.8165283</ele>
+        <time>2007-07-08T11:39:37Z</time>
+      </trkpt>
+      <trkpt lat="51.8656818" lon="7.4799719">
+        <ele>57.3358154</ele>
+        <time>2007-07-08T11:39:44Z</time>
+      </trkpt>
+      <trkpt lat="51.8661866" lon="7.4800230">
+        <ele>58.7777100</ele>
+        <time>2007-07-08T11:40:06Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+
+</gpx>

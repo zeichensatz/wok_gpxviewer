@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>GPXViewer Beispiel 13</title>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 13 - Nachträgliches Setzen eines Wegpunktes an der aktuellen Position</h1>
+		<div id="map" class="gpxview::Karte" style="display:block;width:100%;height:99vh"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<p><span style="font-family:'Segoe UI Symbol';color:black;font-size:40px;">&#x1f518;</span> </p>
+		<hr><p>14. 11. 2020 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+			const Legende = false;
+			let wpid = null;
+			const getPos = false, watchPos = true;
+			const geoloc = function(map) {
+				if (navigator.geolocation) {
+					const marker = map.Marker({lat:0,lon:0},JB.icons.CP)[0];
+					const geolocpos = function(position) {
+						const lat = position.coords.latitude;
+						const lon = position.coords.longitude;
+						map.rescale({latmin:lat-.001,latmax:lat+.001,lonmin:lon-.001,lonmax:lon+.001});
+						if(marker.setPosition) marker.setPosition(new google.maps.LatLng(lat,lon));
+						else if(marker.setLatLng) marker.setLatLng([lat,lon]);
+						console.log(lat,lon);
+					}
+					const geolocerror = function() {
+						JB.Debug_Info("geolocation","Geolocation-Dienst fehlgeschlagen!",true);
+					}
+					if(watchPos) {
+						if(wpid) navigator.geolocation.clearWatch(wpid);
+						wpid = navigator.geolocation.watchPosition(geolocpos,geolocerror,{enableHighAccuracy:true});
+					}
+					else if(getPos)
+						navigator.geolocation.getCurrentPosition(geolocpos,geolocerror,{enableHighAccuracy:true});
+				}
+				else JB.Debug_Info("geolocation","Geolocation wird nicht unterstützt!",true);
+			}
+
+			document.getElementById("map").addEventListener("Map_n",function(event) {
+				const map = event.detail.Map;
+				geoloc(map);
+			});
+			
+		</script>	
+	</body>
+</html>

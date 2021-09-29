@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>GPXViewer Beispiel 8</title>
+		<style>
+			body > p > button { padding:.3em }
+			#map1, #map2 { display:inline-block; width:500px;height:500px; width:calc(50vw - 40px); height: calc(100vh - 10em); }
+			@media screen and (max-width:800px) {
+				#map1, #map2 { display:block; width:calc(100vw - 50px); }
+			}
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 8 - Nachträgliches Setzen von Wegpunkten und Abfahren eines Tracks</h1>
+		<p><button id="button_rw" type="button">Random Walk</button> 
+			<button id="button_bp" type="button">Bildwegpunkt</button></p>
+		<div id="map1" class="gpxview:Beispiel1.gpx:Satellit"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<div id="map2" class="gpxview:Beispiel3.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<hr><p>7. 5. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+			"use strict";
+			const mapele_1 = document.getElementById("map1");
+			const mapele_2 = document.getElementById("map2");
+
+			mapele_1.addEventListener("Map_n",function(event) {
+				const map = event.detail.Map;
+				document.getElementById("button_rw").addEventListener("click",
+					function() {
+						if(!map1) return;
+						map.rescale({latmin:40,latmax:60,lonmin:5,lonmax:15});
+						const marker = map.Marker_Text({lat:50,lon:0},JB.icons.flag,"Titel","Text")[0];
+						let x=50,y=10;
+						const animate = function() {
+							x += 0.2*(Math.random()-0.5);
+							y += 0.2*(Math.random()-0.5);
+							if(marker.setPosition) marker.setPosition(new google.maps.LatLng(x,y));
+							else if(marker.setLatLng) marker.setLatLng([x,y]);
+							window.requestAnimationFrame(animate);
+						};
+						animate();
+					}
+				);
+				document.getElementById("button_bp").addEventListener("click",
+					function() { 	
+						map.rescale({latmin:40,latmax:60,lonmin:5,lonmax:15});
+						const marker = map.Marker_Bild({lat:50,lon:10},JB.icons.Bild,"Beispiel4.png","Das Bild zeigt das Beispiel 4");
+					}
+				);
+			});
+
+			mapele_1.addEventListener("Tracks_n",runningMarker);
+		
+			mapele_2.addEventListener("Tracks_n",runningMarker);
+			
+			function runningMarker(event) {
+				if(event.detail.track_animation_running) return;
+				event.detail.track_animation_running = true;
+				const tracks = event.detail.gpxdaten.tracks.track;
+				const map = event.detail.Map;
+				const movemarker = map.Marker({lat:0,lon:0},JB.icons.MoveMarker)[0];
+				let latlon = [], 
+				    nr = 0;
+				for(let i=0;i<tracks.length;i++) 
+					for(let j=0;j<tracks[i].daten.length;j++)
+						latlon.push({lat:tracks[i].daten[j].lat,lon:tracks[i].daten[j].lon});
+				const animate = function() {
+					if(movemarker.setPosition) movemarker.setPosition(new google.maps.LatLng(latlon[nr].lat,latlon[nr].lon));
+					else if(movemarker.setLatLng) movemarker.setLatLng([latlon[nr].lat,latlon[nr].lon]);
+					nr++; if(nr>=latlon.length) nr=0;
+					window.requestAnimationFrame(animate);
+				};
+				animate();
+			}
+		
+		</script>	
+	</body>
+</html>

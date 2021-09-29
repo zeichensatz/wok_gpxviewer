@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>Fotoanzeige V3</title>
+		<style>
+			#map { display:inline-block;width:800px;height:500px;width:100%;height:90vh  }
+		</style>
+	</head>
+	<body>
+		<h1>Fotoanzeige V3</h1>
+		<div id="map" class="gpxview:Beispiel1.gpx:Satellit"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+    <p><a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+			const mapele = document.getElementById("map");
+			mapele.addEventListener("click_Marker_Bild",function(event) {
+				location.href = event.detail.events.eventparameter.src;
+				event.preventDefault();
+			});
+		</script>	
+	</body>
+</html>

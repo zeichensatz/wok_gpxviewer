@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<title>Fotoanzeige V7</title>
+		<style>
+			#map { display:inline-block;width:50%;height:500px }
+			#Bilder { display:inline-block;margin-left:1%;margin-top:0.5em;width:48%;height:500px;vertical-align: top; padding: 0 }
+			@media screen and (max-width:500px) {
+				#map { display:block;width:100%;height:500px }
+				#Bilder { display:block;margin:0;width:100%; height:100% }
+			}
+			#map_img { display:none }
+			figure { display: inline-block; margin:0; padding:0 }
+			figure img { max-width: 100%; max-height: 500px }
+			figure figcaption { display: block }
+		</style>
+	</head>
+	<body>
+		<h1>Fotoanzeige V7</h1>
+		<div id="map" class="gpxview::Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map_img" data-geo="centerlat:45.43465,centerlon:12.33924,radius:0.5">
+			<a href="Arsenale.jpg" data-geo="lat:45.43369,lon:12.35005">Arsenale di Venezia</a>
+			<a href="Basilica.jpg" data-geo="lat:45.43325,lon:12.34010">Basilica Di San Giorgio Maggiore</a>
+			<a href="Campanile.jpg" data-geo="lat:45.43465,lon:12.33924">Campanile di San Marco</a>
+			<a href="Lido.jpg" data-geo="lat:45.41983,lon:12.36822">Lido</a>
+			<a href="PonteAcademia.jpg" data-geo="lat:45.43148,lon:12.32852">Ponte del Academia</a>
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100">Seufzerbrücke</a>
+			<a href="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596">St. Michele Island Cementery</a>
+			<a href="Viale.jpg" data-geo="lat:45.43078,lon:12.35511">Viale Giuseppe Garibaldi</a>
+		</div>
+		<div id="Bilder"><p><button>Vorheriges</button> / 	<button>nächstes</button> Bild</p><figure><img alt=" "><figcaption></figcaption></figure></div>
+    <p><a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script>
+			"use strict";
+			var marker = null, map, mapObject;
+			var mapele = document.getElementById("map");
+			var img = document.querySelector("#Bilder img");
+			var figcaption = document.querySelector("#Bilder figcaption");
+			var buttons = document.querySelectorAll("#Bilder button");
+			var imageindex = [], images = {}, nr = 0;
+
+			function setImage() {
+				if(imageindex.length == 0) return;
+				if(nr < 0) nr = imageindex.length - 1;
+				if(nr >= imageindex.length) nr = 0;
+				let image = images[imageindex[nr]];
+				img.src = image.src;
+				figcaption.innerHTML = image.text;
+				if(marker) JB.RemoveElement(marker);
+				marker = map.Marker({lat:image.coord.lat,lon:image.coord.lon},JB.icons.Kreis)[0];
+				//mapObject.Rescale(image.coord.lat,image.coord.lon,.2);
+			}
+
+			mapele.addEventListener("Show",function(event) {
+				images = {};
+				imageindex = [];
+				nr = 0;
+				img.src = "";
+				figcaption.innerHTML = "";
+				if(marker) JB.RemoveElement(marker);
+			});
+			
+			mapele.addEventListener("Map_n",function(event) {
+				mapObject = event.detail;
+				map = mapObject.Map;
+				buttons[0].onclick = function(){ nr--; setImage(); };
+				buttons[1].onclick = function(){ nr++; setImage(); };
+			});
+			
+			mapele.addEventListener("created_Marker_Bild",function(event) {
+				let src = event.detail.events.eventparameter.src;
+				images[event.detail.events.eventparameter.src] = {src: event.detail.events.eventparameter.src, text: event.detail.events.eventparameter.text, marker: event.detail.events.eventparameter.marker, coord: event.detail.events.eventparameter.coord};
+			});
+			
+			mapele.addEventListener("Wegpunkte_n",function(event) {
+				imageindex = [];
+				for(let image in images) imageindex.push(image);
+				setImage();
+			});
+
+			mapele.addEventListener("click_Marker_Bild",function(event) {
+				for(let i=0;i<imageindex.length;i++) {
+					if(event.detail.events.eventparameter.src == imageindex[i]) { nr = i; break; }
+				}
+				setImage();
+				event.preventDefault();
+			});
+		</script>	
+		<script src="../GM_Utils/GPX2GM.js"></script>
+	</body>
+</html>
