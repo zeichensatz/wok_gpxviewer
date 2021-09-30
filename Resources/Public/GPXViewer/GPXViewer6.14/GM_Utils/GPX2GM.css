@@ -13,16 +13,16 @@
 .JBinfofenster_gm strong { white-space:nowrap }
 .leaflet-popup-content { overflow: auto }
 
-.JBmaphead { position: absolute; margin:0;padding:0;font-size:16px;line-height:24px;z-index:510;max-width:100% }
-.JBmaphead * { margin:0;padding:0; }
-.JBmaphead div { display:inline-block; }
+.JBmaphead { position: absolute; margin:0;padding:0;font-size:13px;line-height:23px;z-index:510;max-width:100% }
+.JBmaphead * { margin:0;padding:0; font-weight:400; }
+.JBmaphead div { display:inline-block; margin-left:3px; }
 .JBmaphead button { border: none; background-color: transparent; font: inherit; color: inherit; text-align: inherit; padding: 0; cursor: pointer; } 
 
 .visually-hidden { position: absolute !important; clip: rect(1px, 1px, 1px, 1px) !important; padding: 0 !important; border: 0 !important; height: 1px !important; width: 1px !important; overflow: hidden !important; white-space: nowrap !important; }
 
 .JBcheckbox ol { position: absolute; }
 .JBcheckbox li { list-style-type: none; white-space:nowrap; background-color: white; }
-.JBcheckbox input { margin-right:3px; margin-left:3px; }
+.JBcheckbox input { margin-right:3px; margin-left:3px; margin-top:0px; }
 .JBcheckbox li input:hover ~ label, .JBcheckbox li label:hover, .JBcheckbox li button:hover,
 .JBcheckbox li input:focus ~ label, .JBcheckbox li button:focus { outline: 1px dotted red; background-color: lightgray; }
 .JBcheckbox [aria-pressed="false"]::after { content: " ▼" }

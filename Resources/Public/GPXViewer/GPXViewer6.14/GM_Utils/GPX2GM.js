@@ -1329,7 +1329,7 @@ JB.makeMap = function (ID) {
 
 JB.checkImageName = function(url) {
 	var ext = url.substr(url.lastIndexOf(".")+1).toLowerCase();
-	return (ext=="jpg" || ext=="jpeg" || ext=="png" || ext=="gif" || url.indexOf("data:image")>-1) ;
+	return (ext=="jpg" || ext=="jpeg" || ext=="png" || ext=="gif" || JB.GPX2GM.parameters.checkimagename == false || url.indexOf("data:image")>-1) ;
 } //  checkImageName                 
 
 JB.CheckBoxGroup = function(mapoject,id,Texte,gpxelement,Label,Farbe,def_stat,clickFunc,clickFunc2) {

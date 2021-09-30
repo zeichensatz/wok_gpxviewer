@@ -29,6 +29,7 @@ JB.Map = function(makemap) {
 	var myOptions = {
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		zoomControl: true, //large,
+		controlSize: makemap.parameters.gm_controlsize,
 		mapTypeControl: large && makemap.parameters.showmaptypecontroll,
 		mapTypeControlOptions: {
 			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,

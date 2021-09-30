@@ -113,6 +113,73 @@ JB.Icons = function(baseurl) {
 	//this.myicon       = { icon:   { anchor: {x:15,y:36}, url: baseurl+"Icons/myicon.png" },
 	//                  shadow: { anchor: {x:10,y:31}, url: baseurl+"Icons/shadow.png" } };
 	// Most Icons from https://mapicons.mapsmarker.com/
+	this.cycling42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/cycling42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.cycling42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/cycling42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.fourbyfour42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/fourbyfour42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.fourbyfour42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/fourbyfour42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.hiking42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/hiking42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.hiking42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/hiking42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.jogging42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/jogging42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.jogging42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/jogging42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.motorbike42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/motorbike42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.motorbike42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/motorbike42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.aircraftsmall42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/aircraftsmall42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.aircraftsmall42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/aircraftsmall42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.car42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/car42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.car42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/car42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.convertible42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/convertible42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.convertible42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/convertible42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.cruiseship42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/cruiseship42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.cruiseship42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/cruiseship42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.helicopter42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/helicopter42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.helicopter42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/helicopter42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.plane42_r2l	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/plane42-r2l.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+	this.plane42_l2r	= { icon:   { anchor: {x: 15,y: 15}, url: baseurl+"../../MyIcons/plane42-l2r.png", 
+											scaledSize: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" },
+											size: { width: 30, height: 30, widthUnit: "px", heightUnit: "px" } } };
+
 } ;   
 
 JB.GPX2GM.setparameters = function() {  
@@ -227,6 +294,8 @@ JB.GPX2GM.setparameters = function() {
 	JB.GPX2GM.parameters.ropac = (typeof(Ropac)!="undefined") ? Ropac : 0.8;   // Transparenz Routenfarbe
 	JB.GPX2GM.parameters.linktarget = (typeof(Linktarget)!="undefined") ? Linktarget : "";
 	JB.GPX2GM.parameters.popup_Pars = (typeof(Popup_Pars)!="undefined") ? Popup_Pars : "width=900,height=790,screenX=970,screenY=0,status=yes,scrollbars=yes";
+	JB.GPX2GM.parameters.gm_controlsize = (typeof(Gm_controlsize)!="undefined") ? Gm_controlsize : 25; // Für Google Maps controlSize/Änderungen werden erst nach Löschen des Browser-Cache wirksam! 
+	JB.GPX2GM.parameters.checkimagename = (typeof(Checkimagename)!="undefined") ? Checkimagename : true;
 	
 	if(JB.GPX2GM.parameters.tracks_dateiuebergreifend_verbinden) JB.GPX2GM.parameters.tracks_verbinden = true;
 	if(typeof(JB.GPX2GM.parameters.tcols)=="string") JB.GPX2GM.parameters.tcols = JB.GPX2GM.parameters.tcols.split(",");
