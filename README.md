@@ -4,7 +4,7 @@ This is a [TYPO3](https://typo3.org) extension, which provides a plugin for inte
 ## What does it do?
 With including the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) javascript one can display GPX tracks, routes, waypoints in Google Maps or Openstreetmap. Please refer to the [GPXViewer website](https://www.j-berkemeier.de/GPXViewer) for more informations about the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer).
 
-This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/test/GPXViewer). I will also try to do some documentation for the use of the extension there.
+This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/en/gpxviewer). I will also try to do some documentation for the use of the extension there.
 
 ## What prerequisites are needed?
 * [TYPO3](https://typo3.org) 9.5.x or above. I'm running it on 10.4.x.
@@ -32,11 +32,11 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
   * You can add issues or pull requests on [github](https://github.com/zeichensatz/wok_gpxviewer).
 
 ## Todos
-* Update GPXViewer source to current version 6.14 (last supported version is 6.8).
+* Update GPXViewer source to current version 6.14 (last supported version is 6.8) [work in progress].
 * Check button formatting for imgdivs: perhaps change to a tag? This would mean changes in the javascript too.
 * Map+imgdiv+profiles: Some minor problems in display
 * make each map/imgdiv/profiles scaleable from backend
-* more examples
+* more examples and translation of examples into English
 * more documentation
 * create TER version
 * check compatibility with extension_builder 10.0.1
