@@ -87,12 +87,28 @@
 										<numIndex index="1">OSM_Landscape</numIndex>
 									</numIndex>
 									<numIndex index="9" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOSM_Outdoors</numIndex>
+										<numIndex index="1">OSM_Outdoors</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
 										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOPENTOPO</numIndex>
 										<numIndex index="1">OPENTOPO</numIndex>
 									</numIndex>
-									<numIndex index="10" type="array">
+									<numIndex index="11" type="array">
 										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeOPEN_Sea</numIndex>
 										<numIndex index="1">OPEN_Sea</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeHiking</numIndex>
+										<numIndex index="1">Hiking</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeCycling</numIndex>
+										<numIndex index="1">Cycling</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxFileMapTypeKeine_Karte</numIndex>
+										<numIndex index="1">Keine_Karte</numIndex>
 									</numIndex>
 								</items>
 							</config>

@@ -64,6 +64,10 @@
 				<source>OSM Landscape</source>
 				<target state="translated">OSM Landscape</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxFileMapTypeOSM_Outdoors" resname="flexform.gpxFileMapTypeOSM_Outdoors">
+				<source>OSM Outdoors (only Leaflet)</source>
+				<target state="translated">OSM Outdoors (nur Leaflet)</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxFileMapTypeOPENTOPO" resname="flexform.gpxFileMapTypeOPENTOPO">
 				<source>OPENTOPO</source>
 				<target state="translated">OPENTOPO</target>
@@ -71,6 +75,18 @@
 			<trans-unit id="flexform.gpxFileMapTypeOPEN_Sea" resname="flexform.gpxFileMapTypeOPEN_Sea">
 				<source>OPEN Sea (only Leaflet)</source>
 				<target state="translated">OPEN Sea (nur Leaflet)</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxFileMapTypeHiking" resname="flexform.gpxFileMapTypeHiking">
+				<source>Hiking (only Leaflet)</source>
+				<target state="translated">Hiking (nur Leaflet)</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxFileMapTypeCycling" resname="flexform.gpxFileMapTypeCycling">
+				<source>Cycling (only Leaflet)</source>
+				<target state="translated">Cycling (nur Leaflet)</target>
+			</trans-unit>
+			<trans-unit id="flexform.gpxFileMapTypeKeine_Karte" resname="flexform.gpxFileMapTypeKeine_Karte">
+				<source>No map (only Leaflet)</source>
+				<target state="translated">Keine Karte (nur Leaflet)</target>
 			</trans-unit>
 			<trans-unit id="flexform.gpxFileDownloadLink" resname="flexform.gpxFileDownloadLink">
 				<source>Toggle for display of download link for the GPX file</source>
@@ -563,20 +579,20 @@
 				<target state="translated">API Schlüssel für OSM Landscape: siehe auch www.j-berkemeier.de/GPXViewer/#Apikey</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.Map" resname="constants.gpxMapType.options.Map">
-				<source>Map</source>
-				<target state="translated">Karte</target>
+				<source>Map (only with Google Maps API)</source>
+				<target state="translated">Karte (nur mit Google Maps API)</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.Satellite" resname="constants.gpxMapType.options.Satellite">
 				<source>Satellite</source>
 				<target state="translated">Satellit</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.Hybrid" resname="constants.gpxMapType.options.Hybrid">
-				<source>Hybrid</source>
-				<target state="translated">Hybrid</target>
+				<source>Hybrid (only with Google Maps API)</source>
+				<target state="translated">Hybrid (nur mit Google Maps API)</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.Terrain" resname="constants.gpxMapType.options.Terrain">
-				<source>Terrain</source>
-				<target state="translated">Oberfläche</target>
+				<source>Terrain (only with Google Maps API)</source>
+				<target state="translated">Oberfläche (nur mit Google Maps API)</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.OSM" resname="constants.gpxMapType.options.OSM">
 				<source>OpenStreetMap (OSM)</source>
@@ -594,13 +610,29 @@
 				<source>OSM Landscape</source>
 				<target state="translated">OSM Landscape</target>
 			</trans-unit>
+			<trans-unit id="constants.gpxMapType.options.OSM_Outdoors" resname="constants.gpxMapType.options.OSM_Outdoors">
+				<source>OSM Outdoors (only Leaflet-Version)</source>
+				<target state="translated">OSM Outdoors (nur Leaflet-Version)</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.OPENTOPO" resname="constants.gpxMapType.options.OPENTOPO">
 				<source>OpenTopo</source>
 				<target state="translated">OpenTopo</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.OPEN_Sea" resname="constants.gpxMapType.options.OPEN_Sea">
-				<source>Open Sea</source>
-				<target state="translated">Open Sea</target>
+				<source>Open Sea (only Leaflet-Version)</source>
+				<target state="translated">Open Sea (nur Leaflet-Version)</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMapType.options.Hiking" resname="constants.gpxMapType.options.Hiking">
+				<source>Hiking (only Leaflet-Version)</source>
+				<target state="translated">Hiking (nur Leaflet-Version)</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMapType.options.Cycling" resname="constants.gpxMapType.options.Cycling">
+				<source>Cycling (only Leaflet-Version)</source>
+				<target state="translated">Cycling (nur Leaflet-Version)</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxMapType.options.Keine_Karte" resname="constants.gpxMapType.options.Keine_Karte">
+				<source>No map (only Leaflet-Version)</source>
+				<target state="translated">Keine Karte (nur Leaflet-Version)</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxMapType.label" resname="constants.gpxMapType.label">
 				<source>GPXViewer Map Type: Choose kind of map</source>
