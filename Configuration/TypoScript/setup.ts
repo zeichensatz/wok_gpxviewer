@@ -20,7 +20,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Legende_rr = true
 			Legende_trk = true
 			Legende_rte = true
-			Legende_wpt = false
+			Legende_wpt = true
 			Gpxtracks = true
 			Gpxrouten = true
 			Gpxwegpunkte = true
