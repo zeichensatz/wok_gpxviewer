@@ -7,7 +7,7 @@ With including the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) javascript
 This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/en/gpxviewer). I will also try to do some documentation for the use of the extension there.
 
 ## What prerequisites are needed?
-* [TYPO3](https://typo3.org) 9.5.x or above. I'm running it on 10.4.x.
+* [TYPO3](https://typo3.org) 10.4.19 and above.
 * The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler and therefore the layout might be broken if you don't (please refer to "How to set up?").
 * For some features you need [exiftool](https://exiftool.org) installed on your server.
 * Probably you need API keys for use of Google maps or OSM. Find more information about API keys [here](https://www.j-berkemeier.de/GPXViewer/#Apikey).
