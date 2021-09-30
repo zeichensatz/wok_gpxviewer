@@ -830,6 +830,10 @@
 				<source>GPXViewer Legende_wpt: Show waypoint(s) in legend on/off</source>
 				<target state="translated">GPXViewer Legende_wpt: Ein-/Ausschalten der Anzeige der Wegpunkte in der Legende</target>
 			</trans-unit>
+			<trans-unit id="constants.gpxLegende_info.label" resname="constants.gpxLegende_info.label">
+				<source>GPXViewer Legende_info: Show track- and routeinfo in legend line on/off</source>
+				<target state="translated">GPXViewer Legende_info: Ein-/Ausschalten der Anzeige der Track- und Routeninfos in der Legendenzeile</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxGpxtracks.label" resname="constants.gpxGpxtracks.label">
 				<source>GPXViewer Gpxtracks: Toggles display of GPX track(s) from GPX file(s) at start on/off</source>
 				<target state="translated">GPXViewer Gpxtracks: Ein-/Ausschalten der Anzeige von Tracks bei Seitenaufruf</target>
@@ -913,6 +917,10 @@
 			<trans-unit id="constants.gpxShwpname.label" resname="constants.gpxShwpname.label">
 				<source>GPXViewer Shwpname: Show content of name field in waypoint info on/off</source>
 				<target state="translated">GPXViewer Shwpname: Ein-/Ausschalten der Ausgabe des Namensfeldes in der Wegpunktinfo</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxShwptooltip.label" resname="constants.gpxShwptooltip.label">
+				<source>GPXViewer Shwptooltip (only OSM): Show content of name field over waypoint on/off</source>
+				<target state="translated">GPXViewer Shwptooltip (nur OSM): Ein-/Ausschalten der Ausgabe des Namensfeldes über dem Wegpunkt</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxShwpcmt.label" resname="constants.gpxShwpcmt.label">
 				<source>GPXViewer Shwpcmt: Show content of cmt field in waypoint info on/off</source>

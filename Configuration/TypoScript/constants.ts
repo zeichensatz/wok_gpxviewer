@@ -129,181 +129,185 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxLegende_rte = true
 		# cat=GPXViewer: Advanced/1130/2214; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLegende_wpt.label
 		gpxLegende_wpt = true
-		# cat=GPXViewer: Advanced/1130/2215; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxtracks.label
+		# cat=GPXViewer: Advanced/1130/2215; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLegende_info.label
+		gpxLegende_info = false
+		# cat=GPXViewer: Advanced/1130/2216; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxtracks.label
 		gpxGpxtracks = true
-		# cat=GPXViewer: Advanced/1130/2216; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxrouten.label
+		# cat=GPXViewer: Advanced/1130/2217; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxrouten.label
 		gpxGpxrouten = true
-		# cat=GPXViewer: Advanced/1130/2217; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxwegpunkte.label
+		# cat=GPXViewer: Advanced/1130/2218; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxwegpunkte.label
 		gpxGpxwegpunkte = true
-		# cat=GPXViewer: Advanced/1130/2218; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracks_verbinden.label
+		# cat=GPXViewer: Advanced/1130/2219; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracks_verbinden.label
 		gpxTracks_verbinden = false
-		# cat=GPXViewer: Advanced/1130/2219; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracks_dateiuebergreifend_verbinden.label
+		# cat=GPXViewer: Advanced/1130/2220; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracks_dateiuebergreifend_verbinden.label
 		gpxTracks_dateiuebergreifend_verbinden = false
-		# cat=GPXViewer: Advanced/1130/2220; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracksort.label
+		# cat=GPXViewer: Advanced/1130/2221; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTracksort.label
 		gpxTracksort = true
-		# cat=GPXViewer: Advanced/1130/2221; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDateitrenner.label
+		# cat=GPXViewer: Advanced/1130/2222; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDateitrenner.label
 		gpxDateitrenner = ,
-		# cat=GPXViewer: Advanced/1130/2222; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxReadspeed.label
+		# cat=GPXViewer: Advanced/1130/2223; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxReadspeed.label
 		gpxReadspeed = true
-		# cat=GPXViewer: Advanced/1130/2223; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxSpeedfaktor.label
+		# cat=GPXViewer: Advanced/1130/2224; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxSpeedfaktor.label
 		gpxSpeedfaktor = 3.6
-		# cat=GPXViewer: Advanced/1130/2224; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHfaktor.label
+		# cat=GPXViewer: Advanced/1130/2225; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHfaktor.label
 		gpxHfaktor = 1
-		# cat=GPXViewer: Advanced/1130/2225; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxSfaktor.label
+		# cat=GPXViewer: Advanced/1130/2226; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxSfaktor.label
 		gpxSfaktor = 1
-		# cat=GPXViewer: Advanced/1130/2226; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVfaktor.label
+		# cat=GPXViewer: Advanced/1130/2227; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVfaktor.label
 		gpxVfaktor = 1
-		# cat=GPXViewer: Advanced/1130/2227; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxWfaktor.label
+		# cat=GPXViewer: Advanced/1130/2228; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxWfaktor.label
 		gpxWfaktor = 1
-		# cat=GPXViewer: Advanced/1130/2228; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTfaktor.label
+		# cat=GPXViewer: Advanced/1130/2229; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTfaktor.label
 		gpxTfaktor = 1
-		# cat=GPXViewer: Advanced/1130/2229; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxToffset.label
+		# cat=GPXViewer: Advanced/1130/2230; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxToffset.label
 		gpxToffset = 0
-		# cat=GPXViewer: Advanced/1130/2230; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxUnwraplon.label
+		# cat=GPXViewer: Advanced/1130/2231; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxUnwraplon.label
 		gpxUnwraplon = false
-		# cat=GPXViewer: Advanced/1130/2231; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackover.label
+		# cat=GPXViewer: Advanced/1130/2232; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackover.label
 		gpxTrackover = true
-		# cat=GPXViewer: Advanced/1130/2232; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackclick.label
+		# cat=GPXViewer: Advanced/1130/2233; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackclick.label
 		gpxTrackclick = true
-		# cat=GPXViewer: Advanced/1130/2233; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackmarker.label
+		# cat=GPXViewer: Advanced/1130/2234; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrackmarker.label
 		gpxTrackmarker = 
-		# cat=GPXViewer: Advanced/1130/2234; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRoutemarker.label
+		# cat=GPXViewer: Advanced/1130/2235; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRoutemarker.label
 		gpxRoutemarker = 
-		# cat=GPXViewer: Advanced/1130/2235; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpname.label
+		# cat=GPXViewer: Advanced/1130/2236; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpname.label
 		gpxShwpname = true
-		# cat=GPXViewer: Advanced/1130/2236; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpcmt.label
+		# cat=GPXViewer: Advanced/1130/2237; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwptooltip.label
+		gpxShwptooltip = false
+		# cat=GPXViewer: Advanced/1130/2238; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpcmt.label
 		gpxShwpcmt = true
-		# cat=GPXViewer: Advanced/1130/2237; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpdesc.label
+		# cat=GPXViewer: Advanced/1130/2239; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpdesc.label
 		gpxShwpdesc = false
-		# cat=GPXViewer: Advanced/1130/2238; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwptime.label
+		# cat=GPXViewer: Advanced/1130/2240; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwptime.label
 		gpxShwptime = false
-		# cat=GPXViewer: Advanced/1130/2239; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpshadow.label
+		# cat=GPXViewer: Advanced/1130/2241; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShwpshadow.label
 		gpxShwpshadow = true
-		# cat=GPXViewer: Advanced/1130/2240; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxWpcluster.label
+		# cat=GPXViewer: Advanced/1130/2242; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxWpcluster.label
 		gpxWpcluster = false
-		# cat=GPXViewer: Advanced/1130/2241; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxBildpfad.label
+		# cat=GPXViewer: Advanced/1130/2243; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxBildpfad.label
 		gpxBildpfad = 
-		# cat=GPXViewer: Advanced/1130/2242; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxpfad.label
+		# cat=GPXViewer: Advanced/1130/2244; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGpxpfad.label
 		gpxGpxpfad = 
-		# cat=GPXViewer: Advanced/1130/2243; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxBildwegpunkticon.label
+		# cat=GPXViewer: Advanced/1130/2245; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxBildwegpunkticon.label
 		gpxBildwegpunkticon = Bild
-		# cat=GPXViewer: Advanced/1130/2244; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrcmt.label
+		# cat=GPXViewer: Advanced/1130/2246; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrcmt.label
 		gpxShtrcmt = false
-		# cat=GPXViewer: Advanced/1130/2245; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrdesc.label
+		# cat=GPXViewer: Advanced/1130/2247; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrdesc.label
 		gpxShtrdesc = false
-		# cat=GPXViewer: Advanced/1130/2246; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrx.label
+		# cat=GPXViewer: Advanced/1130/2248; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrx.label
 		gpxShtrx = true
-		# cat=GPXViewer: Advanced/1130/2247; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrt.label
+		# cat=GPXViewer: Advanced/1130/2249; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrt.label
 		gpxShtrt = true
-		# cat=GPXViewer: Advanced/1130/2248; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtwob.label
+		# cat=GPXViewer: Advanced/1130/2250; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtwob.label
 		gpxShtrtwob = false
-		# cat=GPXViewer: Advanced/1130/2249; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtabs.label
+		# cat=GPXViewer: Advanced/1130/2251; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtabs.label
 		gpxShtrtabs = false
-		# cat=GPXViewer: Advanced/1130/2250; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtges.label
+		# cat=GPXViewer: Advanced/1130/2252; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtges.label
 		gpxShtrtges = false
-		# cat=GPXViewer: Advanced/1130/2251; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtgeswob.label
+		# cat=GPXViewer: Advanced/1130/2253; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrtgeswob.label
 		gpxShtrtgeswob = false
-		# cat=GPXViewer: Advanced/1130/2252; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrv.label
+		# cat=GPXViewer: Advanced/1130/2254; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrv.label
 		gpxShtrv = true
-		# cat=GPXViewer: Advanced/1130/2253; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrpace.label
+		# cat=GPXViewer: Advanced/1130/2255; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrpace.label
 		gpxShtrpace = false
-		# cat=GPXViewer: Advanced/1130/2254; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrh.label
+		# cat=GPXViewer: Advanced/1130/2256; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrh.label
 		gpxShtrh = true
-		# cat=GPXViewer: Advanced/1130/2255; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrrr.label
+		# cat=GPXViewer: Advanced/1130/2257; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrrr.label
 		gpxShtrrr = true
-		# cat=GPXViewer: Advanced/1130/2256; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrs.label
+		# cat=GPXViewer: Advanced/1130/2258; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrs.label
 		gpxShtrs = true
-		# cat=GPXViewer: Advanced/1130/2257; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrhr.label
+		# cat=GPXViewer: Advanced/1130/2259; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrhr.label
 		gpxShtrhr = true
-		# cat=GPXViewer: Advanced/1130/2258; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrcad.label
+		# cat=GPXViewer: Advanced/1130/2260; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrcad.label
 		gpxShtrcad = true
-		# cat=GPXViewer: Advanced/1130/2259; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtratemp.label
+		# cat=GPXViewer: Advanced/1130/2261; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtratemp.label
 		gpxShtratemp = true
-		# cat=GPXViewer: Advanced/1130/2260; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmitt.label
+		# cat=GPXViewer: Advanced/1130/2262; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmitt.label
 		gpxShtrvmitt = false
-		# cat=GPXViewer: Advanced/1130/2261; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittwob.label
+		# cat=GPXViewer: Advanced/1130/2263; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittwob.label
 		gpxShtrvmittwob = false
-		# cat=GPXViewer: Advanced/1130/2262; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittpace.label
+		# cat=GPXViewer: Advanced/1130/2264; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittpace.label
 		gpxShtrvmittpace = false
-		# cat=GPXViewer: Advanced/1130/2263; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittpacewob.label
+		# cat=GPXViewer: Advanced/1130/2265; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrvmittpacewob.label
 		gpxShtrvmittpacewob = false
-		# cat=GPXViewer: Advanced/1130/2264; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMovevmin.label
+		# cat=GPXViewer: Advanced/1130/2266; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMovevmin.label
 		gpxMovevmin = 1
-		# cat=GPXViewer: Advanced/1130/2265; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowtrack.label
+		# cat=GPXViewer: Advanced/1130/2267; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowtrack.label
 		gpxArrowtrack = false
-		# cat=GPXViewer: Advanced/1130/2266; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowtrackcol.label
+		# cat=GPXViewer: Advanced/1130/2268; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowtrackcol.label
 		gpxArrowtrackcol = 
-		# cat=GPXViewer: Advanced/1130/2267; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtcmt.label
+		# cat=GPXViewer: Advanced/1130/2269; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtcmt.label
 		gpxShrtcmt = false
-		# cat=GPXViewer: Advanced/1130/2268; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtdesc.label
+		# cat=GPXViewer: Advanced/1130/2270; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtdesc.label
 		gpxShrtdesc = false
-		# cat=GPXViewer: Advanced/1130/2269; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrstart.label
+		# cat=GPXViewer: Advanced/1130/2271; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrstart.label
 		gpxShtrstart = false
-		# cat=GPXViewer: Advanced/1130/2270; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrziel.label
+		# cat=GPXViewer: Advanced/1130/2272; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShtrziel.label
 		gpxShtrziel = false
-		# cat=GPXViewer: Advanced/1130/2271; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtstart.label
+		# cat=GPXViewer: Advanced/1130/2273; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtstart.label
 		gpxShrtstart = false
-		# cat=GPXViewer: Advanced/1130/2272; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtziel.label
+		# cat=GPXViewer: Advanced/1130/2274; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxShrtziel.label
 		gpxShrtziel = false
-		# cat=GPXViewer: Advanced/1130/2273; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowroute.label
+		# cat=GPXViewer: Advanced/1130/2275; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowroute.label
 		gpxArrowroute = false
-		# cat=GPXViewer: Advanced/1130/2274; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowroutecol.label
+		# cat=GPXViewer: Advanced/1130/2276; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowroutecol.label
 		gpxArrowroutecol = 
-		# cat=GPXViewer: Advanced/1130/2275; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowsymbol.label
+		# cat=GPXViewer: Advanced/1130/2277; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxArrowsymbol.label
 		gpxArrowsymbol = ➤
-		# cat=GPXViewer: Advanced/1130/2276; type=int[10-149]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGroesseminibild.label
+		# cat=GPXViewer: Advanced/1130/2278; type=int[10-149]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxGroesseminibild.label
 		gpxGroesseminibild = 60
-		# cat=GPXViewer: Advanced/1130/2277; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDisplaycolor.label
+		# cat=GPXViewer: Advanced/1130/2279; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDisplaycolor.label
 		gpxDisplaycolor = false
-		# cat=GPXViewer: Advanced/1130/2278; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLaengen3d.label
+		# cat=GPXViewer: Advanced/1130/2280; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLaengen3d.label
 		gpxLaengen3d = false
-		# cat=GPXViewer: Advanced/1130/2279; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxUsegpxbounds.label
+		# cat=GPXViewer: Advanced/1130/2281; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxUsegpxbounds.label
 		gpxUsegpxbounds = false
-		# cat=GPXViewer: Advanced/1130/2280; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHglattlaen.label
+		# cat=GPXViewer: Advanced/1130/2282; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHglattlaen.label
 		gpxHglattlaen = 500
-		# cat=GPXViewer: Advanced/1130/2281; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVglattlaen.label
+		# cat=GPXViewer: Advanced/1130/2283; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVglattlaen.label
 		gpxVglattlaen = 100
-		# cat=GPXViewer: Advanced/1130/2282; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVglatt.label
+		# cat=GPXViewer: Advanced/1130/2284; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxVglatt.label
 		gpxVglatt = false
-		# cat=GPXViewer: Advanced/1130/2283; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHglatt.label
+		# cat=GPXViewer: Advanced/1130/2285; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxHglatt.label
 		gpxHglatt = false
-		# cat=GPXViewer: Advanced/1130/2284; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTdiff.label
+		# cat=GPXViewer: Advanced/1130/2286; type=int+; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTdiff.label
 		gpxTdiff = 0
-		# cat=GPXViewer: Advanced/1130/2285; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTkorr.label
+		# cat=GPXViewer: Advanced/1130/2287; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTkorr.label
 		gpxTkorr = true
-		# cat=GPXViewer: Advanced/1130/2286; type=int[10-30]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMaxzoomemove.label
+		# cat=GPXViewer: Advanced/1130/2288; type=int[10-30]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMaxzoomemove.label
 		gpxMaxzoomemove = 30
-		# cat=GPXViewer: Advanced/1130/2287; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotframecol.label
+		# cat=GPXViewer: Advanced/1130/2289; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotframecol.label
 		gpxPlotframecol = black
-		# cat=GPXViewer: Advanced/1130/2288; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotgridcol.label
+		# cat=GPXViewer: Advanced/1130/2290; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotgridcol.label
 		gpxPlotgridcol = gray
-		# cat=GPXViewer: Advanced/1130/2289; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotlabelcol.label
+		# cat=GPXViewer: Advanced/1130/2291; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotlabelcol.label
 		gpxPlotlabelcol = black
-		# cat=GPXViewer: Advanced/1130/2290; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotmarkercol.label
+		# cat=GPXViewer: Advanced/1130/2292; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotmarkercol.label
 		gpxPlotmarkercol = black
-		# cat=GPXViewer: Advanced/1130/2291; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxProfilfillopac.label
+		# cat=GPXViewer: Advanced/1130/2293; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxProfilfillopac.label
 		gpxProfilfillopac = 0.5
-		# cat=GPXViewer: Advanced/1130/2292; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.none=,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.altitude=h,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.slope=s,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.speed=v,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.cadence=cad,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.heartrate=hr]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.label
+		# cat=GPXViewer: Advanced/1130/2294; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.none=,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.altitude=h,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.slope=s,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.speed=v,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.cadence=cad,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.heartrate=hr]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.label
 		gpxTrcolmod = 
-		# cat=GPXViewer: Advanced/1130/2293; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTcols.label
+		# cat=GPXViewer: Advanced/1130/2295; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTcols.label
 		gpxTcols = ["#ff0000","#00ff00","#0000ff","#eeee00","#ff00ff","#00ffff","#000000"]
-		# cat=GPXViewer: Advanced/1130/2294; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRcols.label
+		# cat=GPXViewer: Advanced/1130/2296; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRcols.label
 		gpxRcols = ["#800000","#008000","#000080","#808000","#800080","#008080","#808080"]
-		# cat=GPXViewer: Advanced/1130/2295; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxOcol.label
+		# cat=GPXViewer: Advanced/1130/2297; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxOcol.label
 		gpxOcol = #000000
-		# cat=GPXViewer: Advanced/1130/2296; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxOwidth.label
+		# cat=GPXViewer: Advanced/1130/2298; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxOwidth.label
 		gpxOwidth = 3.0
-		# cat=GPXViewer: Advanced/1130/2297; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTwidth.label
+		# cat=GPXViewer: Advanced/1130/2299; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTwidth.label
 		gpxTwidth = 2.0
-		# cat=GPXViewer: Advanced/1130/2298; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRwidth.label
+		# cat=GPXViewer: Advanced/1130/2301; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRwidth.label
 		gpxRwidth = 2.0
-		# cat=GPXViewer: Advanced/1130/2299; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTopac.label
+		# cat=GPXViewer: Advanced/1130/2302; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTopac.label
 		gpxTopac = 0.8
-		# cat=GPXViewer: Advanced/1130/2300; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRopac.label
+		# cat=GPXViewer: Advanced/1130/2303; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxRopac.label
 		gpxRopac = 0.8
-		# cat=GPXViewer: Advanced/1130/2301; type=type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLinktarget.label
+		# cat=GPXViewer: Advanced/1130/2304; type=type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxLinktarget.label
 		gpxLinktarget = 
-		# cat=GPXViewer: Advanced/1130/2302; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPopup_Pars.label
+		# cat=GPXViewer: Advanced/1130/2305; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPopup_Pars.label
 		gpxPopup_Pars = width=900,height=790,screenX=970,screenY=0,status=yes,scrollbars=yes
 
 	}

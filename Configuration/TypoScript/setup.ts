@@ -20,7 +20,8 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Legende_rr = true
 			Legende_trk = true
 			Legende_rte = true
-			Legende_wpt = false
+			Legende_wpt = true
+			Legende_info = false
 			Gpxtracks = true
 			Gpxrouten = true
 			Gpxwegpunkte = true
@@ -42,6 +43,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Trackmarker = 
 			Routemarker = 
 			Shwpname = true
+			Shwptooltip = false
 			Shwpcmt = true
 			Shwpdesc = false
 			Shwptime = false
@@ -134,6 +136,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Legende_trk = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_trk}
 			Legende_rte = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_rte}
 			Legende_wpt = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_wpt}
+			Legende_info = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_info}
 			Gpxtracks = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxtracks}
 			Gpxrouten = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxrouten}
 			Gpxwegpunkte = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxwegpunkte}
@@ -155,6 +158,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Trackmarker = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxTrackmarker}
 			Routemarker = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxRoutemarker}
 			Shwpname = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpname}
+			Shwptooltip = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwptooltip}
 			Shwpcmt = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpcmt}
 			Shwpdesc = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpdesc}
 			Shwptime = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwptime}
