@@ -14,7 +14,6 @@ plugin.bootstrap_package {
 		scss {
 			# cat=GPXViewer: Basic/1122/2181; type=options[Bootstrap_package 11.x=../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme,Bootstrap_package 12.x + bootstrap 4=../../../../../bootstrap_package/Resources/Public/Scss/bootstrap4/theme,Bootstrap_package 12.x + bootstrap 5=../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-theme.label
 			gpxviewer-theme = ../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme
-
 			# cat=GPXViewer: Basic/1122/2182; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-height.label
 			gpxviewer-height = 600px
 			# cat=GPXViewer: Basic/1122/2183; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-profiles-height.label
