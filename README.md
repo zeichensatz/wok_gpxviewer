@@ -7,8 +7,8 @@ With including the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) javascript
 This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/test/GPXViewer). I will also try to do some documentation for the use of the extension there.
 
 ## What prerequisites are needed?
-* [TYPO3](https://typo3.org) 9.5.x or above. I'm running it on 10.4.x.
-* The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler and therefore the layout might be broken if you don't (please refer to "How to set up?").
+* [TYPO3](https://typo3.org) 10.4.19 and above.
+* The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler and therefore the layout might be broken if you don't (please refer to "How to set up?"). I tested the [bootstrap_package](https://www.bootstrap-package.com/) versions 11.0.2, 11.0.3.
 * For some features you need [exiftool](https://exiftool.org) installed on your server.
 * Probably you need API keys for use of Google maps or OSM. Find more information about API keys [here](https://www.j-berkemeier.de/GPXViewer/#Apikey).
 * You don't necessarily need GPX files, you even can create a GPXViewer content element and add your own waypoints or waypoint images with GPS coordinates. You need to know the coordinates from another source. This extension does not provide a way to determine GPS coordinates from a map.
@@ -32,7 +32,6 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
   * You can add issues or pull requests on [github](https://github.com/zeichensatz/wok_gpxviewer).
 
 ## Todos
-* Update GPXViewer source to current version 6.14 (last supported version is 6.8).
 * Check button formatting for imgdivs: perhaps change to a tag? This would mean changes in the javascript too.
 * Map+imgdiv+profiles: Some minor problems in display
 * make each map/imgdiv/profiles scaleable from backend
