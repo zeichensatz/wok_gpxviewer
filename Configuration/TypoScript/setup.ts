@@ -265,11 +265,14 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_profilesCols = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesCols}
 		gpxMap_profilesPSaddr = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMap_profilesPSaddr}
 
+/*
 		// Import layout variables from bootstrap_package
+		// These settings are not needed, they are used for SCSS only
+		gpxviewer-theme = {$plugin.bootstrap_package.settings.scss.gpxviewer-theme}
 		gpxviewer-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-height}
 		gpxviewer-profiles-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-profiles-height}
 		gpxviewer-images-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-images-height}
-
+*/
 	}
 	view {
 		templateRootPaths.0 = EXT:wok_gpxviewer/Resources/Private/Templates/
