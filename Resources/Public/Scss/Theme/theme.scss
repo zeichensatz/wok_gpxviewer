@@ -22,6 +22,10 @@
 	width: $gpxviewer-width;
 	margin-left: 0px;
 	margin-bottom: 0px;
+	gap: 0px; // Change for BP_12-0 + bootstrap4/bootstrap5: not working for columns side by side (width isn't 100% anymore)
+}
+.tx-wok-gpxviewer .textpic-left .textpic-item, .tx-wok-gpxviewer .textpic-right .textpic-item {
+	width: calc(50%);
 }
 .tx-wok-gpxviewer .textpic-gallery {
 	padding-left: 0px;
@@ -87,6 +91,9 @@
 .gpx-viewer-images-border button.next { 
 	border-left-style: solid;
 	border-right-style: none;
+}
+.gpx-viewer-images-border .btn-group { 
+	width: 100%; // Change for BP_12-0 + bootstrap5
 }
 .gpx-viewer-figure {
 	margin-bottom: 0px; 
