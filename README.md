@@ -8,7 +8,7 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 
 ## What prerequisites are needed?
 * [TYPO3](https://typo3.org) 10.4.19 and above.
-* The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler and therefore the layout might be broken if you don't (please refer to "How to set up?"). I tested the [bootstrap_package](https://www.bootstrap-package.com/) versions 11.0.2, 11.0.3. 12.0.3
+* The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler and therefore the layout might be broken if you don't. I tested the [bootstrap_package](https://www.bootstrap-package.com/) versions 11.0.2, 11.0.3. 12.0.3.
 * For some features you need [exiftool](https://exiftool.org) installed on your server.
 * Probably you need API keys for use of Google maps or OSM. Find more information about API keys [here](https://www.j-berkemeier.de/GPXViewer/#Apikey).
 * You don't necessarily need GPX files, you even can create a GPXViewer content element and add your own waypoints or waypoint images with GPS coordinates. You need to know the coordinates from another source. This extension does not provide a way to determine GPS coordinates from a map.
@@ -20,14 +20,10 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 * Create a new page in [TYPO3](https://typo3.org) backend or edit an existing one.
 * Create an extension template for that page or edit an existing template and `"Include static (from extensions)"` for `GPXViewer (wok_gpxviewer)`. Please include the GPXViewer template after your bootstrap_package templates.
 * Change to `Constant Editor` and edit the settings for GPXViewer if needed.
-  * Depending to the bootstrap_package version, you are using, you have to set up the constant plugin.bootstrap-package.settings.scss.gpxviever-theme accordingly. You can do that in the constant editor in category `GPXVIEWER: BASIC` in the section `Scss Layout Settings` in `$gpxviewer-theme`.
   * You need API keys for Google Maps or OSM, see [GPXViewer API keys](https://www.j-berkemeier.de/GPXViewer/#Apikey). You can configure them with the constant editor in category `GPXVIEWER: BASIC` too.
   * Please refer to the help texts in constant editor for all other configuration options.
 * Now you can create a content element of type `plugin` and then select `GPXViewer tracks display`.
 * In the tab `Plug-in` you are able to add GPX files for display in the frontend. There are several tabs with settings to explore. Hopefully most of them are self explaining. If not, don't hesitate to contact me (see below).
-* If you're not using the bootstrap_package, please do the following:
-  * Set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss = false`. This setting will cause the use of CSS file `wok_gpxviewer/Resources/Public/CSS/custom.css`. 
-  * Best practice is to copy the CSS file `wok_gpxviewer/Resources/Public/CSS/custom.css` into your CSS file folder. Then set the constant `plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile = ToYourCssFile`. Please check, if your CSS file will be included in the source text of your page. If not, path/name is most probably not correct yet.
 
 ## How can you give your feedback
 * I would like to hear from you, how you're using the extension and what can be improved.
