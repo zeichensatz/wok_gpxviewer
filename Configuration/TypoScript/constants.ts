@@ -99,7 +99,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxMap_profilesPSaddr = https://fotos.wolfgangkleinbach.de
 
 		// Advanced Javascript Settings
-		# cat=GPXViewer: Advanced/1130/2200; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.auto=auto,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.German=de,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.English=en,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.Spanish=es]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.label
+		# cat=GPXViewer: Advanced/1130/2200; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.auto=auto,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.German=de,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.English=en,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.Spanish=es,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.options.Italian=it]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxDoclang.label
 		gpxDoclang = auto
 		# cat=GPXViewer: Advanced/1130/2201; type=options[m/km=si,mile/ft=enus,NM/ft=air,sm/ft=water]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxUnit.label
 		gpxUnit = si

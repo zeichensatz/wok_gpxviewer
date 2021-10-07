@@ -786,6 +786,10 @@
 				<source>Spanish</source>
 				<target state="translated">Spanisch</target>
 			</trans-unit>
+			<trans-unit id="constants.gpxDoclang.options.Italian" resname="constants.gpxDoclang.options.Italian">
+				<source>Italian</source>
+				<target state="translated">Italienisch</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxDoclang.label" resname="constants.gpxDoclang.label">
 				<source></source>
 				<target state="translated">GPXViewer Doclang: Sprache für die Ausgabe auswahlen</target>
