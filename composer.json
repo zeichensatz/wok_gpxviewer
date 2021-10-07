@@ -4,7 +4,7 @@
     "description": "Extension with plugin for GPXViewer content element based on GPXViewer from J\u00fcrgen Berkemeier (https://www.j-berkemeier.de/GPXViewer/)",
     "authors": [],
     "require": {
-        "typo3/cms-core": "^10.4.19"
+        "typo3/cms-core": "10.4.19-10.4.99 || ^11.5"
     },
     "autoload": {
         "psr-4": {
