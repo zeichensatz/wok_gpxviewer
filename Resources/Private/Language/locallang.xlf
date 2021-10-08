@@ -714,10 +714,6 @@
 				<source>GPXViewer Checkimagename: Toggles checking of images extensions for waypoints with images on/off. This switch has to be deactivated, if you want to use image references which are based on a hash value, i.e. images references to a Synology PhotoStation.</source>
 				<target state="translated">GPXViewer Checkimagename: Ein-/Ausschalten des Überprüfens der Namenserweiterungen von Bilddateien für Image-Wegpunkte. Dieser Schalter muss für Bildreferenzen deaktiviert werden, die z.B. über einen Hashwert einer Synology PhotoStation referenziert werden.</target>
 			</trans-unit>
-			<trans-unit id="constants.scss.label" resname="constants.scss.label">
-				<source>Using ScssPHP Parser from bootstrap-package: If you use GPXViewer together with bootstrap-package, you should not turn this off. All layout changes then should be made in EXT:/Resources/Public/Scss/Theme. The cssFile will not be used in this case!</source>
-				<target state="translated">Nutzung des ScssPHP Parser aus dem bootstrap-package: Wenn GPXViewer mit dem bootstrap-package genutzt wird, sollte diese Einstellung nicht deaktiviert werden. Alle Layout-Änderungen sollten dann in EXT:/Resources/Public/Scss/Theme vorgenommen werden. Das cssFile wird in diesem Fall nicht genutzt!</target>
-			</trans-unit>
 			<trans-unit id="constants.scss.gpxviewer-height.label" resname="constants.scss.gpxviewer-height.label">
 				<source>$gpxviewer-height: Height of the map. Value may NOT be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-height: Höhe der Karte. Der Wert darf nicht in % sein! Die Einheit sollte angegeben werden!</target>

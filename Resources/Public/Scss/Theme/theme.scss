@@ -7,9 +7,6 @@
 //
 @import "variables";
 
-//
-//* GPXViewer */
-//
 .frame > .tx-wok-gpxviewer:last-child {
 	margin-bottom: 1em;
 }
@@ -21,7 +18,7 @@
 	width: $gpxviewer-width;
 	margin-left: 0px;
 	margin-bottom: 0px;
-	gap: 0px; // Change for BP_12-0 + bootstrap4/bootstrap5: not working for columns side by side (width is not 100% anymore)
+	gap: 0px; /* Change for BP_12-0 + bootstrap4/bootstrap5: not working for columns side by side (width is not 100% anymore) */
 }
 .tx-wok-gpxviewer .textpic-left .textpic-item, .tx-wok-gpxviewer .textpic-right .textpic-item {
 	width: calc(50%);
@@ -92,7 +89,7 @@
 	border-right-style: none;
 }
 .gpx-viewer-images-border .btn-group { 
-	width: 100%; // Change for BP_12-0 + bootstrap5
+	width: 100%; /* Change for BP_12-0 + bootstrap5 */
 }
 .gpx-viewer-figure {
 	margin-bottom: 0px; 
@@ -106,14 +103,13 @@
 }
 
 /* Bootstrap design changes */
-/*div.frame.default.gpx-viewer {*/
 .gpx-viewer {
 	margin-bottom: 0px;
 	padding-bottom: 0;
 	padding-top: 0;
 }
-// ###################
-// correction of gpxviewer div for profiles left or right of gpxviewer
+
+/* correction of gpxviewer div for profiles left or right of gpxviewer */
 .viewer-gpx-pro-left, .viewer-gpx-pro-right {
 	height: $gpxviewer-height + 2px;
 }
@@ -122,9 +118,10 @@
 .viewer-gpx-pro-left, .viewer-gpx-pro-right, .viewer-gpx-pro-above, .viewer-gpx-pro-below {
 	width: 100%;
 }
-// ###################
-// IMAGES and PROFILES
-// set defaults for all divs with images and profiles
+/* ###################
+   IMAGES and PROFILES
+   set defaults for all divs with images and profiles 
+*/
 .images-gpx-img-pro-above, 
 .images-gpx-img-pro-left, 
 .images-gpx-img-pro-below, 
@@ -153,8 +150,9 @@
 	border-width: 1px;
 	border-color: #477DBE;
 }
-// ### EXCEPTIONS FOR IMAGES
-// ### set exceptions for all divs with images or profiles
+/* ### EXCEPTIONS FOR IMAGES
+   ### set exceptions for all divs with images or profiles
+*/
 .images-gpx-img-pro-above {
 	border-top-style: none;
 }
@@ -167,7 +165,7 @@
 .images-gpx-img-pro-right {
 	border-right-style: none;
 }
-// ### set exceptions for all divs with images
+/* ### set exceptions for all divs with images */
 .images-gpx-img-above {
 	border-top-style: none;
 }
@@ -180,13 +178,14 @@
 .images-gpx-img-right {
 	border-right-style: none;
 }
-// ### set exceptions for all divs with profiles
+/* ### set exceptions for all divs with profiles */
 .images-gpx-pro-above {}
 .images-gpx-pro-left {}
 .images-gpx-pro-below {}
 .images-gpx-pro-right {}
-// ### EXCEPTIONS FOR profiles
-// ### set exceptions for all divs with images or profiles
+/* ### EXCEPTIONS FOR profiles
+   ### set exceptions for all divs with images or profiles 
+*/
 .profiles-gpx-img-pro-above {
 	border-top-style: none;
 }
@@ -195,12 +194,12 @@
 	border-top-style: none;
 }
 .profiles-gpx-img-pro-right {}
-// ### set exceptions for all divs with images
+/* ### set exceptions for all divs with images */
 .profiles-gpx-img-above {}
 .profiles-gpx-img-left {}
 .profiles-gpx-img-below {}
 .profiles-gpx-img-right {}
-// ### set exceptions for all divs with profiles
+/* ### set exceptions for all divs with profiles */
 .profiles-gpx-pro-above {
 	border-top-style: none;
 }
@@ -213,9 +212,9 @@
 .profiles-gpx-pro-right {
 	border-right-style: none;
 }
-// ### Exceptions for media queries
+/* ### Exceptions for media queries */
 @media (max-width: 767px) {
-	// ### set exceptions for all divs with images or profiles
+	/* ### set exceptions for all divs with images or profiles */
 	.images-gpx-img-pro-left {
 		border-left-style: solid;
 		border-top-style: none;
@@ -226,7 +225,7 @@
 		border-top-style: none;
 		border-bottom-style: none;
 	}
-	// ### set exceptions for all divs with images
+	/* ### set exceptions for all divs with images */
 	.images-gpx-img-left {
 		border-left-style: solid;
 		border-top-style: none;
@@ -235,7 +234,7 @@
 		border-right-style: solid;
 		border-top-style: none;
 	}
-	// ### set exceptions for all divs with profiles
+	/* ### set exceptions for all divs with profiles */
 	.profiles-gpx-pro-left {
 		border-left-style: solid;
 		border-top-style: none;
@@ -245,7 +244,7 @@
 		border-top-style: none;
 	}
 }
-// END OF IMAGES and PROFILES
+/* END OF IMAGES and PROFILES */
 
 
 /* Settings of GPXViewer for media queries */

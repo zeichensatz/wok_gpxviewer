@@ -235,7 +235,6 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		jsSourceFile4shimg = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceFile4shimg}
 		jsSourceAdditionalJS = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceAdditionalJS}
 		cssFile = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
-		scss = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss}
 
 		// General Settings
 		gpxMapType = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMapType}
@@ -295,14 +294,9 @@ plugin.tx_wokgpxviewer_gpxtracks {
 	}
 }
 
-// If scss is set to true, then use scss parser of bootstrap_package instead of a cssFile 
-// (defined plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile)
-// scss files are in directory /Resources/Public/Scss/Theme
-[{$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss} == true]
-//	plugin.tx_wokgpxviewer_gpxtracks.settings.cssFile >
-	page {
-		includeCSS {
-			wok_gpxviewer-theme = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
-		}
+page {
+	// Includes the scss/css file
+	includeCSS {
+		wok_gpxviewer-theme = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
 	}
-[END]
+}

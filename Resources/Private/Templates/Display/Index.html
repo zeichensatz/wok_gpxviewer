@@ -96,9 +96,6 @@
 <f:if condition="{settings.shimg} == 'true'">
 	<m:includeFile path="{settings.jsSourceFile4shimg}" footer="true">Bindet im Footer Javascript für die animierte Darstellung von Image-Wegpunkten ein.</m:includeFile>
 </f:if>
-<f:if condition="{settings.scss} == 'false'">
-	<m:includeFile path="{settings.cssFile}" footer="true">Bindet im Footer zusätzliches CSS für die GPXViewer-Extension ein, sofern nicht scss-Formatierung gewählt ist.</m:includeFile>
-</f:if>
 <m:GpxviewerSettings jsSettings="{jsSettings}">Bindet im Footer alle Definitionen für GPXViewer ein.</m:GpxviewerSettings>
 </f:section>
 </html>

@@ -82,10 +82,6 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		# cat=GPXViewer: Basic/1120/2169; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxCheckimagename.label
 		gpxCheckimagename = true
 
-		// ScssPHP Parser
-		# cat=GPXViewer: Basic/1122/2180; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.label
-		scss = true
-
 		// Profiles
 		# cat=GPXViewer: Basic/1121/2170; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxMap_sorting.label
 		gpxMap_sorting = hp,hpt,sp,spt,vp,vpt,hrp,hrpt,cadp,cadpt,atempp,atemppt,wpt
