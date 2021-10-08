@@ -31,6 +31,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		jsSourceFile=EXT:wok_gpxviewer/Resources/Public/GPXViewer/GPXViewer6.14/GM_Utils/GPX2GM.js
 		# cat=GPXViewer: Basic/1000/2130; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.cssFile.label
 		cssFile=EXT:wok_gpxviewer/Resources/Public/CSS/custom.css
+//		cssFile=EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
 		# cat=GPXViewer: Basic/1000/2131; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.jsSourceFile4shimg.label
 		jsSourceFile4shimg=EXT:wok_gpxviewer/Resources/Public/GPXViewer/GPXViewer6.14/GM_Utils/shimg.js
 		# cat=GPXViewer: Basic/1000/2132; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.jsSourceAdditionalJS.label

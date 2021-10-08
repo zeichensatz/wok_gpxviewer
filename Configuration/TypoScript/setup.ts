@@ -302,7 +302,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 //	plugin.tx_wokgpxviewer_gpxtracks.settings.cssFile >
 	page {
 		includeCSS {
-			wok_gpxviewer-theme = EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
+			wok_gpxviewer-theme = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
 		}
 	}
 [END]
