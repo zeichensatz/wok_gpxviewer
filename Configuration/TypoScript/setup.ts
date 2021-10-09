@@ -6,6 +6,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			JB.GPX2GM.GM_Api_key = 
 			JB.GPX2GM.OSM_Cycle_Api_Key = 
 			JB.GPX2GM.OSM_Landscape_Api_Key = 
+			JB.GPX2GM.OSM_Outdoors_Api_Key = 
 			Doclang = auto
 			Unit = si
 			Showmaptypecontroll = true
@@ -120,6 +121,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			JB.GPX2GM.GM_Api_key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyGoogleMaps}
 			JB.GPX2GM.OSM_Cycle_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Cycle}
 			JB.GPX2GM.OSM_Landscape_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Landscape}
+			JB.GPX2GM.OSM_Outdoors_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Outdoors}
 			// Advanced
 			Doclang = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxDoclang}
 			Unit = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxUnit}
