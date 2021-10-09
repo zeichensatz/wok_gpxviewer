@@ -309,6 +309,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			$gpxMap_wayp = $this->settings['gpxFileMap_wayp'];
 		};
 		$this->view->assign('gpxMap_wayp', $gpxMap_wayp);
+
 		// IMAGE-Wegpunkte
 		if($this->settings['gpxFileMap_img'] == 'Default' or $this->settings['gpxFileMap_img'] == '') {
 			// ... dann den Wert für gpxMap_img aus constants.ts nehmen ...
@@ -318,6 +319,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			$gpxMap_img = $this->settings['gpxFileMap_img'];
 		};
 		$this->view->assign('gpxMap_img', $gpxMap_img);
+
 		// Das gesamte Array für Wegpunkte einlesen
 		$wholeArray = $this->settings['waypoints'];
 		// Das Array muss existieren und darf nicht leer sein!
@@ -484,6 +486,22 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						} else {
 							$gpxMapWaypointLink = '';
 						};
+
+
+						// Ausgabestrings für Wegpunkte: Emoji
+						if (($array['container']['settings']['gpxMapWaypointType'] == 'emoji') and ($array['container']['settings']['gpxMapWaypointEmoji'] <> '')) {
+							$gpxMapWaypointEmoji = ' data-icon="' . $array['container']['settings']['gpxMapWaypointEmoji']  . '"';
+							$gpxMapIcons = $gpxMapIcons .
+											'<div data-geo="lat:' . $latitude . ',lon:' . $longitude . '"' . $gpxMapWaypointEmoji . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>' . $array['container']['settings']['gpxMapWaypointDescription'] . $Coords . '</div>
+			';
+						};
+
+						if ((isset($array['container']['settings']['gpxMapWaypointIcon'])) and ($array['container']['settings']['gpxMapWaypointIcon'] <> '')) {
+							$gpxMapWaypointIcon = ' data-icon="' . $array['container']['settings']['gpxMapWaypointIcon']  . '"';
+							$gpxMapIcons = $gpxMapIcons .
+											'<div data-geo="lat:' . $latitude . ',lon:' . $longitude . '"' . $gpxMapWaypointIcon . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>' . $array['container']['settings']['gpxMapWaypointDescription'] . $Coords . '</div>
+			';
+						};
 						// Ausgabestrings für Wegpunkte (Images/Icons) erstellen
 						if ($array['container']['settings']['gpxMapWaypointType'] == 'image') {
 							// sys_file uid für gewähltes Image umwandeln
@@ -496,15 +514,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							$gpxMapWaypointImage = 'fileadmin' . $tmpFile->getIdentifier();
 							$gpxMapImages = $gpxMapImages . 
 											'<img src="' . $gpxMapWaypointImage . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . $Coords . '"' . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>
-			';
-						} else {
-							if((isset($array['container']['settings']['gpxMapWaypointIcon'])) and ($array['container']['settings']['gpxMapWaypointIcon'] <> '')) {
-								$gpxMapWaypointIcon = ' data-icon="' . $array['container']['settings']['gpxMapWaypointIcon']  . '"';
-							} else {
-								$gpxMapWaypointIcon = '';
-							};
-							$gpxMapIcons = $gpxMapIcons .
-											'<div data-geo="lat:' . $latitude . ',lon:' . $longitude . '"' . $gpxMapWaypointIcon . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>' . $array['container']['settings']['gpxMapWaypointDescription'] . $Coords . '</div>
 			';
 						};
 					};

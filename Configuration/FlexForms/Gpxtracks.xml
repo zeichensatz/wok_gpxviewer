@@ -399,32 +399,36 @@
 												<maxitems>1</maxitems>
 												<size>1</size>
 												<default>image</default>
- 												<items type="array">
+												<items type="array">
 													<numIndex index="0" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImage</numIndex>
 														<numIndex index="1">image</numIndex>
 													</numIndex>
 													<numIndex index="1" type="array">
+														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectEmoji</numIndex>
+														<numIndex index="1">emoji</numIndex>
+													</numIndex>
+													<numIndex index="2" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectIcon</numIndex>
 														<numIndex index="1">icon</numIndex>
 													</numIndex>
-													<numIndex index="2" type="array">
+													<numIndex index="3" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectIconLinked</numIndex>
 														<numIndex index="1">iconLinked</numIndex>
 													</numIndex>
-													<numIndex index="3" type="array">
+													<numIndex index="4" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotagged</numIndex>
 														<numIndex index="1">imageGeotagged</numIndex>
 													</numIndex>
-													<numIndex index="4" type="array">
+													<numIndex index="5" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedDir</numIndex>
 														<numIndex index="1">imageGeotaggedDir</numIndex>
 													</numIndex>
-													<numIndex index="5" type="array">
+													<numIndex index="6" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedPS</numIndex>
 														<numIndex index="1">imageGeotaggedPS</numIndex>
 													</numIndex>
-													<numIndex index="6" type="array">
+													<numIndex index="7" type="array">
 														<numIndex index="0">LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointTypeSelectImageGeotaggedPSDir</numIndex>
 														<numIndex index="1">imageGeotaggedPSDir</numIndex>
 													</numIndex>
@@ -534,6 +538,17 @@
 											</config>
 										</TCEforms>
 									</settings.gpxMapWaypointPhotoStationPhotoSize>
+									<settings.gpxMapWaypointEmoji>
+										<TCEforms>
+											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointEmoji</label>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:emoji</displayCond>
+											<config>
+												<type>input</type>
+												<size>1</size>
+												<eval>required</eval>
+											</config>
+										</TCEforms>
+									</settings.gpxMapWaypointEmoji>
 									<settings.gpxMapWaypointIcon>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointIcon</label>
@@ -668,7 +683,7 @@
 									<settings.gpxMapWaypointDescriptionHeadline>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointDescriptionHeadline</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,emoji,icon,iconLinked</displayCond>
 											<config>
 												<type>input</type>
 												<size>48</size>
@@ -678,7 +693,7 @@
 									<settings.gpxMapWaypointDescription>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointDescription</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,emoji,icon</displayCond>
 											<config>
 												<type>text</type>
 												<enableRichtext>true</enableRichtext>
@@ -701,7 +716,7 @@
 									<settings.gpxMapWaypointCoordsFormat>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsFormat</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,emoji,icon,iconLinked</displayCond>
 											<config>
 												<type>select</type>
 												<renderType>selectSingle</renderType>
@@ -728,7 +743,7 @@
 									<settings.gpxMapWaypointCoords>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoords</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,iconLinked</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,emoji,icon,iconLinked</displayCond>
 											<config>
 												<type>input</type>
 												<size>48</size>
@@ -739,7 +754,7 @@
 									<settings.gpxMapWaypointCoordsShow>
 										<TCEforms>
 											<label>LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:flexform.gpxMapWaypointCoordsShow</label>
-											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,icon,imageGeotagged,imageGeotaggedPS,imageGeotaggedDir,imageGeotaggedPSDir</displayCond>
+											<displayCond>FIELD:settings.gpxMapWaypointType:IN:image,emoji,icon,imageGeotagged,imageGeotaggedPS,imageGeotaggedDir,imageGeotaggedPSDir</displayCond>
 											<config>
 												<type>select</type>
 												<renderType>selectSingle</renderType>

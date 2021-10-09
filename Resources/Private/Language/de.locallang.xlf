@@ -277,6 +277,10 @@
 				<source>Image</source>
 				<target state="translated">Bild</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointTypeSelectEmoji" resname="flexform.gpxMapWaypointTypeSelectEmoji">
+				<source>Emoji</source>
+				<target state="translated">Emoji</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointTypeSelectIcon" resname="flexform.gpxMapWaypointTypeSelectIcon">
 				<source>Icon</source>
 				<target state="translated">Icon</target>
@@ -335,6 +339,10 @@
 			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointImageFolderPS.placeholder" resname="flexform.gpxMapWaypointImageFolderPS.placeholder">
 				<source>album_</source>
+			</trans-unit>
+			<trans-unit id="flexform.gpxMapWaypointEmoji" resname="flexform.gpxMapWaypointEmoji">
+				<source>Emoji (choose from https://unicode.org/emoji/charts/full-emoji-list.html)</source>
+				<target state="translated">Emoji (siehe u.a. https://unicode.org/emoji/charts/full-emoji-list.html)</target>
 			</trans-unit>
 			<trans-unit id="flexform.gpxMapWaypointIcon" resname="flexform.gpxMapWaypointIcon">
 				<source>Name of icon</source>
