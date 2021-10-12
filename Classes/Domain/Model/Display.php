@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Wok\WokGpxviewer\Domain\Model;
 
 
@@ -12,6 +15,7 @@ namespace Wok\WokGpxviewer\Domain\Model;
  *  (c) 2020
  *
  ***/
+
 /**
  * Display
  */
@@ -20,14 +24,14 @@ class Display extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * dummy
-     * 
+     *
      * @var string
      */
     protected $dummy = '';
 
     /**
      * Returns the dummy
-     * 
+     *
      * @return string $dummy
      */
     public function getDummy()
@@ -37,7 +41,7 @@ class Display extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the dummy
-     * 
+     *
      * @param string $dummy
      * @return void
      */

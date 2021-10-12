@@ -49,6 +49,10 @@ overwriteSettings:
     Configuration:
         #TCA merge not possible - use overrides directory
         TypoScript: keep
+        TCA:
+           Overrides:
+              tt_content.php: keep
+              sys_template.php: keep
 
     Resources:
         Private:
@@ -56,7 +60,8 @@ overwriteSettings:
             Language: keep
             #Templates: keep
             Templates:
-                Index.html: keep
+                Display:
+                   Index.html: keep
         Public:
             Icons:
                 Extension.svg: keep
