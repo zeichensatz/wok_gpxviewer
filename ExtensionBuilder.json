@@ -67,7 +67,7 @@
             "sourceLanguage": "en",
             "state": "stable",
             "targetVersion": "10.4.0-10.4.99",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "extensionKey": "wok_gpxviewer",
         "name": "GPXViewer",
