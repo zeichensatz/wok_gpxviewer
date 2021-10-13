@@ -10,11 +10,12 @@
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
-                    "_default0_list": false,
-                    "_default1_show": false,
-                    "_default2_new_create": false,
-                    "_default3_edit_update": false,
-                    "_default4_delete": false,
+                    "_default0_index": false,
+                    "_default1_list": false,
+                    "_default2_show": false,
+                    "_default3_new_create": false,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
                     "customActions": [
                         "index"
                     ]
@@ -41,6 +42,7 @@
                             "propertyDescription": "",
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "dummy",
                             "propertyType": "String",
@@ -60,14 +62,14 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 10.4.0-10.4.99\n",
+            "dependsOn": "typo3 => 10.4.0-11.5.99\nbootstrap_package => 12.0.3-12.0.99",
             "disableLocalization": false,
             "disableVersioning": false,
-            "skipGenerateDocumentationTemplate": false,
+            "generateDocumentationTemplate": false,
             "sourceLanguage": "en",
             "state": "stable",
             "targetVersion": "10.4.0-10.4.99",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "extensionKey": "wok_gpxviewer",
         "name": "GPXViewer",
@@ -78,8 +80,7 @@
             {
                 "actions": {
                     "controllerActionCombinations": "Display => index",
-                    "noncacheableActions": "Display => index",
-                    "switchableActions": ""
+                    "noncacheableActions": "Display => index"
                 },
                 "description": "Display GPX tracks with GPXViewer",
                 "key": "gpxtracks",
@@ -91,8 +92,8 @@
     "wires": [],
     "storagePath": "\/netzwerk\/ZSweb.local\/vhosts\/test2\/typo3conf\/ext\/",
     "log": {
-        "last_modified": "2020-06-15 04:53",
-        "extension_builder_version": "9.11.0",
+        "last_modified": "2021-10-12 03:12",
+        "extension_builder_version": "10.0.1",
         "be_user": "Wolfgang Kleinbach (4)"
     }
 }

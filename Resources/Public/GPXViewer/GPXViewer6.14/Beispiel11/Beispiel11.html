@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GPXViewer Beispiel 11</title>
+		<script>
+			// Wpcluster = true;
+		</script>
+		<script src="../GM_Utils/GPX2GM.js"></script>
+		<style>
+			#map { width: 90%; width:calc(100vw - 50px); height:700px; height:calc(100vh - 5em); margin:0; padding:0 }
+			#map_img { display:none }
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 11 - Bildwegpunkte ohne GPX-Datei</h1>
+		<div id="map" class="gpxview::Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map_img" data-geo="centerlat:45.43465,centerlon:12.33924,radius:0.5">
+			<a href="Arsenale.jpg" data-geo="lat:45.43369,lon:12.35005">Arsenale di Venezia</a>
+			<a href="Basilica.jpg" data-geo="lat:45.43325,lon:12.34010">Basilica Di San Giorgio Maggiore</a>
+			<a href="Campanile.jpg" data-geo="lat:45.43465,lon:12.33924">Campanile di San Marco</a>
+			<a href="Lido.jpg" data-geo="lat:45.41983,lon:12.36822">Lido</a>
+			<a href="PonteAcademia.jpg" data-geo="lat:45.43148,lon:12.32852">Ponte del Academia</a>
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100">Seufzerbrücke</a>
+			<a href="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596">St. Michele Island Cementery</a>
+			<a href="Viale.jpg" data-geo="lat:45.43078,lon:12.35511">Viale Giuseppe Garibaldi</a>
+		</div>
+		<hr /><p>27. 12. 2017 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+	</body>
+</html>

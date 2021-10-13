@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de"> 
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>Beispiel 9</title>
+		<style>
+			html,body { height:100% }
+			#map1 { width:80%;height:500px;margin:auto }
+		</style>
+	</head>
+	<body>
+		<h1>Beispiel 9 - Wegpunktcluster</h1>
+		<div id="map1" class="gpxview:Beispiel4.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<hr><p>7. 5. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+			/* JB.GPX2GM.callback = function(pars) {
+				switch(pars.type) {
+					case "Map_n":
+						pars.Map.map.setOptions({draggable:false});	
+						break;
+				}
+				return true;
+			} // JB.GPX2GM.callback */
+			var Wpcluster = true;
+			var Fullscreenbutton = true;
+		</script>
+	</body>
+</html>

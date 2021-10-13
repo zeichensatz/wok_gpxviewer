@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GPXViewer Beispiel 11b</title>
+		<script>
+			// Wpcluster = true;
+		</script>
+		<script src="../GM_Utils/GPX2GM.js"></script>
+		<style>
+			#map1, #map2, #map3 { width: 90%; width:calc(100vw - 50px); height:700px; height:calc(100vh - 5em); margin:0; padding:0 }
+			#map1_img, #map2_img, #map3_img { display:none }
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 11b - Wegpunkte ohne GPX-Datei</h1>
+		<h2>Bilder in Links und Imgs mit Track</h2>
+		<div id="map1" class="gpxview:Venedig-Tracks.GPX:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map1_img">
+			<a href="Arsenale.jpg" data-geo="lat:45.43369,lon:12.35005">Arsenale di Venezia</a>
+			<a href="Basilica.jpg" data-geo="lat:45.43325,lon:12.34010">Basilica Di San Giorgio Maggiore</a>
+			<a href="Campanile.jpg" data-geo="lat:45.43465,lon:12.33924">Campanile di San Marco</a>
+			<a href="Lido.jpg" data-geo="lat:45.41983,lon:12.36822">Lido</a>
+			<a href="PonteAcademia.jpg" data-geo="lat:45.43148,lon:12.32852">Ponte del Academia</a>
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100">Seufzerbrücke</a>
+			<a href="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596">St. Michele Island Cementery</a>
+			<img src="Viale.jpg" data-geo="lat:45.43078,lon:12.35511" alt="Viale Giuseppe Garibaldi">
+		</div>
+		<hr>
+		<h2>Bilder in Links und Imgs mit eigener Skalierung</h2>
+		<div id="map2" class="gpxview::Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map2_img" data-geo="centerlat:45.43465,centerlon:12.33924,radius:5.0">
+			<a href="Arsenale.jpg" data-geo="lat:45.43369,lon:12.35005">Arsenale di Venezia</a>
+			<a href="Basilica.jpg" data-geo="lat:45.43325,lon:12.34010">Basilica Di San Giorgio Maggiore</a>
+			<a href="Campanile.jpg" data-geo="lat:45.43465,lon:12.33924">Campanile di San Marco</a>
+			<a href="Lido.jpg" data-geo="lat:45.41983,lon:12.36822">Lido</a>
+			<a href="PonteAcademia.jpg" data-geo="lat:45.43148,lon:12.32852">Ponte del Academia</a>
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100">Seufzerbrücke</a>
+			<a href="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596">St. Michele Island Cementery</a>
+			<img src="Viale.jpg" data-geo="lat:45.43078,lon:12.35511" alt="Viale Giuseppe Garibaldi">
+		</div>
+		<hr>
+		<h2>Bilder in Links und Imgs und Wegpunkte in Divs mit eigener Skalierung - Bilder und Wegpunkte sind verlinkt</h2>
+		<div id="map3" class="gpxview::Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map3_wp" data-geo="centerlat:45.43465,centerlon:12.33924,radius:2.0">
+			<div data-geo="lat:45.43369,lon:12.35005" data-icon="Castle" 
+				data-name="Arsenale di Venezia" data-link="https://de.wikipedia.org/wiki/Arsenal_(Venedig)"></div>
+			<div data-geo="lat:45.43325,lon:12.34010" data-icon="Church" 
+				data-name="Basilica Di San Giorgio Maggiore" data-link="https://de.wikipedia.org/wiki/San_Giorgio_Maggiore"></div>
+			<div data-geo="lat:45.43465,lon:12.33924" data-icon="circle_red" 
+				data-name="Campanile di San Marco" data-link="https://de.wikipedia.org/wiki/Markusturm_(Venedig)"></div>
+			<div data-geo="lat:45.41983,lon:12.36822" data-icon="Park" 
+				data-name="Lido" data-link="https://de.wikipedia.org/wiki/Lido_di_Venezia"></div>
+			<div data-geo="lat:45.43148,lon:12.32852" data-icon="Bridge" 
+				data-name="Ponte del Academia" data-link="https://de.wikipedia.org/wiki/Ponte_dell%E2%80%99Accademia"></div>
+		</div>
+		<div id="map3_img">
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556" data-link="https://de.wikipedia.org/wiki/Rialtobr%C3%BCcke">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100" 
+				data-link="https://de.wikipedia.org/wiki/Seufzerbr%C3%BCcke">Seufzerbrücke</a>
+			<img src="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596" alt="St. Michele Island Cemetery" 
+				data-link="https://de.wikipedia.org/wiki/San_Michele_(Insel)">
+			<img src="Viale.jpg" data-geo="lat:45.43078,lon:12.35511" alt="Viale Giuseppe Garibaldi" 
+				data-link="https://de.wikipedia.org/wiki/Venedig#Struktur_der_Altstadt">
+		</div>
+		
+		<hr /><p>23. 4. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+	</body>
+</html>

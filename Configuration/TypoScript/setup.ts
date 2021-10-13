@@ -6,6 +6,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			JB.GPX2GM.GM_Api_key = 
 			JB.GPX2GM.OSM_Cycle_Api_Key = 
 			JB.GPX2GM.OSM_Landscape_Api_Key = 
+			JB.GPX2GM.OSM_Outdoors_Api_Key = 
 			Doclang = auto
 			Unit = si
 			Showmaptypecontroll = true
@@ -21,6 +22,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Legende_trk = true
 			Legende_rte = true
 			Legende_wpt = true
+			Legende_info = false
 			Gpxtracks = true
 			Gpxrouten = true
 			Gpxwegpunkte = true
@@ -42,6 +44,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Trackmarker = 
 			Routemarker = 
 			Shwpname = true
+			Shwptooltip = false
 			Shwpcmt = true
 			Shwpdesc = false
 			Shwptime = false
@@ -118,6 +121,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			JB.GPX2GM.GM_Api_key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyGoogleMaps}
 			JB.GPX2GM.OSM_Cycle_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Cycle}
 			JB.GPX2GM.OSM_Landscape_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Landscape}
+			JB.GPX2GM.OSM_Outdoors_Api_Key = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.apiKeyOSM_Outdoors}
 			// Advanced
 			Doclang = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxDoclang}
 			Unit = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxUnit}
@@ -134,6 +138,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Legende_trk = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_trk}
 			Legende_rte = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_rte}
 			Legende_wpt = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_wpt}
+			Legende_info = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxLegende_info}
 			Gpxtracks = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxtracks}
 			Gpxrouten = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxrouten}
 			Gpxwegpunkte = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxwegpunkte}
@@ -155,6 +160,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Trackmarker = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxTrackmarker}
 			Routemarker = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxRoutemarker}
 			Shwpname = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpname}
+			Shwptooltip = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwptooltip}
 			Shwpcmt = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpcmt}
 			Shwpdesc = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwpdesc}
 			Shwptime = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShwptime}
@@ -231,7 +237,6 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		jsSourceFile4shimg = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceFile4shimg}
 		jsSourceAdditionalJS = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.jsSourceAdditionalJS}
 		cssFile = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
-		scss = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss}
 
 		// General Settings
 		gpxMapType = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxMapType}
@@ -291,14 +296,9 @@ plugin.tx_wokgpxviewer_gpxtracks {
 	}
 }
 
-// If scss is set to true, then use scss parser of bootstrap_package instead of a cssFile 
-// (defined plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile)
-// scss files are in directory /Resources/Public/Scss/Theme
-[{$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.scss} == true]
-//	plugin.tx_wokgpxviewer_gpxtracks.settings.cssFile >
-	page {
-		includeCSS {
-			theme = EXT:wok_gpxviewer/Resources/Public/Scss/Theme/theme.scss
-		}
+page {
+	// Includes the scss/css file
+	includeCSS {
+		wok_gpxviewer-theme = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.cssFile}
 	}
-[END]
+}

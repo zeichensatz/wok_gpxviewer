@@ -1,15 +1,19 @@
 <?php
+declare(strict_types=1);
+
 namespace Wok\WokGpxviewer\Tests\Unit\Controller;
 
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
+
 /**
- * Test case.
+ * Test case
  */
-class DisplayControllerTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
+class DisplayControllerTest extends UnitTestCase
 {
     /**
      * @var \Wok\WokGpxviewer\Controller\DisplayController
      */
-    protected $subject = null;
+    protected $subject;
 
     protected function setUp()
     {

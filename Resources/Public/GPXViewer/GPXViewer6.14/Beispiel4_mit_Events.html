@@ -1,0 +1,176 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>GPXViewer Beispiel 4 mit Events</title>
+		<style>
+			body { width:calc(100% - 50px);padding: 10px 10px 10px 30px }
+			figure { margin:0;padding:0; }
+			#gpxviewer { display: grid; gap: .3em; grid-template-columns: repeat(auto-fit, minmax(15em, 1fr	)); }
+			#map1 { height:100vh; }
+			#map1_profiles { height:100vh; }
+			#map1_hp { height:calc((100% + 64px)/3);margin-top:10px }
+			#map1_sp { height:calc((100% + 64px)/3);margin-top:-37px }
+			#map1_vp { height:calc((100% + 64px)/3);margin-top:-37px }
+		</style>
+	</head>
+	<body>
+		<h1>GPXViewer Beispiel 4 mit Events</h1>
+		<div id="gpxviewer">
+			<figure id="map1" class="gpxview:Beispiel1.gpx:Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></figure>
+			<figure id="map1_profiles">
+				<figure id="map1_hp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+				<figure id="map1_sp" class="no_x"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+				<figure id="map1_vp"><noscript><p>Zum Anzeigen des Profils wird Javascript benötigt.</p></noscript></figure>
+			</figure>
+		</div>
+		<hr><p>8. 11. 2020 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script>
+			var Fullscreenbutton = true;
+			
+			const mapele = document.getElementById("map1");
+			
+			mapele.addEventListener("Map_div_v",function(event) {
+				console.log("Map_div_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Map_div_n",function(event) {
+				console.log("Map_div_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Show",function(event) {
+				console.log("Show");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Map_v",function(event) {
+				console.log("Map_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Map_n",function(event) {
+				console.log("Map_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Wegpunkte_v",function(event) {
+				console.log("Wegpunkte_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Wegpunkte_n",function(event) {
+				console.log("Wegpunkte_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Routen_v",function(event) {
+				console.log("Routen_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Routen_n",function(event) {
+				console.log("Routen_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Tracks_v",function(event) {
+				console.log("Tracks_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Tracks_n",function(event) {
+				console.log("Tracks_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Profil_v",function(event) {
+				console.log("Profil_v");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("Profil_n",function(event) {
+				console.log("Profil_n");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("created_Marker_Text",function(event) {
+				console.log("created_Marker_Text");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("created_Marker_Bild",function(event) {
+				console.log("created_Marker_Bild");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("created_Marker_Link",function(event) {
+				console.log("created_Marker_Link");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("created_Route",function(event) {
+				console.log("created_Route");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("created_Track",function(event) {
+				console.log("created_Track");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("click_Track",function(event) {
+				console.log("click_Track");
+				event.preventDefault();
+				console.log("preventDefault");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("click_Route",function(event) {
+				console.log("click_Route");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("click_Marker_Text",function(event) {
+				console.log("click_Marker_Text");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("click_Marker_Bild",function(event) {
+				console.log("click_Marker_Bild");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+			
+			mapele.addEventListener("click_Marker_Link",function(event) {
+				console.log("click_Marker_Link");
+				console.log("GPXViewer-Objekt:",event.detail);
+				console.log("Eventparameter:",event.detail.events.eventparameter);
+			});
+		</script>
+		<script src="GM_Utils/GPX2GM.js"></script>
+	</body>
+</html>
