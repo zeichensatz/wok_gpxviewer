@@ -10,10 +10,10 @@ namespace Wok\WokGpxviewer\ViewHelpers;
  */
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 use TYPO3Fluid\Fluid\Core\ViewHelper\ViewHelperInterface;
+use TYPO3\CMS\Core\Utility\PathUtility;
 
 /**
  * ViewHelper to include a css/js file
@@ -56,9 +56,9 @@ class IncludeFileViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractVi
 
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
         if (TYPO3_MODE === 'FE') {
-            $sanitizer = GeneralUtility::makeInstance(FilePathSanitizer::class);
             try {
-                $path = $sanitizer->sanitize($path);
+                $path = PathUtility::getAbsoluteWebPath(GeneralUtility::getFileAbsFileName($path));
+
                 // JS
                 if (strtolower(substr($path, -3)) === '.js') {
                     if ($footer) {

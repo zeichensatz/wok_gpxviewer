@@ -454,9 +454,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							$imageDescription = $this->getImageDescription($exifdata['ImageDescription']);
 							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
 							$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
-							// Ausgabestring
+							// Ausgabestring, bei im mit einem führenden "/", da sonst die Namen nicht vollständig
 							$gpxMapImages = $gpxMapImages . 
-									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
+									'			<img src="/' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
 				';
 						};
 					};
@@ -511,7 +511,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							// Angaben aus sys_file auslesen
 							$tmpFile = $resourceFactory->getFileObject($sysFileUid);
 							// Vollen Dateinamen auslesen
-							$gpxMapWaypointImage = 'fileadmin' . $tmpFile->getIdentifier();
+							$gpxMapWaypointImage = '/fileadmin' . $tmpFile->getIdentifier();
 							$gpxMapImages = $gpxMapImages . 
 											'<img src="' . $gpxMapWaypointImage . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . $Coords . '"' . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>
 			';
