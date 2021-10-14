@@ -738,6 +738,22 @@
 				<source>$gpxviewer-width: Width of Gpxviewer content element. Value should be in %! Unit should be added!</source>
 				<target state="translated">$gpxviewer-width: Breite der Karte. Der Wert muss in % sein! Die Einheit muss angegeben werden!</target>
 			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-border-style.label" resname="constants.scss.gpxviewer-border-style.label">
+				<source>$gpxviewer-border-style: Border style of Gpxviewer content element.</source>
+				<target state="translated">$gpxviewer-border-style: Rahmenstil des Gpxviewer Contentelements.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-border-width.label" resname="constants.scss.gpxviewer-border-width.label">
+				<source>$gpxviewer-border-width: Border width of Gpxviewer content element.</source>
+				<target state="translated">$gpxviewer-border-width: Rahmenbreite für das Gpxviewer Contentelement.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-border-color.label" resname="constants.scss.gpxviewer-border-color.label">
+				<source>$gpxviewer-border-color: Border color of Gpxviewer content element.</source>
+				<target state="translated">$gpxviewer-border-color: Rahmenfarbe des Gpxviewer Contentelements.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-button-bg-color.label" resname="constants.scss.gpxviewer-button-bg-color.label">
+				<source>$gpxviewer-button-bg-color: Background color for Gpxviewer buttons.</source>
+				<target state="translated">$gpxviewer-button-bg-color: Hintergrundfarbe für Gpxviewer Schaltflächen.</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxMap_sorting.label" resname="constants.gpxMap_sorting.label">
 				<source>GPXViewer profiles sorting: Sorting of profiles for the display</source>
 				<target state="translated">GPXViewer Profil Sortierung: Sortierung der Profile für die Ausgabe</target>

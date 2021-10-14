@@ -2,7 +2,11 @@
 // Variables settings in case there's no default given
 //
 // Default value for gpxviewer-theme is set to the bootstrap_package 12 default
-$gpxviewer-height:		600px !default;
-$gpxviewer-profiles-height:	600px !default;
-$gpxviewer-images-height:	600px !default;
-$gpxviewer-width:		100% !default;
+$gpxviewer-height:		600px !default;			/* height of gpxviewer content */
+$gpxviewer-profiles-height:	600px !default;			/* height of profiles content */
+$gpxviewer-images-height:	600px !default;			/* height of images content */
+$gpxviewer-width:		100% !default;			/* width of gpxviewer content */
+$gpxviewer-border-style:	solid !default;			/* border style for map, profiles and images */
+$gpxviewer-border-width:	1px !default;			/* border width for map, profiles, images and buttons */
+$gpxviewer-border-color:	$primary !default;		/* border color for map, profiles and images */
+$gpxviewer-button-bg-color:	$secondary !default;		/* background color of buttons */

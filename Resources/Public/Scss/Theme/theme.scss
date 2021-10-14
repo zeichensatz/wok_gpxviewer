@@ -35,9 +35,9 @@
 }
 
 .gpx-viewer {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
+	border-style: $gpxviewer-border-style;
+	border-width: $gpxviewer-border-width;
+	border-color: $gpxviewer-border-color;
 	width: $gpxviewer-width;
 	height: $gpxviewer-height;
 }
@@ -54,9 +54,9 @@
 
 // For single profiles in the profile list
 .gpx-viewer-profile {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
+	border-style: $gpxviewer-border-style;
+	border-width: $gpxviewer-border-width;
+	border-color: $gpxviewer-border-color;
 }
 .gpx-viewer-download {
 }
@@ -66,10 +66,11 @@
 
 .gpx-viewer-images-border button.previous, .gpx-viewer-images-border button.next { 
 	border-top-style: none;
-	border-bottom-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
-	background-color: #f2f2f2;
+	border-bottom-style: $gpxviewer-border-style;
+	border-width: $gpxviewer-border-width;
+	border-color: $gpxviewer-border-color;
+	background-color: $gpxviewer-button-bg-color;
+	border-radius: 0;
 }
 .gpx-viewer-images-border button.previous:hover, .gpx-viewer-images-border button.next:hover { 
 	background-color: $primary;
@@ -82,10 +83,10 @@
 }
 .gpx-viewer-images-border button.previous {
 	border-left-style: none;
-	border-right-style: solid;
+	border-right-style: $gpxviewer-border-style;
 }
 .gpx-viewer-images-border button.next { 
-	border-left-style: solid;
+	border-left-style: $gpxviewer-border-style;
 	border-right-style: none;
 }
 .gpx-viewer-images-border .btn-group { 
@@ -146,9 +147,9 @@
 .profiles-gpx-pro-left, 
 .profiles-gpx-pro-below, 
 .profiles-gpx-pro-right {
-	border-style: solid;
-	border-width: 1px;
-	border-color: #477DBE;
+	border-style: $gpxviewer-border-style;
+	border-width: $gpxviewer-border-width;
+	border-color: $gpxviewer-border-color;
 }
 /* ### EXCEPTIONS FOR IMAGES
    ### set exceptions for all divs with images or profiles
@@ -216,31 +217,31 @@
 @media (max-width: 767px) {
 	/* ### set exceptions for all divs with images or profiles */
 	.images-gpx-img-pro-left {
-		border-left-style: solid;
+		border-left-style: $gpxviewer-border-style;
 		border-top-style: none;
 		border-bottom-style: none;
 	}
 	.images-gpx-img-pro-right {
-		border-right-style: solid;
+		border-right-style: $gpxviewer-border-style;
 		border-top-style: none;
 		border-bottom-style: none;
 	}
 	/* ### set exceptions for all divs with images */
 	.images-gpx-img-left {
-		border-left-style: solid;
+		border-left-style: $gpxviewer-border-style;
 		border-top-style: none;
 	}
 	.images-gpx-img-right {
-		border-right-style: solid;
+		border-right-style: $gpxviewer-border-style;
 		border-top-style: none;
 	}
 	/* ### set exceptions for all divs with profiles */
 	.profiles-gpx-pro-left {
-		border-left-style: solid;
+		border-left-style: $gpxviewer-border-style;
 		border-top-style: none;
 	}
 	.profiles-gpx-pro-right {
-		border-right-style: solid;
+		border-right-style: $gpxviewer-border-style;
 		border-top-style: none;
 	}
 }

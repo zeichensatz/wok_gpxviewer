@@ -270,7 +270,11 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxviewer-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-height}
 		gpxviewer-profiles-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-profiles-height}
 		gpxviewer-images-height = {$plugin.bootstrap_package.settings.scss.gpxviewer-images-height}
-
+		gpxviewer-width = {$plugin.bootstrap_package.settings.scss.gpxviewer-width}
+		gpxviewer-border-style = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-style}
+		gpxviewer-border-width = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-width}
+		gpxviewer-border-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-color}
+		gpxviewer-button-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-button-gb-color}
 	}
 	view {
 		templateRootPaths.0 = EXT:wok_gpxviewer/Resources/Private/Templates/

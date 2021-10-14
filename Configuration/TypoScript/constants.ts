@@ -20,6 +20,14 @@ plugin.bootstrap_package {
 			gpxviewer-images-height = 600px
 			# cat=GPXViewer: Basic/1122/2185; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-width.label
 			gpxviewer-width = 100%
+			# cat=GPXViewer: Basic/1122/2186; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-style.label
+			gpxviewer-border-style = solid
+			# cat=GPXViewer: Basic/1122/2187; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-width.label
+			gpxviewer-border-width = 1px
+			# cat=GPXViewer: Basic/1122/2188; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-color.label
+			gpxviewer-border-color = $primary
+			# cat=GPXViewer: Basic/1122/2189; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-button-bg-color.label
+			gpxviewer-button-bg-color = $secondary
 		}
 	}
 }
