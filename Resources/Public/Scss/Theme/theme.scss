@@ -13,7 +13,10 @@
 .tx-wok-gpxviewer:last-child {
 	margin-bottom: 0;
 }
-
+.tx-wok-gpxviewer {
+	background-color: $gpxviewer-content-bg-color;
+	color: $gpxviewer-content-text-color;
+}
 .tx-wok-gpxviewer .textpic {
 	width: $gpxviewer-width;
 	margin-left: 0px;
@@ -40,9 +43,18 @@
 	border-color: $gpxviewer-border-color;
 	width: $gpxviewer-width;
 	height: $gpxviewer-height;
+	background-color: $gpxviewer-gpxviewer-bg-color;
 }
 .gpx-viewer-description {
+	@if $gpxviewer-description-border == true {
+		border-style: $gpxviewer-border-style;
+		border-top: none;
+		border-width: $gpxviewer-border-width;
+		border-color: $gpxviewer-border-color;
+	}
 	width: $gpxviewer-width;
+	color: $gpxviewer-description-text-color;
+	background-color: $gpxviewer-description-bg-color;
 }
 .gpx-viewer-description p {
 	margin-bottom: 1px;
@@ -50,6 +62,7 @@
 .gpx-viewer-profiles {
 	width: 100%;
 	height: $gpxviewer-profiles-height;
+	background-color: $gpxviewer-profiles-bg-color;
 }
 
 // For single profiles in the profile list
@@ -73,8 +86,8 @@
 	border-radius: 0;
 }
 .gpx-viewer-images-border button.previous:hover, .gpx-viewer-images-border button.next:hover { 
-	background-color: $primary;
-	color: white;
+	background-color: $gpxviewer-button-bg-color-hover;
+	color: $gpxviewer-button-color-hover;
 	font-weight: bolder;
 }
 .gpx-viewer-images-border button.previous:focus, .gpx-viewer-images-border button.next:focus { 
@@ -94,13 +107,13 @@
 }
 .gpx-viewer-figure {
 	margin-bottom: 0px; 
-	background-color: black;
+	background-color: $gpxviewer-images-bg-color;
 }
 .gpx-viewer-figure-caption {
 	text-align: left;
 	padding-right: 3px;
 	padding-left: 3px;
-	color: white;
+	color: $gpxviewer-images-text-color;
 }
 
 /* Bootstrap design changes */

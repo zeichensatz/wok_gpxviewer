@@ -274,7 +274,18 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		gpxviewer-border-style = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-style}
 		gpxviewer-border-width = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-width}
 		gpxviewer-border-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-border-color}
-		gpxviewer-button-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-button-gb-color}
+		gpxviewer-button-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-button-bg-color}
+		gpxviewer-button-bg-color-hover = {$plugin.bootstrap_package.settings.scss.gpxviewer-button-bg-color-hover}
+		gpxviewer-button-color-hover = {$plugin.bootstrap_package.settings.scss.gpxviewer-button-color-hover}
+		gpxviewer-images-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-images-bg-color}
+		gpxviewer-images-text-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-images-text-color}
+		gpxviewer-profiles-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-profiles-bg-color}
+		gpxviewer-gpxviewer-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-gpxviewer-bg-color}
+		gpxviewer-content-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-content-bg-color}
+		gpxviewer-content-text-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-content-text-color}
+		gpxviewer-description-bg-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-description-bg-color}
+		gpxviewer-description-text-color = {$plugin.bootstrap_package.settings.scss.gpxviewer-description-text-color}
+		gpxviewer-description-border = {$plugin.bootstrap_package.settings.scss.gpxviewer-description-border}
 	}
 	view {
 		templateRootPaths.0 = EXT:wok_gpxviewer/Resources/Private/Templates/

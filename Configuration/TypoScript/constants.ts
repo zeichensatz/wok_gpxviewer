@@ -20,7 +20,7 @@ plugin.bootstrap_package {
 			gpxviewer-images-height = 600px
 			# cat=GPXViewer: Basic/1122/2185; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-width.label
 			gpxviewer-width = 100%
-			# cat=GPXViewer: Basic/1122/2186; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-style.label
+			# cat=GPXViewer: Basic/1122/2186; type=options[dotted=dotted,dashed=dashed,solid=solid,double=double,none=none]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-style.label
 			gpxviewer-border-style = solid
 			# cat=GPXViewer: Basic/1122/2187; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-border-width.label
 			gpxviewer-border-width = 1px
@@ -28,6 +28,28 @@ plugin.bootstrap_package {
 			gpxviewer-border-color = $primary
 			# cat=GPXViewer: Basic/1122/2189; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-button-bg-color.label
 			gpxviewer-button-bg-color = $secondary
+			# cat=GPXViewer: Basic/1122/2190; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-button-bg-color-hover.label
+			gpxviewer-button-bg-color-hover = $primary
+			# cat=GPXViewer: Basic/1122/2191; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-button-color-hover.label
+			gpxviewer-button-color-hover = transparent
+			# cat=GPXViewer: Basic/1122/2192; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-bg-color.label
+			gpxviewer-images-bg-color = black
+			# cat=GPXViewer: Basic/1122/2193; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-text-color.label
+			gpxviewer-images-text-color = transparent
+			# cat=GPXViewer: Basic/1122/2194; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-profiles-bg-color.label
+			gpxviewer-profiles-bg-color = transparent
+			# cat=GPXViewer: Basic/1122/2195; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-gpxviewer-bg-color.label
+			gpxviewer-gpxviewer-bg-color = transparent
+			# cat=GPXViewer: Basic/1122/2196; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-content-bg-color.label
+			gpxviewer-content-bg-color = transparent
+			# cat=GPXViewer: Basic/1122/2197; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-content-text-color.label
+			gpxviewer-content-text-color = black
+			# cat=GPXViewer: Basic/1122/2198; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-description-bg-color.label
+			gpxviewer-description-bg-color = transparent
+			# cat=GPXViewer: Basic/1122/2199; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-description-text-color.label
+			gpxviewer-description-text-color = black
+			# cat=GPXViewer: Basic/1122/2200; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.On=true,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.options.Off=false]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-description-border.label
+			gpxviewer-description-border = false
 		}
 	}
 }

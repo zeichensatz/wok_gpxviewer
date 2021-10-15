@@ -754,6 +754,50 @@
 				<source>$gpxviewer-button-bg-color: Background color for Gpxviewer buttons.</source>
 				<target state="translated">$gpxviewer-button-bg-color: Hintergrundfarbe für Gpxviewer Schaltflächen.</target>
 			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-button-bg-color-hover.label" resname="constants.scss.gpxviewer-button-bg-color-hover.label">
+				<source>$gpxviewer-button-bg-color-hover: Background color for Gpxviewer buttons on hover.</source>
+				<target state="translated">$gpxviewer-button-bg-color-hover: Hintergrundfarbe für Gpxviewer Schaltflächen bei hover.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-button-color-hover.label" resname="constants.scss.gpxviewer-button-color-hover.label">
+				<source>$gpxviewer-button-color-hover: Text color for Gpxviewer buttons on hover.</source>
+				<target state="translated">$gpxviewer-button-color-hover: Textfarbe für Gpxviewer Schaltflächen bei hover.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-images-bg-color.label" resname="constants.scss.gpxviewer-images-bg-color.label">
+				<source>$gpxviewer-images-bg-color: Background color for images.</source>
+				<target state="translated">$gpxviewer-images-bg-color: Hintergrundfarbe für Bilder.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-images-text-color.label" resname="constants.scss.gpxviewer-images-text-color.label">
+				<source>$gpxviewer-images-text-color: Text color for image caption.</source>
+				<target state="translated">$gpxviewer-images-text-color: Textfarbe für Bildzuschriften.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-profiles-bg-color.label" resname="constants.scss.gpxviewer-profiles-bg-color.label">
+				<source>$gpxviewer-profiles-bg-color: Background color for profiles.</source>
+				<target state="translated">$gpxviewer-profiles-bg-color: Hintergrundfarbe für Profile.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-gpxviewer-bg-color.label" resname="constants.scss.gpxviewer-gpxviewer-bg-color.label">
+				<source>$gpxviewer-gpxviewer-bg-color: Background color for maps.</source>
+				<target state="translated">$gpxviewer-gpxviewer-bg-color: Hintergrundfarbe für Karten.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-content-bg-color.label" resname="constants.scss.gpxviewer-content-bg-color.label">
+				<source>$gpxviewer-content-bg-color: Background color for Gpxviewer content element.</source>
+				<target state="translated">$gpxviewer-content-bg-color: Hintergrundfarbe für Gpxviewer Content Element.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-content-text-color.label" resname="constants.scss.gpxviewer-content-text-color.label">
+				<source>$gpxviewer-content-text-color: Text color for Gpxviewer content element.</source>
+				<target state="translated">$gpxviewer-content-text-color: Textfarbe für Gpxviewer Content Element.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-description-bg-color.label" resname="constants.scss.gpxviewer-description-bg-color.label">
+				<source>$gpxviewer-description-bg-color: Background color for description text.</source>
+				<target state="translated">$gpxviewer-description-bg-color: Hintergrundfarbe für Beschreibungstext.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-description-text-color.label" resname="constants.scss.gpxviewer-description-text-color.label">
+				<source>$gpxviewer-description-text-color: Text color for description text.</source>
+				<target state="translated">$gpxviewer-description-text-color: Textfarbe für Beschreibungstexte.</target>
+			</trans-unit>
+			<trans-unit id="constants.scss.gpxviewer-description-border.label" resname="constants.scss.gpxviewer-description-border.label">
+				<source>$gpxviewer-description-border: Toogles border in description text on/off.</source>
+				<target state="translated">$gpxviewer-description-border: Schaltet den Rahmen für Beschreibungstexte an/aus.</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxMap_sorting.label" resname="constants.gpxMap_sorting.label">
 				<source>GPXViewer profiles sorting: Sorting of profiles for the display</source>
 				<target state="translated">GPXViewer Profil Sortierung: Sortierung der Profile für die Ausgabe</target>
