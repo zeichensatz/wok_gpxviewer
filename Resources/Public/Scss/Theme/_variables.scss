@@ -11,13 +11,13 @@ $gpxviewer-border-width:		1px !default;			/* border width for map, profiles, ima
 $gpxviewer-border-color:		$primary !default;		/* border color for map, profiles and images */
 $gpxviewer-button-bg-color:		$secondary !default;		/* background color of buttons */
 $gpxviewer-button-bg-color-hover:	$primary !default;		/* background color of buttons on hover */
-$gpxviewer-button-color-hover:		white !default;			/* text color of buttons on hover */
+$gpxviewer-button-color-hover:		transparent !default;		/* text color of buttons on hover */
 $gpxviewer-images-bg-color:		black !default;			/* background color for images */
-$gpxviewer-images-text-color:		white !default;			/* text color for images text */
-$gpxviewer-profiles-bg-color:		white !default;			/* background color for profiles */
-$gpxviewer-gpxviewer-bg-color:		white !default;			/* background color for maps */
-$gpxviewer-content-bg-color:		white !default;			/* background color for gpxviewer content element */
+$gpxviewer-images-text-color:		transparent !default;		/* text color for images text */
+$gpxviewer-profiles-bg-color:		transparent !default;		/* background color for profiles */
+$gpxviewer-gpxviewer-bg-color:		transparent !default;		/* background color for maps */
+$gpxviewer-content-bg-color:		transparent !default;		/* background color for gpxviewer content element */
 $gpxviewer-content-text-color:		black !default;			/* text color for text in gpxviewer content element */
-$gpxviewer-description-bg-color:	blue !default;			/* background color for descriptions */
-$gpxviewer-description-text-color:	yellow !default;		/* text color for descriptions */
+$gpxviewer-description-bg-color:	transparent !default;		/* background color for descriptions */
+$gpxviewer-description-text-color:	black !default;			/* text color for descriptions */
 $gpxviewer-description-border:		false !default;			/* Switch for border in descriptions (on/off) */
