@@ -314,7 +314,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 		# cat=GPXViewer: Advanced/1130/2292; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxPlotmarkercol.label
 		gpxPlotmarkercol = black
 		# cat=GPXViewer: Advanced/1130/2293; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxProfilfillopac.label
-		gpxProfilfillopac = 0.5
+		gpxProfilfillopac = 0
 		# cat=GPXViewer: Advanced/1130/2294; type=options[LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.none=,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.altitude=h,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.slope=s,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.speed=v,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.cadence=cad,LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.options.heartrate=hr]; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTrcolmod.label
 		gpxTrcolmod = 
 		# cat=GPXViewer: Advanced/1130/2295; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.gpxTcols.label

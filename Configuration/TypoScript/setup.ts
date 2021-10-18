@@ -38,7 +38,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Wfaktor = 1
 			Tfaktor = 1
 			Toffset = 0
-			Unwraplon = true
+			Unwraplon = false
 			Trackover = true
 			Trackclick = true
 			Trackmarker = 
