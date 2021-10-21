@@ -1,7 +1,7 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
-call_user_func(static function() {
+(static function() {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
         'WokGpxviewer',
         'Gpxtracks',
@@ -33,12 +33,5 @@ call_user_func(static function() {
             }
        }'
     );
-
-    $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-    $iconRegistry->registerIcon(
-        'wok_gpxviewer-plugin-gpxtracks',
-        \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        ['source' => 'EXT:wok_gpxviewer/Resources/Public/Icons/user_plugin_gpxtracks.svg']
-    );
-});
+})();
 ## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder

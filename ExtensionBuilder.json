@@ -62,13 +62,15 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 10.4.0-11.5.99\nbootstrap_package => 12.0.3-12.0.99",
+            "dependsOn": "typo3 => 10.4.0-11.5.99",
             "disableLocalization": false,
             "disableVersioning": false,
             "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
             "sourceLanguage": "en",
             "state": "stable",
-            "targetVersion": "10.4.0-10.4.99",
+            "targetVersion": "11.5.0-11.5.99",
             "version": "1.0.1"
         },
         "extensionKey": "wok_gpxviewer",
@@ -90,10 +92,10 @@
         "vendorName": "Wok"
     },
     "wires": [],
-    "storagePath": "\/netzwerk\/ZSweb.local\/vhosts\/test2\/typo3conf\/ext\/",
+    "storagePath": "\/netzwerk\/ZSweb.local\/vhosts\/test4\/typo3conf\/ext\/",
     "log": {
-        "last_modified": "2021-10-12 03:12",
-        "extension_builder_version": "10.0.1",
+        "last_modified": "2021-10-21 02:11",
+        "extension_builder_version": "11.0.0",
         "be_user": "Wolfgang Kleinbach (4)"
     }
 }

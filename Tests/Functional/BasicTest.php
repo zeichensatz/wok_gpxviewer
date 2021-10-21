@@ -22,7 +22,7 @@ class BasicTest extends FunctionalTestCase
      *
      * @test
      */
-    public function dummy()
+    public function dummy(): void
     {
         $this->assertTrue(true);
     }

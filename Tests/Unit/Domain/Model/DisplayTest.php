@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Wok\WokGpxviewer\Tests\Unit\Domain\Model;
 
+use PHPUnit\Framework\MockObject\MockObject;
+use TYPO3\TestingFramework\Core\AccessibleObjectInterface;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 /**
@@ -11,17 +13,21 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 class DisplayTest extends UnitTestCase
 {
     /**
-     * @var \Wok\WokGpxviewer\Domain\Model\Display
+     * @var \Wok\WokGpxviewer\Domain\Model\Display|MockObject|AccessibleObjectInterface
      */
     protected $subject;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
-        $this->subject = new \Wok\WokGpxviewer\Domain\Model\Display();
+
+        $this->subject = $this->getAccessibleMock(
+            \Wok\WokGpxviewer\Domain\Model\Display::class,
+            ['dummy']
+        );
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         parent::tearDown();
     }
@@ -29,7 +35,7 @@ class DisplayTest extends UnitTestCase
     /**
      * @test
      */
-    public function getDummyReturnsInitialValueForString()
+    public function getDummyReturnsInitialValueForString(): void
     {
         self::assertSame(
             '',
@@ -40,14 +46,10 @@ class DisplayTest extends UnitTestCase
     /**
      * @test
      */
-    public function setDummyForStringSetsDummy()
+    public function setDummyForStringSetsDummy(): void
     {
         $this->subject->setDummy('Conceived at T3CON10');
 
-        self::assertAttributeEquals(
-            'Conceived at T3CON10',
-            'dummy',
-            $this->subject
-        );
+        self::assertEquals('Conceived at T3CON10', $this->subject->_get('dummy'));
     }
 }
