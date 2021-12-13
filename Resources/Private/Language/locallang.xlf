@@ -72,6 +72,10 @@
 				<source>OPENTOPO</source>
 				<target state="translated">OPENTOPO</target>
 			</trans-unit>
+			<trans-unit id="flexform.gpxFileMapTypeTopPlusOpen" resname="flexform.gpxFileMapTypeTopPlusOpen">
+				<source>TopPlusOpen (only Leaflet)</source>
+				<target state="translated">TopPlusOpen (nur Leaflet)</target>
+			</trans-unit>
 			<trans-unit id="flexform.gpxFileMapTypeOPEN_Sea" resname="flexform.gpxFileMapTypeOPEN_Sea">
 				<source>OPEN Sea (only Leaflet)</source>
 				<target state="translated">OPEN Sea (nur Leaflet)</target>
@@ -626,6 +630,10 @@
 				<source>OpenTopo</source>
 				<target state="translated">OpenTopo</target>
 			</trans-unit>
+			<trans-unit id="constants.gpxMapType.options.TopPlusOpen" resname="constants.gpxMapType.options.TopPlusOpen">
+				<source>TopPlusOpen (only Leaflet)</source>
+				<target state="translated">TopPlusOpen (nur Leaflet)</target>
+			</trans-unit>
 			<trans-unit id="constants.gpxMapType.options.OPEN_Sea" resname="constants.gpxMapType.options.OPEN_Sea">
 				<source>Open Sea (only Leaflet-Version)</source>
 				<target state="translated">Open Sea (nur Leaflet-Version)</target>
@@ -1049,6 +1057,10 @@
 			<trans-unit id="constants.gpxGpxpfad.label" resname="constants.gpxGpxpfad.label">
 				<source>GPXViewer Gpxpfad: Path to GPX file(s). BETTER DO NOT USE THIS OPTION! CHOOSE FILE WITHIN PLUGIN FILE SELECTION!</source>
 				<target state="translated">GPXViewer Gpxpfad: Pfad zum/zu den GPX Datei(en). DIESE OPTION BESSER NICHT NUTZEN! DIE GPX-DATEIEN IN DER DATEIAUSWAHL DES PLUGINS AUSWÄHLEN!</target>
+			</trans-unit>
+			<trans-unit id="constants.gpxDefaulticon.label" resname="constants.gpxDefaulticon.label">
+				<source>GPXViewer Defaulticon: Waypoint icon default value.</source>
+				<target state="translated">GPXViewer Defaulticon: Defaultwert für Wegpunkticon.</target>
 			</trans-unit>
 			<trans-unit id="constants.gpxBildwegpunkticon.label" resname="constants.gpxBildwegpunkticon.label">
 				<source>GPXViewer Bildwegpunkticon: Filename of waypoint icon. If empty Icon of GPX file will be used</source>

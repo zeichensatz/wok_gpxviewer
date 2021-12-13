@@ -52,6 +52,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Wpcluster = false
 			Bildpfad = 
 			Gpxpfad = 
+			Defaulticon = 
 			Bildwegpunkticon = Bild
 			Shtrcmt = false
 			Shtrdesc = false
@@ -168,6 +169,7 @@ plugin.tx_wokgpxviewer_gpxtracks {
 			Wpcluster = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxWpcluster}
 			Bildpfad = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxBildpfad}
 			Gpxpfad = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxGpxpfad}
+			Defaulticon = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxDefaulticon}
 			Bildwegpunkticon = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxBildwegpunkticon}
 			Shtrcmt = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShtrcmt}
 			Shtrdesc = {$plugin.tx_wokgpxviewer_gpxtracks.gpxviewer.gpxShtrdesc}

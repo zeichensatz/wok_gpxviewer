@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GPXViewer Beispiel 1 Parametertest</title>
+		<link rel="stylesheet" href="../jb.css" type="text/css"/>
+		<script>
+			var GPXVIEW_Debuginfo = true;
+		</script>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<style>
+			html, body { height:100%; padding-right:0 }
+			.map {width:100%;height:30%}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="text">
+			<h1>GPXViewer Beispiel 1 Parametertest</h1>
+		</div>
+		<div 
+			data-legende_fnm_lm="d" 
+			data-arrowtrack=true 
+			data-fullscreenbutton=true
+			class="map gpxview:Beispiel1.gpx:Satellit"></div>
+		<div 
+			data-legende_fnm_lm="t" 
+			class="map gpxview:Beispiel1.gpx:Karte"></div>
+		<div 
+			data-legende_fnm_lm="dt" 
+			class="map gpxview:Beispiel1.gpx:OSMDE"></div>
+		<noscript><p>Zum Anzeigen der Karteen wird Javascript benötigt.</p></noscript>
+			<hr><p>15. 10. 2019 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<p><button id="viewsource" type="button" style="position:absolute;top:0;right:0" onclick="JB.LoadScript('viewsource.js',function(){})">Quelltext anzeigen</button></p>
+	</body>
+</html>

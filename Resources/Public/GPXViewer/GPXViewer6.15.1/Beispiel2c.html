@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+  <head> 
+    <meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPXViewer Beispiel 2c</title>
+    <script type="text/javascript">
+      var Shtrcmt = true;
+
+			(function() { // Direkt nach dem Laden zoomen wie im Zoom-Button
+				var first=true;
+				window.JB = window.JB || {};
+				window.JB.GPX2GM = window.JB.GPX2GM || {};
+				JB.GPX2GM.callback = function(pars) {
+					JB.Debug_Info("callback",pars.id+" "+pars.type,false);
+					switch(pars.type) {
+						case "Tracks_n":
+							if(first) {
+								first = false;
+								document.getElementById("scale_button").click();
+							}
+							break;
+					}
+					return true;
+				} // JB.GPX2GM.callback */
+			}());
+
+    </script>
+    <script type="text/javascript" src="GM_Utils/GPX2GM.js"></script>
+    <style type="text/css">
+			html, body { height:100%; padding-right:0 }
+			.map {width:100%;height:100%}
+			@media screen and (min-width:700px) {
+				.text { display:inline-block; vertical-align: top; padding-right:1em; width:25%; margin:0 }
+				.map { display:inline-block; width: 72%; width:calc(75% - 25px); height:95%; height:calc(100% - 10px); margin:0; padding:0 }
+			}
+    </style>
+  </head>
+  <body>
+   <h1>GPXViewer Beispiel 2c - mit Button, um auf einen Ort zu zoomen<br>Beim Start auf Zoom-Angabe zentriert</h1>
+    <div class="text">
+     <p><button type="button" class="gpxview:map:skaliere">Alles anzeigen</button></p>
+     <p><button id="scale_button" type="button" class="gpxview:map:skaliere:47.68058,10.90050,.5">500 Meter um die<br>Wieskirche anzeigen</button></p>
+     <hr /><p>9. 12. 2016 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+    </div>
+    <div id="map" class="map gpxview:Beispiel1.gpx:Satellit"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		 <p><button id="viewsource" type="button" style="position:absolute;top:0;right:0" onclick="JB.LoadScript('viewsource.js',function(){})">Quelltext anzeigen</button></p>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="MapSource 6.16.3" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2014-02-01T18:45:06Z</time>
+    <bounds maxlat="51.52888298034668" maxlon="-0.000944137573242" minlat="51.477813720703125" minlon="-0.193118965253234"/>
+  </metadata>
+
+  <wpt lat="51.503262519836426" lon="-0.127630233764648">
+    <time>2011-08-07T18:40:05Z</time>
+    <name>10 Downing Street</name>
+    <cmt>10 Downing Street</cmt>
+    <desc>10 Downing Street</desc>
+    <sym>Residence</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.52888298034668" lon="-0.126857841387391">
+    <time>2011-08-27T12:02:09Z</time>
+    <name>British Library</name>
+    <cmt>British Library</cmt>
+    <desc>British Library</desc>
+    <sym>Library</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.518540382385254" lon="-0.125441635027528">
+    <time>2011-08-27T12:09:38Z</time>
+    <name>British Museum</name>
+    <cmt>British Museum</cmt>
+    <desc>British Museum</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.501588821411133" lon="-0.141148567199707">
+    <time>2011-08-07T18:39:00Z</time>
+    <name>Buckingham Palace</name>
+    <cmt>Buckingham Palace</cmt>
+    <desc>Buckingham Palace</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.511459434404969" lon="-0.122909462079406">
+    <time>2011-08-27T12:21:11Z</time>
+    <name>Covent Garden Market</name>
+    <cmt>Covent Garden Market</cmt>
+    <desc>Covent Garden Market</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.49944313801825" lon="-0.163893699645996">
+    <time>2011-08-07T21:38:53Z</time>
+    <name>Harrods</name>
+    <cmt>Harrods</cmt>
+    <desc>Harrods</desc>
+    <sym>Shopping Center</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.508480086922646" lon="-0.163780124858022">
+    <time>2014-02-01T18:00:46Z</time>
+    <name>Hyde Park</name>
+    <cmt>Hyde Park</cmt>
+    <desc>Hyde Park</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.505326647311449" lon="-0.187888154760003">
+    <time>2014-02-01T17:59:43Z</time>
+    <name>Kensington Palace</name>
+    <cmt>Kensington Palace</cmt>
+    <desc>Kensington Palace</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.512446403503418" lon="-0.083298683166504">
+    <time>2014-02-01T18:06:43Z</time>
+    <name>Leadenhall Market</name>
+    <cmt>Leadenhall Market</cmt>
+    <desc>Leadenhall Market</desc>
+    <sym>Bar</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.522703170776367" lon="-0.154838562011719">
+    <time>2011-08-07T21:35:59Z</time>
+    <name>Madame Tussauds</name>
+    <cmt>Madame Tussauds</cmt>
+    <desc>Madame Tussauds</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.508498191833496" lon="-0.128445625305176">
+    <time>2011-08-27T12:15:16Z</time>
+    <name>National Gallery</name>
+    <cmt>National Gallery</cmt>
+    <desc>National Gallery</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.509914398193359" lon="-0.134754180908203">
+    <time>2011-08-28T17:24:00Z</time>
+    <name>Piccadilly Circus</name>
+    <cmt>Piccadilly Circus</cmt>
+    <desc>Piccadilly Circus</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.512222187593579" lon="-0.158611088991165">
+    <time>2011-08-27T12:25:33Z</time>
+    <name>Speakers Corner</name>
+    <cmt>Speakers Corner</cmt>
+    <desc>Speakers Corner</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.513433456420898" lon="-0.099563598632813">
+    <time>2014-02-01T17:57:10Z</time>
+    <name>St Pauls Cathedral</name>
+    <cmt>St Pauls Cathedral</cmt>
+    <desc>St Pauls Cathedral</desc>
+    <sym>Church</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+        <gpxx:Address>
+          <gpxx:StreetAddress>St Paul's Churchyard</gpxx:StreetAddress>
+          <gpxx:City>Ec4</gpxx:City>
+          <gpxx:State>London</gpxx:State>
+          <gpxx:Country>GBR</gpxx:Country>
+          <gpxx:PostalCode>Ec4m 8</gpxx:PostalCode>
+        </gpxx:Address>
+        <gpxx:PhoneNumber></gpxx:PhoneNumber>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.477813720703125" lon="-0.000944137573242">
+    <time>2011-08-07T18:33:22Z</time>
+    <name>Sternwarte Greenwich</name>
+    <cmt>Old Royal Observatory</cmt>
+    <desc>Old Royal Observatory</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.490817070007324" lon="-0.126428604125977">
+    <time>2011-08-27T11:11:31Z</time>
+    <name>Tate Britain</name>
+    <cmt>Tate Britain</cmt>
+    <desc>Tate Britain</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.505494117736816" lon="-0.07535926066339">
+    <time>2011-08-07T18:42:40Z</time>
+    <name>Tower Bridge</name>
+    <cmt>Tower Bridge</cmt>
+    <desc>Tower Bridge</desc>
+    <sym>Museum</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.508044814690948" lon="-0.12806810438633">
+    <time>2011-08-27T12:14:48Z</time>
+    <name>TrafalgarSquare</name>
+    <cmt>Trafalgar Square</cmt>
+    <desc>Trafalgar Square</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.492190361022949" lon="-0.193076133728027">
+    <time>2011-08-26T15:53:48Z</time>
+    <name>Underground Earls Court</name>
+    <cmt>Underground-Earls Court</cmt>
+    <desc>Underground-Earls Court</desc>
+    <sym>Ground Transportation</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.500988006591797" lon="-0.193118965253234">
+    <time>2011-08-26T15:57:31Z</time>
+    <name>Underground High Street Kensington</name>
+    <cmt>Underground-High Street Kensington</cmt>
+    <desc>Underground-High Street Kensington</desc>
+    <sym>Ground Transportation</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.517167091369629" lon="-0.081539237871766">
+    <time>2011-07-31T17:18:52Z</time>
+    <name>Underground Liverpool Street</name>
+    <cmt>Liverpool Street</cmt>
+    <desc>Liverpool Street</desc>
+    <sym>Ground Transportation</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.499786376953125" lon="-0.128660202026367">
+    <time>2011-08-07T18:39:39Z</time>
+    <name>Westminster Abbey</name>
+    <cmt>Westminster Abbey</cmt>
+    <desc>Westminster Abbey</desc>
+    <sym>Church</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+  <wpt lat="51.500859260559082" lon="-0.123810768127441">
+    <time>2011-08-27T11:08:48Z</time>
+    <name>Westminster Bridge</name>
+    <cmt>Westminster Bridge</cmt>
+    <desc>Westminster Bridge</desc>
+    <sym>Scenic Area</sym>
+    <extensions>
+      <gpxx:WaypointExtension xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
+        <gpxx:DisplayMode>SymbolAndName</gpxx:DisplayMode>
+      </gpxx:WaypointExtension>
+    </extensions>
+  </wpt>
+
+</gpx>

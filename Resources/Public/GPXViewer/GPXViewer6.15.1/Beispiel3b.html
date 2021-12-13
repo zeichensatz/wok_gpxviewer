@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+  <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"> 
+    <title>GPXViewer Beispiel 3b</title>
+    <script type="text/javascript" src="GM_Utils/GPX2GM.js"></script>
+		<style type="text/css">
+			html, body { height:100%; padding-right:0 }
+			.map {width:100%;height:100%}
+			@media screen and (min-width:700px) {
+				.text { display:inline-block;vertical-align:top;padding-right:2em;width:25% }
+				.geo { display:inline-block; width: 67%; width:calc(70% - 25px); margin:0; padding:0 }
+			}
+			.geo .map { height:300px }
+    </style>
+   </head>
+  <body>
+   <h1>GPXViewer Beispiel 3b - Weitere Karten mit Auswahlmenü anzeigen - mehrere Karten</h1>
+    <h2>1. Karte</h2>
+    <div class="text">
+     <p><button type="button" class="gpxview:map1:skaliere">Alles anzeigen</button></p>
+     <select class="gpxview">
+      <option value="map1:Beispiel1.gpx:Hybrid" selected="selected">Beispiel1.gpx</option>
+      <option value="map1:Beispiel2.gpx:Karte">Beispiel2.gpx</option>
+      <option value="map1:Beispiel3.gpx:Oberflaeche">Beispiel3.gpx</option>
+     </select>
+    </div>
+		<div class="geo">
+     <div id="map1" class="map gpxview:Beispiel1.gpx:Satellit"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+     <div id="map1_profiles"><div id="map1_hp" class="map"></div></div>
+		</div>
+    <h2>2. Karte</h2>
+    <div class="text">
+     <p><button type="button" class="gpxview:map2:skaliere">Alles anzeigen</button></p>
+     <select class="gpxview">
+      <option value="map2:Beispiel1.gpx:OPENTOPO">Beispiel1.gpx</option>
+      <option value="map2:Beispiel2.gpx:OSM_Cycle" selected="selected">Beispiel2.gpx</option>
+      <option value="map2:Beispiel3.gpx:OSM_Landscape">Beispiel3.gpx</option>
+      <option value="map2:GPX/Faehre.gpx:Open_Sea">Fähre.gpx</option>
+     </select>
+    </div>
+		<div class="geo">
+     <div id="map2" class="map gpxview:Beispiel2.gpx:OPENTOPO"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+     <div id="map2_profiles"><div id="map2_hp" class="map"></div></div>
+		</div>
+     <hr><p>28. 8. 2018 <a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+  </body>
+</html>

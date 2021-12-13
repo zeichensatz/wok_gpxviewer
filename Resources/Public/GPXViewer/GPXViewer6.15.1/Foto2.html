@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8"> 
+		<title>Fotoanzeige V2</title>
+	</head>
+	<body>
+		<h1>Fotoanzeige V2</h1>
+		<div id="map" class="gpxview:Beispiel1.gpx:Satellit" style="float:left;width:55%;height:500px"><noscript><p>Zum Anzeigen der Karte wird Javascript ben&ouml;tigt.</p></noscript></div>
+		<div style="display:inline-block;margin-left:5%;margin-top:1em;width:35%"><img id="Bild"><br><span id="Text"></span></div>
+    <p style="clear:both;margin-top:0.5em"><a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script src="GM_Utils/GPX2GM.js"></script>
+		<script>
+		let marker = null;
+		const mapele = document.getElementById("map");
+		mapele.addEventListener("click_Marker_Bild",function(event) {
+			const text = event.detail.events.eventparameter.text;
+			const lat = event.detail.events.eventparameter.coord.lat;
+			const lon = event.detail.events.eventparameter.coord.lon;
+			const src = event.detail.events.eventparameter.src;
+			const parameters = event.detail.parameters;
+			const map = event.detail.Map;
+
+			if(marker) JB.RemoveElement(marker);
+			document.getElementById("Bild").src = src;
+			document.getElementById("Text").innerHTML = text;
+			if(JB.GPX2GM.parameters.mapapi=="gm") marker = map.Marker({ lat:lat, lon:lon },
+													{ icon: { anchor: { x: 0, y: 3 }, 
+																	 rotation: 60, scale: 5, 
+																	 path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW, 
+																	 strokeColor: "red", fillColor: "red", fillOpacity:1 
+																	} 
+													} ) [0];
+			else marker = map.Marker({lat:lat,lon:lon},JB.icons.Kreis)[0];
+			
+			event.preventDefault();
+		});
+		</script>	
+	</body>
+</html>

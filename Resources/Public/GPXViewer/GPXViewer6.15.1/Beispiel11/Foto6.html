@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="de"> 
+	<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<title>Fotoanzeige V6</title>
+		<style>
+			#map { display:inline-block;width:50%;height:80vh;position:-webkit-sticky;position:sticky;top:0 }
+			#Bilder { display:inline-block;margin-left:5%;margin-top:1em;width:40%;vertical-align: top }
+			figure { display: inline-block; margin:1em }
+			figure img { width:50px; max-width: 100% }
+			figure figcaption { display: none }
+			figure:focus img { border: 1px solid red; width:auto; display: inline; }
+			figure:focus figcaption { display: block }
+		</style>
+	</head>
+	<body>
+		<h1>Fotoanzeige V6</h1>
+		<div id="map" class="gpxview: :Karte"><noscript><p>Zum Anzeigen der Karte wird Javascript benötigt.</p></noscript></div>
+		<div id="map_img" data-geo="centerlat:45.43465,centerlon:12.33924,radius:0.5" hidden>
+			<a href="Arsenale.jpg" data-geo="lat:45.43369,lon:12.35005">Arsenale di Venezia</a>
+			<a href="Basilica.jpg" data-geo="lat:45.43325,lon:12.34010">Basilica Di San Giorgio Maggiore</a>
+			<a href="Campanile.jpg" data-geo="lat:45.43465,lon:12.33924">Campanile di San Marco</a>
+			<a href="Lido.jpg" data-geo="lat:45.41983,lon:12.36822">Lido</a>
+			<a href="PonteAcademia.jpg" data-geo="lat:45.43148,lon:12.32852">Ponte del Academia</a>
+			<a href="Rialtobruecke.jpg" data-geo="lat:45.43757,lon:12.33556">Rialtobrücke</a>
+			<a href="Seufzerbruecke.jpg" data-geo="lat:45.43363,lon:12.34100">Seufzerbrücke</a>
+			<a href="StMichele.jpg" data-geo="lat:45.45003,lon:12.34596">St. Michele Island Cementery</a>
+			<a href="Viale.jpg" data-geo="lat:45.43078,lon:12.35511">Viale Giuseppe Garibaldi</a>
+		</div>
+		<div id="Bilder"></div>
+    <p><a href="https://www.j-berkemeier.de/GPXViewer/">GPX-Viewer</a></p>
+		<script>
+			"use strict";
+			var marker = null, map;
+			var mapele = document.getElementById("map");
+			var Bilder = document.getElementById("Bilder");
+			var images = {};
+			
+			mapele.addEventListener("Show",function(event) {
+				images = {};
+				if(marker) JB.RemoveElement(marker);
+				Bilder.innerHTML = "";
+			});
+			
+			mapele.addEventListener("Map_n",function(event) {
+				map = event.detail.Map;
+			});
+
+			mapele.addEventListener("created_Marker_Bild",function(event) {
+				var figure = document.createElement("figure");
+				var img = document.createElement("img");
+				var figcaption = document.createElement("figcaption");
+				img.src = event.detail.events.eventparameter.src;
+				img.alt = " ";
+				figcaption.innerHTML = event.detail.events.eventparameter.text;
+				figure.appendChild(img);
+				figure.appendChild(figcaption);
+				figure.role = "button";
+				figure.tabIndex = 0;
+				figure.coord = event.detail.events.eventparameter.coord
+				figure.onfocus = function() {
+					this.marker = map.Marker({lat:this.coord.lat,lon:this.coord.lon},JB.icons.Kreis)[0];
+				}
+				figure.onblur = function() {
+					if(this.marker) JB.RemoveElement(this.marker);
+				}
+				Bilder.appendChild(figure);
+				images[event.detail.events.eventparameter.src] = figure;
+			});
+
+			mapele.addEventListener("click_Marker_Bild",function(event) {
+				images[event.detail.events.eventparameter.src].focus();
+				event.preventDefault();
+			});
+		</script>	
+		<script src="../GM_Utils/GPX2GM.js"></script>
+	</body>
+</html>
