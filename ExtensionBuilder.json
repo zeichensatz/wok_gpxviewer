@@ -94,8 +94,8 @@
     "wires": [],
     "storagePath": "\/netzwerk\/ZSweb.local\/vhosts\/test4\/typo3conf\/ext\/",
     "log": {
-        "last_modified": "2021-10-21 02:11",
-        "extension_builder_version": "11.0.0",
+        "last_modified": "2021-12-14 05:44",
+        "extension_builder_version": "11.0.1",
         "be_user": "Wolfgang Kleinbach (4)"
     }
 }
