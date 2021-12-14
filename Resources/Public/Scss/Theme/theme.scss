@@ -228,6 +228,10 @@
 }
 /* ### Exceptions for media queries */
 @media (max-width: 767px) {
+	/* ### layout fix for new bootstrap version */
+	.tx-wok-gpxviewer .textpic-left .textpic-item, .tx-wok-gpxviewer .textpic-right .textpic-item {
+		width: 100%;
+	}
 	/* ### set exceptions for all divs with images or profiles */
 	.images-gpx-img-pro-left {
 		border-left-style: $gpxviewer-border-style;
