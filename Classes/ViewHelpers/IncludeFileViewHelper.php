@@ -14,6 +14,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 use TYPO3Fluid\Fluid\Core\ViewHelper\ViewHelperInterface;
 use TYPO3\CMS\Core\Utility\PathUtility;
+use TYPO3\CMS\Core\Http\ApplicationType;
 
 /**
  * ViewHelper to include a css/js file
@@ -55,7 +56,8 @@ class IncludeFileViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractVi
         $footer = (bool)$arguments['footer'];
 
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        if (TYPO3_MODE === 'FE') {
+//        if (TYPO3_MODE === 'FE') {
+        if (ApplicationType::fromRequest($GLOBALS['TYPO3_REQUEST'])->isFrontend()) {
             try {
                 $path = PathUtility::getAbsoluteWebPath(GeneralUtility::getFileAbsFileName($path));
 
