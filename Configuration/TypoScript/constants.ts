@@ -35,7 +35,7 @@ plugin.bootstrap_package {
 			# cat=GPXViewer: Basic/1122/2192; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-bg-color.label
 			gpxviewer-images-bg-color = black
 			# cat=GPXViewer: Basic/1122/2193; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-images-text-color.label
-			gpxviewer-images-text-color = transparent
+			gpxviewer-images-text-color = white
 			# cat=GPXViewer: Basic/1122/2194; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-profiles-bg-color.label
 			gpxviewer-profiles-bg-color = transparent
 			# cat=GPXViewer: Basic/1122/2195; type=string; label=LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang.xlf:constants.scss.gpxviewer-gpxviewer-bg-color.label
