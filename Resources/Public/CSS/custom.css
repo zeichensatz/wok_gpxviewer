@@ -83,7 +83,7 @@
 
 .gpx-viewer-images-border button.previous:hover,.gpx-viewer-images-border button.next:hover {
     background-color: #2a9d8f;
-    color: transparent;
+    color: white;
     font-weight: bolder
 }
 
@@ -115,7 +115,7 @@
     text-align: left;
     padding-right: 3px;
     padding-left: 3px;
-    color: transparent
+    color: white
 }
 
 .gpx-viewer {
@@ -195,8 +195,12 @@
 }
 
 @media (max-width: 767px) {
+    .tx-wok-gpxviewer .textpic-left .textpic-item,.tx-wok-gpxviewer .textpic-right .textpic-item {
+        width:100%
+    }
+
     .images-gpx-img-pro-left {
-        border-left-style:solid;
+        border-left-style: solid;
         border-top-style: none;
         border-bottom-style: none
     }
