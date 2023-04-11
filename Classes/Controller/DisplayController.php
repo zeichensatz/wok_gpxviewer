@@ -40,12 +40,22 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		} else {
 			$lat_multiplier = 1;
 		};
+
+		// Array definieren
+		if(!isset($CoordsArray[2])) {
+			$CoordsArray[2] = '';
+		}
+		if(!isset($CoordsArray[3])) {
+			$CoordsArray[3] = '';
+		}
 		// auf W/E prüfen
 		if(substr($CoordsArray[2], 0, 1) == 'W' or substr($CoordsArray[3], 0, 1) == 'W') {
 			$lon_multiplier = -1;
 		} else {
 			$lon_multiplier = 1;
 		};
+		// Sekundenzeichen entfernen!
+		$CoordsOrigin = str_replace('"', '', $CoordsOrigin);
 		// auf Zahlenwerte reduziertes Koordinaten-Array erstellen
 		$replace = array("S", "N", "°", "'", "W", "E", ",");
 		$CoordsArray = explode(" ", str_replace($replace, "", $CoordsOrigin));
@@ -131,6 +141,10 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function indexAction()
 	{
+		$gpxMapImages = '';
+		$gpxMapIcons = '';
+		$imageDescriptionText = '';
+
 		// Move all constants in subarrays to first level: JB.GPX2GM.*
 		foreach ($this->settings['constants']['JB']['GPX2GM'] as $key => $value) {
 			$this->settings['constants']["JB.GPX2GM.".$key] = $value;
@@ -239,6 +253,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// MAPTYPE
+		if(!isset($this->settings['gpxFileMapType'])) {
+			$this->settings['gpxFileMapType'] = '';
+		}
 		// Wenn in der Flexform die Auswahl "Default" für MapType erfolgt ist oder kein Wert vorhanden ist (alte Content elemente) ...
 		if($this->settings['gpxFileMapType'] == 'Default' or $this->settings['gpxFileMapType'] == '') {
 			// ... dann den Wert für gpxMapType aus constants.ts nehmen ...
@@ -251,6 +268,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// DOWNLOADLINK
+		if(!isset($this->settings['gpxFileDownloadLink'])) {
+			$this->settings['gpxFileDownloadLink'] = '';
+		}
 		if($this->settings['gpxFileDownloadLink'] == 'Default' or $this->settings['gpxFileDownloadLink'] == '') {
 			// ... dann den Wert für gpxDownloadLink aus constants.ts nehmen ...
 			$gpxDownloadLink = $this->settings['gpxDownloadLink'];
@@ -263,6 +283,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// ############################
 		// DESCRIPTION
 		// Description on/off
+		if(!isset($this->settings['gpxFileDescriptionToggle'])) {
+			$this->settings['gpxFileDescriptionToggle'] = '';
+		}
 		if($this->settings['gpxFileDescriptionToggle'] == 'Default' or $this->settings['gpxFileDescriptionToggle'] == '') {
 			// ... dann den Wert für gpxDescriptionToggle aus constants.ts nehmen ...
 			$gpxDescriptionToggle = $this->settings['gpxDescriptionToggle'];
@@ -279,6 +302,15 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// ############################
 		// CENTERING WITH COORDINATES
 		// Werte für MapCoords aus Flexform auslesen
+		if(!isset($this->settings['gpxMapCoordsCenter'])) {
+			$this->settings['gpxMapCoordsCenter'] = '';
+		}
+		if(!isset($this->settings['gpxMapCoordsCenterFormat'])) {
+			$this->settings['gpxMapCoordsCenterFormat'] = '';
+		}
+		if(!isset($this->settings['gpxMapCoordsCenterRadius'])) {
+			$this->settings['gpxMapCoordsCenterRadius'] = '';
+		}
 		$gpxMapCoordsCenter = $this->settings['gpxMapCoordsCenter'];
 		$gpxMapCoordsCenterFormat = $this->settings['gpxMapCoordsCenterFormat'];
 		$gpxMapCoordsCenterRadius = $this->settings['gpxMapCoordsCenterRadius'];
@@ -301,6 +333,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// ############################
 		// WEGPUNKTE
 		// ICON-Wegpunkte
+		if(!isset($this->settings['gpxFileMap_wayp'])) {
+			$this->settings['gpxFileMap_wayp'] = '';
+		}
 		if($this->settings['gpxFileMap_wayp'] == 'Default' or $this->settings['gpxFileMap_wayp'] == '') {
 			// ... dann den Wert für gpxMap_wayp aus constants.ts nehmen ...
 			$gpxMap_wayp = $this->settings['gpxMap_wayp'];
@@ -311,6 +346,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxMap_wayp', $gpxMap_wayp);
 
 		// IMAGE-Wegpunkte
+		if(!isset($this->settings['gpxFileMap_img'])) {
+			$this->settings['gpxFileMap_img'] = '';
+		}
 		if($this->settings['gpxFileMap_img'] == 'Default' or $this->settings['gpxFileMap_img'] == '') {
 			// ... dann den Wert für gpxMap_img aus constants.ts nehmen ...
 			$gpxMap_img = $this->settings['gpxMap_img'];
@@ -321,7 +359,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxMap_img', $gpxMap_img);
 
 		// Das gesamte Array für Wegpunkte einlesen
-		$wholeArray = $this->settings['waypoints'];
+		if(isset($this->settings['waypoints'])) {
+			$wholeArray = $this->settings['waypoints'];
+		};
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
 			// FESTSTELLEN DER SEITENSPRACHE
@@ -333,12 +373,18 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			$gpxMapImages = "";
 			$gpxMapIcons = "";
 			foreach($wholeArray as $array) {
+				if(!isset($array['container']['settings']['gpxMapWaypointCoordsShow'])) {
+					$array['container']['settings']['gpxMapWaypointCoordsShow'] = '';
+				}
 				if($array['container']['settings']['gpxMapWaypointCoordsShow'] != '' and $array['container']['settings']['gpxMapWaypointCoordsShow'] != "Default") {
 					$coordsShow = $array['container']['settings']['gpxMapWaypointCoordsShow'];
 				} else {
 					$coordsShow = $this->settings['gpxMap_img_coords'];
 				}
 				// Bestimmen von $photoSize für PhotoStation-Zugriffe (PhotoStation 6 Bild oder Album)
+				if(!isset($array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'])) {
+					$array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'] = '';
+				}
 				if($array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'] != '' and $array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'] != "Default") {
 					$photoSize = $array['container']['settings']['gpxMapWaypointPhotoStationPhotoSize'];
 				} else {
@@ -358,11 +404,12 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 					$jsonPHParray = json_decode($jsonArray[0], true);
 					// Überprüfen, ob die PhotoStation-Abfrage erfolgreich war
 					if($jsonPHParray['success'] == 'true') {
+						// Hier sollte vielleicht auch ein Check der GPS-Daten rein?? Kann nur funktionieren, wenn das Bild über GPS-Daten verfügt.
 						$item = $jsonPHParray['data'][0];
 						$sourceFile = $serverAddr . "/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $image;
 						$latitude = $item['additional']['photo_exif']['gps']['lat']; // Kann auch in $items['info']['lat'] stehen
 						$longitude = $item['additional']['photo_exif']['gps']['lng']; // Kann auch in $items['info']['lng'] stehen
-						$gpxMapWaypointLink = ""; // Checken!!!
+						$gpxMapWaypointLink = ""; // Checken!!! Kann hier ein Link verwendet werden? Eigentlich nicht, oder?
 						// Get image description from a multilangual string
 						$imageDescription = $this->getImageDescription($item['info']['description']);
 						// Ausgabe der Koordinaten in der Wegpunktbeschreibung
@@ -387,18 +434,21 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 					if($jsonPHParray['success'] == 'true') {
 						$items = $jsonPHParray['data']['items'];
 						foreach($items as $item) {
-							$sourceFile = $serverAddr . "/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $item['id'];
-							$latitude = $item['additional']['photo_exif']['gps']['lat']; // Kann auch in $items['info']['lat'] stehen
-							$longitude = $item['additional']['photo_exif']['gps']['lng']; // Kann auch in $items['info']['lng'] stehen
-							$gpxMapWaypointLink = ""; // Checken!!!
-							// Get image description from a multilangual string
-							$imageDescription = $this->getImageDescription($item['info']['description']);
-							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
-							$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
-							// Ausgabestring
-							$gpxMapImages = $gpxMapImages . 
+							// Check if GPS coordinates are found
+							if(isset($item['additional']['photo_exif']['gps']['lat']) AND isset($item['additional']['photo_exif']['gps']['lng'])) {
+								$sourceFile = $serverAddr . "/photo/webapi/thumb.php?api=SYNO.PhotoStation.Thumb&method=get&version=1&size=" . $photoSize . "&id=" . $item['id'];
+								$latitude = $item['additional']['photo_exif']['gps']['lat']; // Kann auch in $items['info']['lat'] stehen
+								$longitude = $item['additional']['photo_exif']['gps']['lng']; // Kann auch in $items['info']['lng'] stehen
+								$gpxMapWaypointLink = ""; // Checken!!! Kann hier ein Link verwendet werden? Eigentlich nicht, oder?
+								// Get image description from a multilangual string
+								$imageDescription = $this->getImageDescription($item['info']['description']);
+								// Ausgabe der Koordinaten in der Wegpunktbeschreibung
+								$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
+								// Ausgabestring
+								$gpxMapImages = $gpxMapImages . 
 									'			<img src="' . $sourceFile . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $imageDescription . $Coords . '"' . $gpxMapWaypointLink . '>
 				';
+							}
 						}
 					}
 				}
@@ -438,8 +488,17 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 					// Für alle Bilddaten
 					foreach($exif as $exifdata) {
 						$sourceFile = $exifdata['SourceFile'];
+						if(!isset($exifdata['GPSLatitude'])) {
+							$exifdata['GPSLatitude'] = '';
+						}
 						$latitude = $exifdata['GPSLatitude'];
+						if(!isset($exifdata['GPSLongitude'])) {
+							$exifdata['GPSLongitude'] = '';
+						}
 						$longitude = $exifdata['GPSLongitude'];
+						if(!isset($exifdata['BaseURL'])) {
+							$exifdata['BaseURL'] = '';
+						}
 						$imageURL = $exifdata['BaseURL'];
 						// Vorbereitung der Ausgabe eines Links über dem Bild in der Karte
 						if($imageURL <> '') {
@@ -451,6 +510,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						// Ausgabe nur, wenn GPS-Daten vorhanden sind
 						if (($latitude <> "") and ($longitude <> "")) {
 							// Get image description from a multilangual string
+							if(!isset($exifdata['ImageDescription'])) {
+								$exifdata['ImageDescription'] = '';
+							}
 							$imageDescription = $this->getImageDescription($exifdata['ImageDescription']);
 							// Ausgabe der Koordinaten in der Wegpunktbeschreibung
 							$Coords = $this->getCoords($coordsShow, $imageDescription, $latitude, $longitude);
@@ -528,6 +590,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// ############################
 		// PROFILES
 		// Profiles on/off
+		if(!isset($this->settings['gpxFileMap_profiles'])) {
+			$this->settings['gpxFileMap_profiles'] = '';
+		}
 		if($this->settings['gpxFileMap_profiles'] == 'Default' or $this->settings['gpxFileMap_profiles'] == '') {
 			// ... dann den Wert für gpxMap_profiles aus constants.ts nehmen ...
 			$gpxMap_profiles = $this->settings['gpxMap_profiles'];
@@ -535,6 +600,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// ... sonst den Wert aus der Flexform nehmen
 			$gpxMap_profiles = $this->settings['gpxFileMap_profiles'];
 		};
+		
 		$this->view->assign('gpxMap_profiles', $gpxMap_profiles);
 		if($gpxMap_profiles == 'true') {
 			// Vorbereitung für die Profilausgabe
@@ -552,6 +618,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// Standard-Angabe für Spalten für jeweilige Anzahl von Profilen einlesen
 			$profilesCols = array_map('trim',explode(",",$this->settings['gpxMap_profilesCols']));
 			// Hier eine Prüfung, ob Spaltenangabe im Content Element vorgenommen wurden
+			if(!isset($this->settings['gpxFileMap_profilesCols'])) {
+				$this->settings['gpxFileMap_profilesCols'] = null;
+			}
 			if($this->settings['gpxFileMap_profilesCols'] != null and $this->settings['gpxFileMap_profilesCols'] != 'Default') {
 				$profilesCols[$profilesCount-1] = $this->settings['gpxFileMap_profilesCols'];
 			}
@@ -562,7 +631,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 				$profilesRows++;
 			};
 			// Höhe des Profile-Divs geteilt durch Zeilenanzahl - 4px für Ränder ergibt die Höhe EINES Profils
-			$profileHeight = $this->settings['gpxviewer-profiles-height'] / $profilesRows - 4;
+			// Bei $this->settings['gpxviewer-profiles-height'] müssen überflüssig "px" gelöscht werden
+//			$profileHeight = $this->settings['gpxviewer-profiles-height'] / $profilesRows - 4;
+			$profileHeight = str_replace('px', '', $this->settings['gpxviewer-profiles-height']) / $profilesRows - 4;
 			// Werte für die Ausgabe zu weisen
 			$this->view->assign('profilesNameArray', $profilesNameArray);
 			$this->view->assign('profilesCols', $profilesCols[$profilesCount-1]);
@@ -574,6 +645,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// ImageDiv (MarkerImage)
+		if(!isset($this->settings['gpxFileMap_imgdiv'])) {
+			$this->settings['gpxFileMap_imgdiv'] = '';
+		}
 		if($this->settings['gpxFileMap_imgdiv'] == 'Default' or $this->settings['gpxFileMap_imgdiv'] == '') {
 			// ... dann den Wert für $gpxMap_imgLayout aus constants.ts nehmen ...
 			$gpxMap_imgdiv = $this->settings['gpxMap_imgdiv'];
@@ -583,6 +657,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		}
 		$this->view->assign('gpxMap_imgdiv', $gpxMap_imgdiv);
 		// Scale
+		if(!isset($this->settings['gpxFileMap_imgdivScale'])) {
+			$this->settings['gpxFileMap_imgdivScale'] = '';
+		}
 		if($this->settings['gpxFileMap_imgdivScale'] == '' or !isset($this->settings['gpxFileMap_imgdivScale'])) {
 			// ... dann den Wert für $gpxMap_imgLayout aus constants.ts nehmen ...
 			$gpxMap_imgdivScale = $this->settings['gpxMap_imgdivScale'];
@@ -595,12 +672,18 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// ############################
 		// LAYOUT
 		// Layout for Images
+		if(!isset($this->settings['gpxFileMap_imgdivLayout'])) {
+			$this->settings['gpxFileMap_imgdivLayout'] = '';
+		}
 		if($this->settings['gpxFileMap_imgdivLayout'] == 'Default' or $this->settings['gpxFileMap_imgdivLayout'] == '') {
 			// ... dann den Wert für $gpxMap_imgLayout aus constants.ts nehmen ...
 			$gpxMap_imgdivLayout = $this->settings['gpxMap_imgdivLayout'];
 		} else {
 			// ... sonst den Wert aus der Flexform nehmen
 			$gpxMap_imgdivLayout = $this->settings['gpxFileMap_imgdivLayout'];
+		}
+		if(!isset($this->settings['gpxFileMap_profilesLayout'])) {
+			$this->settings['gpxFileMap_profilesLayout'] = '';
 		}
 		// Layout for Profiles
 		if($this->settings['gpxFileMap_profilesLayout'] == 'Default' or $this->settings['gpxFileMap_profilesLayout'] == '') {
