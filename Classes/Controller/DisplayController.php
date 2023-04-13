@@ -203,12 +203,18 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// gpxFileAnimation is a flexform switch, gpxAnimation is a constant
 		// gpxAnimation variable is needed as a switch, preset to false
 		$gpxAnimation = "false";
+		if(!isset($this->settings['gpxFileAnimation'])) {
+			$this->settings['gpxFileAnimation'] = '';
+		}
 		if($this->settings['gpxFileAnimation'] == 'true' or ($this->settings['gpxAnimation'] == 'true' and ($this->settings['gpxFileAnimation'] == 'Default' or $this->settings['gpxFileAnimation'] == ''))) 
 		{
 			// Assign a switch
 			$gpxAnimation = "true";
 			// Animations-Icon bestimmen
 			// Wenn der Wert aus der Flexform nicht leer oder nicht gleich "Default" ist, dann wird der Flexformwert verwendet
+			if(!isset($this->settings['gpxFileAnimationIcon'])) {
+				$this->settings['gpxFileAnimationIcon'] = '';
+			}
 			if($this->settings['gpxFileAnimationIcon'] != "" and $this->settings['gpxFileAnimationIcon'] != "Default") {
 				$gpxFileAnimationIcon = $this->settings['gpxFileAnimationIcon'];
 			} else {
@@ -296,6 +302,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxDescriptionToggle', $gpxDescriptionToggle);
 
 		// Inhalt von Description zuweisen
+		if(!isset($this->settings['gpxFileDescription'])) {
+			$this->settings['gpxFileDescription'] = '';
+		}
 		$gpxFileDescription = $this->settings['gpxFileDescription'];
 		$this->view->assign('gpxFileDescription', $gpxFileDescription);
 
