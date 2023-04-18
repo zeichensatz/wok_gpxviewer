@@ -613,6 +613,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxMap_profiles', $gpxMap_profiles);
 		if($gpxMap_profiles == 'true') {
 			// Vorbereitung für die Profilausgabe
+			if(!isset($this->settings['gpxFileMap_sorting'])) {
+				$this->settings['gpxFileMap_sorting'] = '';
+			}
 			if($this->settings['gpxFileMap_sorting'] != "") {
 				$gpxMap_sorting = $this->settings['gpxFileMap_sorting'];
 			} else {
