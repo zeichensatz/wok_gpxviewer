@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die();
+defined('TYPO3') or die('Access denied.');
 
 /***************
  * Register plugin for selection in the backend plugin list
