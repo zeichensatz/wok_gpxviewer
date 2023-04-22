@@ -745,5 +745,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		}
 		$addClassname = $addClassname . "-" . $textpicPosition;
 		$this->view->assign('addClassname', $addClassname);
+
+		return $this->htmlResponse();
 	}
 }
