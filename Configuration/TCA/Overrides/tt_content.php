@@ -5,7 +5,7 @@ defined('TYPO3') or die('Access denied.');
  * Register plugin for selection in the backend plugin list
  */
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'Wok.WokGpxviewer',
+    'WokGpxviewer',
     'Gpxtracks',
     'GPXViewer tracks display',
     'EXT:wok_gpxviewer/Resources/Public/Icons/user_plugin_gpxtracks.svg'
