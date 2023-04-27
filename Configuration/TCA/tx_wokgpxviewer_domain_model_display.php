@@ -17,6 +17,9 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'dummy',
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
         'iconfile' => 'EXT:wok_gpxviewer/Resources/Public/Icons/tx_wokgpxviewer_domain_model_display.gif'
     ],
     'types' => [
