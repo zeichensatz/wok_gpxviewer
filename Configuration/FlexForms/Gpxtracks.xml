@@ -308,9 +308,7 @@
 							<config>
 								<type>text</type>
 								<enableRichtext>true</enableRichtext>
-								<defaultExtras>
-									<richtext>rte_transform</richtext>
-								</defaultExtras>
+								<richtextConfiguration>default</richtextConfiguration>
 							</config>
 						</TCEforms>
 					</settings.gpxFileDescription>
@@ -696,9 +694,7 @@
 											<config>
 												<type>text</type>
 												<enableRichtext>true</enableRichtext>
-												<defaultExtras>
-													<richtext>rte_transform</richtext>
-												</defaultExtras>
+												<richtextConfiguration>default</richtextConfiguration>
 											</config>
 										</TCEforms>
 									</settings.gpxMapWaypointDescription>
