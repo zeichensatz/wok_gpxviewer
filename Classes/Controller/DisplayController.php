@@ -15,6 +15,11 @@ namespace Wok\WokGpxviewer\Controller;
 // Müssen für die Umwandlung der Dateinamen aus den Settings eingebunden werden
 use \TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
 use \TYPO3\CMS\Core\Utility\GeneralUtility;
+//use \TYPO3\CMS\Core\Site\Entity\SiteLanguage;
+#use TYPO3\CMS\Core\Database\Connection;
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
+
 
 /**
  * DisplayController
@@ -134,6 +139,32 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		return $Coords;
 	}
 
+    /**
+     * Returns all records for list_type "wokgpxviewer_gpxtracks"
+     */
+    protected function getTranslatedRecord(int $uid, int $language): array
+    {
+        $connectionPool = GeneralUtility::makeInstance(ConnectionPool::class);
+        $queryBuilder = $connectionPool->getQueryBuilderForTable('tt_content');
+        $queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
+
+        return $queryBuilder
+            ->select('uid', 'pid', 'tstamp', 'crdate', 'sys_language_uid', 'list_type', 'pi_flexform')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq(
+                    'l18n_parent', $queryBuilder->createNamedParameter($uid),
+                    'hidden', $queryBuilder->createNamedParameter(0),
+                    'deleted', $queryBuilder->createNamedParameter(0),
+                    'sys_language_uid', $queryBuilder->createNamedParameter($language),
+                    'list_type', $queryBuilder->createNamedParameter('wokgpxviewer_gpxtracks')
+                )
+            )
+            ->executeQuery()
+            ->fetchAllAssociative();
+    }
+
+
 	/**
 	 * Index action for this controller.
 	 *
@@ -196,7 +227,12 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// This might throw a deprecation message which can be ignored, see here:
 		// https://stackoverflow.com/questions/56463377/deprecationmessage-getting-content-object-in-controller
 		// @extensionScannerIgnoreLine
-		$uid = $this->configurationManager->getContentObject()->data['uid'];
+//		$uid = $this->configurationManager->getContentObject()->data['uid'];
+		// Besser ersetzen durch folgende zwei Zeilen:
+		$object = $this->request->getAttribute('currentContentObject');
+		$uid = $object->data['uid'];
+
+		// assign uid
 		$this->view->assign('uid', $uid);
 
 		// ############################
@@ -227,6 +263,82 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// assign switch for animation of markers
 		$this->view->assign('gpxAnimation', $gpxAnimation);
 
+
+//NEU AB HIER!!!!!
+	// Get major version of TYPO3
+	$versionInformation = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
+	$typo3MajorVersion = $versionInformation->getMajorVersion();
+//	debug($typo3MajorVersion);
+	if($typo3MajorVersion == 12) {
+
+		// ############################
+		// GPXFILE
+//debug('uid: ' . $uid);
+		// Get current selected language ID
+		$language = $this->request->getAttribute('language');
+		$languageId = $language->getLanguageId();
+		//$languageId = $language->getTwoLetterIsoCode();
+//		debug("LanguageId: ". $languageId);
+
+		// Wenn es eine andere Sprache als der Standard ist, dann muss die richtige CE-uid gesucht werden
+		if($languageId <> 0) {
+			$query = $this->getTranslatedRecord($uid, $languageId);
+//			debug($query);
+			// Wenn die Suche nach einem übersetzten Record nicht erfolgreich ist, dann muss auf das Fallback zurückgegriffen werden
+			if(count($query) <> 0) {
+				$uid = $query[0]['uid'];
+			};
+//			debug('uid-NEU: ' . $uid);
+		}
+
+		// Hier werden die Dateien abgefragt.
+		$fileRepository = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Resource\\FileRepository');
+		$fileObjects = $fileRepository->findByRelation('tt_content', 'settings.gpxFile', $uid);
+		$newFileArray = [];
+		foreach ($fileObjects as $fileObject) {
+			array_push($newFileArray, '/fileadmin' . $fileObject->getIdentifier());
+		}
+//		debug($newFileArray);
+		$gpxFilesCount = count($newFileArray);
+//		debug('gpxFilesCount: ' . $gpxFilesCount);
+
+		// Vollständige Namen in einem kommaseparierten String umwandeln
+		$gpxFile = implode(',', $newFileArray);
+//		debug($gpxFile);
+	} else {
+		// ############################
+		// GPXFILE
+		// Numerisch(e) Wert(e) für gpxFile aus Flexform auslesen und vollständige Namen aus sys_file auslesen
+		$gpxFile = $this->settings['gpxFile'];
+
+		// Wenn kein Wert in $gpxFile enthalten ist, dann wird kein Track ausgegeben, eventuell sind aber manuell Punkte definiert
+		if($gpxFile == '') {
+			// keine GPX-Dateien für die Ausgabe
+			$gpxFilesCount = 0;
+		} else {
+			// Kommaseparierte Liste von uids in array umwandeln
+			$fileArray = explode(',', $gpxFile);
+			// ResourceFactory einlesen
+			//$resourceFactory = \TYPO3\CMS\Core\Resource\ResourceFactory::getInstance();
+			$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
+			// Für jede uid den Namen aus der sys_file holen
+			foreach ($fileArray as $key => $file) {
+				$tmpFile = $resourceFactory->getFileObject($file);
+				// Hier braucht es anstelle von "/fileadmin" noch eine automatische Zuordnung des Verzeichnisses
+				$newFileArray[$key] = '/fileadmin' . $tmpFile->getIdentifier();
+			}
+			// Vollständige Namen in einem kommaseparierten String umwandeln
+			$gpxFile = implode(',', $newFileArray);
+			// Anzahl der GPX-Dateien feststellen
+			$gpxFilesCount = count($newFileArray);
+		}
+	}
+		// Werte zuweisen
+		$this->view->assign('gpxFile', $gpxFile);
+		// Counter: Wie viele gpxFiles sind es?
+		$this->view->assign('gpxFilesCount', $gpxFilesCount);
+
+/*
 		// ############################
 		// GPXFILE
 		// Numerisch(e) Wert(e) für gpxFile aus Flexform auslesen und vollständige Namen aus sys_file auslesen
@@ -257,6 +369,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		$this->view->assign('gpxFile', $gpxFile);
 		// Counter: Wie viele gpxFiles sind es?
 		$this->view->assign('gpxFilesCount', $gpxFilesCount);
+*/
+
+
 
 		// ############################
 		// MAPTYPE
@@ -378,7 +493,11 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// Bis 9.x funktionierte noch dies:
 			// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
 			// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
-			$this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
+//			$this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
+			// Besser ersetzen mit den beiden folgenden Zeilen:
+			$language = $this->request->getAttribute('language');
+			$this->pageLanguage = $language->getTwoLetterIsoCode();
+
 			// Variablen für Ausgabestrings (Wegpunkte für Images/Icons) resetten
 			$gpxMapImages = "";
 			$gpxMapIcons = "";

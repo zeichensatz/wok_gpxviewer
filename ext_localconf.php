@@ -36,6 +36,6 @@ defined('TYPO3') || die();
 })();
 
 // Update wizard
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['wokGpxviewer_flexformUpgradeWizard'] = \Wok\WokGpxviewer\Updates\FlexformUpgradeWizard::class;
+#$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update']['flexformUpgradeWizard'] = \Wok\WokGpxviewer\Updates\FlexformUpgradeWizard::class;
 
 ## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder

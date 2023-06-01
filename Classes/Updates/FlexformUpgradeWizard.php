@@ -4,27 +4,41 @@ declare(strict_types=1);
 
 namespace Wok\WokGpxviewer\Updates;
 
-//use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Database\Connection;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Install\Updates\RepeatableInterface;
 use TYPO3\CMS\Install\Updates\DatabaseUpdatedPrerequisite;
+use TYPO3\CMS\Install\Updates\RepeatableInterface;
+use TYPO3\CMS\Install\Attribute\UpgradeWizard;
 use TYPO3\CMS\Install\Updates\UpgradeWizardInterface;
+use Symfony\Component\Console\Output\OutputInterface;
+use TYPO3\CMS\Install\Updates\ChattyInterface;
 
-final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableInterface
+#[UpgradeWizard('flexformUpgradeWizard')]
+class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableInterface, ChattyInterface
 {
+    /**
+     * @var OutputInterface
+     */
+    protected $output;
+
+    public function setOutput(OutputInterface $output): void
+    {
+        $this->output = $output;
+    }
+
     /**
      * Return the identifier for this wizard
      * This should be the same string as used in the ext_localconf.php class registration
      */
+/*
     public function getIdentifier(): string
     {
-        return 'wokGpxviewer_flexformUpgradeWizard';
+        return 'flexformUpgradeWizard';
     }
-
+*/
     /**
      * Return the speaking name of this wizard
      */
@@ -49,29 +63,61 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
     public function executeUpdate(): bool
     {
         // Add your logic here
+        // Get records which have to be updated
         $records = $this->getMigrationRecords();
-        $this->flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
+
+        // This is only needed if flexform content should be converted ta an array
+//        $this->flexFormService = GeneralUtility::makeInstance(FlexFormService::class);
 
         foreach ($records as $record) {
+            // Get Flexform date from field pi_flexform
             $flexFormData = GeneralUtility::xml2array($record['pi_flexform']);
 
             // Gibt ein Array nur mit den Flexform-Werten aus
 //            $flexForm = $this->flexFormService->convertFlexformContentToArray($record['pi_flexform']);
-//            debug($flexForm);
 
-            // uid
-            debug($record['uid']);
-
-            // settings.gpxFile muss vorhanden sein und darf nicht "" sein
+            // Check if settings.gpxFile is available in the flexform and make sure value isn't empty ""
+            // Only for these conditions a migration will be performed
             if(isset($flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF']) AND $flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF'] <> '') {
 //                debug($flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF']);
-                // settings.gpxFile kann mehrere Einträge enthalten
+                // settings.gpxFile can be filled with sys_file numbers separated with comma
                 $gpxFileArray = explode(",",$flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF']);
-                // Für jeden Eintrag in $gpxFileArray muss in der sys_file_reference ein Verweis eingetragen werden, 
-                // wobei der Wert im $gpxFileArray dem sys_file entspricht
-                // benötigt wird pid (uid des CE), tablesname (tt_content), fieldname (settings.gpxFile), sorting_foreign (das ist ein Zähler für die Sortierung), CE, sys_file (Wert), 
+
+                // For every value in $gpxFileArray an entry in table sys_file_reference has to be generated 
+                // Values in $gpxFileArray are referencing to uid of table sys_file
+                // value for keeping track of sorting
+                $sorting = 0;
+                foreach ($gpxFileArray as $gpxFile) {
+                    ++$sorting;
+                    // Create entries for GPX-files in table sys_file_reference
+                    // following values are needed:
+                    // pid
+                    // uid_local (sys_file uid)
+                    // uid_foreign (uid of content element)
+                    // tablenames (tt_content)
+                    // fieldname (settings.gpxFile)
+                    // sorting_foreign (counter for sorting)
+                    $this->createSysFileReference($record['pid'], intval($gpxFile), $record['uid'], $record['tstamp'], $record['crdate'], 'tt_content', 'settings.gpxFile', $sorting);
+                }
+
+                // Finally the field pi_flexform in table tt_content has to be updated
+                // Update field settings.gpxFile with number of related files
+                $flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF'] = count($gpxFileArray);
+
+                // Generate new flexform for field pi_flexform
+                $newFlexform = GeneralUtility::array2xml($flexFormData);
+
+                // The previous flexform generation deletes the "." in settings.gpx... and have to be restored by the following line
+                $newFlexform = str_replace('settingsgpx', 'settings.gpx', $newFlexform);
+
+                // Update tt_content field pi_flexform
+                $this->updateContentElement($record['uid'], $newFlexform);
+
             }
 
+/*
+   Funktioniert leider nicht so. Muss komplett geändert werden.
+   Das wäre für die Einträge der Wegpunkte ...
             // Wenn ein settings.waypoints vorhanden ist
             if(isset($flexFormData['data']['s_Waypoints']['lDEF']['settings.waypoints']['el'])) {
             //    debug($flexFormData['data']['s_Waypoints']['lDEF']['settings.waypoints']['el']);
@@ -85,27 +131,15 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
                     ++$counter;
                 }
             }
-
-            // Zuletzt Update des Feldes pi_flexform der tt_content
-#            $this->updateContentElement($record['uid'], $newFlexform);
- 
-
+*/
 
         }
 
-/*
-#        debug('TEST: ' . $records);
-        $testarray = $this->getMigrationRecords();
+        // Finally display a message
+        if (count($records) > 0) {
+            $this->output->writeln('Performing ' . count($records) . ' changes in table tt_content field pi_flexform.');
+        }
 
-#        $flexFormData = GeneralUtility::xml2array($record['pi_flexform']);
-            $flexFormData = GeneralUtility::xml2array($testarray['750']['pi_flexform']);
-#        debug($flexFormData);
-        debug($flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF']);
-        # Anzahl der Dateien über array feststellen
-        $flexFormData['data']['options']['lDEF']['settings.gpxFile']['vDEF'] = '1';
-        $newFlexformData = GeneralUtility::array2xml($flexFormData);
-        debug($newFlexformData);
-*/
         return true;
     }
 
@@ -138,7 +172,7 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
         $queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
 
         return $queryBuilder
-            ->select('uid', 'list_type', 'pi_flexform')
+            ->select('uid', 'pid', 'tstamp', 'crdate', 'sys_language_uid', 'list_type', 'pi_flexform')
             ->from('tt_content')
             ->where(
                 $queryBuilder->expr()->eq(
@@ -151,17 +185,46 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
     }
 
     /**
-     * Updates pi_flexform of the given content element UID
+     * Adds sys_file_reference entries for GPX files
+     *
+     * @param int $pid
+     * @param int $uid_local
+     * @param int $uid_foreign
+     * @param int $tstamp
+     * @param int $crdate
+     * @param string $tablename
+     * @param string $field
+     * @param int $sorting
+     */
+    protected function createSysFileReference(int $pid, int $uid_local, int $uid_foreign, int $tstamp, int $crdate, string $tablename, string $field, int $sorting): void
+    {
+//        $string = "PID: " . $pid . " uid_local (sys_file): " . $uid_local . " uid_foreign (CE uid): " . $uid_foreign . " " . $tablename . " " . $field . " Sort: " . $sorting;
+//        debug($string);
+
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_file_reference');
+        $queryBuilder->insert('sys_file_reference')
+            ->values([
+                'tstamp' => $tstamp,
+                'crdate' => $crdate,
+                'pid' => $pid,
+                'uid_local' => $uid_local,
+                'tablenames' => $tablename,
+                'uid_foreign' => $uid_foreign,
+                'fieldname' => $field
+            ])->execute();
+    }
+
+    /**
+     * Updates pi_flexform in table tt_content for the uid of the given content element
      *
      * @param int $uid
      * @param string $flexform
      */
     protected function updateContentElement(int $uid, string $flexform): void
     {
-        debug($uid);
-        debug($flexform);
+//        debug($uid);
+//        debug($flexform);
 
-/*
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
         $queryBuilder->update('tt_content')
             ->set('pi_flexform', $flexform)
@@ -172,7 +235,6 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
                 )
             )
             ->executeStatement();
-*/
     }
 
     /**
@@ -185,10 +247,10 @@ final class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableI
      */
     public function getPrerequisites(): array
     {
-        // Add your logic here
         return [
             DatabaseUpdatedPrerequisite::class,
         ];
     }
+
 
 }
