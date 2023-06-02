@@ -172,6 +172,10 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 */
 	public function indexAction()
 	{
+		// Get major version of TYPO3
+		$versionInformation = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
+		$typo3MajorVersion = $versionInformation->getMajorVersion();
+
 		$gpxMapImages = '';
 		$gpxMapIcons = '';
 		$imageDescriptionText = '';
@@ -224,13 +228,16 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// UID (needed as id for content elements)
-		// This might throw a deprecation message which can be ignored, see here:
-		// https://stackoverflow.com/questions/56463377/deprecationmessage-getting-content-object-in-controller
-		// @extensionScannerIgnoreLine
-//		$uid = $this->configurationManager->getContentObject()->data['uid'];
-		// Besser ersetzen durch folgende zwei Zeilen:
-		$object = $this->request->getAttribute('currentContentObject');
-		$uid = $object->data['uid'];
+		if($typo3MajorVersion == 11) {
+			// This might throw a deprecation message which can be ignored, see here:
+			// https://stackoverflow.com/questions/56463377/deprecationmessage-getting-content-object-in-controller
+			// @extensionScannerIgnoreLine
+			$uid = $this->configurationManager->getContentObject()->data['uid'];
+		} else {
+			// With TYPO3 12 the following works
+			$object = $this->request->getAttribute('currentContentObject');
+			$uid = $object->data['uid'];
+		};
 
 		// assign uid
 		$this->view->assign('uid', $uid);
@@ -265,10 +272,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 
 //NEU AB HIER!!!!!
-	// Get major version of TYPO3
-	$versionInformation = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Information\Typo3Version::class);
-	$typo3MajorVersion = $versionInformation->getMajorVersion();
-//	debug($typo3MajorVersion);
 	if($typo3MajorVersion == 12) {
 
 		// ############################
