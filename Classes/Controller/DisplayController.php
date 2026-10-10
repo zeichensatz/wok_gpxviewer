@@ -378,7 +378,14 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// Bis 9.x funktionierte noch dies:
 			// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
 			// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
-			$this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
+			// $this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
+			// debug($this->pageLanguage);
+			// Since TYPO3 12 use the following:
+			$siteLanguage = $this->request->getAttribute('language');
+			$languageCode = $siteLanguage->getLocale()->getLanguageCode();
+			$this->pageLanguage = $siteLanguage->getLocale()->getLanguageCode();
+//			debug($this->pageLanguage);
+
 			// Variablen für Ausgabestrings (Wegpunkte für Images/Icons) resetten
 			$gpxMapImages = "";
 			$gpxMapIcons = "";
