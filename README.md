@@ -7,7 +7,7 @@ With including the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) javascript
 This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/en/gpxviewer). I will also try to do some documentation for the use of the extension there.
 
 ## What prerequisites are needed?
-* [TYPO3](https://typo3.org) 10.4.19 and above.
+* [TYPO3](https://typo3.org) 13.4.35 and above.
 * The [bootstrap_package](https://www.bootstrap-package.com/) is highly recommended. I only use the extension/plugin with the bootstrap_package and it's ScssPHP compiler. If you don't use it, then you have to include at least `Fluid Content Elements (fluid_style_content)` into your template (see below).
 * For some features you may need [exiftool](https://exiftool.org) installed on your server.
 * Probably you need API keys for use of Google maps or OSM. Find more information about API keys [here](https://www.j-berkemeier.de/GPXViewer/#Apikey).
@@ -37,6 +37,7 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
   * You can add issues or pull requests on [github](https://github.com/zeichensatz/wok_gpxviewer).
 
 ## Todos
+* Some of the previous maintained features of the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) are broken in the update process from TYPO3 12 to TYPO3 13. These features are mainly the waypoint related stuff. In the Configuration/FlexForms/GpxTracks.XML waypoint data can't be nested anymore. The data have to be moved therefore. Hopefully I will find time to add this feature again.
 * more examples and translation of examples into English
 * more documentation
 * create TER version
