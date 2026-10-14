@@ -1,37 +1,21 @@
 <?php
-defined('TYPO3') || die();
+defined('TYPO3') || die('Access denied.');
+
+use Wok\WokGpxviewer\Controller\DisplayController;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 (static function() {
-    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    // Registrierung als eigenständiges Inhaltselement (Zukunftssicher für TYPO3 13/14)
+    ExtensionUtility::configurePlugin(
         'WokGpxviewer',
         'Gpxtracks',
         [
-            \Wok\WokGpxviewer\Controller\DisplayController::class => 'index'
+            DisplayController::class => 'index'
         ],
         // non-cacheable actions
         [
-            \Wok\WokGpxviewer\Controller\DisplayController::class => 'index'
-        ]
-    );
-
-    // wizards
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        'mod {
-            wizards.newContentElement.wizardItems.plugins {
-                elements {
-                    gpxtracks {
-                        iconIdentifier = wok_gpxviewer-plugin-gpxtracks
-                        title = LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang_db.xlf:tx_wok_gpxviewer_gpxtracks.name
-                        description = LLL:EXT:wok_gpxviewer/Resources/Private/Language/locallang_db.xlf:tx_wok_gpxviewer_gpxtracks.description
-                        tt_content_defValues {
-                            CType = list
-                            list_type = wokgpxviewer_gpxtracks
-                        }
-                    }
-                }
-                show = *
-            }
-       }'
+            DisplayController::class => 'index'
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT // 5. Parameter hinzugefügt
     );
 })();
-## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder

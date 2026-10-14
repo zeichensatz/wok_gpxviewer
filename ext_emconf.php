@@ -8,10 +8,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => '',
     'state' => 'stable',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.2',
+    'version' => '1.0.3',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.0-12.3.99',
+            'typo3' => '13.0.0-14.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

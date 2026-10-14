@@ -1,28 +1,31 @@
 <?php
 defined('TYPO3') or die('Access denied.');
 
-/***************
- * Register plugin for selection in the backend plugin list
- */
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+$pluginSignature = 'wokgpxviewer_gpxtracks';
+
+// 1. Plugin registrieren
+ExtensionUtility::registerPlugin(
     'WokGpxviewer',
     'Gpxtracks',
     'GPXViewer tracks display',
-    'EXT:wok_gpxviewer/Resources/Public/Icons/user_plugin_gpxtracks.svg'
+    'EXT:wok_gpxviewer/Resources/Public/Icons/user_plugin_gpxtracks.svg',
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
-/***************
- * Add flexForms for plugin configuration
- */
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['wokgpxviewer_gpxtracks'] = 'pi_flexform';
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    // plugin signature: <extension key without underscores> '_' <plugin name in lowercase>
-    'wokgpxviewer_gpxtracks',
-    // Flexform configuration schema file
-    'FILE:EXT:wok_gpxviewer/Configuration/FlexForms/Gpxtracks.xml'
+// 2. Das pi_flexform-Feld sicher in das Standard-TCA einbetten
+ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    'pi_flexform',
+    $pluginSignature,
+    'after:palette:headers'
 );
 
-/***************
- * Deactivate pages and recursive in tab "plugin" of content element 
- */
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['wokgpxviewer_gpxtracks'] = 'pages,recursive';
+// 3. FlexForm-Datenstruktur über die offizielle API an die Signatur koppeln
+ExtensionManagementUtility::addPiFlexFormValue(
+    '*',
+    'FILE:EXT:wok_gpxviewer/Configuration/FlexForms/Gpxtracks.xml',
+    $pluginSignature
+);

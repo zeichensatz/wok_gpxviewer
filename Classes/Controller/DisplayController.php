@@ -193,11 +193,13 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// UID (needed as id for content elements)
-		// This might throw a deprecation message which can be ignored, see here:
-		// https://stackoverflow.com/questions/56463377/deprecationmessage-getting-content-object-in-controller
+		// Holt das Inhaltselement direkt aus dem Request-Objekt des Controllers
+		$currentContentObject = $this->request->getAttribute('currentContentObject');
+
 		// @extensionScannerIgnoreLine
-		$uid = $this->configurationManager->getContentObject()->data['uid'];
+		$uid = $currentContentObject ? $currentContentObject->data['uid'] : 0;
 		$this->view->assign('uid', $uid);
+
 
 		// ############################
 		// Zusätzliches Javascript für Animation von GPX tracks in einer Karte generieren
@@ -253,6 +255,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 			// Anzahl der GPX-Dateien feststellen
 			$gpxFilesCount = count($newFileArray);
 		}
+
 		// Werte zuweisen
 		$this->view->assign('gpxFile', $gpxFile);
 		// Counter: Wie viele gpxFiles sind es?
@@ -375,15 +378,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
 			// FESTSTELLEN DER SEITENSPRACHE
-			// Bis 9.x funktionierte noch dies:
-			// $pageLanguage = $GLOBALS['TSFE']->sys_language_isocode);
-			// Deprecated seit 9.2 funktioniert aber noch mit 10.4.1
-			// $this->pageLanguage = $GLOBALS['TYPO3_REQUEST']->getAttribute('language')->getTwoLetterIsoCode();
-			// debug($this->pageLanguage);
-			// Since TYPO3 12 use the following:
-			$siteLanguage = $this->request->getAttribute('language');
-			$languageCode = $siteLanguage->getLocale()->getLanguageCode();
-			$this->pageLanguage = $siteLanguage->getLocale()->getLanguageCode();
+			// Holt die Sprache direkt aus dem Request-Objekt des Controllers
+			$languageAttribute = $this->request->getAttribute('language');
+			$this->pageLanguage = $languageAttribute ? $languageAttribute->getLocale()->getLanguageCode() : 'de';
 //			debug($this->pageLanguage);
 
 			// Variablen für Ausgabestrings (Wegpunkte für Images/Icons) resetten
