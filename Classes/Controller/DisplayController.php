@@ -13,8 +13,14 @@ namespace Wok\WokGpxviewer\Controller;
  ***/
 
 // Müssen für die Umwandlung der Dateinamen aus den Settings eingebunden werden
-use \TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
-use \TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Frontend\Resource\FilePathSanitizer;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Context\Context;
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
+use TYPO3\CMS\Core\Resource\ResourceFactory;
+
+
 
 /**
  * DisplayController
@@ -135,6 +141,87 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	}
 
 	/**
+	 * Returns all records for list_type "wokgpxviewer_gpxtracks"
+	 */
+	protected function getTranslatedRecord(int $uid, int $language): array
+	{
+		$connectionPool = GeneralUtility::makeInstance(ConnectionPool::class);
+		$queryBuilder = $connectionPool->getQueryBuilderForTable('tt_content');
+		$queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
+
+		return $queryBuilder
+		->select('uid', 'pid', 'tstamp', 'crdate', 'sys_language_uid', 'list_type', 'pi_flexform')
+		->from('tt_content')
+		->where(
+			$queryBuilder->expr()->eq(
+				'l18n_parent', $queryBuilder->createNamedParameter($uid),
+				'hidden', $queryBuilder->createNamedParameter(0),
+				'deleted', $queryBuilder->createNamedParameter(0),
+				'sys_language_uid', $queryBuilder->createNamedParameter($language),
+				'list_type', $queryBuilder->createNamedParameter('wokgpxviewer_gpxtracks')
+			)
+		)
+		->executeQuery()
+		->fetchAllAssociative();
+	}
+
+	/**
+	 * Return file or folder id from a flexform link entry
+	 *
+	 * @param string $condition1
+	 * @param string $condition2
+	 * @return string $Coord
+	 */
+	protected function getFlexformIdentifier($flexformLinkString)
+	{
+debug($flexformLinkString, "1: ");
+$flexformLinkString = "t3://folder?uid=3369";
+						if (!empty($flexformLinkString)) {
+							// Prüfen, ob es sich um eine moderne t3://folder Verknüpfung handelt
+							if (str_starts_with($flexformLinkString, 't3://folder')) {
+debug("True");
+								try {
+									// Native PHP-Funktionen nutzen, um die Query-Parameter zu zerlegen
+									$parsedUrl = parse_url($flexformLinkString);
+debug($parsedUrl, "2: ");
+									$queryParams = [];
+									if (isset($parsedUrl['query'])) {
+										parse_str($parsedUrl['query'], $queryParams);
+									}
+debug($queryParams, "3: ");
+									// Storage-UID und Verzeichnispfad aus den Parametern extrahieren
+									$storageUid = isset($queryParams['storage']) ? (int)$queryParams['storage'] : 1;
+debug($storageUid, "4: ");
+									$folderIdentifier = isset($queryParams['identifier']) ? urldecode($queryParams['identifier']) : '';
+debug($folderIdentifier, "5: ");
+									if (!empty($folderIdentifier)) {
+										// Die ResourceFactory ist in TYPO3 13 unverändert verfügbar
+										$resourceFactory = GeneralUtility::makeInstance(ResourceFactory::class);
+debug($resourceFactory, "6: ");
+										// Kombinierten Identifier bauen (z.B. "1:/pageResources/motorcycle/...")
+										$combinedIdentifier = $storageUid . ':' . $folderIdentifier;
+
+										// Ordner-Objekt aus dem Core holen
+										$folderObject = $resourceFactory->getFolderObjectFromCombinedIdentifier($combinedIdentifier);
+
+										// Den relativen Pfad als String auslesen ("fileadmin/pageResources/...")
+										// ltrim und rtrim entfernen den führenden und abschließenden Slash
+										$finalFolderUrl = ltrim(rtrim($folderObject->getPublicUrl(), '/'), '/');
+									}
+								} catch (\Exception $e) {
+									// Falls der Ordner auf der Festplatte nicht existiert, Fehler abfangen
+									$finalFolderUrl = '';
+								}
+							} else {
+								// Abwärtskompatibilität: Falls im Altsystem bereits ein nativer Pfad eingetragen war
+								$finalFolderUrl = rtrim($flexformLinkString, '/');
+							}
+						}
+debug($finalFolderUrl, "5: ");
+return($finalFolderUrl);
+	}
+
+	/**
 	 * Index action for this controller.
 	 *
 	 * @return string The rendered view
@@ -195,11 +282,9 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// UID (needed as id for content elements)
 		// Holt das Inhaltselement direkt aus dem Request-Objekt des Controllers
 		$currentContentObject = $this->request->getAttribute('currentContentObject');
-
 		// @extensionScannerIgnoreLine
 		$uid = $currentContentObject ? $currentContentObject->data['uid'] : 0;
 		$this->view->assign('uid', $uid);
-
 
 		// ############################
 		// Zusätzliches Javascript für Animation von GPX tracks in einer Karte generieren
@@ -231,30 +316,38 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 		// ############################
 		// GPXFILE
-		// Numerisch(e) Wert(e) für gpxFile aus Flexform auslesen und vollständige Namen aus sys_file auslesen
-		$gpxFile = $this->settings['gpxFile'];
+		//debug('uid: ' . $uid);
 
-		// Wenn kein Wert in $gpxFile enthalten ist, dann wird kein Track ausgegeben, eventuell sind aber manuell Punkte definiert
-		if($gpxFile == '') {
-			// keine GPX-Dateien für die Ausgabe
-			$gpxFilesCount = 0;
-		} else {
-			// Kommaseparierte Liste von uids in array umwandeln
-			$fileArray = explode(',', $gpxFile);
-			// ResourceFactory einlesen
-			//$resourceFactory = \TYPO3\CMS\Core\Resource\ResourceFactory::getInstance();
-			$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-			// Für jede uid den Namen aus der sys_file holen
-			foreach ($fileArray as $key => $file) {
-				$tmpFile = $resourceFactory->getFileObject($file);
-				// Hier braucht es anstelle von "/fileadmin" noch eine automatische Zuordnung des Verzeichnisses
-				$newFileArray[$key] = '/fileadmin' . $tmpFile->getIdentifier();
-			}
-			// Vollständige Namen in einem kommaseparierten String umwandeln
-			$gpxFile = implode(',', $newFileArray);
-			// Anzahl der GPX-Dateien feststellen
-			$gpxFilesCount = count($newFileArray);
+		// Get current selected language ID,values 0 (=de) or 1 (=en)
+		$languageAspect = GeneralUtility::makeInstance(Context::class)->getAspect('language');
+		$languageId = $languageAspect->getId();
+//		debug("LanguageId: ". $languageId);
+
+		// Wenn es eine andere Sprache als der Standard ist, dann muss die richtige CE-uid gesucht werden
+		if($languageId <> 0) {
+		    $query = $this->getTranslatedRecord($uid, $languageId);
+//		    debug($query);
+		    // Wenn die Suche nach einem übersetzten Record nicht erfolgreich ist, dann muss auf das Fallback zurückgegriffen werden
+		    if(count($query) <> 0) {
+			$uid = $query[0]['uid'];
+		    };
+//		    debug('uid-NEU: ' . $uid);
 		}
+
+		// Hier werden die Dateien abgefragt.
+		$fileRepository = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Resource\\FileRepository');
+		$fileObjects = $fileRepository->findByRelation('tt_content', 'settings.gpxFile', $uid);
+		$newFileArray = [];
+		foreach ($fileObjects as $fileObject) {
+		    array_push($newFileArray, '/fileadmin' . $fileObject->getIdentifier());
+		}
+//		debug($newFileArray);
+		$gpxFilesCount = count($newFileArray);
+//		debug('gpxFilesCount: ' . $gpxFilesCount);
+
+		// Vollständige Namen in einem kommaseparierten String umwandeln
+		$gpxFile = implode(',', $newFileArray);
+//		debug($gpxFile);
 
 		// Werte zuweisen
 		$this->view->assign('gpxFile', $gpxFile);
@@ -378,7 +471,7 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 		// Das Array muss existieren und darf nicht leer sein!
 		if(isset($wholeArray) and !($wholeArray == '')) {
 			// FESTSTELLEN DER SEITENSPRACHE
-			// Holt die Sprache direkt aus dem Request-Objekt des Controllers
+			// Holt die Sprachbezeichnung "de" oder "en" direkt aus dem Request-Objekt des Controllers
 			$languageAttribute = $this->request->getAttribute('language');
 			$this->pageLanguage = $languageAttribute ? $languageAttribute->getLocale()->getLanguageCode() : 'de';
 //			debug($this->pageLanguage);
@@ -466,33 +559,102 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						}
 					}
 				}
+
+//debug($array['container']);
 				// Falls es sich um Bilder mit Geotags handelt
 				$geotagged = array('imageGeotagged','imageGeotaggedDir');
 				if (in_array($array['container']['settings']['gpxMapWaypointType'], $geotagged)) {
 					// Es handelt sich um eine Bilddatei
-					if ($array['container']['settings']['gpxMapWaypointImage'] != '') {
-						// sys_file uid für Image in Dateiname umwandeln
-						$sysFileUid = $array['container']['settings']['gpxMapWaypointImage'];
-						// ResourceFactory einlesen
-						$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-						// Angaben aus sys_file auslesen
-						$tmpFile = $resourceFactory->getFileObject($sysFileUid);
-						// Vollen Dateinamen auslesen
-						$imageGeotaggedSource = 'fileadmin' . $tmpFile->getIdentifier();
+//					if ($array['container']['settings']['gpxMapWaypointImage'] != '') {
+					if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotagged') {
+						$flexformLinkString = $array['container']['settings']['gpxMapWaypointImage'];
+						$finalFolderUrl = '';
+						$fileUid = 0;
+
+//						if (!empty($flexformLinkString) && str_starts_with($flexformLinkString, 't3://file')) {
+						if (!empty($flexformLinkString)) {
+							if (str_starts_with($flexformLinkString, 't3://file')) {
+
+								// 1. Query-String auslesen ('uid=3938')
+								$queryString = parse_url($flexformLinkString, PHP_URL_QUERY);
+
+								if (!empty($queryString)) {
+									$queryParams = [];
+									parse_str($queryString, $queryParams);
+
+									if (isset($queryParams['uid'])) {
+										$fileUid = (int)$queryParams['uid'];
+
+										try {
+											// 2. ResourceFactory holen & Datei-Objekt über die UID laden
+											$resourceFactory = GeneralUtility::makeInstance(ResourceFactory::class);
+											$fileObject = $resourceFactory->getFileObject($fileUid);
+
+											// 3. Den kompletten Dateinamen mit Pfad auslesen
+											$fileName = ltrim($fileObject->getPublicUrl(), '/');
+                
+										} catch (\Exception $e) {
+											// Fängt Fehler ab, falls die Datei physisch vom Server gelöscht wurde
+											$fileName = '';
+										}
+									}
+								}
+							} else {
+								// Abwärtskompatibilität: Falls im Altsystem bereits ein nativer Pfad eingetragen war
+								$fileUid = (int)$flexformLinkString;
+								debug($fileUid);
+
+							}
+						}
+						$imageGeotaggedSource = $fileName;
 					}
+
 					// Wenn es ein Verzeichnis ist
 					if ($array['container']['settings']['gpxMapWaypointType'] == 'imageGeotaggedDir') {
-						// sys_file uid für gewähltes Image umwandeln
-						$sysFileUid = $array['container']['settings']['gpxMapWaypointImageFolder'];
-						// ResourceFactory muss hier wiederholt gebraucht
-						$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-						// Angaben aus sys_file auslesen
-						$tmpFile = $resourceFactory->getFileObject($sysFileUid);
-						// Vollen Dateinamen auslesen
-						$imageGeotaggedSource = 'fileadmin' . $tmpFile->getIdentifier();
-						// Dateinamen abschneiden: Übrig bleibt Verzeichnisname
-						$imageGeotaggedSource = substr($imageGeotaggedSource, 0, strrpos($imageGeotaggedSource, "/"));
+						// Deine Ausgangsvariable (inkl. Bereinigung von eventuellen Zeilenumbrüchen/Leerzeichen)
+						$flexformLinkString = $array['container']['settings']['gpxMapWaypointImageFolder'];
+						$finalFolderUrl = '';
+						if (!empty($flexformLinkString)) {
+							// Prüfen, ob es sich um eine moderne t3://folder Verknüpfung handelt
+							if (str_starts_with($flexformLinkString, 't3://folder')) {
+								try {
+									// Native PHP-Funktionen nutzen, um die Query-Parameter zu zerlegen
+									$parsedUrl = parse_url($flexformLinkString);
+									$queryParams = [];
+									if (isset($parsedUrl['query'])) {
+										parse_str($parsedUrl['query'], $queryParams);
+									}
+									// Storage-UID und Verzeichnispfad aus den Parametern extrahieren
+									$storageUid = isset($queryParams['storage']) ? (int)$queryParams['storage'] : 1;
+									$folderIdentifier = isset($queryParams['identifier']) ? urldecode($queryParams['identifier']) : '';
+									if (!empty($folderIdentifier)) {
+										// Die ResourceFactory ist in TYPO3 13 unverändert verfügbar
+										$resourceFactory = GeneralUtility::makeInstance(ResourceFactory::class);
+
+										// Kombinierten Identifier bauen (z.B. "1:/pageResources/motorcycle/...")
+										$combinedIdentifier = $storageUid . ':' . $folderIdentifier;
+
+										// Ordner-Objekt aus dem Core holen
+										$folderObject = $resourceFactory->getFolderObjectFromCombinedIdentifier($combinedIdentifier);
+
+										// Den relativen Pfad als String auslesen ("fileadmin/pageResources/...")
+										// ltrim und rtrim entfernen den führenden und abschließenden Slash
+										$finalFolderUrl = ltrim(rtrim($folderObject->getPublicUrl(), '/'), '/');
+									}
+								} catch (\Exception $e) {
+									// Falls der Ordner auf der Festplatte nicht existiert, Fehler abfangen
+									$finalFolderUrl = '';
+								}
+							} else {
+								// Abwärtskompatibilität: Falls im Altsystem bereits eine Image-Datei (uid) eingetragen war
+								$resourceFactory = GeneralUtility::makeInstance(ResourceFactory::class);
+								$fileObject = $resourceFactory->getFileObject($flexformLinkString);
+								$finalFolderUrl = ltrim(dirname($fileObject->getPublicUrl()), '/');
+							}
+						}
+						$imageGeotaggedSource = $finalFolderUrl;
 					}
+
 					// exiftool Abfrage
 					$exif = '';
 					eval('$exif=' . `exiftool -php -q -c %+.6f '$imageGeotaggedSource'`);
@@ -563,7 +725,6 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 							$gpxMapWaypointLink = '';
 						};
 
-
 						// Ausgabestrings für Wegpunkte: Emoji
 						if (($array['container']['settings']['gpxMapWaypointType'] == 'emoji') and ($array['container']['settings']['gpxMapWaypointEmoji'] <> '')) {
 							$gpxMapWaypointEmoji = ' data-icon="' . $array['container']['settings']['gpxMapWaypointEmoji']  . '"';
@@ -580,14 +741,30 @@ class DisplayController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 						};
 						// Ausgabestrings für Wegpunkte (Images/Icons) erstellen
 						if ($array['container']['settings']['gpxMapWaypointType'] == 'image') {
-							// sys_file uid für gewähltes Image umwandeln
-							$sysFileUid = $array['container']['settings']['gpxMapWaypointImage'];
-							// ResourceFactory einlesen
+							$flexformLinkString = $array['container']['settings']['gpxMapWaypointImage'];
+							$fileUid = 0;
+							if (!empty($flexformLinkString) && str_starts_with($flexformLinkString, 't3://file')) {
+								// 1. Zerlegt den String in seine URL-Bestandteile (liefert den Query-Teil: 'uid=3938')
+								$queryString = parse_url($flexformLinkString, PHP_URL_QUERY);
+								if (!empty($queryString)) {
+									$queryParams = [];
+									// 2. Parsed den Query-String in ein sauberes PHP-Array
+									parse_str($queryString, $queryParams);
+
+									// 3. Extrahiert die UID und wandelt sie zur Sicherheit in einen Integer um
+									if (isset($queryParams['uid'])) {
+										$fileUid = (int)$queryParams['uid'];
+									}
+								} 
+							} else {
+								// Sonst ist es eine file Uid in der alten Form
+								$fileUid = (int)$flexformLinkString;
+							}
 							$resourceFactory = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
-							// Angaben aus sys_file auslesen
-							$tmpFile = $resourceFactory->getFileObject($sysFileUid);
+							$fileObject = $resourceFactory->getFileObject($fileUid);
+
 							// Vollen Dateinamen auslesen
-							$gpxMapWaypointImage = '/fileadmin' . $tmpFile->getIdentifier();
+							$gpxMapWaypointImage = '/fileadmin' . $fileObject->getIdentifier();
 							$gpxMapImages = $gpxMapImages . 
 											'<img src="' . $gpxMapWaypointImage . '" data-geo="lat:' . $latitude . ',lon:' . $longitude . '" alt="' . $array['container']['settings']['gpxMapWaypointDescriptionHeadline']  . $Coords . '"' . $gpxMapWaypointDescriptionHeadline . $gpxMapWaypointLink . '>
 			';

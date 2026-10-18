@@ -6,3 +6,8 @@ services:
 
   Wok\WokGpxviewer\:
     resource: '../Classes/*'
+
+  # Registriert deinen speziellen Wizard explizit im TYPO3-Upgrade-System
+  Wok\WokGpxviewer\Updates\FlexformUpgradeWizard:
+    tags:
+      - name: upgrade.wizard
