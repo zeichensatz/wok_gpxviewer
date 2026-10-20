@@ -4,7 +4,7 @@ This is a [TYPO3](https://typo3.org) extension, which provides a plugin for inte
 ## What does it do?
 With including the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) javascript one can display GPX tracks, routes, waypoints in Google Maps or Openstreetmap. Please refer to the [GPXViewer website](https://www.j-berkemeier.de/GPXViewer) for more informations about the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer).
 
-This extension/plugin for [TYPO3](https://typo3.org) integrate most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/en/gpxviewer). I will also try to do some documentation for the use of the extension there.
+This extension/plugin for [TYPO3](https://typo3.org) integrates most of the features of [GPXViewer](https://www.j-berkemeier.de/GPXViewer). For some examples please refer to [my website](https://wolfgangkleinbach.de/en/gpxviewer). I will also try to do some documentation for the use of the extension there.
 
 ## What prerequisites are needed?
 * [TYPO3](https://typo3.org) 13.4.35 and above.
@@ -35,9 +35,9 @@ This extension/plugin for [TYPO3](https://typo3.org) integrate most of the featu
 * I would like to hear from you, how you're using the extension and what can be improved.
   * You can write me a mail, see [my website](https://wolfgangkleinbach.de) for contact data.
   * You can add issues or pull requests on [github](https://github.com/zeichensatz/wok_gpxviewer).
+* Please note, that I'm not a professional coder and the code of the extension therefore isn't designed very well.
 
 ## Todos
-* Some of the previous maintained features of the [GPXViewer](https://www.j-berkemeier.de/GPXViewer) are broken in the update process from TYPO3 12 to TYPO3 13. These features are mainly the waypoint related stuff. In the Configuration/FlexForms/GpxTracks.XML waypoint data can't be nested anymore. The data have to be moved therefore. Hopefully I will find time to add this feature again.
 * more examples and translation of examples into English
 * more documentation
 * create TER version
