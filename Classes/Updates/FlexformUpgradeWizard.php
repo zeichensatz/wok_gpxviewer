@@ -19,12 +19,13 @@ use TYPO3\CMS\Core\Database\Query\Restriction\DeletedRestriction;
 use TYPO3\CMS\Core\Registry;
 use TYPO3\CMS\Core\Service\FlexFormService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Install\Updates\DatabaseUpdatedPrerequisite;
-use TYPO3\CMS\Install\Updates\RepeatableInterface;
-use TYPO3\CMS\Install\Attribute\UpgradeWizard;
-use TYPO3\CMS\Install\Updates\UpgradeWizardInterface;
+use TYPO3\CMS\Core\Updates\DatabaseUpdatedPrerequisite;
+use TYPO3\CMS\Core\Updates\RepeatableInterface;
+use TYPO3\CMS\Core\Attribute\UpgradeWizard;
+use TYPO3\CMS\Core\Updates\UpgradeWizardInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use TYPO3\CMS\Install\Updates\ChattyInterface;
+use TYPO3\CMS\Core\Updates\ChattyInterface;
+
 
 #[UpgradeWizard('flexformUpgradeWizard')]
 class FlexformUpgradeWizard implements UpgradeWizardInterface, RepeatableInterface, ChattyInterface

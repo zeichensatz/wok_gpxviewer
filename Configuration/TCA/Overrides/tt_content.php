@@ -6,7 +6,7 @@ use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 $pluginSignature = 'wokgpxviewer_gpxtracks';
 
-// 1. Plugin registrieren
+// 1. Inhaltselement/Plugin registrieren
 ExtensionUtility::registerPlugin(
     'WokGpxviewer',
     'Gpxtracks',
@@ -15,17 +15,15 @@ ExtensionUtility::registerPlugin(
     ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
 );
 
-// 2. Das pi_flexform-Feld sicher in das Standard-TCA einbetten
+// 2. FlexForm-Datenstruktur direkt an das TCA des Inhaltselements binden (Ersetzt addPiFlexFormValue)
+$GLOBALS['TCA']['tt_content']['types'][$pluginSignature]['columnsOverrides']['pi_flexform']['config']['ds'] = [
+    'default' => 'FILE:EXT:wok_gpxviewer/Configuration/FlexForms/Gpxtracks.xml',
+];
+
+// 3. Dem Inhaltselement mitteilen, dass das pi_flexform-Feld eingeblendet werden soll
 ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
     'pi_flexform',
     $pluginSignature,
     'after:palette:headers'
-);
-
-// 3. FlexForm-Datenstruktur über die offizielle API an die Signatur koppeln
-ExtensionManagementUtility::addPiFlexFormValue(
-    '*',
-    'FILE:EXT:wok_gpxviewer/Configuration/FlexForms/Gpxtracks.xml',
-    $pluginSignature
 );
